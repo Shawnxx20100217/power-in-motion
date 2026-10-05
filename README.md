@@ -34,6 +34,7 @@ The project used AI-assisted research compilation, translation, programming and 
 - `data/editorial-en.json`: English editorial copy merged during the build.
 - `data/findings.json`: generated counts, denominators, period comparisons and coverage statistics.
 - `data/method-content.json`: bilingual method content and tour script.
+- `data/research-synthesis.json`: bilingual closing synthesis and links to the existing findings and method; separate from generated statistics.
 - `data/review-coverage.json`: profile coverage and unresolved issues.
 - `data/evidence-review.json`: targeted correction and reference audit trail.
 - `scripts/compute_findings.py`: reproducible research queries.

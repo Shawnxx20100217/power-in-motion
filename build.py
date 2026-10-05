@@ -23,7 +23,11 @@ for person in data['people']:
         person['editorial'] = editorial[person['nameZh']]
     if person.get('summaryEn'):
         person.setdefault('editorial', {})['summary_en'] = person['summaryEn']
-research = {'findings': findings, 'method': json.loads((root / 'data/method-content.json').read_text())}
+research = {
+    'findings': findings,
+    'method': json.loads((root / 'data/method-content.json').read_text()),
+    'synthesis': json.loads((root / 'data/research-synthesis.json').read_text()),
+}
 html = (root / 'src/index.template.html').read_text()
 for token, name in [('__SITE_CSS__', 'styles.css'), ('__ATLAS_JS__', 'atlas.js'), ('__RESEARCH_JS__', 'research.js')]:
     html = html.replace(token, (root / 'src' / name).read_text())

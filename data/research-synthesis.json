@@ -1,0 +1,50 @@
+{
+  "titleZh": "研究总结：不止于出生地",
+  "titleEn": "Research Synthesis: Beyond Birthplace",
+  "paragraphsZh": [
+    [
+      {"text": "本图谱的阶段性认识是：描述所选政治人物的空间经历，不能仅以出生地概括，还需要考察学习与政治活动发生的地点及其时间关系。现有发现按各自的筛选条件，分别呈现了"},
+      {"text": "预设地点组中的学习与受训记录", "href": "#findings/learning-destinations"},
+      {"text": "、部分人物在"},
+      {"text": "多座所选政治中心的到场记录", "href": "#findings/multiple-centers"},
+      {"text": "，以及证据条件满足时可以确立的"},
+      {"text": "异地学习与后续中心事件的先后", "href": "#findings/learning-before-center"},
+      {"text": "。这些观察支持一种按人生阶段理解人物地理经历的方式，而不只是将人物归入单一的出身地。"}
+    ],
+    [
+      {"text": "这种理解并不意味着地理流动解释了政治成功。人物的选择、史料保存和记载详略都会影响图中呈现的分布；"},
+      {"text": "学习发生在先，也不能单独证明它促成了后来的政治地位", "href": "#method/findings"},
+      {"text": "。"},
+      {"text": "未被记录的经历仍是未知，而非不存在", "href": "#method/limits"},
+      {"text": "。"}
+    ],
+    [
+      {"text": "本项目的阶段性贡献，是把分散的传记记载整理为"},
+      {"text": "可以比较、追溯和修订的空间材料", "href": "#method/provenance"},
+      {"text": "。读者不仅能够观察地点与经历之间的联系，也能够返回相关人物、事件与来源，检查这些观察如何形成。图谱的价值，在于让关于地点与政治人生的讨论，从地图上的印象进一步走向可以检查的证据。"}
+    ]
+  ],
+  "paragraphsEn": [
+    [
+      {"text": "A provisional conclusion from this atlas is that birthplace alone cannot adequately describe the spatial experiences of the selected political figures. The separate queries, each with its own criteria, document "},
+      {"text": "learning and training in the specified destination groups", "href": "#findings/learning-destinations"},
+      {"text": ", "},
+      {"text": "presence in more than one selected political center", "href": "#findings/multiple-centers"},
+      {"text": ", and—where evidence permits—"},
+      {"text": "learning elsewhere before a later recorded center event", "href": "#findings/learning-before-center"},
+      {"text": ". These observations support examining these lives through different life stages, rather than classifying them solely by place of origin."}
+    ],
+    [
+      {"text": "This does not establish that mobility explains political success. The selection of people, the survival of sources, and differences in biographical detail shape the patterns shown. "},
+      {"text": "Earlier learning is not, by itself, evidence that it caused later political advancement", "href": "#method/findings"},
+      {"text": ". "},
+      {"text": "An unrecorded experience remains unknown, not disproven", "href": "#method/limits"},
+      {"text": "."}
+    ],
+    [
+      {"text": "The project’s contribution is to organize biographical records into "},
+      {"text": "spatial material that can be compared, traced, and revised", "href": "#method/provenance"},
+      {"text": ". Readers can move from an overall observation to the people, events, and sources behind it. The atlas’s value lies in moving discussion of place and political lives beyond visual impressions toward evidence that readers can inspect."}
+    ]
+  ]
+}

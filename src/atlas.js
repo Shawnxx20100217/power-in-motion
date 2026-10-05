@@ -465,7 +465,7 @@
     const compactFilters=window.matchMedia('(max-width:1199px)');
     if(disclosure){disclosure.open=!compactFilters.matches;compactFilters.addEventListener('change',event=>{disclosure.open=!event.matches;});}
     document.addEventListener('click',event=>{if(event.target.closest('[data-back-map]'))window.atlasScrollMap();});
-    document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{state.lang=button.dataset.lang;syncUI();}));
+    document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{window.researchBeforeLanguageChange?.();state.lang=button.dataset.lang;syncUI();}));
     document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{state.mode=button.dataset.mode;document.querySelectorAll('[data-mode]').forEach(item=>item.classList.toggle('active',item===button));syncUI();}));
     personSearch.addEventListener('input',event=>{state.search=event.target.value.trim();syncUI();});
     coverageFilter.addEventListener('click',()=>{state.verifiedOnly=!state.verifiedOnly;syncUI();});
