@@ -1,0 +1,925 @@
+{
+  "曾国藩": {
+    "name_en": "Zeng Guofan",
+    "summary_en": "Zeng Guofan was a Qing official and organizer of the Hunan Army. His birthplace lay in historical Xiangxiang County, now Shuangfeng. He entered government through the examinations and built a regional military organization during the Taiping war. He later held the Liangjiang and Zhili viceroyalties and supported Western military technology. The capture of Tianjing was carried out by his brother’s forces, so it does not establish Zeng’s own presence there. He died in Nanjing after returning to Liangjiang.",
+    "roles_en": [
+      "Official",
+      "Military",
+      "Reformer"
+    ],
+    "office_impact_en": "Viceroy of Liangjiang; founder and commander of the Hunan Army; participant in the Self-Strengthening network.",
+    "inclusion_en": "Included as a source-backed late Qing official and military organizer whose local network is central to the atlas’s regional-power question.",
+    "notes_en": "The birthplace, education, and office-holding chain still requires field-level completion.",
+    "entity_en": "Qing Empire"
+  },
+  "左宗棠": {
+    "name_en": "Zuo Zongtang",
+    "summary_en": "Zuo Zongtang was a Qing military and administrative leader born in Xiangyin, Hunan. After passing the provincial examination he pursued practical scholarship and teaching before entering the Hunan governor’s staff. He organized the Chu Army and became governor of Zhejiang and viceroy of Min-Zhe and Shaan-Gan. His career included campaigns against the Taiping and northwestern rebellions, direction of the Xinjiang campaign, and industrial projects. He later served in central government and Liangjiang, and died while supervising Fujian military affairs.",
+    "roles_en": [
+      "Official",
+      "Military",
+      "Reformer"
+    ],
+    "office_impact_en": "Late Qing military and administrative leadership; northwest governance; Xinjiang campaign; Self-Strengthening and coastal-defense work.",
+    "inclusion_en": "Included as a pending-verification late Qing regional administrator and military leader.",
+    "notes_en": "Two-source verification and a complete place sequence are still needed.",
+    "entity_en": "Qing Empire"
+  },
+  "李鸿章": {
+    "name_en": "Li Hongzhang",
+    "summary_en": "Li Hongzhang was a Qing official, military organizer and diplomat from Hefei. He passed the jinshi examination in 1847 and studied under Zeng Guofan. His Huai Army fought the Taiping, and he rose through provincial offices to the Zhili viceroyalty and the northern trade administration. Li promoted military industry and commercial shipping while undertaking major diplomatic negotiations. After the Sino-Japanese War he signed the Treaty of Shimonoseki; he also signed the Boxer Protocol shortly before his death in Beijing.",
+    "roles_en": [
+      "Official",
+      "Military",
+      "Diplomacy",
+      "Reformer"
+    ],
+    "office_impact_en": "Viceroy of Zhili and Beiyang minister; founder and commander of the Huai Army; participant in the Self-Strengthening Movement and treaty diplomacy.",
+    "inclusion_en": "Included because the seed record identifies a documented office, military network, and reform trajectory.",
+    "notes_en": "The full sequence of appointments remains to be added to the archive.",
+    "entity_en": "Qing Empire"
+  },
+  "张之洞": {
+    "name_en": "Zhang Zhidong",
+    "summary_en": "Zhang Zhidong was a late Qing official associated with industrial and educational reform. His ancestral home was Nanpi and his early life was in Guizhou. He passed the jinshi examination in 1863 and later served as provincial education commissioner, governor of Shanxi, and viceroy of Liangguang and Huguang. He supported new schools and industrial projects and helped formulate a national school system. In 1907 he returned to Beijing for central office. Official accounts disagree on his precise Guizhou birthplace.",
+    "roles_en": [
+      "Official",
+      "Reformer",
+      "Education",
+      "Military"
+    ],
+    "office_impact_en": "Governor of Shanxi; Viceroy of Liangguang and Huguang; Grand Councillor; education, military-industrial, and railway reform.",
+    "inclusion_en": "Included as a late Qing provincial administrator whose reform work connects institutions and regional geography.",
+    "notes_en": "The candidate record is pending two-source verification.",
+    "entity_en": "Qing Empire"
+  },
+  "慈禧太后": {
+    "name_en": "Empress Dowager Cixi",
+    "summary_en": "Cixi entered the Qing palace in 1852 and became empress dowager when her son succeeded to the throne. The 1861 coup established the joint regency of Cixi and Ci’an with Prince Gong’s support. She retained decisive power under the Guangxu emperor, halted the 1898 reforms, and fled with the court to Xi’an during the foreign occupation of Beijing in 1900. She later returned to the capital and died in 1908. Her precise birthplace has been debated in historical research.",
+    "roles_en": [
+      "Political leader",
+      "Court power"
+    ],
+    "office_impact_en": "De facto highest decision-maker in the late Qing court during the Tongzhi and Guangxu reigns.",
+    "inclusion_en": "Included as a court-power figure because the seed record places her at the center of the late Qing decision network.",
+    "notes_en": "Add a court-archive or authoritative biographical source before treating the profile as complete.",
+    "entity_en": "Qing Empire"
+  },
+  "光绪帝": {
+    "name_en": "Guangxu Emperor",
+    "summary_en": "The Guangxu emperor, born Zaitian, succeeded to the Qing throne in 1875 under the empress dowagers’ regency. Educated at Yuqing Palace, he held a formal coming-of-age ceremony in 1887 and assumed personal rule in 1889. He backed reform in 1898, but the subsequent coup left him confined at Yingtai. He accompanied Cixi to Xi’an during the crisis of 1900 and later returned to Beijing. His chronology distinguishes formal reign, personal government and confinement rather than treating them as uninterrupted independent rule.",
+    "roles_en": [
+      "Political leader",
+      "Reformer"
+    ],
+    "office_impact_en": "Qing head of state during the Hundred Days’ Reform.",
+    "inclusion_en": "Included as a head of state directly linked to the reform period.",
+    "notes_en": "The current record is a candidate entry and needs a fuller source-backed biography.",
+    "entity_en": null
+  },
+  "康有为": {
+    "name_en": "Kang Youwei",
+    "summary_en": "Kang Youwei was a reform advocate and political thinker from Nanhai, Guangdong. He petitioned the Qing court, taught students and organized associations to promote institutional change. After receiving the jinshi degree in 1895, he became a leading participant in the 1898 reform movement. Its defeat forced him into exile, where he continued supporting constitutional monarchy. He returned in 1913, opposed Yuan Shikai’s imperial project, but participated in the attempted Qing restoration of 1917. His later years included teaching and writing.",
+    "roles_en": [
+      "Reformer",
+      "Political thinker"
+    ],
+    "office_impact_en": "Advocate of the 1898 reform movement; organizer in the Protect the Emperor Society; overseas political activity.",
+    "inclusion_en": "Included as a reformer whose political thought and organization crossed the late Qing and Republican periods.",
+    "notes_en": "The record links him to both Qing and Republic periods; detailed places remain to be verified.",
+    "entity_en": "Qing Empire; Republic of China"
+  },
+  "梁启超": {
+    "name_en": "Liang Qichao",
+    "summary_en": "Liang Qichao was a reform advocate, journalist and scholar born in Xinhui. Trained in classical learning, he became Kang Youwei’s student and promoted reform through newspapers and education. Following the 1898 coup he lived in Japan and published influential journals in Yokohama. He returned after the republic’s establishment, held justice and finance portfolios, and opposed Yuan Shikai’s monarchy. Later he traveled in Europe, taught at universities including Nankai and Tsinghua, and helped develop libraries. He died in Beiping in 1929.",
+    "roles_en": [
+      "Reformer",
+      "Political thinker",
+      "Organizer"
+    ],
+    "office_impact_en": "Leader in the reform movement; organizer in political journalism and parties; political thought and educational work in the Republic.",
+    "inclusion_en": "Included as a documented bridge between reform ideas, public opinion, and party organization.",
+    "notes_en": "The period link is intentionally overlapping; verify each place-event separately.",
+    "entity_en": "Qing Empire; Republic of China"
+  },
+  "袁世凯": {
+    "name_en": "Yuan Shikai",
+    "summary_en": "Yuan Shikai was born in Xiangcheng, Henan, and entered military service before accompanying Qing forces to Korea in 1882. His influence grew through military organization and senior provincial office, including the Zhili viceroyalty. Recalled during the 1911 revolution, he became provisional president of the Republic of China in 1912 and subsequently concentrated executive power. His attempt to establish a monarchy in 1915 provoked armed opposition. He abandoned the imperial project in 1916 and died that June.",
+    "roles_en": [
+      "Political leader",
+      "Military",
+      "Official"
+    ],
+    "office_impact_en": "Beiyang military founder and commander; late Qing governor and premier; first formal President of the Republic of China; imperial experiment.",
+    "inclusion_en": "Included because his career crosses late Qing state-building, Beiyang power, and the founding phase of the Republic.",
+    "notes_en": "The imperial episode and political entities require careful period and source labeling.",
+    "entity_en": "Qing Empire; Beiyang Government; Republic of China"
+  },
+  "孙中山": {
+    "name_en": "Sun Yat-sen",
+    "summary_en": "Sun Yat-sen was born in Cuiheng village in Guangdong and studied in Honolulu, Hong Kong and Guangzhou before qualifying in medicine. He organized revolutionary associations, including the Revive China Society and Tongmenghui, and advanced the Three Principles of the People. He became provisional president in Nanjing in 1912. Subsequent efforts against Yuan Shikai and for constitutional protection brought repeated setbacks. He later established governments in Guangzhou, reorganized the Kuomintang and supported military training. He traveled north in 1924 and died in Beijing.",
+    "roles_en": [
+      "Revolutionary",
+      "Party leader",
+      "Political leader"
+    ],
+    "office_impact_en": "Leader of the Tongmenghui and Nationalist Party; provisional President of the Republic of China; organizer of revolutionary politics.",
+    "inclusion_en": "Included as a source-backed revolutionary and party leader whose career connects overseas networks, revolution, and the early Republic.",
+    "notes_en": "Remove the 1937–1945 period link: Sun Yat-sen died in 1925. Posthumous influence must be recorded separately.",
+    "entity_en": "Tongmenghui; Provisional Government of the Republic of China; Kuomintang"
+  },
+  "谭嗣同": {
+    "name_en": "Tan Sitong",
+    "summary_en": "Tan Sitong was a reform thinker born in Beijing with family origins in Liuyang, Hunan. His early life included travel with his father and study of literary and martial subjects. After the Sino-Japanese War he promoted reform in Hunan through educational societies, schools and newspapers, and wrote Renxue. In 1898 he went to Beijing and received an appointment assisting reform in the central administration. Following the coup he was arrested and executed at Caishikou with five other reformers.",
+    "roles_en": [
+      "Reformer",
+      "Revolutionary"
+    ],
+    "office_impact_en": "Core participant in the Hundred Days’ Reform.",
+    "inclusion_en": "Included as a reform-era figure whose documented political impact is concentrated in 1898.",
+    "notes_en": "Candidate entry; add an authoritative biographical source before expanding the path.",
+    "entity_en": null
+  },
+  "张謇": {
+    "name_en": "Zhang Jian",
+    "summary_en": "Zhang Jian was an industrialist, educator and political participant associated with Nantong. He worked as a staff adviser before taking first place in the imperial examination in 1894. He subsequently developed the Dasheng textile enterprise and invested in education and public institutions, including teacher training and the Nantong Museum. He supported constitutional reform, chaired Jiangsu’s provincial assembly, and held economic portfolios in the early republic. In later life he concentrated on local development in Nantong, where he died in 1926.",
+    "roles_en": [
+      "Reformer",
+      "Entrepreneur",
+      "Political network"
+    ],
+    "office_impact_en": "Industrial, educational, constitutional, and local-modernization initiatives centered on Nantong.",
+    "inclusion_en": "Included under the project’s peripheral-influence rule because the seed record describes direct links among industry, education, and local politics.",
+    "notes_en": "Keep the peripheral-influence label visible; do not treat entrepreneurship alone as political office.",
+    "entity_en": "Qing Empire; Republic of China; Constitutionalists"
+  },
+  "黎元洪": {
+    "name_en": "Li Yuanhong",
+    "summary_en": "Li Yuanhong was born in Huangpi and trained at the Beiyang Naval Academy after moving to Tianjin as a child. Following the Sino-Japanese War he worked under Zhang Zhidong and helped develop the Hubei New Army. The Wuchang uprising brought him into revolutionary leadership. He subsequently became republican vice president and twice president, navigating conflicts among military factions. The 1917 struggle with Duan Qirui and restoration crisis ended his first presidency. He left office again in 1923 and died in Tianjin.",
+    "roles_en": [
+      "Political leader",
+      "Military"
+    ],
+    "office_impact_en": "Wuchang Uprising leadership; President of the Republic of China.",
+    "inclusion_en": "Included as a Republican political and military leader; the full office sequence remains pending.",
+    "notes_en": "Complete appointment dates and the place chain before drawing a detailed route.",
+    "entity_en": null
+  },
+  "段祺瑞": {
+    "name_en": "Duan Qirui",
+    "summary_en": "Duan Qirui was born in Lu’an and spent part of his childhood in Hefei. Military education in Tianjin and Germany led to service in Yuan Shikai’s modernizing forces and eventual leadership of the Anhui military faction. He repeatedly headed republican cabinets and returned as provisional chief executive after losing the Zhili–Anhui War. His government’s repression of petitioners caused the March 18 massacre in 1926. After leaving power he lived in Tianjin, moved to Shanghai in 1933 and died there.",
+    "roles_en": [
+      "Political leader",
+      "Military"
+    ],
+    "office_impact_en": "Premier and provisional chief executive of the Beiyang government; leading figure of the Anhui clique.",
+    "inclusion_en": "Included as a central Beiyang military-political figure.",
+    "notes_en": "Two-source verification remains pending.",
+    "entity_en": "Beiyang Government; Anhui Clique"
+  },
+  "冯国璋": {
+    "name_en": "Feng Guozhang",
+    "summary_en": "Feng Guozhang was born in Hejian and received classical schooling before entering military education in Tianjin. He helped develop the Beiyang New Army and commanded forces against the Wuchang revolution. After the republic was established he held senior posts in Zhili and Jiangsu and became a central figure in the Zhili faction. Elected vice president in 1916, he served as acting president following the failed restoration of 1917. He left office in 1918 and died in Beijing the following year.",
+    "roles_en": [
+      "Political leader",
+      "Military"
+    ],
+    "office_impact_en": "Beiyang military and political leadership.",
+    "inclusion_en": "Included as a Beiyang network candidate whose office and movement records require fuller verification.",
+    "notes_en": "Current entry is a candidate record rather than a complete biography.",
+    "entity_en": null
+  },
+  "张作霖": {
+    "name_en": "Zhang Zuolin",
+    "summary_en": "Zhang Zuolin came from Haicheng in Fengtian and rose through local armed groups absorbed into Qing service. He became the leading military power in Manchuria and headed the Fengtian faction. His forces fought successive wars with the Zhili faction, and victory in 1924 gave him influence over Beijing politics. He met Sun Yat-sen in Tianjin and later became generalissimo in Beijing. During his 1928 retreat to the northeast, a Japanese army bombing at Huanggutun fatally wounded him.",
+    "roles_en": [
+      "Regional warlord",
+      "Military",
+      "Political leader"
+    ],
+    "office_impact_en": "Leader of the Fengtian regime; decisive regional and Beijing political power; killed at Huanggutun in 1928.",
+    "inclusion_en": "Included as a regional-power figure because the expansion record provides a source-backed Fengtian and Beiyang trajectory.",
+    "notes_en": "Retain historical place names with modern equivalents; the Palace Museum entry supports the broad route.",
+    "entity_en": "Fengtian regime; Beiyang Government"
+  },
+  "吴佩孚": {
+    "name_en": "Wu Peifu",
+    "summary_en": "Wu Peifu, whose native home was Penglai, received classical and military education before rising in the Beiyang army. A leading Zhili commander, he advocated a ceasefire while in Hunan and fought the Zhili–Anhui and Zhili–Fengtian wars. Luoyang became a military base. In 1923 his forces suppressed the railway workers’ strike in the February 7 massacre. Subsequent defeats drove him through Hubei and Sichuan. He later settled in Beiping, refused a Japanese-sponsored position, and died in 1939.",
+    "roles_en": [
+      "Regional warlord",
+      "Military",
+      "Political leader"
+    ],
+    "office_impact_en": "Leader of the Zhili clique; major actor in Beiyang central politics and north–south wars.",
+    "inclusion_en": "Included as a regional-warlord candidate to represent competing military centers.",
+    "notes_en": "The detailed route and second-source verification are pending.",
+    "entity_en": "Zhili Clique; Beiyang Government"
+  },
+  "蒋介石": {
+    "name_en": "Chiang Kai-shek",
+    "summary_en": "Chiang Kai-shek was born in Fenghua, trained in Japan and joined the Tongmenghui. He led Whampoa Academy and the Northern Expedition, consolidated Kuomintang power, and launched the 1927 anti-communist purge. He directed wartime military affairs and attended the Cairo Conference. Elected constitutional president in 1948, he relocated to Taiwan after civil-war defeat and resumed presidential powers in 1950. His government advanced land and education policies while maintaining authoritarian rule; he personally reviewed military cases during the White Terror. He died in 1975.",
+    "roles_en": [
+      "Political leader",
+      "Military",
+      "Party leader"
+    ],
+    "office_impact_en": "Leader of the Nationalist Party; chair of the National Military Council; central figure in the Nanjing government and wartime command.",
+    "inclusion_en": "Included as a source-backed political and military leader spanning the Republic, the War of Resistance, and governance in Taiwan.",
+    "notes_en": "Keep the political entity explicit when period filters overlap.",
+    "entity_en": "Nationalist Government; Kuomintang; National Revolutionary Army"
+  },
+  "汪精卫": {
+    "name_en": "Wang Jingwei",
+    "summary_en": "Wang Jingwei, also known as Wang Zhaoming, began as an anti-Qing revolutionary associated with Sun Yat-sen. He later occupied senior Nationalist offices and alternately cooperated and competed with Chiang Kai-shek. In 1938 he publicly advocated ending resistance to Japan; in 1940 he established a Japanese-backed government at Nanjing. He died in Nagoya in 1944. The timeline distinguishes his revolutionary career, Nationalist appointments and wartime collaboration. His ancestral origin is recorded separately from his birthplace.",
+    "roles_en": [
+      "Political leader",
+      "Party leader",
+      "Collaborationist regime"
+    ],
+    "office_impact_en": "Early Nationalist party and government leadership; chairman of the Nanjing collaborationist regime after 1940.",
+    "inclusion_en": "Included because his offices and wartime regime directly affected Republican political history.",
+    "notes_en": "Mark the collaborationist regime and the historical controversy in every public-facing profile; evidence requires careful sourcing.",
+    "entity_en": "Kuomintang; Nanjing collaborationist regime"
+  },
+  "胡汉民": {
+    "name_en": "Hu Hanmin",
+    "summary_en": "Hu Hanmin was an early leader of the Tongmenghui and the Nationalist movement. Educated in Japan, he edited Minbao and supported revolutionary organizing in southern China. He became military governor of Guangdong after the 1911 Revolution and later worked with Sun Yat-sen. After supporting the 1927 purge, he headed the Legislative Yuan. Conflict with Chiang Kai-shek led to house arrest in 1931; he subsequently returned to Guangzhou, where he died.",
+    "roles_en": [
+      "Party leader",
+      "Official"
+    ],
+    "office_impact_en": "Early Kuomintang party and government leadership.",
+    "inclusion_en": "Included as a Republican party-network candidate.",
+    "notes_en": "Expand only after a second source confirms the office sequence.",
+    "entity_en": null
+  },
+  "宋教仁": {
+    "name_en": "Song Jiaoren",
+    "summary_en": "Song Jiaoren helped organize the Huaxinghui and Tongmenghui and studied political and legal institutions in Japan. After the Republic was founded, he served as agriculture and forestry minister and promoted a party cabinet responsible to parliament. He played a central role in forming the Kuomintang, which won the largest bloc of seats in the first parliamentary election. Shot at a Shanghai railway station in March 1913, he died two days later.",
+    "roles_en": [
+      "Party leader",
+      "Reformer",
+      "Revolutionary"
+    ],
+    "office_impact_en": "Tongmenghui and Kuomintang organization; advocacy of responsible cabinet and parliamentary politics; assassinated in 1913.",
+    "inclusion_en": "Included as an early Republican party organizer whose institutional ideas are explicit in the seed record.",
+    "notes_en": "Keep the 1913 assassination as a documented event, not as a generalized impact claim.",
+    "entity_en": "Republic of China; Kuomintang"
+  },
+  "宋庆龄": {
+    "name_en": "Soong Ching-ling",
+    "summary_en": "Soong Ching-ling was educated in Shanghai and the United States before joining Sun Yat-sen’s revolutionary work. She broke with the Nationalist leadership in 1927 and later organized civil-rights campaigns, wartime relief and welfare programs for women and children. In 1949 she became a vice chair of the Central People’s Government. Her later public service combined state responsibilities with international and welfare work. She received the title of honorary president of the PRC shortly before her death in 1981.",
+    "roles_en": [
+      "Revolutionary",
+      "Political leader",
+      "Social network"
+    ],
+    "office_impact_en": "Nationalist revolution and wartime work; post-1949 state leadership and united-front networks.",
+    "inclusion_en": "Included because the record explicitly links her across the overlapping periods and political entities.",
+    "notes_en": "This is a cross-period person record; separate each political context and avoid collapsing them into one office.",
+    "entity_en": null
+  },
+  "李宗仁": {
+    "name_en": "Li Zongren",
+    "summary_en": "Li Zongren was a principal leader of the New Guangxi Clique. He received military training in Guangxi, joined the Northern Expedition and later commanded the Fifth War Area against Japan, including the Taierzhuang campaign. Elected ROC vice president in 1948, he assumed presidential duties in 1949 and pursued peace talks. He subsequently lived in the United States, was removed from the vice presidency in 1954, returned to mainland China in 1965 and died in Beijing.",
+    "roles_en": [
+      "Political leader",
+      "Military",
+      "Regional power"
+    ],
+    "office_impact_en": "New Guangxi Clique leadership; Taierzhuang campaign command; vice president and acting president of the Republic of China.",
+    "inclusion_en": "Included as a regional-power and wartime commander with a source-backed trajectory.",
+    "notes_en": "Nanjing government work is pending a dedicated source; do not render that node yet.",
+    "entity_en": "Republic of China; Kuomintang; New Guangxi Clique"
+  },
+  "张学良": {
+    "name_en": "Zhang Xueliang",
+    "summary_en": "Zhang Xueliang trained at the Northeast military academy and succeeded his father as leader of the northeastern forces. He recognized the Nationalist government in 1928. His army’s nonresistance during the 1931 Japanese invasion preceded his role with Yang Hucheng in the 1936 Xi’an Incident. After accompanying Chiang Kai-shek to Nanjing, he was confined for decades. He regained freedom in 1990, later settled in Hawaii and died there in October 2001; sources differ on the day.",
+    "roles_en": [
+      "Military",
+      "Regional warlord",
+      "Political leader"
+    ],
+    "office_impact_en": "Commander of the Northeast Army; central actor in the Xi’an Incident and the move toward cooperation against Japan.",
+    "inclusion_en": "Included as a regional military leader whose network and political intervention changed the wartime map.",
+    "notes_en": "The candidate status remains pending full verification.",
+    "entity_en": "Northeast Army; Nationalist Government"
+  },
+  "陈独秀": {
+    "name_en": "Chen Duxiu",
+    "summary_en": "Chen Duxiu was an influential New Culture intellectual and a founder of the Chinese Communist Party. He studied in China and Japan, pursued anti-Qing activity, founded Youth Magazine in Shanghai and became dean of letters at Peking University. He helped organize the Shanghai communist group and led the CCP in its early years. Removed from leadership in 1927 and expelled in 1929, he later joined the Left Opposition, was imprisoned and spent his last years in Jiangjin.",
+    "roles_en": [
+      "Revolutionary",
+      "Party leader",
+      "Political thinker"
+    ],
+    "office_impact_en": "New Culture and May Fourth leadership; CPC founding; early general secretary.",
+    "inclusion_en": "Included because the official party-history record identifies direct organizational and intellectual political influence.",
+    "notes_en": "The expansion seed supports early organizations in Shanghai, Beijing, and Guangzhou; later years remain outside this seed.",
+    "entity_en": "Chinese Communist Party; New Culture Movement"
+  },
+  "李大钊": {
+    "name_en": "Li Dazhao",
+    "summary_en": "Li Dazhao studied politics and law in Tianjin and Tokyo before becoming a leading New Culture intellectual at Peking University. He promoted Marxism, helped establish the Chinese Communist Party and led its early Beijing organization. His work included organizing northern China’s party network, supporting cooperation with the Kuomintang and representing the CCP in Moscow. Arrested in Beijing in April 1927, he was executed later that month. His native origin and documented residences are recorded separately.",
+    "roles_en": [
+      "Revolutionary",
+      "Political thinker",
+      "Party network"
+    ],
+    "office_impact_en": "Marxist communication; early CPC organization; northern party leadership; role in the First United Front.",
+    "inclusion_en": "Included as a source-backed intellectual and organizer connecting universities, cities, and party networks.",
+    "notes_en": "Tokyo, Beijing, and Moscow are source-linked nodes; add event-level dates in the archive.",
+    "entity_en": "Peking University; Chinese Communist Party; First United Front"
+  },
+  "毛泽东": {
+    "name_en": "Mao Zedong",
+    "summary_en": "Mao moved from student activism into communist organization, rural warfare and national leadership. His record includes founding the PRC, the Great Leap Forward and the Cultural Revolution.",
+    "roles_en": [
+      "Revolutionary",
+      "Party leader",
+      "Political leader",
+      "Military"
+    ],
+    "office_impact_en": "CPC leadership; wartime central leadership and strategy; Yan’an Rectification and united-front work; national leadership after 1949.",
+    "inclusion_en": "Included as a core revolutionary, wartime, and state leader whose trajectory spans the project’s overlapping periods.",
+    "notes_en": "The candidate entry needs a complete official biography before all route events are rendered.",
+    "entity_en": "Chinese Communist Party; Chinese Workers’ and Peasants’ Red Army; Shaanxi–Gansu–Ningxia Border Region"
+  },
+  "周恩来": {
+    "name_en": "Zhou Enlai",
+    "summary_en": "Zhou’s work ranged from student and revolutionary organization to negotiation, government administration and diplomacy. He served as the PRC’s first premier and foreign minister.",
+    "roles_en": [
+      "Revolutionary",
+      "Party leader",
+      "Diplomat",
+      "Official"
+    ],
+    "office_impact_en": "Political director at Huangpu; Nanchang Uprising leadership; united-front and wartime negotiations; Premier and diplomat after 1949.",
+    "inclusion_en": "Included as a documented bridge between military education, revolutionary organization, wartime diplomacy, and state leadership.",
+    "notes_en": "The source covers early office and wartime experience; add a complete event chain later.",
+    "entity_en": "Chinese Communist Party; Huangpu Military Academy; Eighth Route Army"
+  },
+  "朱德": {
+    "name_en": "Zhu De",
+    "summary_en": "Zhu served in Yunnan forces before studying in Europe and joining the CPC. He held major Red Army, Eighth Route Army and PLA commands, then national state offices.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Party leader"
+    ],
+    "office_impact_en": "Nanchang Uprising and Jinggangshan; Red Army commander; commander of the Eighth Route Army; national leadership after 1949.",
+    "inclusion_en": "Included as a core military organizer whose route connects revolutionary bases and wartime command.",
+    "notes_en": "The seed source is the founding-generals archive; expand dates and offices before final publication.",
+    "entity_en": "Chinese Communist Party; Chinese Workers’ and Peasants’ Red Army; Eighth Route Army"
+  },
+  "彭德怀": {
+    "name_en": "Peng Dehuai",
+    "summary_en": "Peng’s career spans Hunan military service, the Red Army, the war against Japan and command in Korea. He became defense minister, lost office after Lushan and suffered persecution.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Official"
+    ],
+    "office_impact_en": "Senior Red Army commander; deputy commander of the Eighth Route Army; central commander in the Hundred Regiments Offensive.",
+    "inclusion_en": "Included as a wartime military leader with explicit post-1949 defense and army leadership in the candidate record.",
+    "notes_en": "The record is marked for review; add a dedicated biography or military-history source.",
+    "entity_en": "Chinese Communist Party; Red Army; Eighth Route Army"
+  },
+  "叶挺": {
+    "name_en": "Ye Ting",
+    "summary_en": "Ye’s record spans military education, the Northern Expedition and communist uprisings. He later led the New Fourth Army, was imprisoned and died in an air crash after release.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Organizational leader"
+    ],
+    "office_impact_en": "Independent Regiment command; Nanchang Uprising leadership; commander of the New Fourth Army.",
+    "inclusion_en": "Included as a source-backed military organizer whose career crosses Nationalist and Communist wartime networks.",
+    "notes_en": "The expansion source supports broad places; exact New Fourth Army operational sites should be added later.",
+    "entity_en": "National Revolutionary Army; Chinese Communist Party; New Fourth Army"
+  },
+  "叶剑英": {
+    "name_en": "Ye Jianying",
+    "summary_en": "Ye combined military staff work and negotiations with regional and national leadership. He later served as defense minister and NPC Standing Committee chair.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Official"
+    ],
+    "office_impact_en": "Chief of staff of the Eighth Route Army; post-1949 military and political leadership.",
+    "inclusion_en": "Included as a wartime staff and post-1949 leadership figure.",
+    "notes_en": "The current candidate record requires a fuller office timeline.",
+    "entity_en": null
+  },
+  "张自忠": {
+    "name_en": "Zhang Zizhong",
+    "summary_en": "Zhang Zizhong was born in Linqing, Shandong, studied law and entered military service. He rose through Feng Yuxiang’s forces and fought in the Great Wall campaign. During the full-scale war against Japan he led the Fifty-Ninth Army and later the Thirty-Third Army Group, participating in the Linyi, Wuhan and Suixian–Zaoyang campaigns. In May 1940 he crossed the Xiang River during the Zaoyang–Yichang campaign and was killed in combat near Yicheng.",
+    "roles_en": [
+      "Military"
+    ],
+    "office_impact_en": "Commander of the 33rd Group Army; wartime commander who died in the Zaoyi campaign.",
+    "inclusion_en": "Included as a Nationalist wartime commander with a clearly documented military impact.",
+    "notes_en": "Add the official war-history source before expanding the route.",
+    "entity_en": "Nationalist Government; National Revolutionary Army"
+  },
+  "白崇禧": {
+    "name_en": "Bai Chongxi",
+    "summary_en": "Bai Chongxi was a leading New Guangxi Clique commander trained in Wuchang and Baoding. He took part in the Northern Expedition, the Nationalist purge and subsequent conflicts with Chiang Kai-shek’s central government. During the war against Japan he held senior staff posts and participated in major campaigns. He became the ROC’s first defense minister after the war, visited Taiwan in connection with the 1947 February 28 Incident, and moved there permanently in 1949. He died in Taipei.",
+    "roles_en": [
+      "Military",
+      "Official",
+      "Regional power"
+    ],
+    "office_impact_en": "Core Guangxi military leader; deputy chief of staff of the Military Affairs Commission; wartime operational planning.",
+    "inclusion_en": "Included as a wartime military-network candidate.",
+    "notes_en": "Seed is marked for review and requires a second source or original encyclopedia record.",
+    "entity_en": "Nationalist Government; Guangxi Clique; National Revolutionary Army"
+  },
+  "薛岳": {
+    "name_en": "Xue Yue",
+    "summary_en": "Xue Yue began his career in Guangdong military forces after attending military schools. He participated in the constitutional-protection movement, the Northern Expedition and campaigns against the Red Army. During the war with Japan he held senior commands, most notably in the Ninth War Area and the Changsha campaigns. After the war he served in Xuzhou and Guangdong. Following the loss of Hainan in 1950, he withdrew to Taiwan, later lived in Chiayi and died in Taipei in 1998.",
+    "roles_en": [
+      "Military",
+      "Official"
+    ],
+    "office_impact_en": "Nationalist military command on the main front during the War of Resistance.",
+    "inclusion_en": "Included as a wartime commander candidate to represent the main-front military geography.",
+    "notes_en": "The current entry is a candidate; add a source-backed office and campaign sequence.",
+    "entity_en": null
+  },
+  "何应钦": {
+    "name_en": "He Yingqin",
+    "summary_en": "He Yingqin was a Japanese-trained military officer, Whampoa Academy instructor and Northern Expedition commander. He headed the Nationalist Ministry of Military Affairs for many years and later commanded the Chinese army. In September 1945 he accepted Japan’s surrender in Nanjing on behalf of the China theater. He briefly served as ROC premier in 1949 before moving to Taiwan, where he held presidential strategic advisory positions. He died in Taipei in October 1987.",
+    "roles_en": [
+      "Military",
+      "Official"
+    ],
+    "office_impact_en": "Senior Nationalist military and political leadership during the War of Resistance.",
+    "inclusion_en": "Included as a wartime military-government candidate.",
+    "notes_en": "The office sequence and place path remain pending verification.",
+    "entity_en": null
+  },
+  "杨靖宇": {
+    "name_en": "Yang Jingyu",
+    "summary_en": "Yang Jingyu, originally named Ma Shangde, was born in Queshan, Henan. After industrial schooling he organized peasants, joined the Communist Party and moved to northeastern China for underground work. He helped build anti-Japanese guerrilla forces in southern Manchuria and commanded the First Army and later the First Route Army of the Northeast Anti-Japanese United Army. He continued resistance under severe shortages and died in combat at Mengjiang, Jilin, in February 1940. His command areas are distinguished from places of personal presence.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Regional resistance"
+    ],
+    "office_impact_en": "Organization of anti-Japanese forces in Manchuria; commander and political commissar of the First Route Army.",
+    "inclusion_en": "Included as a regional resistance leader with source-backed organizational impact.",
+    "notes_en": "Keep historical Mengjiang and modern Jingyu as separate place fields; add exact event dates.",
+    "entity_en": "Chinese Communist Party; Northeast Anti-Japanese United Army"
+  },
+  "周保中": {
+    "name_en": "Zhou Baozhong",
+    "summary_en": "Zhou Baozhong was a Bai military commander from Dali, Yunnan. He graduated from Yunnan’s military academy, participated in the Northern Expedition, joined the Communist Party and studied in the Soviet Union. In northeastern China he led anti-Japanese forces, including the Fifth Army, Second Route Army and training brigade. After Japan’s defeat he worked in Changchun and subsequently returned to Yunnan. He held provincial leadership posts and served as president of Yunnan University from 1951 to 1957. He died in Beijing in 1964.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Regional resistance"
+    ],
+    "office_impact_en": "Command of the Fifth Army and Second Route Army of the Northeast Anti-Japanese United Army.",
+    "inclusion_en": "Included as a regional resistance organizer whose command geography is explicit in the expansion source.",
+    "notes_en": "Birthplace in Dali, Yunnan is pending a separate source.",
+    "entity_en": "Chinese Communist Party; Northeast Anti-Japanese United Army"
+  },
+  "刘少奇": {
+    "name_en": "Liu Shaoqi",
+    "summary_en": "Liu rose through labor and party organization to national leadership. He participated in land reform and state-building, became president and died under persecution during the Cultural Revolution.",
+    "roles_en": [
+      "Party leader",
+      "Political leader",
+      "Official"
+    ],
+    "office_impact_en": "Labor and organizational leadership; wartime central-China base-area and New Fourth Army political leadership; national leadership after 1949.",
+    "inclusion_en": "Included as a post-1949 national leader whose earlier organizational path is also documented in the seed material.",
+    "notes_en": "The candidate currently has mainly chronological clues; a formal biography is pending.",
+    "entity_en": "Chinese Communist Party; People’s Republic of China"
+  },
+  "陈云": {
+    "name_en": "Chen Yun",
+    "summary_en": "Chen began in printing and labor activism, then held organizational and economic posts. His career links early fiscal consolidation, planning and reform-era economic debate.",
+    "roles_en": [
+      "Party leader",
+      "Official",
+      "Economic reformer"
+    ],
+    "office_impact_en": "Post-1949 economic and organizational leadership.",
+    "inclusion_en": "Included as a core economic-governance figure in the post-1949 period.",
+    "notes_en": "Add an official biography before assigning detailed places or reform episodes.",
+    "entity_en": null
+  },
+  "聂荣臻": {
+    "name_en": "Nie Rongzhen",
+    "summary_en": "Nie’s career joins overseas study, revolutionary warfare and defense science administration. He led forces in the Shanxi–Chahar–Hebei region and later held national military and scientific posts.",
+    "roles_en": [
+      "Military",
+      "Official",
+      "Science policy"
+    ],
+    "office_impact_en": "Post-1949 military, defense-industrial, and science-policy leadership.",
+    "inclusion_en": "Included as a candidate for the atlas’s state-building and science-governance layer.",
+    "notes_en": "The detailed office and place sequence remains pending.",
+    "entity_en": null
+  },
+  "贺龙": {
+    "name_en": "He Long",
+    "summary_en": "He moved from regional armed forces into revolutionary command. His career includes Nanchang, the Long March, wartime northern China and national sports administration.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Official"
+    ],
+    "office_impact_en": "Revolutionary command; post-1949 military and state leadership.",
+    "inclusion_en": "Included as a post-1949 military-political leader.",
+    "notes_en": "The candidate record needs a complete, source-backed office chronology.",
+    "entity_en": null
+  },
+  "李先念": {
+    "name_en": "Li Xiannian",
+    "summary_en": "Li began as a carpenter and revolutionary organizer, then held wartime commands. He moved from Hubei administration into economic leadership, the presidency and CPPCC chairmanship.",
+    "roles_en": [
+      "Party leader",
+      "Official",
+      "Economic reformer"
+    ],
+    "office_impact_en": "Post-1949 fiscal and national leadership.",
+    "inclusion_en": "Included as a fiscal-governance and national-leadership candidate.",
+    "notes_en": "Add a formal biography and dated place events before rendering detailed routes.",
+    "entity_en": null
+  },
+  "邓小平": {
+    "name_en": "Deng Xiaoping",
+    "summary_en": "Deng Xiaoping studied in France and the Soviet Union, joined the Long March, and held wartime commands alongside Liu Bocheng. He entered central government in 1952 and became CPC general secretary in 1956. After losing office during the Cultural Revolution, he returned to leadership and helped advance economic and institutional reforms. In June 1989 he publicly supported military measures against the demonstrations. He resigned the CPC military chairmanship that November, remained influential through his 1992 southern tour, and died in 1997.",
+    "roles_en": [
+      "Revolutionary",
+      "Military",
+      "Political leader",
+      "Reformer"
+    ],
+    "office_impact_en": "CPC leadership; vice premier; principal designer of Reform and Opening and modernization.",
+    "inclusion_en": "Included as a core cross-period figure with a source-backed revolutionary, state-building, and reform trajectory.",
+    "notes_en": "The seed includes Guang’an, France, Moscow, Baise, Beijing, and Chongqing; verify each event independently.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "赵紫阳": {
+    "name_en": "Zhao Ziyang",
+    "summary_en": "Zhao Ziyang was born in Hua County, Henan, in 1919. He held provincial leadership posts in Guangdong and Sichuan, where he promoted rural economic reforms. As premier from 1980 to 1987 and then CPC general secretary, he helped shape economic and political reform. In 1989 he opposed military force against the demonstrations and visited Tiananmen Square on 19 May. Removed from leadership, he lived under house arrest in Beijing until his death in a Beijing hospital in January 2005.",
+    "roles_en": [
+      "Party leader",
+      "Reformer",
+      "Official"
+    ],
+    "office_impact_en": "Early Reform-era leadership and party-state office.",
+    "inclusion_en": "Included as a reform-era leader whose institutional impact is explicit in the candidate record.",
+    "notes_en": "Add multiple independent sources before expanding the biography or place path.",
+    "entity_en": null
+  },
+  "江泽民": {
+    "name_en": "Jiang Zemin",
+    "summary_en": "Jiang moved from electrical engineering and industrial administration to Shanghai and central leadership. His tenure spans market reforms, international integration and the Hong Kong and Macao handovers.",
+    "roles_en": [
+      "Party leader",
+      "Political leader",
+      "Reformer",
+      "Diplomat"
+    ],
+    "office_impact_en": "Shanghai Party secretary; General Secretary of the CPC; President; Chairman of the Central Military Commission; third-generation central leadership.",
+    "inclusion_en": "Included as a core Reform-era leader with a source-backed office trajectory.",
+    "notes_en": "Current source is a 2026 government memorial text; cite it as a dated source and refresh if the project uses a later release.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "朱镕基": {
+    "name_en": "Zhu Rongji",
+    "summary_en": "Zhu moved from engineering into economic administration and Shanghai leadership. As vice premier and premier he worked on fiscal, banking, enterprise and housing reforms and WTO accession.",
+    "roles_en": [
+      "Official",
+      "Economic reformer",
+      "Political leader"
+    ],
+    "office_impact_en": "Senior party-state leadership; central role in Reform-era macroeconomic governance.",
+    "inclusion_en": "Included because economic governance is one of the project’s explicit reform dimensions.",
+    "notes_en": "The candidate source should be replaced with mainland official or academic material before publication.",
+    "entity_en": null
+  },
+  "胡锦涛": {
+    "name_en": "Hu Jintao",
+    "summary_en": "Hu’s path runs from hydraulic engineering and Gansu construction through Youth League and regional leadership to CPC general secretary and president. He later retired from national leadership.",
+    "roles_en": [
+      "Party leader",
+      "Political leader",
+      "Official"
+    ],
+    "office_impact_en": "Communist Youth League; Guizhou and Tibet leadership; General Secretary; President; Chairman of the Central Military Commission.",
+    "inclusion_en": "Included as a Reform-era national leader with an explicit organizational and regional path.",
+    "notes_en": "The seed source is an official-material reprint; preserve that provenance and verify the underlying document.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "温家宝": {
+    "name_en": "Wen Jiabao",
+    "summary_en": "Wen moved from geology and field work in Gansu into central administration and the premiership. His biography links technical training, administrative coordination and national economic management.",
+    "roles_en": [
+      "Official",
+      "Political leader",
+      "Reformer"
+    ],
+    "office_impact_en": "Premier-era public governance and reform leadership.",
+    "inclusion_en": "Included as a national executive and reform candidate.",
+    "notes_en": "A formal biography and dated office path are still needed.",
+    "entity_en": null
+  },
+  "习近平": {
+    "name_en": "Xi Jinping",
+    "summary_en": "Xi’s career links rural work, Tsinghua study and posts in Hebei, Fujian, Zhejiang and Shanghai to central leadership. A September 2026 report confirms his party, state and military titles.",
+    "roles_en": [
+      "Party leader",
+      "Political leader",
+      "Military",
+      "Official"
+    ],
+    "office_impact_en": "General Secretary of the CPC; President; Chairman of the Central Military Commission, as recorded by the project’s 05 October 2026 source date.",
+    "inclusion_en": "Included as a current-period subject because the official biography records the listed offices.",
+    "notes_en": "Current-office status is source-date dependent and must be refreshed for any later publication; do not present it as timeless.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "李克强": {
+    "name_en": "Li Keqiang",
+    "summary_en": "Li moved from rural Anhui and Peking University into Youth League, provincial and central posts. He served as vice premier and then premier from 2013 to 2023.",
+    "roles_en": [
+      "Party leader",
+      "Official",
+      "Economic reformer"
+    ],
+    "office_impact_en": "Communist Youth League; Henan and Liaoning leadership; Vice Premier; Premier of the State Council.",
+    "inclusion_en": "Included as a Reform-era executive and economic-governance figure.",
+    "notes_en": "The seed notes a discrepancy in birthplace wording; preserve that uncertainty until reconciled.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "李强": {
+    "name_en": "Li Qiang",
+    "summary_en": "Li moved from Rui’an employment and agricultural-mechanics study through Zhejiang administration and provincial leadership to the premiership. His role is confirmed in a September 2026 diplomatic report.",
+    "roles_en": [
+      "Party leader",
+      "Political leader",
+      "Official"
+    ],
+    "office_impact_en": "Zhejiang local leadership; Shanghai Party secretary; Politburo Standing Committee; Premier of the State Council, as recorded on 05 October 2026.",
+    "inclusion_en": "Included as a current-period executive leader based on the dated official biography.",
+    "notes_en": "The current-office entry needs refresh after the project’s publication date and a fuller local-career source.",
+    "entity_en": "People’s Republic of China; Chinese Communist Party"
+  },
+  "李登辉": {
+    "name_en": "Lee Teng-hui",
+    "summary_en": "Lee Teng-hui was born in Sanzhi and trained in agricultural economics, earning a Cornell doctorate. He served as minister without portfolio, Taipei mayor, provincial governor and vice president before succeeding Chiang Ching-kuo in 1988. His presidency included constitutional change, the ending of emergency mobilization arrangements and direct presidential elections. He won the first direct election in 1996, left office in 2000 and died in 2020.",
+    "roles_en": [
+      "Political leader",
+      "Reformer",
+      "Democratization"
+    ],
+    "office_impact_en": "President of Taiwan from 1988 to 2000; constitutional reform and first direct presidential election.",
+    "inclusion_en": "Included as a central figure in Taiwan’s democratization and institutional transition.",
+    "notes_en": "Keep Taipei County as the historical administrative name and map its modern equivalent separately.",
+    "entity_en": "Republic of China on Taiwan"
+  },
+  "陈水扁": {
+    "name_en": "Chen Shui-bian",
+    "summary_en": "Chen Shui-bian was born in Guantian, Tainan, and graduated in law from National Taiwan University. He entered politics through Taipei’s city council and later served as legislator and mayor. Elected president in 2000, he won a second term in 2004. His administration pursued referendum legislation and changes in cross-strait policy. After leaving office in 2008, he faced criminal proceedings and imprisonment. Official correctional records document medical release in January 2015; later developments require separate verification.",
+    "roles_en": [
+      "Political leader",
+      "Party leader",
+      "Democratization"
+    ],
+    "office_impact_en": "President of Taiwan; first change of governing party.",
+    "inclusion_en": "Included as a documented figure in Taiwan’s democratic and party-competition transition.",
+    "notes_en": "The official presidential list supports the office and ordinal; add policy and place events separately.",
+    "entity_en": "Republic of China on Taiwan"
+  },
+  "马英九": {
+    "name_en": "Ma Ying-jeou",
+    "summary_en": "Ma Ying-jeou was born in Hong Kong and studied law at National Taiwan University, New York University and Harvard. His public career included presidential staff work, the Research, Development and Evaluation Commission, the Mainland Affairs Council, the justice ministry and Taipei’s mayoralty. President from 2008 to 2016, he pursued institutionalized cross-strait negotiations and the ECFA agreement. He met Xi Jinping in Singapore in November 2015 and completed his second term in May 2016.",
+    "roles_en": [
+      "Political leader",
+      "Party leader",
+      "Diplomat"
+    ],
+    "office_impact_en": "President of Taiwan; cross-strait and international-relations leadership.",
+    "inclusion_en": "Included as a Taiwan political leader whose office is source-backed in the official presidential list.",
+    "notes_en": "Avoid turning the ordinal into an impact ranking; add specific policy events only with sources.",
+    "entity_en": "Republic of China on Taiwan"
+  },
+  "蔡英文": {
+    "name_en": "Tsai Ing-wen",
+    "summary_en": "Tsai Ing-wen was born in Taipei and studied law in Taiwan, the United States and Britain. After teaching, she entered trade negotiations and cross-strait policy work, later serving as Mainland Affairs Council chair, legislator, vice premier and Democratic Progressive Party chair. She held the presidency from 2016 to 2024. Her administration pursued pension reform, indigenous and transitional justice, and legislation recognizing same-sex marriage. She completed her second presidential term in May 2024.",
+    "roles_en": [
+      "Political leader",
+      "Party leader",
+      "Reformer"
+    ],
+    "office_impact_en": "President of Taiwan, 2016–2024; transitional justice, same-sex marriage, social policy, and industrial-development agenda.",
+    "inclusion_en": "Included as a source-backed democratic, institutional, and policy leader.",
+    "notes_en": "Coordinates and exact campus nodes remain pending; keep policy claims linked to the official profile.",
+    "entity_en": "Republic of China on Taiwan; Democratic Progressive Party"
+  },
+  "赖清德": {
+    "name_en": "Lai Ching-te",
+    "summary_en": "Lai Ching-te was born in Wanli and trained in rehabilitation, clinical medicine and public health. He worked at National Cheng Kung University Hospital before entering politics. His subsequent offices included National Assembly delegate, legislator, Tainan mayor, premier and vice president. He became Democratic Progressive Party chair in 2023 and president in May 2024. The official biography and activity record consulted for this review extend to August 2026; office jurisdictions are distinguished from documented travel.",
+    "roles_en": [
+      "Political leader",
+      "Party leader",
+      "Official"
+    ],
+    "office_impact_en": "Current Taiwan political leadership, as recorded in the project’s source-date snapshot.",
+    "inclusion_en": "Included because the official presidential source is intended to document the current office.",
+    "notes_en": "Current status must be refreshed against the project publication date; do not make a timeless present-tense claim.",
+    "entity_en": "Republic of China on Taiwan"
+  },
+  "蒋经国": {
+    "name_en": "Chiang Ching-kuo",
+    "summary_en": "Chiang Ching-kuo was born in Fenghua and studied in the Soviet Union before returning to China in 1937. He held posts in Jiangxi, wartime political administration and the security apparatus. Following work in Shanghai in 1948, his later career in Taiwan included minister of defense, vice premier and premier. He was president from 1978 until his death in January 1988. His final years included the lifting of martial law and permission for residents to visit relatives on the mainland.",
+    "roles_en": [
+      "Political leader",
+      "Reformer",
+      "Official"
+    ],
+    "office_impact_en": "Defense minister; premier; president; direction of the Ten Major Construction Projects and political reforms.",
+    "inclusion_en": "Included as a Taiwan state-building and reform leader under the project’s direct-institutional-impact rule.",
+    "notes_en": "The Executive Yuan source supports offices and programs; exact birth and presidential-office nodes need a presidential archive.",
+    "entity_en": "Republic of China on Taiwan"
+  },
+  "董建华": {
+    "name_en": "Tung Chee-hwa",
+    "summary_en": "Tung Chee-hwa was born in Shanghai and moved with his family to Hong Kong in 1947. After a marine engineering degree at Liverpool and work in the United States, he returned to the family shipping business. He joined Basic Law consultation and the Executive Council before becoming Hong Kong’s first chief executive in 1997. He began a second term in 2002 and left office in March 2005, subsequently serving as a CPPCC vice chairman.",
+    "roles_en": [
+      "Political leader",
+      "HKSAR governance"
+    ],
+    "office_impact_en": "First Chief Executive of the Hong Kong Special Administrative Region; re-elected in 2002; Basic Law and HKSAR preparatory work.",
+    "inclusion_en": "Included as a transition-governance figure whose office and preparatory roles are source-backed.",
+    "notes_en": "Do not infer a specific U.S. city from the broad “United States” node without a second source.",
+    "entity_en": "Hong Kong Special Administrative Region"
+  },
+  "曾荫权": {
+    "name_en": "Donald Tsang",
+    "summary_en": "Donald Tsang entered Hong Kong’s civil service in 1967, later working at the Asian Development Bank and studying public administration at Harvard. His senior posts included director of administration, director-general of trade, secretary for the treasury, financial secretary and chief secretary. He became chief executive in 2005 and won another term in 2007. Following his retirement, a misconduct trial led to a 2017 conviction, which the Court of Final Appeal quashed in June 2019 without ordering a retrial.",
+    "roles_en": [
+      "Official",
+      "HKSAR governance"
+    ],
+    "office_impact_en": "Second Chief Executive of the Hong Kong Special Administrative Region.",
+    "inclusion_en": "Included as a source-backed HKSAR executive in the post-1997 institutional sequence.",
+    "notes_en": "Use “second Chief Executive” for the office sequence; it does not mean second person in any broader political ranking.",
+    "entity_en": "Hong Kong Special Administrative Region"
+  },
+  "梁振英": {
+    "name_en": "Leung Chun-ying",
+    "summary_en": "Leung Chun-ying was born in Hong Kong and trained in surveying and property management in Britain. After returning to professional practice, he participated in Basic Law consultation and preparations for the SAR. He convened the Executive Council from 1997 to 2011 and served as chief executive from 2012 to 2017. His tenure included the 2014 occupation protests and disputes over electoral reform. He became a CPPCC vice chairman in 2017; national office is not treated as evidence of residence in Beijing.",
+    "roles_en": [
+      "Political leader",
+      "HKSAR governance"
+    ],
+    "office_impact_en": "Third Chief Executive of the Hong Kong Special Administrative Region.",
+    "inclusion_en": "Included as a source-backed HKSAR executive in the post-1997 institutional sequence.",
+    "notes_en": "Keep the office sequence separate from claims about broader influence.",
+    "entity_en": "Hong Kong Special Administrative Region"
+  },
+  "林郑月娥": {
+    "name_en": "Carrie Lam",
+    "summary_en": "Carrie Lam graduated from the University of Hong Kong and entered the Administrative Service in 1980. Her career covered welfare, planning, London trade representation and home affairs before she became development secretary and chief secretary. She was chief executive from 2017 to 2022. During the 2019 protests she announced withdrawal of the fugitive offenders bill, and in 2020 signed the promulgation of the Hong Kong national security law. In 2024 she received an honorary doctorate in Shanghai.",
+    "roles_en": [
+      "Political leader",
+      "Official",
+      "HKSAR governance"
+    ],
+    "office_impact_en": "Fourth Chief Executive of the Hong Kong Special Administrative Region.",
+    "inclusion_en": "Included as a source-backed HKSAR executive.",
+    "notes_en": "The current seed does not yet provide a complete education and career path.",
+    "entity_en": "Hong Kong Special Administrative Region"
+  },
+  "李家超": {
+    "name_en": "John Lee",
+    "summary_en": "John Lee joined the Hong Kong Police Force in 1977 and rose to deputy commissioner. He moved to the Security Bureau in 2012, became security secretary in 2017 and chief secretary in 2021, and took office as chief executive in July 2022. His official biography records a Charles Sturt University master’s degree but does not establish residence in Australia. He signed the Safeguarding National Security Ordinance in March 2024. The biography was last revised in September 2026.",
+    "roles_en": [
+      "Political leader",
+      "Official",
+      "HKSAR governance"
+    ],
+    "office_impact_en": "Security and disciplined-services leadership; Chief Executive of the Hong Kong Special Administrative Region, as recorded on 05 October 2026.",
+    "inclusion_en": "Included as a current-period HKSAR executive because the official biography documents the path and office.",
+    "notes_en": "The official source date must be shown and refreshed; call him the sixth Chief Executive, not the sixth person.",
+    "entity_en": "Hong Kong Special Administrative Region"
+  },
+  "何厚铧": {
+    "name_en": "Edmund Ho Hau-wah",
+    "summary_en": "Edmund Ho was born in Macao, studied in Canada and obtained a York University business degree and accounting qualifications. After working in Hong Kong, he returned to banking in Macao. He served in the legislature and helped prepare the Basic Law and the establishment of the SAR. He was Macao’s chief executive from 1999 to 2009 and subsequently became a CPPCC vice chairman. A March 2023 official biography records his service in the 14th CPPCC.",
+    "roles_en": [
+      "Political leader",
+      "MSAR governance",
+      "Economic network"
+    ],
+    "office_impact_en": "First Chief Executive of the Macao Special Administrative Region; two terms through 2009.",
+    "inclusion_en": "Included as a transition-governance figure with official sources for the office and broad education and career nodes.",
+    "notes_en": "Exact Canadian and Hong Kong addresses remain pending; do not infer them from broad region labels.",
+    "entity_en": "Macao Special Administrative Region"
+  },
+  "崔世安": {
+    "name_en": "Fernando Chui Sai-on",
+    "summary_en": "Fernando Chui was born in Macao, with family origins in Xinhui, Guangdong, and studied urban health and public health in the United States. He worked in education and served in the fifth Macao Legislative Assembly. Appointed secretary for social affairs and culture in 1999, he was reappointed in 2004. He became the third-term chief executive in December 2009 and began a second term in December 2014. His chief executive service ended in 2019.",
+    "roles_en": [
+      "Political leader",
+      "MSAR governance"
+    ],
+    "office_impact_en": "Second Chief Executive of the Macao Special Administrative Region.",
+    "inclusion_en": "Included as a candidate in the official post-handover MSAR leadership sequence.",
+    "notes_en": "The candidate record requires a complete official biography and source-linked career path.",
+    "entity_en": null
+  },
+  "贺一诚": {
+    "name_en": "Ho Iat Seng",
+    "summary_en": "Ho Iat Seng was born in Macao and began work in his family’s factory. He studied electromechanical subjects and economics at Zhejiang University in 1992. His political career included Zhejiang provincial CPPCC service, the National People’s Congress and its Standing Committee, Macao’s Executive Council and legislative leadership. He became chief executive in 2019 and participated in the development of the Hengqin cooperation zone. In August 2024 he announced that he would not seek the next term, which ended that December.",
+    "roles_en": [
+      "Political leader",
+      "MSAR governance"
+    ],
+    "office_impact_en": "Fifth Chief Executive of the Macao Special Administrative Region.",
+    "inclusion_en": "Included as a candidate in the official post-handover MSAR leadership sequence.",
+    "notes_en": "A complete office and biography source is still pending; avoid present-tense claims.",
+    "entity_en": null
+  },
+  "岑浩辉": {
+    "name_en": "Sam Hou Fai",
+    "summary_en": "Sam Hou Fai was born in mainland China in May 1962 and graduated from Peking University’s law department. He practised law on the mainland and undertook Portuguese and Macao legal and judicial training. Returning from Portugal in 1993, he became a judge in 1997 and headed Macao’s Court of Final Appeal from December 1999 to August 2024. He was elected chief executive designate in October 2024 and took office on 20 December following appointment by the State Council.",
+    "roles_en": [
+      "Political leader",
+      "Judiciary",
+      "MSAR governance"
+    ],
+    "office_impact_en": "Judicial leadership and Chief Executive of the Macao Special Administrative Region, as recorded on 05 October 2026.",
+    "inclusion_en": "Included under the project’s direct institutional-impact rule because the official MSAR page documents education, judicial work, and the executive office.",
+    "notes_en": "Refresh current-office status after the source date; call him the sixth Chief Executive, not the sixth person.",
+    "entity_en": "Macao Special Administrative Region"
+  },
+  "林则徐": {
+    "name_en": "Lin Zexu",
+    "summary_en": "Lin Zexu was born in Houguan, Fujian, received family instruction and studied at Aofeng Academy before passing the jinshi examination in 1811. He held judicial, financial and provincial offices before being sent to Guangdong to suppress the opium trade. In 1839 he reached Guangzhou and supervised the destruction of opium at Humen. Dismissed after the Opium War, he arrived in exile at Huiyuan in 1842. Later restored to office, he eventually retired through illness and died in Puning while traveling on a new assignment.",
+    "roles_en": [
+      "Official",
+      "Reformer"
+    ],
+    "office_impact_en": "Imperial commissioner; 1839 Guangdong anti-opium campaign and Humen destruction; coastal-defense and statecraft debates.",
+    "inclusion_en": "Included as a pre-1840 background figure because the seed explicitly links his offices and actions to the opening boundary of the atlas.",
+    "notes_en": "The project period begins in 1840; show his 1839 actions as pre-period context rather than silently moving them into the late Qing interval.",
+    "entity_en": "Qing Empire"
+  },
+  "蔡锷": {
+    "name_en": "Cai E",
+    "summary_en": "Cai E was born in Shaoyang, Hunan, and studied in Chinese schools and at the Japanese Army Academy. Returning to China, he worked in military education and the New Army. He helped lead the 1911 uprising in Kunming and became Yunnan’s military governor. In 1915 he joined the campaign against Yuan Shikai’s monarchy and commanded National Protection forces in Sichuan. He subsequently became Sichuan’s military and civil governor, but ill health led him to seek treatment in Japan, where he died in Fukuoka in November 1916.",
+    "roles_en": [
+      "Military",
+      "Revolutionary"
+    ],
+    "office_impact_en": "National Protection Army uprising; opposition to Yuan Shikai’s imperial restoration.",
+    "inclusion_en": "Included as a Republican military and constitutional figure with a clear political-military impact.",
+    "notes_en": "The seed supplies a broad route through Hunan, Yunnan, Sichuan, and Fukuoka; verify dates and place types.",
+    "entity_en": "Republic of China; Yunnan Military Government"
+  },
+  "冯玉祥": {
+    "name_en": "Feng Yuxiang",
+    "summary_en": "Feng Yuxiang was born in Qingxian, Zhili, into a military family with ancestral roots in Chaoxian, Anhui. He rose through the army and became a major northern commander. His 1924 Beijing coup reshaped national politics, and he later joined the Northern Expedition and held Nationalist government posts. After the Central Plains War he organized the Chahar People’s Anti-Japanese Allied Army. Following a postwar visit to the United States, he died in a shipboard fire on the Black Sea while returning to China in 1948.",
+    "roles_en": [
+      "Military",
+      "Political leader",
+      "Revolutionary"
+    ],
+    "office_impact_en": "Leader of the Nationalist Army; Beijing Coup; Chahar anti-Japanese alliance and political activity.",
+    "inclusion_en": "Included as a regional military leader whose career links warlord politics and anti-Japanese mobilization.",
+    "notes_en": "The seed includes Anhui, Beijing, Xi’an, Chahar, and the Black Sea; verify each as a place-event.",
+    "entity_en": "Nationalist Army; Nationalist Government"
+  },
+  "赵尚志": {
+    "name_en": "Zhao Shangzhi",
+    "summary_en": "Zhao Shangzhi was born in Chaoyang, Liaoning, and studied in Harbin and at Whampoa Military Academy. He joined the Communist Party in 1925 and endured repeated imprisonment. After the Japanese occupation of northeastern China, he organized guerrilla resistance and led the Zhuhe guerrillas, the Third Army and northern Manchurian forces. He suffered party disciplinary actions and detention in the Soviet Union. He was killed during an operation near Wutonghe in February 1942; his party membership was restored posthumously in 1982.",
+    "roles_en": [
+      "Military",
+      "Revolutionary",
+      "Regional resistance"
+    ],
+    "office_impact_en": "Manchurian underground and anti-Japanese organization; commander of the Third Army and senior Northeast Anti-Japanese United Army leadership.",
+    "inclusion_en": "Included as a regional resistance organizer under the project’s non-central network rule.",
+    "notes_en": "The seed supports Chaoyang, Harbin, Zhuhe/Shangzhi, and northern Manchuria; verify historical and modern place names separately.",
+    "entity_en": "Chinese Communist Party; Northeast Anti-Japanese United Army"
+  },
+  "左权": {
+    "name_en": "Zuo Quan",
+    "summary_en": "Zuo Quan was born in Liling, Hunan, and studied at Whampoa Military Academy, Moscow Sun Yat-sen University and the Frunze Military Academy. He joined the Communist Party in 1925 and returned to China to serve in Red Army education and command posts. After the Long March, he became deputy chief of staff and forward headquarters chief of staff of the Eighth Route Army. He helped direct major wartime operations, including the Hundred Regiments Offensive and Huangyadong defense, and died during a breakout at Shiziling in 1942.",
+    "roles_en": [
+      "Military",
+      "Revolutionary"
+    ],
+    "office_impact_en": "Deputy chief of staff of the Eighth Route Army; North China behind-enemy operations; died in 1942.",
+    "inclusion_en": "Included as a wartime staff and operations leader with source-backed military impact.",
+    "notes_en": "The seed links Liling, Ruijin, Yan’an, the Taihang Mountains, and Liao County; retain historical and modern county names.",
+    "entity_en": "Chinese Communist Party; Eighth Route Army"
+  }
+}

@@ -1,0 +1,1529 @@
+{
+  "version": "0.6",
+  "reviewedAt": "2026-10-05",
+  "scope": "All 72 indexed people, major life stages and all existing place leads; not exhaustive historical coverage.",
+  "peopleCount": 72,
+  "sourcedEvents": 1098,
+  "unresolvedOriginalLeads": 35,
+  "sourceCatalogCount": 285,
+  "eventSourceCount": 232,
+  "undatedSourcedEvents": 71,
+  "loggedResearchGaps": 103,
+  "schematicConnections": 251,
+  "profiles": [
+    {
+      "personId": "p_zeng_guofan",
+      "nameZh": "曾国藩",
+      "nameEn": "Zeng Guofan",
+      "birthDate": "1811",
+      "deathDate": "1872",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "education",
+          "reasonZh": "已读故宫与双峰资料；未取得足以确定长沙具体求学年月的正文，不把原长沙线索强行转为学校事件。",
+          "reasonEn": "The reviewed sources do not date a specific Changsha educational stay."
+        },
+        {
+          "field": "birthDate/deathDate",
+          "reasonZh": "本轮采用可核实的年份；月日尚未交叉核定。",
+          "reasonEn": "Only years are recorded; exact days have not been cross-checked."
+        }
+      ]
+    },
+    {
+      "personId": "p_zuo_zongtang",
+      "nameZh": "左宗棠",
+      "nameEn": "Zuo Zongtang",
+      "birthDate": "1812",
+      "deathDate": "1885-09-05",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "specificPresence",
+          "reasonZh": "陕甘和新疆任命仅表示辖区/战区；本轮不据任命推定西安、乌鲁木齐等驻地。",
+          "reasonEn": "The Shaan-Gan and Xinjiang appointments establish jurisdiction, not a personal stay in Xi’an or Urumqi."
+        },
+        {
+          "field": "sourceDiscrepancy",
+          "reasonZh": "湖南文史馆正文将1875误写为1975，采用浙江档案馆明确的1875年。",
+          "reasonEn": "A Hunan article prints 1975 in error; the Zhejiang archive confirms 1875."
+        }
+      ]
+    },
+    {
+      "personId": "p_li_hongzhang",
+      "nameZh": "李鸿章",
+      "nameEn": "Li Hongzhang",
+      "birthDate": "1823-02-15",
+      "deathDate": "1901-11-07",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 10,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "officeDateRanges",
+          "reasonZh": "直隶任命有1870年证据；未把连续任期或办公城市从职名中反推。",
+          "reasonEn": "The appointment is dated 1870; continuous tenure and office-city presence are not inferred from the title."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhang_zhidong",
+      "nameZh": "张之洞",
+      "nameEn": "Zhang Zhidong",
+      "birthDate": "1837",
+      "deathDate": "1909",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 2,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "birthPlace",
+          "reasonZh": "中央纪委与贵州政协正文分别支持兴义府、贵阳；不将历史兴义府直接等同今兴义市。",
+          "reasonEn": "Official sources disagree on the birthplace; historical Xingyi Prefecture is not equated with present-day Xingyi city."
+        },
+        {
+          "field": "nanjingPresence",
+          "reasonZh": "教育辞书载署两江总督，但未据此证明南京具体到场年月，原南京线索保留。",
+          "reasonEn": "Acting Liangjiang office does not by itself establish a dated personal stay in Nanjing."
+        }
+      ]
+    },
+    {
+      "personId": "p_cixi",
+      "nameZh": "慈禧太后",
+      "nameEn": "Empress Dowager Cixi",
+      "birthDate": "1835",
+      "deathDate": "1908-11-15",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "education",
+          "reasonZh": "故宫生平未载早期教育的具体师承、场所与日期。",
+          "reasonEn": "The museum biography does not specify early tutors, places or dates."
+        },
+        {
+          "field": "birthDate/birthPlace",
+          "reasonZh": "故宫载农历1835年十月，未擅作公历月日换算；出生地专文列不同学说，未设精确出生节点。",
+          "reasonEn": "The museum gives a lunar birth month; no Gregorian day or precise birth node is inferred."
+        },
+        {
+          "field": "summerPalacePresence",
+          "reasonZh": "颐和园修缮与政治关联有记载，但本轮未取得个人居住的确切起讫日期。",
+          "reasonEn": "Summer Palace rebuilding is documented, but a precise personal residence interval was not established."
+        }
+      ]
+    },
+    {
+      "personId": "p_guangxu",
+      "nameZh": "光绪帝",
+      "nameEn": "Guangxu Emperor",
+      "birthDate": "1871-08-14",
+      "deathDate": "1908-11-14",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 9,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "sourceDateError",
+          "reasonZh": "故宫世系页正文卒日有“十二月二十一”字样，与慈禧翌日去世及贵州政协明确的11月14日冲突；采用后者公历日期。",
+          "reasonEn": "The lineage page contains an inconsistent death-date rendering; the explicit Gregorian date in the Guizhou account is used."
+        },
+        {
+          "field": "deathCause",
+          "reasonZh": "本轮未以独立研究核对死因，未新增毒杀判断。",
+          "reasonEn": "The cause of death was not independently evaluated in this round."
+        }
+      ]
+    },
+    {
+      "personId": "p_kang_youwei",
+      "nameZh": "康有为",
+      "nameEn": "Kang Youwei",
+      "birthDate": "1858",
+      "deathDate": "1927",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "education",
+          "reasonZh": "已核进士年份，早期书院和师承的时间链仍缺专门年谱证据。",
+          "reasonEn": "The examination year is verified; the early educational sequence still needs a dedicated chronology."
+        },
+        {
+          "field": "birthPlace",
+          "reasonZh": "来源称南海人，尚不据籍贯直接断言出生地点。",
+          "reasonEn": "The source gives native origin in Nanhai, which is not automatically treated as birthplace."
+        }
+      ]
+    },
+    {
+      "personId": "p_liang_qichao",
+      "nameZh": "梁启超",
+      "nameEn": "Liang Qichao",
+      "birthDate": "1873-02-23",
+      "deathDate": "1929-01-19",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 11,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "travelGranularity",
+          "reasonZh": "欧游已核1918年底至1920年3月，但不把列出的各国人为排列为逐站路线。",
+          "reasonEn": "European travel is dated, but individual national stops are not converted into an inferred itinerary."
+        }
+      ]
+    },
+    {
+      "personId": "p_yuan_shikai",
+      "nameZh": "袁世凯",
+      "nameEn": "Yuan Shikai",
+      "birthDate": "1859",
+      "deathDate": "1916-06-06",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "education",
+          "reasonZh": "已查故宫、地方政府与学术论文；尚无可直接引用的早期学校及应试年月。",
+          "reasonEn": "The reviewed museum, government and academic texts do not establish an exact early educational chronology."
+        },
+        {
+          "field": "sourceConflict",
+          "reasonZh": "故宫将正式总统写为1913年6月；本轮采用北京市人大来源的1913年，仅保留年份。",
+          "reasonEn": "The Palace Museum gives an inconsistent month for the formal presidency; the Beijing legislature account supports the year 1913."
+        },
+        {
+          "field": "xiaozhanBaoding",
+          "reasonZh": "天津小站与保定的逐地起讫日期未在本轮源中核全，原合并线索仅落实为直隶辖区。",
+          "reasonEn": "The combined Tianjin/Baoding lead is resolved only at the jurisdiction level; individual stays remain unverified."
+        }
+      ]
+    },
+    {
+      "personId": "p_sun_yat_sen",
+      "nameZh": "孙中山",
+      "nameEn": "Sun Yat-sen",
+      "birthDate": "1866-11-12",
+      "deathDate": "1925-03-12",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 20,
+      "routeEligibleEvents": 17,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "itinerary",
+          "reasonZh": "已补主干生平，流亡期间所有海外筹款行程与起义逐次日期仍未穷尽。",
+          "reasonEn": "The principal biography is expanded; not every fundraising journey or uprising is individually dated."
+        }
+      ]
+    },
+    {
+      "personId": "p_tan_sitong",
+      "nameZh": "谭嗣同",
+      "nameEn": "Tan Sitong",
+      "birthDate": "1865-03-10",
+      "deathDate": "1898-09-28",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 9,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "education",
+          "reasonZh": "现有官方简介主要记录维新时期，早期私塾教育具体年月尚不完整。",
+          "reasonEn": "The official biographies concentrate on the reform years; precise early schooling remains incomplete."
+        },
+        {
+          "field": "arrestDate",
+          "reasonZh": "所查通俗材料中的被捕日尚未与档案年表交叉核对，事件只给年份。",
+          "reasonEn": "The exact arrest day in the popular account was not cross-checked against an archival chronology."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhang_jian",
+      "nameZh": "张謇",
+      "nameEn": "Zhang Jian",
+      "birthDate": "1853",
+      "deathDate": "1926-08-24",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "resignationDate",
+          "reasonZh": "海门正文“民国3年10月袁世凯称帝”存在历年冲突，未据该句填写辞职月日。",
+          "reasonEn": "The Haimen text misdates Yuan’s imperial project; no precise resignation date is derived from that sentence."
+        }
+      ]
+    },
+    {
+      "personId": "p_li_yuanhong",
+      "nameZh": "黎元洪",
+      "nameEn": "Li Yuanhong",
+      "birthDate": "1864-10-19",
+      "deathDate": "1928-06-03",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 8,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "sourceChronology",
+          "reasonZh": "湖北省志正文后段将1923年与直皖战争混写；本轮不采用该句，仅保留其他可核年月。",
+          "reasonEn": "A later sentence conflates 1923 with the Zhili–Anhui War; that chronology was excluded."
+        }
+      ]
+    },
+    {
+      "personId": "p_duan_qirui",
+      "nameZh": "段祺瑞",
+      "nameEn": "Duan Qirui",
+      "birthDate": "1865-03-06",
+      "deathDate": "1936",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 14,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "educationDates",
+          "reasonZh": "威海文史称1887年毕业、1890年冬归国，全国政协刊载家属回忆称1889年毕业并留德四年；本轮仅采用一致的1885入学、1889赴德。",
+          "reasonEn": "The Weihai biography and family memoir disagree on graduation and return; only the agreed admission and departure years are recorded."
+        },
+        {
+          "field": "deathDate",
+          "reasonZh": "已核1936年死亡，尚未以所读资料交叉核准月日。",
+          "reasonEn": "The death year is verified, but an exact day has not been cross-checked."
+        }
+      ]
+    },
+    {
+      "personId": "p_feng_guozhang",
+      "nameZh": "冯国璋",
+      "nameEn": "Feng Guozhang",
+      "birthDate": "1859-01-07",
+      "deathDate": "1919-12-28",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 10,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDiscrepancy",
+          "reasonZh": "旧辞书有1857年说；采用沧州博物馆依据寿序所考1859年1月7日，保留争议说明。",
+          "reasonEn": "Older dictionaries give 1857; this record follows the museum’s documented birthday analysis yielding 7 January 1859."
+        },
+        {
+          "field": "independentCorroboration",
+          "reasonZh": "年表主要依赖博物馆长篇考证；尚未逐项另寻独立档案进行双源校勘。",
+          "reasonEn": "The chronology principally follows the museum study; each event has not yet received independent archival corroboration."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhang_zuolin",
+      "nameZh": "张作霖",
+      "nameEn": "Zhang Zuolin",
+      "birthDate": "1875",
+      "deathDate": "1928-06-04",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthPlace",
+          "reasonZh": "来源载奉天海城人，未明确出生地点；出生事件不设地图点。",
+          "reasonEn": "Native origin in Haicheng is documented, but an explicit birthplace is not."
+        },
+        {
+          "field": "education",
+          "reasonZh": "所读两家博物馆传记未提供正式教育履历。",
+          "reasonEn": "Neither reviewed museum biography provides a formal educational chronology."
+        },
+        {
+          "field": "sourceChronology",
+          "reasonZh": "故宫词条将大元帅年份写作1926；河北政协文史资料明确为1927年6月18日，采用后者。",
+          "reasonEn": "The Palace Museum gives 1926 for the generalissimo title; the Hebei historical account explicitly dates the inauguration to 18 June 1927."
+        }
+      ]
+    },
+    {
+      "personId": "p_wu_peifu",
+      "nameZh": "吴佩孚",
+      "nameEn": "Wu Peifu",
+      "birthDate": "1874-04-22",
+      "deathDate": "1939-12-04",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "birthPlace",
+          "reasonZh": "蓬莱为明确籍贯，所读正文未独立证实出生地点。",
+          "reasonEn": "Penglai is confirmed as native origin; the reviewed text does not separately establish birthplace."
+        },
+        {
+          "field": "sourceDiscrepancy",
+          "reasonZh": "盐田页面开头误列1871年，故宫及临湘材料为1874年；本轮生卒日期采用临湘资料。",
+          "reasonEn": "The Yantian page gives 1871, conflicting with the Palace Museum and Linxiang accounts; Linxiang supplies the adopted life dates."
+        }
+      ]
+    },
+    {
+      "personId": "p_chiang_kaishek",
+      "nameZh": "蒋介石",
+      "nameEn": "Chiang Kai-shek",
+      "birthDate": "1887",
+      "deathDate": "1975-04-05",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 20,
+      "routeEligibleEvents": 10,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDate",
+          "reasonZh": "本轮已读总统府正文明确1887年；生日月日未从该正文核得，保留年份精度。",
+          "reasonEn": "The reviewed presidential biography confirms 1887; an exact birthday was not established from that text."
+        },
+        {
+          "field": "sourceError",
+          "reasonZh": "纪念堂英文展文将西安事变后写成下野时期，未采用该可疑句，只取可互证的扣留事实。",
+          "reasonEn": "The memorial’s English text describes a post-Xi’an retirement inconsistently; only the corroborated detention fact is retained."
+        },
+        {
+          "field": "chronologyScope",
+          "reasonZh": "已覆盖主干生平与政治责任；所有军役、外交访问及各次总统连任未逐项展开。",
+          "reasonEn": "The principal biography and political responsibilities are covered; not every campaign, visit or reelection is separately enumerated."
+        }
+      ]
+    },
+    {
+      "personId": "p_wang_jingwei",
+      "nameZh": "汪精卫",
+      "nameEn": "Wang Jingwei",
+      "birthDate": "1883-05-04",
+      "deathDate": "1944-11-10",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 10,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "office_dates",
+          "reasonZh": "国史馆小传列广州、武汉及行政院职务但未逐项给任期；只将有明确年份者作为定年事件。",
+          "reasonEn": "The archive lists several offices without exact terms; only explicitly dated appointments receive years."
+        }
+      ]
+    },
+    {
+      "personId": "p_hu_hanmin",
+      "nameZh": "胡汉民",
+      "nameEn": "Hu Hanmin",
+      "birthDate": "1879-12-09",
+      "deathDate": "1936-05-12",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "early_office_dates",
+          "reasonZh": "图书馆年表将南京临时总统府任职置于1911年12月，与政府成立时间难相容，本轮不采该具体日期。",
+          "reasonEn": "The library chronology places a provisional presidential appointment in December 1911; that precise date is not adopted because of chronological inconsistency."
+        }
+      ]
+    },
+    {
+      "personId": "p_song_jiaoren",
+      "nameZh": "宋教仁",
+      "nameEn": "Song Jiaoren",
+      "birthDate": "1882-04-05",
+      "deathDate": "1913-03-22",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 10,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "assassination_responsibility",
+          "reasonZh": "部分纪念性来源直接归责袁世凯；本轮只记遇刺与死亡，不把有争议的幕后责任写成已证事实。",
+          "reasonEn": "Commemorative sources assign responsibility to Yuan Shikai; the timeline records the shooting and death without settling disputed responsibility."
+        }
+      ]
+    },
+    {
+      "personId": "p_song_qingling",
+      "nameZh": "宋庆龄",
+      "nameEn": "Soong Ching-ling",
+      "birthDate": "1893-01-27",
+      "deathDate": "1981-05-29",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 8,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "complete_office_terms",
+          "reasonZh": "已核1949与1981关键职务；基金会正文未逐项给出国家副主席及人大职务完整任期，未推算。",
+          "reasonEn": "The foundation biography does not provide complete terms for all later state and NPC offices; none are inferred."
+        }
+      ]
+    },
+    {
+      "personId": "p_li_zongren",
+      "nameZh": "李宗仁",
+      "nameEn": "Li Zongren",
+      "birthDate": "1891-08-13",
+      "deathDate": "1969-01-30",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 14,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "birthplace",
+          "reasonZh": "图书馆仅列临桂为籍贯，未明确出生村；未将籍贯等同出生地。",
+          "reasonEn": "The library identifies Lingui as native place, not an explicit birth village."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhang_xueliang",
+      "nameZh": "张学良",
+      "nameEn": "Zhang Xueliang",
+      "birthDate": "1901-06-03",
+      "deathDate": "2001-10",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "deathDate",
+          "reasonZh": "百科与图书馆记2001-10-15，北京统战网页记10-14；未核时区换算，暂保留月份。",
+          "reasonEn": "The encyclopedia and library give October 15, while the Beijing source gives October 14. Without verified time-zone reconciliation, only the month is stored."
+        }
+      ]
+    },
+    {
+      "personId": "p_chen_duxiu",
+      "nameZh": "陈独秀",
+      "nameEn": "Chen Duxiu",
+      "birthDate": "1879-10-09",
+      "deathDate": "1942-05-27",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 9,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "education_details",
+          "reasonZh": "党史正文对东京专门学校、其他版本对高等师范学校的说法不同，不写成确定毕业学历。",
+          "reasonEn": "Accounts differ on the early Tokyo institution; no unverified degree is assigned."
+        }
+      ]
+    },
+    {
+      "personId": "p_li_dazhao",
+      "nameZh": "李大钊",
+      "nameEn": "Li Dazhao",
+      "birthDate": "1889-10-29",
+      "deathDate": "1927-04-28",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 10,
+      "routeEligibleEvents": 8,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "pku_start",
+          "reasonZh": "来源对回国与北大任职年份叙述有简化，不用“1916年回国后”推定1916即任馆长。",
+          "reasonEn": "Some biographies compress the return and university appointment; a 1916 return is not treated as a 1916 library appointment."
+        }
+      ]
+    },
+    {
+      "personId": "p_mao_zedong",
+      "nameZh": "毛泽东",
+      "nameEn": "Mao Zedong",
+      "birthDate": "1893-12-26",
+      "deathDate": "1976-09-09",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1976-09-09",
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 12,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：西柏坡",
+          "reasonEn": "Original location leads still lack a specific dated event: 西柏坡"
+        }
+      ]
+    },
+    {
+      "personId": "p_zhou_enlai",
+      "nameZh": "周恩来",
+      "nameEn": "Zhou Enlai",
+      "birthDate": "1898-03-05",
+      "deathDate": "1976-01-08",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1976-01-08",
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 12,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：武汉",
+          "reasonEn": "Original location leads still lack a specific dated event: 武汉"
+        }
+      ]
+    },
+    {
+      "personId": "p_zhu_de",
+      "nameZh": "朱德",
+      "nameEn": "Zhu De",
+      "birthDate": "1886-12-01",
+      "deathDate": "1976-07-06",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1976-07-06",
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 12,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：太行山",
+          "reasonEn": "Original location leads still lack a specific dated event: 太行山"
+        }
+      ]
+    },
+    {
+      "personId": "p_peng_dehuai",
+      "nameZh": "彭德怀",
+      "nameEn": "Peng Dehuai",
+      "birthDate": "1898-10-24",
+      "deathDate": "1974-11-29",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1974-11-29",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 10,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：长沙",
+          "reasonEn": "Original location leads still lack a specific dated event: 长沙"
+        }
+      ]
+    },
+    {
+      "personId": "p_ye_ting",
+      "nameZh": "叶挺",
+      "nameEn": "Ye Ting",
+      "birthDate": "1896",
+      "deathDate": "1946-04-08",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1946-04-08",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "education_dates",
+          "reasonZh": "三所国内军校的入学、离校日期在本轮所读来源中未逐一给出；不将学校名单强行连线。",
+          "reasonEn": "Enrollment and departure dates for the three domestic schools remain unestablished; these entries do not form routes."
+        },
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：武汉、上饶/桂林",
+          "reasonEn": "Original location leads still lack a specific dated event: 武汉, 上饶/桂林"
+        }
+      ]
+    },
+    {
+      "personId": "p_ye_jianying",
+      "nameZh": "叶剑英",
+      "nameEn": "Ye Jianying",
+      "birthDate": "1897-04-28",
+      "deathDate": "1986-10-22",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1986-10-22",
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "education_enrollment_conflict",
+          "reasonZh": "黄埔同学会文章引用2015年《云南陆军讲武堂同学录》上卷第65页，记1918年12月；云南党史网记1917。需核对原始学籍及同学录版面，暂不判定哪项误植。",
+          "reasonEn": "The alumni article cites page 65 of the 2015 register for December 1918; the Yunnan party-history account gives 1917. The underlying register page remains uninspected."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhang_zizhong",
+      "nameZh": "张自忠",
+      "nameEn": "Zhang Zizhong",
+      "birthDate": "1891",
+      "deathDate": "1940-05-16",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "early_army_date",
+          "reasonZh": "新华社文章记1917年9月转冯玉祥部，另官方简介记1916年；本轮不确定化争议年份。",
+          "reasonEn": "Sources differ between 1916 and September 1917 for joining Feng’s forces; the exact year is left unresolved."
+        }
+      ]
+    },
+    {
+      "personId": "p_bai_chongxi",
+      "nameZh": "白崇禧",
+      "nameEn": "Bai Chongxi",
+      "birthDate": "1893",
+      "deathDate": "1966-12-02",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "birthDate_and_war_dates",
+          "reasonZh": "已核1893年和战役关联，生日及各战役到场日期未完成独立档案核对；不从战区推个人路线。",
+          "reasonEn": "Birth year and campaign associations are supported, but the birthday and personal campaign itineraries remain unverified."
+        }
+      ]
+    },
+    {
+      "personId": "p_xue_yue",
+      "nameZh": "薛岳",
+      "nameEn": "Xue Yue",
+      "birthDate": "1896",
+      "deathDate": "1998-05-03",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 2,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birth_day",
+          "reasonZh": "图书馆作12月27日，其他通行资料作12月17日；未核原始历法记录，暂只存1896。",
+          "reasonEn": "The library gives December 27 while other references give December 17; birth year only is stored pending a calendar record."
+        }
+      ]
+    },
+    {
+      "personId": "p_he_yingqin",
+      "nameZh": "何应钦",
+      "nameEn": "He Yingqin",
+      "birthDate": "1890-04-02",
+      "deathDate": "1987-10-21",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "source_conflicts",
+          "reasonZh": "图书馆头栏作10月12日、正文作10月22日；采用台北中正区志10月21日。军政部长任期采用行政院1930—1944。",
+          "reasonEn": "The library contradicts itself on the death day; Taipei district history supports October 21. The military-affairs term follows the Executive Yuan’s 1930–1944 dates."
+        }
+      ]
+    },
+    {
+      "personId": "p_yang_jingyu",
+      "nameZh": "杨靖宇",
+      "nameEn": "Yang Jingyu",
+      "birthDate": "1905-02-13",
+      "deathDate": "1940-02-23",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "army_reorganization",
+          "reasonZh": "旧党史简介把第一军组建放在1935年；本轮采用国图引录党史名录的1934年11月，并分别记1936年抗联改编与一路军职务。",
+          "reasonEn": "The older brief dates the First Army to 1935; the National Library’s cited historical roster gives November 1934. Later reorganizations are kept distinct."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhou_baozhong",
+      "nameZh": "周保中",
+      "nameEn": "Zhou Baozhong",
+      "birthDate": "1902-02-07",
+      "deathDate": "1964-02-22",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 14,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "soviet_school_and_appointments",
+          "reasonZh": "国图与共产党员网对留苏学校、1937年第二路军任职月份及1942年教导旅月份有异；保留可靠共同年份，不拼接成精确月日。校长完整任期为1951年10月至1957年5月。",
+          "reasonEn": "Sources differ on Soviet institutions and the months of the 1937 and 1942 commands; only the shared years are used. The university presidency ran from October 1951 to May 1957."
+        }
+      ]
+    },
+    {
+      "personId": "p_liu_shaoqi",
+      "nameZh": "刘少奇",
+      "nameEn": "Liu Shaoqi",
+      "birthDate": "1898-11-24",
+      "deathDate": "1969-11-12",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1969-11-12",
+      "sourcedEvents": 18,
+      "routeEligibleEvents": 9,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：长沙、华中根据地",
+          "reasonEn": "Original location leads still lack a specific dated event: 长沙, 华中根据地"
+        }
+      ]
+    },
+    {
+      "personId": "p_chen_yun",
+      "nameZh": "陈云",
+      "nameEn": "Chen Yun",
+      "birthDate": "1905-06-13",
+      "deathDate": "1995-04-10",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1995-04-10",
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 9,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_nie_rongzhen",
+      "nameZh": "聂荣臻",
+      "nameEn": "Nie Rongzhen",
+      "birthDate": "1899-12-29",
+      "deathDate": "1992-05-14",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1992-05-14",
+      "sourcedEvents": 18,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "education_dates_resolved",
+          "reasonZh": "原1919/1920差异已由启程与抵达区分解决；这不是同一学校入学日期的直接冲突。",
+          "reasonEn": "The 1919/1920 discrepancy is reconciled as departure versus arrival, not conflicting enrollment dates."
+        }
+      ]
+    },
+    {
+      "personId": "p_he_long",
+      "nameZh": "贺龙",
+      "nameEn": "He Long",
+      "birthDate": "1896-03-22",
+      "deathDate": "1969-06-09",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1969-06-09",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_li_xiannian",
+      "nameZh": "李先念",
+      "nameEn": "Li Xiannian",
+      "birthDate": "1909",
+      "deathDate": "1992-06-21",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1992-06-21",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_deng_xiaoping",
+      "nameZh": "邓小平",
+      "nameEn": "Deng Xiaoping",
+      "birthDate": "1904-08-22",
+      "deathDate": "1997-02-19",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1997-02-19",
+      "sourcedEvents": 29,
+      "routeEligibleEvents": 14,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：莫斯科",
+          "reasonEn": "Original location leads still lack a specific dated event: 莫斯科"
+        },
+        {
+          "field": "1989_decision_process",
+          "reasonZh": "已补6月9日公开立场；内部决策、命令链与各参与者责任尚需更完整的档案对读，不把单篇简报当作全过程。",
+          "reasonEn": "The public 9 June position is verified; internal deliberations and chains of command require further archival comparison."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhao_ziyang",
+      "nameZh": "赵紫阳",
+      "nameEn": "Zhao Ziyang",
+      "birthDate": "1919-10-17",
+      "deathDate": "2005-01-17",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2005-01-17",
+      "sourcedEvents": 18,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "reform_scope",
+          "reasonZh": "已补经济改革与软禁事实；不同政策的起草归属及党内决策争议仍需逐项研究。",
+          "reasonEn": "Reform participation and house arrest are now documented; authorship of individual policies and internal disputes require separate study."
+        }
+      ]
+    },
+    {
+      "personId": "p_jiang_zemin",
+      "nameZh": "江泽民",
+      "nameEn": "Jiang Zemin",
+      "birthDate": "1926-08-17",
+      "deathDate": "2022-11-30",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2022-11-30",
+      "sourcedEvents": 20,
+      "routeEligibleEvents": 12,
+      "unresolvedOriginalLeads": 4,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：江苏扬州、北京、国家进出口管理委员会、电子工业部",
+          "reasonEn": "Original location leads still lack a specific dated event: 江苏扬州, 北京, 国家进出口管理委员会, 电子工业部"
+        }
+      ]
+    },
+    {
+      "personId": "p_zhu_rongji",
+      "nameZh": "朱镕基",
+      "nameEn": "Zhu Rongji",
+      "birthDate": "1928-10-23",
+      "deathDate": "2026-08-12",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-08-12",
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_hu_jintao",
+      "nameZh": "胡锦涛",
+      "nameEn": "Hu Jintao",
+      "birthDate": "1942-12",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2026-02-13",
+      "sourcedEvents": 18,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "place_leads",
+          "reasonZh": "尚未落实具体事件的原地点线索：北京",
+          "reasonEn": "Original location leads still lack a specific dated event: 北京"
+        }
+      ]
+    },
+    {
+      "personId": "p_wen_jiabao",
+      "nameZh": "温家宝",
+      "nameEn": "Wen Jiabao",
+      "birthDate": "1942-09",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2026-02-13",
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_xi_jinping",
+      "nameZh": "习近平",
+      "nameEn": "Xi Jinping",
+      "birthDate": "1953-06",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2026-09-30",
+      "sourcedEvents": 18,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_li_keqiang",
+      "nameZh": "李克强",
+      "nameEn": "Li Keqiang",
+      "birthDate": "1955-07-03",
+      "deathDate": "2023-10-27",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2023-10-27",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_li_qiang",
+      "nameZh": "李强",
+      "nameEn": "Li Qiang",
+      "birthDate": "1959-07",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2026-09-23",
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_lee_teng_hui",
+      "nameZh": "李登辉",
+      "nameEn": "Lee Teng-hui",
+      "birthDate": "1923-01-15",
+      "deathDate": "2020-07-30",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2020-07-30",
+      "sourcedEvents": 23,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": []
+    },
+    {
+      "personId": "p_chen_shui_bian",
+      "nameZh": "陈水扁",
+      "nameEn": "Chen Shui-bian",
+      "birthDate": "1950",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2025-01-16",
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 1,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "later_criminal_proceedings",
+          "reasonZh": "已核2015年保外医治及2017年监狱公告；不同刑事案件的判决、撤销及停审须分案整理，本轮未将所有指控混写成已定罪。",
+          "reasonEn": "Medical release and the 2017 prison notice are verified; separate cases and later rulings still require case-by-case review."
+        },
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_ma_ying_jeou",
+      "nameZh": "马英九",
+      "nameEn": "Ma Ying-jeou",
+      "birthDate": "1950",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2016-05-20",
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 1,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "post_presidency",
+          "reasonZh": "总统府年表截至2016年卸任；卸任后访问、政党活动尚未系统逐次核查。",
+          "reasonEn": "The official presidential timeline ends in 2016; post-presidential travel and party activity are not comprehensively reviewed here."
+        },
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_tsai_ing_wen",
+      "nameZh": "蔡英文",
+      "nameEn": "Tsai Ing-wen",
+      "birthDate": "1956",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2024-05-20",
+      "sourcedEvents": 20,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_lai_ching_te",
+      "nameZh": "赖清德",
+      "nameEn": "Lai Ching-te",
+      "birthDate": "1959",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2026-08-27",
+      "sourcedEvents": 14,
+      "routeEligibleEvents": 0,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_chiang_ching_kuo",
+      "nameZh": "蒋经国",
+      "nameEn": "Chiang Ching-kuo",
+      "birthDate": "1910",
+      "deathDate": "1988-01-13",
+      "lifeStatus": "deceased",
+      "statusAsOf": "1988-01-13",
+      "sourcedEvents": 20,
+      "routeEligibleEvents": 2,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "deathPlace",
+          "reasonZh": "所读总统府年表记载逝世日期，未记死亡地点；台北线索不由首都或职务推断。",
+          "reasonEn": "The consulted presidential timeline gives the death date but not the place; Taipei is not inferred from office."
+        },
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        }
+      ]
+    },
+    {
+      "personId": "p_tung_chee_hwa",
+      "nameZh": "董建华",
+      "nameEn": "Tung Chee-hwa",
+      "birthDate": "1937-05-29",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2018-03-14",
+      "sourcedEvents": 22,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_donald_tsang",
+      "nameZh": "曾荫权",
+      "nameEn": "Donald Tsang",
+      "birthDate": "1944",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2019-06-26",
+      "sourcedEvents": 17,
+      "routeEligibleEvents": 1,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_leung_chun_ying",
+      "nameZh": "梁振英",
+      "nameEn": "Leung Chun-ying",
+      "birthDate": "1954-08-12",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2018-03-14",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 3,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_carrie_lam",
+      "nameZh": "林郑月娥",
+      "nameEn": "Carrie Lam",
+      "birthDate": "1957",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2024-06-23",
+      "sourcedEvents": 15,
+      "routeEligibleEvents": 2,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "early_office_dates",
+          "reasonZh": "港府档案简历列福利、规划、伦敦及民政职务但未列起止日期；所链履历图片本轮超时，未以推算补齐。",
+          "reasonEn": "The archived biography names early offices but omits dates; its linked chronology image timed out."
+        },
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        },
+        {
+          "field": "birthPlace",
+          "reasonZh": "已核1957年出生；本轮优先使用的政府档案及大学资料未独立确证出生具体地点。",
+          "reasonEn": "The selected government and university records support 1957 but do not independently establish a precise birthplace."
+        }
+      ]
+    },
+    {
+      "personId": "p_john_lee",
+      "nameZh": "李家超",
+      "nameEn": "John Lee",
+      "birthDate": "1957",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": null,
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 0,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        },
+        {
+          "field": "birthPlace",
+          "reasonZh": "港府简历只载1957年出生，未载出生地点；不能以香港任职推出出生香港。",
+          "reasonEn": "The official biography gives 1957 but no birthplace; employment in Hong Kong does not establish birth there."
+        },
+        {
+          "field": "education_presence",
+          "reasonZh": "查尔斯特大学硕士仅证明学历关联，没有授课方式、年份或本人赴澳证据，不生成澳大利亚迁移节点。",
+          "reasonEn": "The Charles Sturt degree establishes academic affiliation, not dates or physical study in Australia."
+        }
+      ]
+    },
+    {
+      "personId": "p_edmund_ho",
+      "nameZh": "何厚铧",
+      "nameEn": "Edmund Ho Hau-wah",
+      "birthDate": "1955-03",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2023-03-11",
+      "sourcedEvents": 21,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_fernando_chui",
+      "nameZh": "崔世安",
+      "nameEn": "Fernando Chui Sai-on",
+      "birthDate": "1957",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2019-12-20",
+      "sourcedEvents": 16,
+      "routeEligibleEvents": 1,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "degree_title",
+          "reasonZh": "新闻局2014年就职简历称公共卫生硕士，另一中联办2014-12-10稿称医务管理硕士；已保留院校及硕士层次，不擅自统一冲突名称。",
+          "reasonEn": "Official 2014 accounts differ on whether the master’s title was public health or health administration; institution and level are retained without choosing an unsupported label."
+        },
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_ho_iat_seng",
+      "nameZh": "贺一诚",
+      "nameEn": "Ho Iat Seng",
+      "birthDate": "1957-06",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2024-08-21",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 1,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        }
+      ]
+    },
+    {
+      "personId": "p_sam_hou_fai",
+      "nameZh": "岑浩辉",
+      "nameEn": "Sam Hou Fai",
+      "birthDate": "1962-05",
+      "deathDate": null,
+      "lifeStatus": "living_as_of_source",
+      "statusAsOf": "2024-12-20",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 2,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "birthDatePrecision",
+          "reasonZh": "已读传记支持出生年或月份，未以缺乏逐字段证据的通行生日补成日精度。",
+          "reasonEn": "Consulted biographies support the displayed year/month only; an exact birthday is not added without field-level evidence."
+        },
+        {
+          "field": "later_life_status",
+          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
+          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+        },
+        {
+          "field": "birthPlacePrecision",
+          "reasonZh": "澳门政府简历仅称中国内地，不据此细化到省、市或乡村。",
+          "reasonEn": "The government biography says mainland China; no province, city or village is inferred."
+        }
+      ]
+    },
+    {
+      "personId": "p_lin_zexu",
+      "nameZh": "林则徐",
+      "nameEn": "Lin Zexu",
+      "birthDate": "1785-08-30",
+      "deathDate": "1850-11-22",
+      "lifeStatus": "deceased",
+      "statusAsOf": null,
+      "sourcedEvents": 19,
+      "routeEligibleEvents": 8,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "sourceError",
+          "reasonZh": "闽侯长文末段将革职时间写作1842年并称在广州19个月，互相矛盾；本轮不用该句，流放日期依据伊犁州资料。",
+          "reasonEn": "A sentence in the Minhou article gives an internally inconsistent dismissal date and duration; exile dates instead follow the Ili government source."
+        },
+        {
+          "field": "itinerary",
+          "reasonZh": "已核广州、虎门、镇海及伊犁到场，未据总督辖区推定其他城市路线。",
+          "reasonEn": "Presence is established for Guangzhou, Humen, Zhenhai and Ili; other city routes are not inferred from provincial jurisdictions."
+        }
+      ]
+    },
+    {
+      "personId": "p_cai_e",
+      "nameZh": "蔡锷",
+      "nameEn": "Cai E",
+      "birthDate": "1882-12-18",
+      "deathDate": "1916-11-08",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 11,
+      "routeEligibleEvents": 6,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "school_dates",
+          "reasonZh": "湖南档案正文以前后年龄描述部分学校经历，未将传统年龄直接换算为精确入学年份；北京居留起止未纳入本轮年表。",
+          "reasonEn": "Some school stages are described by age, so no exact entry year is inferred from traditional age reckoning. The Beijing residence interval is not included in this chronology."
+        }
+      ]
+    },
+    {
+      "personId": "p_feng_yuxiang",
+      "nameZh": "冯玉祥",
+      "nameEn": "Feng Yuxiang",
+      "birthDate": "1882",
+      "deathDate": "1948-09-01",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 14,
+      "routeEligibleEvents": 5,
+      "unresolvedOriginalLeads": 1,
+      "researchGaps": [
+        {
+          "field": "birth_day_and_early_school",
+          "reasonZh": "采用图书馆确证的出生年与出生地；未用有明显死亡日期错误的地方转载补生日。幼年私塾无确切起止年月。",
+          "reasonEn": "Birth year and place follow the library biography; a local reprint with an erroneous death date is not used to establish the birthday. Private-school dates remain unknown."
+        }
+      ]
+    },
+    {
+      "personId": "p_zhao_shangzhi",
+      "nameZh": "赵尚志",
+      "nameEn": "Zhao Shangzhi",
+      "birthDate": "1908-10-26",
+      "deathDate": "1942-02-12",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 13,
+      "routeEligibleEvents": 7,
+      "unresolvedOriginalLeads": 0,
+      "researchGaps": [
+        {
+          "field": "party_restoration_and_academy",
+          "reasonZh": "来源对1930年代第一次恢复党籍作1934或1935年，对黄埔期别也有出入；不择一填精确值。1982年平反属身后事件，不参与本人路线。",
+          "reasonEn": "Sources differ on the first party restoration in 1934 or 1935 and on the Whampoa class number. The 1982 rehabilitation is posthumous and excluded from personal routes."
+        }
+      ]
+    },
+    {
+      "personId": "p_zuo_quan",
+      "nameZh": "左权",
+      "nameEn": "Zuo Quan",
+      "birthDate": "1905",
+      "deathDate": "1942-05-25",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-10-05",
+      "sourcedEvents": 12,
+      "routeEligibleEvents": 4,
+      "unresolvedOriginalLeads": 2,
+      "researchGaps": [
+        {
+          "field": "birth_month_day",
+          "reasonZh": "可靠生平正文仅核1905年，其他转述有3月、5月等差异；本轮不填精确生日。瑞金、延安仍需会议、驻地或行程材料。",
+          "reasonEn": "The consulted biographies establish 1905; secondary accounts differ on month and day. Ruijin and Yan’an still require dated meeting, residence or itinerary evidence."
+        }
+      ]
+    }
+  ]
+}
