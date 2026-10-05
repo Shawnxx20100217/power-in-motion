@@ -8,6 +8,7 @@
   const hero = document.querySelector('.hero');
   const panel = document.getElementById('tourPanel');
   let activeView = 'atlas', lastLanguage = '', returnFinding = null, activeEvidence = null;
+  let routeInitialized = false;
   let tour = {active:false, index:0, auto:false, remaining:20, timer:null};
   const tr = (en, zh) => state.lang === 'en' ? en : zh;
   const field = (value, prefix) => value[prefix + (state.lang === 'en' ? 'En' : 'Zh')] || '';
@@ -106,7 +107,7 @@
     renderNavigation();
     if(lastLanguage!==state.lang){renderFindings();renderMethod();lastLanguage=state.lang;}
     restoreEvidence();
-    if(location.hash.startsWith('#atlas?')){
+    if(routeInitialized && location.hash.startsWith('#atlas?')){
       const params=new URLSearchParams(location.hash.split('?')[1]);params.set('lang',state.lang);
       if(activeEvidence&&activeEvidence.personId===state.selectedId){params.set('person',state.selectedId);if(activeEvidence.eventIds.length)params.set('events',activeEvidence.eventIds.join('|'));else params.delete('events');}
       else if(params.get('person')!==state.selectedId){params.set('person',state.selectedId||'');params.delete('events');activeEvidence=null;}
@@ -223,7 +224,5 @@
   matchMedia('(max-width:850px)').addEventListener('change',event=>{const contents=document.getElementById('methodContents');if(contents)contents.open=!event.matches;});
   window.addEventListener('hashchange',routeFromHash);
   window.addEventListener('popstate',routeFromHash);
-  window.researchRefresh();routeFromHash();
+  window.researchRefresh();routeFromHash();routeInitialized=true;
 })();
-
-  

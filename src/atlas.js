@@ -266,7 +266,7 @@
       const date = eventYear(item) === null ? (en ? 'Date not established' : '日期未核定') : ((en ? item.dateTextEn : item.dateTextZh) || item.dateText || String(eventYear(item))); 
       const title = (en ? item.titleEn : item.titleZh) || item.placeText || item.raw || mapPlaceLabel(item.place);
       const refs = verified ? uniqueEventSources(item) : [];
-      const links = refs.map((ref, index) => `<a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(ref.title)}">${en ? 'Source' : '来源'} ${index + 1} ↗</a>`).join('');
+      const links = refs.map((ref, index) => `<a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(ref.title)}"><span class="source-number">${en ? 'Source' : '来源'} ${index + 1}</span><span class="source-title">${escapeHTML(ref.title)} ↗</span></a>`).join('');
       const notes = [...new Set(refs.map(ref => en ? ref.evidenceNoteEn : ref.evidenceNoteZh).filter(Boolean))];
       const evidence = notes.length ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p>${notes.filter(note=>!notes.some(other=>other!==note&&other.includes(note))).map(escapeHTML).join(' ')}</p></details>` : '';
       const strength = refs.length ? `<span class="evidence-strength">${refs.length === 1 ? (en ? '1 cited source' : '1 条引用来源') : (en ? `${refs.length} cited source URLs` : `${refs.length} 条引用来源`)}</span>` : '';
@@ -349,17 +349,25 @@
         label.setAttribute('class',`place-label ${evidence} ${selected?'selected-label':''}`);label.textContent=mapPlaceLabel(key);labelLayer.appendChild(label);
         label.style.fontSize=`${labelSize}px`;
         const width=label.getComputedTextLength();
-        const candidates=[[10,3],[-width-10,3],[10,-15],[-width-10,-15],[10,20],[-width-10,20],[12,-31],[-width-12,36]];
+        const mapWidth=document.getElementById('mapSvg').getBoundingClientRect().width;
+        const unit=900/Math.max(280,mapWidth);
+        // Close Pearl River Delta points need more label clearance on small maps.
+        const deltaOffsets=mapWidth<600?{
+          guangzhou:[20*unit,-10*unit], xiangshan:[-width-10*unit,-2*unit],
+          hongkong:[12*unit,18*unit], macau:[-width-10*unit,22*unit]
+        }:{};
+        const preferred=deltaOffsets[key];
+        const candidates=[...(preferred?[preferred]:[]),[10,3],[-width-10,3],[10,-15],[-width-10,-15],[10,20],[-width-10,20],[12,-31],[-width-12,36]];
         let position=null;
         for(const [dx,dy] of candidates){
           const box={x:point.x+dx,y:point.y+dy-labelSize/2,w:width,h:labelSize+3};
-          if(box.x<14 || box.x+box.w>886 || box.y<12 || box.y+box.h>510) continue;
+          if(box.x<14 || box.x+box.w>886 || box.y<12 || box.y+box.h>(preferred?545:510)) continue;
           if(occupied.some(other=>box.x<other.x+other.w+5 && box.x+box.w+5>other.x && box.y<other.y+other.h+3 && box.y+box.h+3>other.y)) continue;
           position={dx,dy,box};break;
         }
         if(!position){label.remove();return;}
         occupied.push(position.box);label.setAttribute('x',point.x+position.dx);label.setAttribute('y',point.y+position.dy);
-        if(Math.abs(position.dy)>8){const leader=document.createElementNS('http://www.w3.org/2000/svg','line');leader.setAttribute('x1',point.x);leader.setAttribute('y1',point.y);leader.setAttribute('x2',point.x+(position.dx>0?8:-8));leader.setAttribute('y2',point.y+position.dy);leader.setAttribute('class','label-leader');labelLayer.insertBefore(leader,label);}
+        if(preferred||Math.abs(position.dy)>8){const leader=document.createElementNS('http://www.w3.org/2000/svg','line');leader.setAttribute('x1',point.x);leader.setAttribute('y1',point.y);leader.setAttribute('x2',preferred?(position.dx>0?position.box.x-4:position.box.x+position.box.w+4):point.x+(position.dx>0?8:-8));leader.setAttribute('y2',point.y+position.dy);leader.setAttribute('class','label-leader');labelLayer.insertBefore(leader,label);}
       });
       placeLayer.querySelectorAll('[data-place]').forEach(point=>{
         const open=event=>{
