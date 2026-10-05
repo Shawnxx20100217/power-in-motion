@@ -5,7 +5,7 @@
     "peopleCount": 72,
     "candidateCount": 67,
     "seedOnlyCount": 5,
-    "sourceCount": 285,
+    "sourceCount": 301,
     "periodCount": 5,
     "periodLinkCountRaw": 75,
     "periodLinkCountNormalized": 160,
@@ -105,12 +105,15 @@
     },
     "lastEventAudit": "2026-10-05",
     "eventAuditVersion": "v0.6",
-    "version": "0.6",
+    "version": "0.7",
     "reviewedAt": "2026-10-05",
     "reviewedPeopleCount": 72,
     "unresolvedLeadCount": 35,
     "reviewScope": "All 72 indexed people, major life stages and all existing place leads; not exhaustive historical coverage.",
-    "originalLeadDispositions": 223
+    "originalLeadDispositions": 223,
+    "latestEvidenceReview": "evidence-review.json",
+    "targetedEvidenceReviewAt": "2026-10-05",
+    "targetedEvidenceReviewScope": "Targeted correction of political-entity chronology; refreshed status evidence for the 17 profiles previously marked living; nine additional references for selected existing events. This is not a new review of all 1,098 event claims."
   },
   "periods": [
     {
@@ -6459,6 +6462,20 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "正文记载此事：任清华国学研究院导师。时间精度：1925；地理分类：本人到场。",
               "evidenceNoteEn": "Supports the stated event and date precision (1925). Spatial evidence: documented presence."
+            },
+            {
+              "sourceId": "review_nankai_liang_history",
+              "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "南开历史学院传记提及1925年以后任教清华及国学四大导师身份，补证学校和职务；1925年这一确切任职年仍依原清华档案，不把此任教记录当成就学。",
+              "evidenceNoteEn": "Nankai’s biography places Liang’s Tsinghua teaching in the period after 1925 and identifies the tutorial role. It corroborates institution and role; the exact appointment year remains based on the original Tsinghua archive. This is a teaching, not student, event.",
+              "supportedFields": [
+                "institution",
+                "role"
+              ],
+              "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "dateTextZh": "1925",
@@ -6523,6 +6540,12 @@
         {
           "sourceId": "full_lateqing_lianglate",
           "url": "https://xsg.tsinghua.edu.cn/info/1004/3150.htm",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_nankai_liang_history",
+          "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
         }
@@ -6849,7 +6872,8 @@
         "full_lateqing_liang",
         "full_lateqing_liangtsinghua",
         "full_lateqing_lianglibrary",
-        "full_lateqing_lianglate"
+        "full_lateqing_lianglate",
+        "review_nankai_liang_history"
       ],
       "reviewNoteZh": "本轮核查生卒、教育、入仕、主要职务、重大事件与晚年。任职和机构所在地不自动等于本人行踪；未详部分列入缺项。",
       "reviewNoteEn": "This round reviews life dates, education, political entry, major offices, key events and later life. Office and institutional locations are not automatically personal travel; remaining uncertainties are listed.",
@@ -7884,6 +7908,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "正文记载此事：赴檀香山求学。时间精度：1879；地理分类：本人到场。",
               "evidenceNoteEn": "Supports the stated event and date precision (1879). Spatial evidence: documented presence."
+            },
+            {
+              "sourceId": "review_iolani_sun_history",
+              "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "学校历史页记载孙中山于1879年入读并寄宿、1882年毕业，补证1879年檀香山求学；学校自身记录与中山市传记分属不同机构来源。",
+              "evidenceNoteEn": "The school history records boarding in 1879 and graduation in 1882, supporting the 1879 Honolulu schooling event. This is distinct institutional provenance from the Zhongshan biography.",
+              "supportedFields": [
+                "year",
+                "institution",
+                "place"
+              ],
+              "independenceAssessment": "distinct_institutional_record",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "dateTextZh": "1879",
@@ -8536,6 +8575,12 @@
           "url": "https://www.cksmh.gov.tw/EN/cp.aspx?n=6477",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_iolani_sun_history",
+          "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
         }
       ],
       "notes": [],
@@ -9008,7 +9053,8 @@
       "corrections": [],
       "reviewedSourceIds": [
         "audit_zs_sun",
-        "audit_cks_en"
+        "audit_cks_en",
+        "review_iolani_sun_history"
       ],
       "reviewNoteZh": "本轮核查生卒、教育、入仕、主要职务、重大事件与晚年。任职和机构所在地不自动等于本人行踪；未详部分列入缺项。",
       "reviewNoteEn": "This round reviews life dates, education, political entry, major offices, key events and later life. Office and institutional locations are not automatically personal travel; remaining uncertainties are listed.",
@@ -21812,6 +21858,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "正文支持：1917-01，任北京大学文科学长。",
               "evidenceNoteEn": "Supports: 1917-01, Became Peking University dean of letters."
+            },
+            {
+              "sourceId": "review_pku_chen_history",
+              "url": "https://www.pku.edu.cn/detail/905.html",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "北大校史同时记载蔡元培聘陈独秀任文科学长及陈于1917年来校；补证学校、职务和年份。1月这一月份仍仅由原党史来源支持。",
+              "evidenceNoteEn": "Peking University’s history records Cai’s appointment of Chen as dean and Chen’s arrival in 1917. It corroborates institution, office and year; January still relies on the original party-history source.",
+              "supportedFields": [
+                "year",
+                "institution",
+                "role"
+              ],
+              "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "dateTextZh": "1917-01",
@@ -22179,6 +22240,12 @@
         {
           "sourceId": "expansion_url_006_01",
           "url": "https://cpc.people.com.cn/GB/64162/4507364.html",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_pku_chen_history",
+          "url": "https://www.pku.edu.cn/detail/905.html",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
         }
@@ -22732,7 +22799,8 @@
       "reviewedSourceIds": [
         "full_republic_chen_archive",
         "full_republic_chen_party",
-        "full_republic_early_party"
+        "full_republic_early_party",
+        "review_pku_chen_history"
       ],
       "reviewNoteZh": "核查生平各阶段与全部原地点线索；职务辖区不转为本人路线，未列出所有短期任免。",
       "reviewNoteEn": "All original place leads and major life stages reviewed. Jurisdictions do not establish personal travel; minor appointments are not exhaustive.",
@@ -24848,6 +24916,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "来源所列生平、任职或年表支持此项事实；地理精度以本条地点为限。 天津：从南开学校毕业；日期：1917。",
               "evidenceNoteEn": "The cited chronology or biography supports this entry; location precision is limited to the place recorded here. Tianjin: graduated from Nankai School. Date recorded: 1917."
+            },
+            {
+              "sourceId": "review_nankai_zhou_school_report",
+              "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "南开档案报告依据同学录与学籍记录记载1913年至1917年就读，并于1917年6月毕业；补证天津南开毕业的学校和年份。",
+              "evidenceNoteEn": "The Nankai archival report cites alumni and enrollment records for attendance in 1913–1917 and graduation in June 1917, corroborating the school and graduation year.",
+              "supportedFields": [
+                "year",
+                "institution",
+                "graduation"
+              ],
+              "independenceAssessment": "distinct_archival_record",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "supersedesEventIds": [
@@ -24885,6 +24968,20 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "来源所列生平、任职或年表支持此项事实；地理精度以本条地点为限。",
               "evidenceNoteEn": "The cited chronology or biography supports this entry; location precision is limited to the place recorded here."
+            },
+            {
+              "sourceId": "review_nankai_zhou_school_report",
+              "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "南开报告记载1917年毕业后赴日本、1920年赴法国；支持原条目的两国求学经历。该合并条目未拆为新事件，也未被赋予一个虚构的共同日期。",
+              "evidenceNoteEn": "The Nankai report records Japan study after the 1917 graduation and departure for France in 1920. It supports the two-country study record; this composite event is neither split nor assigned an invented single date.",
+              "supportedFields": [
+                "countries",
+                "study_sequence"
+              ],
+              "independenceAssessment": "distinct_archival_record",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "dateTextZh": "日期未详",
@@ -25495,6 +25592,12 @@
           "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679426/1206x2_679446/200803/t20080313_9343699.shtml",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_nankai_zhou_school_report",
+          "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
         }
       ],
       "notes": [],
@@ -26046,7 +26149,8 @@
       "reviewedSourceIds": [
         "full_prc_zhou",
         "full_prc_zhou_chongqing",
-        "full_prc_zhou_diplomacy"
+        "full_prc_zhou_diplomacy",
+        "review_nankai_zhou_school_report"
       ],
       "reviewNoteZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
       "reviewNoteEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
@@ -28139,8 +28243,7 @@
         "Organizational leadership"
       ],
       "entities": [
-        "中国共产党",
-        "中华人民共和国"
+        "中国共产党"
       ],
       "rawCoverage": [
         "ROC_MAINLAND",
@@ -29351,17 +29454,24 @@
         ],
         "lifeStatus": [
           "full_prc_ye"
+        ],
+        "entities": [
+          "full_prc_ye"
+        ],
+        "politicalEntitiesZh": [
+          "full_prc_ye"
+        ],
+        "politicalEntitiesEn": [
+          "full_prc_ye"
         ]
       },
       "educationSummaryZh": "先后就读广州陆军小学、湖北陆军第二预备学校及保定军校；1924年赴莫斯科学习。",
       "educationSummaryEn": "Military schools in Guangzhou, Hubei and Baoding, followed by study in Moscow in 1924.",
       "politicalEntitiesZh": [
-        "中国共产党",
-        "中华人民共和国"
+        "中国共产党"
       ],
       "politicalEntitiesEn": [
-        "Chinese Communist Party",
-        "People’s Republic of China"
+        "Chinese Communist Party"
       ],
       "leadResolutions": [
         {
@@ -29455,7 +29565,26 @@
           "reasonEn": "Original location leads still lack a specific dated event: 武汉, 上饶/桂林"
         }
       ],
-      "corrections": [],
+      "corrections": [
+        {
+          "id": "review_ye_ting_pre_prc_entity",
+          "personId": "p_ye_ting",
+          "field": "politicalEntities",
+          "rawValues": [
+            "中国共产党",
+            "中华人民共和国"
+          ],
+          "normalizedValues": [
+            "中国共产党"
+          ],
+          "reasonZh": "叶挺于1946年4月8日逝世，不能具有1949年成立的中华人民共和国的本人任职或活动归属。移除这一后见性政权标签；保留有生平证据的中共关联。",
+          "reason": "Ye Ting died on 8 April 1946, before the PRC was founded in 1949. Remove the retrospective regime affiliation while retaining the documented CPC relationship.",
+          "sourceIds": [
+            "full_prc_ye"
+          ],
+          "reviewedAt": "2026-10-05"
+        }
+      ],
       "reviewedSourceIds": [
         "full_prc_ye_edu",
         "full_prc_ye"
@@ -29688,6 +29817,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "来源所列生平、任职或年表支持此项事实；地理精度以本条地点为限。",
               "evidenceNoteEn": "The cited chronology or biography supports this entry; location precision is limited to the place recorded here."
+            },
+            {
+              "sourceId": "review_locpg_ye_jianying_moscow",
+              "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "文章记载1928年秋受派赴苏、年底抵莫斯科并入中国劳动者共产主义大学；补证年份、城市和学习性质。两篇官方历史叙述是否共享底本尚未确立，不称为完全独立证据。",
+              "evidenceNoteEn": "The account records assignment to Soviet study in autumn 1928 and arrival in Moscow near year-end to enter the Communist University of the Toilers of China. It supports year, city and study; independence from the original official biography’s underlying material is not established.",
+              "supportedFields": [
+                "year",
+                "city",
+                "education"
+              ],
+              "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "dateTextZh": "1928",
@@ -30128,6 +30272,12 @@
           "url": "https://www.cppcc.gov.cn/2011/09/26/ARTI1317001118828591.shtml",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_locpg_ye_jianying_moscow",
+          "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
         }
       ],
       "notes": [],
@@ -30277,7 +30427,7 @@
         "full_prc_ye_jianying",
         "full_prc_supp_ye1917",
         "full_prc_supp_ye1918",
-        "full_prc_ye_jianying"
+        "review_locpg_ye_jianying_moscow"
       ],
       "reviewNoteZh": "追加核查主要缺段与有冲突的日期；与prc主补丁合并时保留其既有事件。",
       "reviewNoteEn": "Supplemental review of major omissions and conflicting dates; append to the main PRC patch without replacing existing events.",
@@ -39953,8 +40103,8 @@
           "mapKey": "france",
           "yearStart": 1920,
           "yearEnd": 1920,
-          "dateText": "1920夏",
-          "dateTextEn": "Summer 1920",
+          "dateText": "1920",
+          "dateTextEn": "1920",
           "status": "verified",
           "pending": false,
           "spatialRelation": "documented_presence",
@@ -39968,14 +40118,29 @@
               "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3579/moe_90/tnull_2554.html",
               "relationship": "event_evidence",
               "evidenceStatus": "event_supported",
-              "evidenceNoteZh": "来源所列生平、任职或年表支持此项事实；地理精度以本条地点为限。 赴法国勤工俭学；日期：1920夏。",
-              "evidenceNoteEn": "The cited chronology or biography supports this entry; location precision is limited to the place recorded here. Went to France for work-study. Date recorded: summer 1920."
+              "evidenceNoteZh": "教育部生平概述写作1920年夏赴法；与法国档案研究所载9月启航、10月抵达存在季节差异，本条仅采用双方共同支持的年份。",
+              "evidenceNoteEn": "The Ministry of Education biography describes a summer 1920 departure, whereas the French archival study dates departure to September and arrival to October. The displayed event retains only the shared year."
+            },
+            {
+              "sourceId": "review_deng_french_years_1988",
+              "url": "https://www.persee.fr/doc/xxs_0294-1759_1988_num_20_1_2793?pageId=T1_19",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "论文第19页依据旅客名单记载1920年9月11日启航、10月19日抵马赛；支持1920年赴法，不能支持旧条目的“夏”。保留年度精度，不把法国区域点改成精确航线。",
+              "evidenceNoteEn": "Page 19 uses passenger-list evidence for departure on 11 September and arrival in Marseille on 19 October 1920. It supports the year and France, but contradicts the former summer label. No exact itinerary is inferred from the regional node.",
+              "supportedFields": [
+                "year",
+                "country",
+                "departure_and_arrival_chronology"
+              ],
+              "independenceAssessment": "independent_scholarly_archival_account",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "supersedesEventIds": [
             "p_deng_xiaoping:place:03"
           ],
-          "dateTextZh": "1920夏",
+          "dateTextZh": "1920",
           "chronologyStatus": "dated",
           "temporalExtent": "point",
           "reviewedAt": "2026-10-05"
@@ -40923,6 +41088,12 @@
           "url": "https://china.usc.edu/node/19922",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_deng_french_years_1988",
+          "url": "https://www.persee.fr/doc/xxs_0294-1759_1988_num_20_1_2793?pageId=T1_19",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source"
         }
       ],
       "notes": [],
@@ -41423,14 +41594,35 @@
           "reasonEn": "The public 9 June position is verified; internal deliberations and chains of command require further archival comparison."
         }
       ],
-      "corrections": [],
+      "corrections": [
+        {
+          "id": "review_deng_france_date_precision",
+          "personId": "p_deng_xiaoping",
+          "field": "p_deng_xiaoping:full:03.dateText",
+          "rawValues": [
+            "1920夏",
+            "Summer 1920"
+          ],
+          "normalizedValues": [
+            "1920",
+            "1920"
+          ],
+          "reasonZh": "删去与档案研究启航及抵达日期冲突的季节标记，保留共同支持的1920年。",
+          "reason": "Remove the seasonal label contradicted by departure and arrival dates in the archival study; preserve the mutually supported year 1920.",
+          "sourceIds": [
+            "moe_deng_bio",
+            "review_deng_french_years_1988"
+          ],
+          "reviewedAt": "2026-10-05"
+        }
+      ],
       "reviewedSourceIds": [
         "full_prc_deng",
         "full_prc_supp_deng1930",
         "full_prc_supp_dengbio",
         "full_prc_supp_deng1970",
         "full_prc_supp_deng1989",
-        "full_prc_deng"
+        "review_deng_french_years_1988"
       ],
       "reviewNoteZh": "追加核查主要缺段与有冲突的日期；与prc主补丁合并时保留其既有事件。",
       "reviewNoteEn": "Supplemental review of major omissions and conflicting dates; append to the main PRC patch without replacing existing events.",
@@ -44531,7 +44723,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-20",
       "birthDate": "1942-12",
       "deathDate": null,
       "claims": [
@@ -45260,6 +45452,14 @@
           "url": "https://cpc.people.com.cn/BIG5/64162/64165/77585/77592/5429581.html",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_hmo_tung_memorial",
+          "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日新华社公祭报道记载胡锦涛在董建华逝世后表示哀悼；具体致哀日期未载，状态以报道时点为限，不推断其出席公祭或担任现职。",
+          "evidenceNoteEn": "The 20 September Xinhua report names Hu among those sending condolences after Tung’s death. The individual action date is unspecified; this does not establish attendance at the memorial or current office."
         }
       ],
       "notes": [],
@@ -45531,9 +45731,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2026-02-13",
-      "statusNoteZh": "2026年2月13日新华社报道列入看望的退休领导人名单。",
-      "statusNoteEn": "Named among retired leaders visited in the Xinhua report of 13 February 2026.",
+      "statusAsOf": "2026-09-20",
+      "statusNoteZh": "9月20日新华社公祭报道记载胡锦涛在董建华逝世后表示哀悼；具体致哀日期未载，状态以报道时点为限，不推断其出席公祭或担任现职。",
+      "statusNoteEn": "The 20 September Xinhua report names Hu among those sending condolences after Tung’s death. The individual action date is unspecified; this does not establish attendance at the memorial or current office.",
       "summaryZh": "胡锦涛的早期履历连接清华水利工程、甘肃建设工作与共青团系统，后主政贵州、西藏并进入中央。2002年起任中共中央总书记，2003年任国家主席，现已离开国家领导岗位。",
       "summaryEn": "Hu’s path runs from hydraulic engineering and Gansu construction through Youth League and regional leadership to CPC general secretary and president. He later retired from national leadership.",
       "fieldEvidence": {
@@ -45542,7 +45742,10 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_prc_retired2026"
+          "review_2026_hmo_tung_memorial"
+        ],
+        "statusAsOf": [
+          "review_2026_hmo_tung_memorial"
         ]
       },
       "educationSummaryZh": "1959–1965年清华大学水利工程系学习，后留校科研。",
@@ -45653,13 +45856,21 @@
       "reviewedSourceIds": [
         "full_prc_hu",
         "full_prc_mexico",
-        "full_prc_retired2026"
+        "full_prc_retired2026",
+        "review_2026_hmo_tung_memorial"
       ],
       "reviewNoteZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
       "reviewNoteEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
-      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。"
+      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_report_of_prior_activity",
+      "statusFactInterval": [
+        "2026-09-08",
+        "2026-09-20"
+      ]
     },
     {
       "id": "p_wen_jiabao",
@@ -45698,7 +45909,7 @@
       "recordStatus": "major_life_stages_reviewed",
       "candidateStatus": "major_life_stages_reviewed",
       "sourceGrades": [],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-02-13",
       "birthDate": "1942-09",
       "deathDate": null,
       "claims": [
@@ -46314,6 +46525,14 @@
           "url": "https://paper.people.com.cn/rmrbhwb/pc/attachement/202602/14/a7aa88cb-12dc-4721-9807-fb8d7fb9d336.pdf",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_retired_leaders",
+          "url": "https://www.spp.gov.cn/spp/tt/202602/t20260213_719855.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "2月13日新华社报道将温家宝列为春节前获看望的老同志；个人探望日未详，在世状态以该报道为限。",
+          "evidenceNoteEn": "The 13 February Xinhua report lists Wen among retired leaders visited before the Spring Festival. His visit date is unspecified; status is bounded by this report."
         }
       ],
       "notes": [],
@@ -46371,8 +46590,8 @@
       ],
       "lifeStatus": "living_as_of_source",
       "statusAsOf": "2026-02-13",
-      "statusNoteZh": "2026年2月13日新华社报道列入看望的退休领导人名单。",
-      "statusNoteEn": "Named among retired leaders visited in the Xinhua report of 13 February 2026.",
+      "statusNoteZh": "2月13日新华社报道将温家宝列为春节前获看望的老同志；个人探望日未详，在世状态以该报道为限。",
+      "statusNoteEn": "The 13 February Xinhua report lists Wen among retired leaders visited before the Spring Festival. His visit date is unspecified; status is bounded by this report.",
       "summaryZh": "温家宝由地质教育和甘肃野外工作进入中央地质管理机关，继而在中央办公厅及国务院任职。其公开履历呈现技术专业、行政协调和国家经济管理之间的职业转换。",
       "summaryEn": "Wen moved from geology and field work in Gansu into central administration and the premiership. His biography links technical training, administrative coordination and national economic management.",
       "fieldEvidence": {
@@ -46381,7 +46600,10 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_prc_retired2026"
+          "review_2026_retired_leaders"
+        ],
+        "statusAsOf": [
+          "review_2026_retired_leaders"
         ]
       },
       "educationSummaryZh": "1960–1965年北京地质学院本科，1965–1968年地质构造专业研究生。",
@@ -46431,13 +46653,17 @@
       "reviewedSourceIds": [
         "full_prc_wen",
         "full_prc_mexico",
-        "full_prc_retired2026"
+        "full_prc_retired2026",
+        "review_2026_retired_leaders"
       ],
       "reviewNoteZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
       "reviewNoteEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
-      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。"
+      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_report_of_prior_activity"
     },
     {
       "id": "p_xi_jinping",
@@ -46487,7 +46713,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-30",
       "birthDate": "1953-06",
       "deathDate": null,
       "claims": [
@@ -47173,6 +47399,14 @@
           "url": "https://www.npc.gov.cn/zgrdw/englishnpc/Special_13_1/2018-03/11/content_2046558.htm",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_xi_national_day",
+          "url": "https://www.cac.gov.cn/2026-09/30/c_1792520315601130.htm",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月30日招待会报道明确列习近平为中共中央总书记、国家主席和中央军委主席；任职与在世状态仅确认至该活动日。",
+          "evidenceNoteEn": "The 30 September reception report explicitly identifies Xi as CPC general secretary, PRC president and CMC chairman. Life and office status are confirmed to that event date only."
         }
       ],
       "notes": [],
@@ -47473,8 +47707,8 @@
       ],
       "lifeStatus": "living_as_of_source",
       "statusAsOf": "2026-09-30",
-      "statusNoteZh": "2026年9月30日报道确认总书记、国家主席、中央军委主席职务。",
-      "statusNoteEn": "Party general secretary, president and military chair titles confirmed on 30 September 2026.",
+      "statusNoteZh": "9月30日招待会报道明确列习近平为中共中央总书记、国家主席和中央军委主席；任职与在世状态仅确认至该活动日。",
+      "statusNoteEn": "The 30 September reception report explicitly identifies Xi as CPC general secretary, PRC president and CMC chairman. Life and office status are confirmed to that event date only.",
       "summaryZh": "习近平的履历包括梁家河知青与村党支部工作、清华求学及河北、福建、浙江、上海地方岗位。2012年出任中共中央总书记，2013年任国家主席；2026年9月报道仍列其担任党、国家与军委领导职务。",
       "summaryEn": "Xi’s career links rural work, Tsinghua study and posts in Hebei, Fujian, Zhejiang and Shanghai to central leadership. A September 2026 report confirms his party, state and military titles.",
       "fieldEvidence": {
@@ -47483,7 +47717,10 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_prc_current_xi"
+          "review_2026_xi_national_day"
+        ],
+        "statusAsOf": [
+          "review_2026_xi_national_day"
         ]
       },
       "educationSummaryZh": "1975–1979年清华化工系；1998–2002年在职研究生，获法学博士。",
@@ -47566,13 +47803,17 @@
       "corrections": [],
       "reviewedSourceIds": [
         "full_prc_leaders2017",
-        "full_prc_current_xi"
+        "full_prc_current_xi",
+        "review_2026_xi_national_day"
       ],
       "reviewNoteZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
       "reviewNoteEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
-      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。"
+      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_li_keqiang",
@@ -48513,7 +48754,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-23",
       "birthDate": "1959-07",
       "deathDate": null,
       "claims": [
@@ -49272,7 +49513,9 @@
           "sourceId": "full_prc_current_li",
           "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260923_12029875.shtml",
           "relationship": "reviewed_profile_source",
-          "evidenceStatus": "reviewed_source"
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月23日外交部报道记载国务院总理李强在杭州会见吉尔吉斯斯坦总理；状态与职务以该日活动为限。",
+          "evidenceNoteEn": "The 23 September MFA report records State Council Premier Li Qiang meeting the Kyrgyz prime minister in Hangzhou. Status and title are bounded by that event."
         },
         {
           "sourceId": "audit_prc_liqiang_start",
@@ -49509,8 +49752,8 @@
       ],
       "lifeStatus": "living_as_of_source",
       "statusAsOf": "2026-09-23",
-      "statusNoteZh": "2026年9月23日外交部报道确认国务院总理职务。",
-      "statusNoteEn": "Premiership confirmed by the Foreign Ministry report of 23 September 2026.",
+      "statusNoteZh": "9月23日外交部报道记载国务院总理李强在杭州会见吉尔吉斯斯坦总理；状态与职务以该日活动为限。",
+      "statusNoteEn": "The 23 September MFA report records State Council Premier Li Qiang meeting the Kyrgyz prime minister in Hangzhou. Status and title are bounded by that event.",
       "summaryZh": "李强从瑞安基层工作和农业机械专业学习进入浙江行政系统，历任温州、浙江、江苏和上海领导职务。2023年获任国务院总理，2026年9月外交部报道确认其以总理身份参加活动。",
       "summaryEn": "Li moved from Rui’an employment and agricultural-mechanics study through Zhejiang administration and provincial leadership to the premiership. His role is confirmed in a September 2026 diplomatic report.",
       "fieldEvidence": {
@@ -49519,6 +49762,9 @@
         ],
         "deathDate": [],
         "lifeStatus": [
+          "full_prc_current_li"
+        ],
+        "statusAsOf": [
           "full_prc_current_li"
         ]
       },
@@ -49598,7 +49844,10 @@
       "reviewNoteEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Major life stages and existing place leads were reviewed. This is not a daily itinerary; jurisdictions do not establish travel.",
-      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。"
+      "notesZh": "本轮系统核查主要人生阶段与旧地点线索；不是逐日活动全集。任职辖区不推断为实际迁移。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_lee_teng_hui",
@@ -51429,7 +51678,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-06",
       "birthDate": "1950",
       "deathDate": null,
       "claims": [
@@ -52059,6 +52308,14 @@
           "url": "https://www.moj.gov.tw/media/14480/761618452061.pdf?mediaDL=true",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_chen_shui_bian_xizhuang",
+          "url": "https://www.cna.com.tw/news/aloc/202609060141.aspx",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "中央社9月6日现场报道记载陈水扁出席西庄里办公室揭牌；仅据此确认当日活动和在世状态。",
+          "evidenceNoteEn": "CNA’s 6 September event report records Chen at the Xizhuang neighborhood-office unveiling. It supports activity and living status on that day only."
         }
       ],
       "notes": [],
@@ -52216,9 +52473,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2025-01-16",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-09-06",
+      "statusNoteZh": "中央社9月6日现场报道记载陈水扁出席西庄里办公室揭牌；仅据此确认当日活动和在世状态。",
+      "statusNoteEn": "CNA’s 6 September event report records Chen at the Xizhuang neighborhood-office unveiling. It supports activity and living status on that day only.",
       "summaryZh": "陈水扁出生于台南县官田，台湾大学法律系毕业，从台北市议员进入政治，加入民进党后担任立法委员及台北市长。2000年当选总统，2004年连任，任内推动公民投票制度及调整两岸政策。2008年卸任后涉及刑事案件并服刑，2015年获保外医治；后续状态须依司法、矫正机关的具体公告核对。",
       "summaryEn": "Chen Shui-bian was born in Guantian, Tainan, and graduated in law from National Taiwan University. He entered politics through Taipei’s city council and later served as legislator and mayor. Elected president in 2000, he won a second term in 2004. His administration pursued referendum legislation and changes in cross-strait policy. After leaving office in 2008, he faced criminal proceedings and imprisonment. Official correctional records document medical release in January 2015; later developments require separate verification.",
       "fieldEvidence": {
@@ -52227,7 +52484,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_chen_2025"
+          "review_2026_chen_shui_bian_xizhuang"
         ],
         "summaryZh": [
           "full_twhkmo_chen",
@@ -52252,7 +52509,7 @@
           "full_twhkmo_chen"
         ],
         "statusAsOf": [
-          "full_twhkmo_chen_2025"
+          "review_2026_chen_shui_bian_xizhuang"
         ]
       },
       "educationSummaryZh": "1974年台湾大学法律系毕业。",
@@ -52300,21 +52557,25 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-06；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-06; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
       "reviewedSourceIds": [
         "full_twhkmo_chen",
         "full_twhkmo_chen_medical",
-        "full_twhkmo_chen_2025"
+        "full_twhkmo_chen_2025",
+        "review_2026_chen_shui_bian_xizhuang"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_ma_ying_jeou",
@@ -52354,7 +52615,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-05-22",
       "birthDate": "1950",
       "deathDate": null,
       "claims": [
@@ -52926,6 +53187,14 @@
           "url": "https://english.president.gov.tw/Page/88",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_ma_statement",
+          "url": "https://www.cna.com.tw/news/aipl/202605220168.aspx",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "中央社5月22日报道基金会发布马英九的声明及手稿；仅采用这项有日期的发声证据，不采纳报道中的医疗指称，也不推断现职。",
+          "evidenceNoteEn": "CNA reported on 22 May that Ma’s foundation released his statement and manuscript. This is dated statement evidence only; medical allegations and any inference of current office are excluded."
         }
       ],
       "notes": [],
@@ -53112,9 +53381,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2016-05-20",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-05-22",
+      "statusNoteZh": "中央社5月22日报道基金会发布马英九的声明及手稿；仅采用这项有日期的发声证据，不采纳报道中的医疗指称，也不推断现职。",
+      "statusNoteEn": "CNA reported on 22 May that Ma’s foundation released his statement and manuscript. This is dated statement evidence only; medical allegations and any inference of current office are excluded.",
       "summaryZh": "马英九出生于香港，祖籍湖南衡山，取得台湾大学、纽约大学和哈佛大学法律学位。返台后历任总统府职务、研考会主委、陆委会副主委、法务部长及台北市长。2008年至2016年担任总统，任内恢复两岸制度化协商并签署ECFA，2015年在新加坡与习近平会面，2016年完成第二任期。",
       "summaryEn": "Ma Ying-jeou was born in Hong Kong and studied law at National Taiwan University, New York University and Harvard. His public career included presidential staff work, the Research, Development and Evaluation Commission, the Mainland Affairs Council, the justice ministry and Taipei’s mayoralty. President from 2008 to 2016, he pursued institutionalized cross-strait negotiations and the ECFA agreement. He met Xi Jinping in Singapore in November 2015 and completed his second term in May 2016.",
       "fieldEvidence": {
@@ -53123,7 +53392,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_ma"
+          "review_2026_ma_statement"
         ],
         "summaryZh": [
           "full_twhkmo_ma"
@@ -53144,7 +53413,7 @@
           "full_twhkmo_ma"
         ],
         "statusAsOf": [
-          "full_twhkmo_ma"
+          "review_2026_ma_statement"
         ]
       },
       "educationSummaryZh": "台湾大学法律系学士、纽约大学法学硕士及哈佛大学法学博士；本页未列毕业年份。",
@@ -53201,19 +53470,23 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-05-22；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-05-22; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
       "reviewedSourceIds": [
-        "full_twhkmo_ma"
+        "full_twhkmo_ma",
+        "review_2026_ma_statement"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_statement_report"
     },
     {
       "id": "p_tsai_ing_wen",
@@ -53253,7 +53526,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-06-25",
       "birthDate": "1956",
       "deathDate": null,
       "claims": [
@@ -53438,6 +53711,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "康奈尔官方报道标明LL.M. 1980届。",
               "evidenceNoteEn": "Cornell identifies her as LL.M. 1980."
+            },
+            {
+              "sourceId": "expansion_url_009_01",
+              "url": "https://english.president.gov.tw/Page/646",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "总统府卸任总统传记列康奈尔法律硕士及赴美求学，补证学校、学位与国家；未列1980年授予日期，年份仍依康奈尔原来源。",
+              "evidenceNoteEn": "The former-president biography lists a Cornell LLM and study in the United States. It corroborates institution, degree and country, but not the 1980 award date, which remains sourced to Cornell.",
+              "supportedFields": [
+                "institution",
+                "degree",
+                "country"
+              ],
+              "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "qualifierZh": "来源支持此地点关联；地图为示意位置，不表示精确地址或完整行程。",
@@ -53488,6 +53776,21 @@
               "evidenceStatus": "event_supported",
               "evidenceNoteZh": "校方确认1984年获法学博士，当时学位授予机构为伦敦大学。",
               "evidenceNoteEn": "LSE confirms the 1984 law doctorate, awarded through the University of London."
+            },
+            {
+              "sourceId": "expansion_url_009_01",
+              "url": "https://english.president.gov.tw/Page/646",
+              "relationship": "event_evidence",
+              "evidenceStatus": "event_supported",
+              "evidenceNoteZh": "总统府传记列伦敦政经学院博士及1984年返台；补证学校、学位与留英经历。确切博士授予年仍采用伦敦政经学院原声明。",
+              "evidenceNoteEn": "The presidential biography lists an LSE PhD, study in Britain and return to Taiwan in 1984. It corroborates institution, degree and country; the exact award year remains sourced to LSE’s statement.",
+              "supportedFields": [
+                "institution",
+                "degree",
+                "country"
+              ],
+              "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+              "reviewedAt": "2026-10-05"
             }
           ],
           "qualifierZh": "来源支持此地点关联；地图为示意位置，不表示精确地址或完整行程。",
@@ -54344,6 +54647,14 @@
           "url": "https://www.mac.gov.tw/cn/cp.aspx?Create=1&n=69594088D2AB9C50",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_tsai_italy",
+          "url": "https://www.cna.com.tw/news/aipl/202606270068.aspx",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "中央社6月27日引述外交部称蔡英文于6月22日至25日在意大利出席女性领袖峰会；状态日期取所报活动区间终点，而非报道发表日。",
+          "evidenceNoteEn": "CNA’s 27 June report cites the foreign ministry on Tsai’s participation in an Italian women-leaders summit during 22–25 June. Status uses the reported activity-window endpoint, not the publication date."
         }
       ],
       "notes": [],
@@ -54756,9 +55067,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-05-20",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-06-25",
+      "statusNoteZh": "中央社6月27日引述外交部称蔡英文于6月22日至25日在意大利出席女性领袖峰会；状态日期取所报活动区间终点，而非报道发表日。",
+      "statusNoteEn": "CNA’s 27 June report cites the foreign ministry on Tsai’s participation in an Italian women-leaders summit during 22–25 June. Status uses the reported activity-window endpoint, not the publication date.",
       "summaryZh": "蔡英文出生于台北，家族来自屏东枋山，先后取得台湾大学、康奈尔大学与伦敦政经学院法律学位。返台任教后参与经贸谈判及两岸政策，历任陆委会主委、立委、行政院副院长与民进党主席。2016年至2024年担任总统，任内推动原住民族历史正义、年金改革和同性婚姻立法，2024年完成任期。",
       "summaryEn": "Tsai Ing-wen was born in Taipei and studied law in Taiwan, the United States and Britain. After teaching, she entered trade negotiations and cross-strait policy work, later serving as Mainland Affairs Council chair, legislator, vice premier and Democratic Progressive Party chair. She held the presidency from 2016 to 2024. Her administration pursued pension reform, indigenous and transitional justice, and legislation recognizing same-sex marriage. She completed her second presidential term in May 2024.",
       "fieldEvidence": {
@@ -54767,7 +55078,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "expansion_url_009_01"
+          "review_2026_tsai_italy"
         ],
         "summaryZh": [
           "expansion_url_009_01",
@@ -54802,7 +55113,7 @@
           "expansion_url_009_01"
         ],
         "statusAsOf": [
-          "expansion_url_009_01"
+          "review_2026_tsai_italy"
         ]
       },
       "educationSummaryZh": "台湾大学法学学士；康奈尔大学法学硕士（1980）；伦敦政经学院法学博士（1984，伦敦大学授予）。",
@@ -55061,8 +55372,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-06-25；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-06-25; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [
@@ -55115,13 +55426,21 @@
         "full_twhkmo_tsai_dyu",
         "full_twhkmo_tsai_mac",
         "cornell_tsai_2016",
-        "lse_tsai_degree_2019"
+        "lse_tsai_degree_2019",
+        "review_2026_tsai_italy"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity_interval",
+      "statusFactInterval": [
+        "2026-06-22",
+        "2026-06-25"
+      ]
     },
     {
       "id": "p_lai_ching_te",
@@ -55161,7 +55480,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-08-27",
       "birthDate": "1959",
       "deathDate": null,
       "claims": [
@@ -55689,7 +56008,9 @@
           "sourceId": "full_twhkmo_lai",
           "url": "https://www.president.gov.tw/Page/694",
           "relationship": "reviewed_profile_source",
-          "evidenceStatus": "reviewed_source"
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "总统府现行年表最后一项有日期的记录为8月27日主持健康台湾推动委员会第八次会议；不将网页在本轮可访问视为10月5日任职证明。",
+          "evidenceNoteEn": "The latest dated item in the current presidential timeline is the 27 August Healthy Taiwan Promotion Committee meeting. Accessibility of the page at this review is not evidence of office through 5 October."
         }
       ],
       "notes": [],
@@ -55876,8 +56197,8 @@
       ],
       "lifeStatus": "living_as_of_source",
       "statusAsOf": "2026-08-27",
-      "statusNoteZh": "总统府现行简历及活动年表记载至2026-08-27；在世与任职仅确认至该资料时点。",
-      "statusNoteEn": "The current presidential biography includes activity through 27 August 2026; status is bounded by that date.",
+      "statusNoteZh": "总统府现行年表最后一项有日期的记录为8月27日主持健康台湾推动委员会第八次会议；不将网页在本轮可访问视为10月5日任职证明。",
+      "statusNoteEn": "The latest dated item in the current presidential timeline is the 27 August Healthy Taiwan Promotion Committee meeting. Accessibility of the page at this review is not evidence of office through 5 October.",
       "summaryZh": "赖清德出生于万里矿工家庭，接受复健医学、临床医学及公共卫生教育，在成大医院行医后投入政治。历任国大代表、立法委员、台南市长、行政院长及副总统，2023年兼任民进党主席，2024年当选并就任总统。总统府资料包含截至2026年8月的活动记录；本轮以可核履历和具体访问为主，任职不直接转成个人迁移路线。",
       "summaryEn": "Lai Ching-te was born in Wanli and trained in rehabilitation, clinical medicine and public health. He worked at National Cheng Kung University Hospital before entering politics. His subsequent offices included National Assembly delegate, legislator, Tainan mayor, premier and vice president. He became Democratic Progressive Party chair in 2023 and president in May 2024. The official biography and activity record consulted for this review extend to August 2026; office jurisdictions are distinguished from documented travel.",
       "fieldEvidence": {
@@ -55957,8 +56278,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-08-27；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-08-27; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
@@ -55969,7 +56290,10 @@
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_chiang_ching_kuo",
@@ -57415,9 +57739,9 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-08",
       "birthDate": "1937-05-29",
-      "deathDate": null,
+      "deathDate": "2026-09-08",
       "claims": [
         {
           "id": "p_tung_chee_hwa:synthesis",
@@ -58567,6 +58891,22 @@
           "url": "https://www.cppcc.gov.cn/zxww/2018/03/14/ARTI1521028040405545.shtml",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_hmo_tung_memorial",
+          "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日新华社公祭报道明确记载董建华于2026年9月8日在香港逝世；9月9日立法会哀悼声明另行确认其逝世。已撤销旧的在世标签。",
+          "evidenceNoteEn": "The 20 September Xinhua memorial report dates Tung’s death in Hong Kong to 8 September 2026; a 9 September Legislative Council release separately confirms his death. The old living-status label has been removed."
+        },
+        {
+          "sourceId": "review_2026_legco_tung_mourning",
+          "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900340p.htm",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日新华社公祭报道明确记载董建华于2026年9月8日在香港逝世；9月9日立法会哀悼声明另行确认其逝世。已撤销旧的在世标签。",
+          "evidenceNoteEn": "The 20 September Xinhua memorial report dates Tung’s death in Hong Kong to 8 September 2026; a 9 September Legislative Council release separately confirms his death. The old living-status label has been removed."
         }
       ],
       "notes": [],
@@ -58924,31 +59264,36 @@
           "evidenceStatus": "record_source"
         }
       ],
-      "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2018-03-14",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
-      "summaryZh": "董建华出生于上海，1947年随家迁居香港，利物浦大学海事工程毕业后在美国工作，1969年返港经营家族航运事业。曾任基本法咨询委员会委员及行政局议员，1997年就任香港首任行政长官，2002年连任，2005年任期结束后转任全国政协副主席。其履历涵盖航运企业、香港回归筹备与特区早期治理。",
-      "summaryEn": "Tung Chee-hwa was born in Shanghai and moved with his family to Hong Kong in 1947. After a marine engineering degree at Liverpool and work in the United States, he returned to the family shipping business. He joined Basic Law consultation and the Executive Council before becoming Hong Kong’s first chief executive in 1997. He began a second term in 2002 and left office in March 2005, subsequently serving as a CPPCC vice chairman.",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-09-08",
+      "statusNoteZh": "9月20日新华社公祭报道明确记载董建华于2026年9月8日在香港逝世；9月9日立法会哀悼声明另行确认其逝世。已撤销旧的在世标签。",
+      "statusNoteEn": "The 20 September Xinhua memorial report dates Tung’s death in Hong Kong to 8 September 2026; a 9 September Legislative Council release separately confirms his death. The old living-status label has been removed.",
+      "summaryZh": "董建华出生于上海，1947年随家迁居香港，利物浦大学海事工程毕业后在美国工作，1969年返港经营家族航运事业。曾任基本法咨询委员会委员及行政局议员，1997年就任香港首任行政长官，2002年连任，2005年任期结束后转任全国政协副主席。其履历涵盖航运企业、香港回归筹备与特区早期治理。 他于2026年9月8日在香港逝世。",
+      "summaryEn": "Tung Chee-hwa was born in Shanghai and moved with his family to Hong Kong in 1947. After a marine engineering degree at Liverpool and work in the United States, he returned to the family shipping business. He joined Basic Law consultation and the Executive Council before becoming Hong Kong’s first chief executive in 1997. He began a second term in 2002 and left office in March 2005, subsequently serving as a CPPCC vice chairman. He died in Hong Kong on 8 September 2026.",
       "fieldEvidence": {
         "birthDate": [
           "expansion_url_010_01"
         ],
-        "deathDate": [],
+        "deathDate": [
+          "review_2026_hmo_tung_memorial"
+        ],
         "lifeStatus": [
-          "full_twhkmo_tung_xinhua"
+          "review_2026_hmo_tung_memorial",
+          "review_2026_legco_tung_mourning"
         ],
         "summaryZh": [
           "expansion_url_010_01",
           "full_twhkmo_tung_xinhua",
           "full_twhkmo_tung_article23",
-          "full_twhkmo_tung_resignation"
+          "full_twhkmo_tung_resignation",
+          "review_2026_hmo_tung_memorial"
         ],
         "summaryEn": [
           "expansion_url_010_01",
           "full_twhkmo_tung_xinhua",
           "full_twhkmo_tung_article23",
-          "full_twhkmo_tung_resignation"
+          "full_twhkmo_tung_resignation",
+          "review_2026_hmo_tung_memorial"
         ],
         "educationSummaryZh": [
           "expansion_url_010_01"
@@ -58963,7 +59308,8 @@
           "expansion_url_010_01"
         ],
         "statusAsOf": [
-          "full_twhkmo_tung_xinhua"
+          "review_2026_hmo_tung_memorial",
+          "review_2026_legco_tung_mourning"
         ]
       },
       "educationSummaryZh": "1960年利物浦大学海事工程理学士毕业。",
@@ -59197,13 +59543,7 @@
           "reasonEn": "Previously verified event retained under its original ID; date refinements are listed in corrections."
         }
       ],
-      "gaps": [
-        {
-          "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
-        }
-      ],
+      "gaps": [],
       "corrections": [
         {
           "eventId": "p_tung_chee_hwa:event:preparatory-committee",
@@ -59215,6 +59555,26 @@
             "dateText": "1995",
             "dateTextEn": "1995"
           }
+        },
+        {
+          "id": "review_tung_death_2026",
+          "personId": "p_tung_chee_hwa",
+          "field": "lifeStatus/deathDate",
+          "rawValues": [
+            "living_as_of_source",
+            null
+          ],
+          "normalizedValues": [
+            "deceased",
+            "2026-09-08"
+          ],
+          "reasonZh": "以2026年9月的公祭报道及立法会声明替代2018年的过时在世状态；未新增事件或迁移节点。",
+          "reason": "Replace the stale 2018 living-status evidence with the September 2026 memorial report and Legislative Council statement; no event or route node was added.",
+          "sourceIds": [
+            "review_2026_hmo_tung_memorial",
+            "review_2026_legco_tung_mourning"
+          ],
+          "reviewedAt": "2026-10-05"
         }
       ],
       "reviewedSourceIds": [
@@ -59222,13 +59582,18 @@
         "full_twhkmo_tung_cppcc",
         "full_twhkmo_tung_xinhua",
         "full_twhkmo_tung_article23",
-        "full_twhkmo_tung_resignation"
+        "full_twhkmo_tung_resignation",
+        "review_2026_hmo_tung_memorial",
+        "review_2026_legco_tung_mourning"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "documented_death"
     },
     {
       "id": "p_donald_tsang",
@@ -59269,7 +59634,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-07-01",
       "birthDate": "1944",
       "deathDate": null,
       "claims": [
@@ -59899,6 +60264,14 @@
           "url": "https://www.doj.gov.hk/en/notable_judgments/pdf/FACC_29_2018e.pdf",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_donald_tsang_flag",
+          "url": "https://www.881903.com/news/amp/local/2638274",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "商业电台7月1日现场报道记载曾荫权出席回归纪念升旗仪式；该证据只确认当日活动，不恢复或推断任何现职。",
+          "evidenceNoteEn": "Commercial Radio’s 1 July event report lists Tsang at the handover-anniversary flag-raising ceremony. It establishes activity on that date, not a current office."
         }
       ],
       "notes": [],
@@ -60025,9 +60398,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2019-06-26",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-07-01",
+      "statusNoteZh": "商业电台7月1日现场报道记载曾荫权出席回归纪念升旗仪式；该证据只确认当日活动，不恢复或推断任何现职。",
+      "statusNoteEn": "Commercial Radio’s 1 July event report lists Tsang at the handover-anniversary flag-raising ceremony. It establishes activity on that date, not a current office.",
       "summaryZh": "曾荫权出身香港，1967年加入公务员队伍，曾借调亚洲开发银行并赴哈佛大学进修。历任行政署长、贸易署长、库务司和财政司司长，2001年任政务司司长，2005年成为行政长官，2007年连任。卸任后因公职行为失当案受审，2017年定罪；2019年终审法院撤销定罪与刑罚，并未命令重审。",
       "summaryEn": "Donald Tsang entered Hong Kong’s civil service in 1967, later working at the Asian Development Bank and studying public administration at Harvard. His senior posts included director of administration, director-general of trade, secretary for the treasury, financial secretary and chief secretary. He became chief executive in 2005 and won another term in 2007. Following his retirement, a misconduct trial led to a 2017 conviction, which the Court of Final Appeal quashed in June 2019 without ordering a retrial.",
       "fieldEvidence": {
@@ -60036,7 +60409,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_tsang_court"
+          "review_2026_donald_tsang_flag"
         ],
         "summaryZh": [
           "full_twhkmo_tsang_cuhk",
@@ -60061,7 +60434,7 @@
           "full_twhkmo_tsang"
         ],
         "statusAsOf": [
-          "full_twhkmo_tsang_court"
+          "review_2026_donald_tsang_flag"
         ]
       },
       "educationSummaryZh": "哈佛大学公共行政硕士；所读官方简历未列就学年份。",
@@ -60094,21 +60467,25 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-07-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-07-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
       "reviewedSourceIds": [
         "full_twhkmo_tsang",
         "full_twhkmo_tsang_cuhk",
-        "full_twhkmo_tsang_court"
+        "full_twhkmo_tsang_court",
+        "review_2026_donald_tsang_flag"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_leung_chun_ying",
@@ -60146,7 +60523,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-20",
       "birthDate": "1954-08-12",
       "deathDate": null,
       "claims": [
@@ -60708,6 +61085,14 @@
           "url": "https://www.info.gov.hk/gia/general/201409/28/P201409280998.htm",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_hmo_tung_memorial",
+          "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日公祭报道明确记载全国政协副主席梁振英出席并主持仪式；状态和职务确认至该日。",
+          "evidenceNoteEn": "The 20 September memorial report identifies Leung as CPPCC vice chairman and records him attending and presiding over the ceremony; status and office are bounded by that day."
         }
       ],
       "notes": [],
@@ -60862,9 +61247,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2018-03-14",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-09-20",
+      "statusNoteZh": "9月20日公祭报道明确记载全国政协副主席梁振英出席并主持仪式；状态和职务确认至该日。",
+      "statusNoteEn": "The 20 September memorial report identifies Leung as CPPCC vice chairman and records him attending and presiding over the ceremony; status and office are bounded by that day.",
       "summaryZh": "梁振英出生于香港，祖籍山东威海，在英国完成测量及物业管理教育后返港执业。参与基本法咨询和香港回归筹备，1997年至2011年担任行政会议召集人，2012年至2017年担任行政长官。任内经历2014年占领运动及政制争议，2017年起转任全国政协副主席；此处不由全国职务推断其定居北京。",
       "summaryEn": "Leung Chun-ying was born in Hong Kong and trained in surveying and property management in Britain. After returning to professional practice, he participated in Basic Law consultation and preparations for the SAR. He convened the Executive Council from 1997 to 2011 and served as chief executive from 2012 to 2017. His tenure included the 2014 occupation protests and disputes over electoral reform. He became a CPPCC vice chairman in 2017; national office is not treated as evidence of residence in Beijing.",
       "fieldEvidence": {
@@ -60873,7 +61258,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_leung"
+          "review_2026_hmo_tung_memorial"
         ],
         "summaryZh": [
           "full_twhkmo_leung_birth",
@@ -60898,7 +61283,7 @@
           "full_twhkmo_leung"
         ],
         "statusAsOf": [
-          "full_twhkmo_leung"
+          "review_2026_hmo_tung_memorial"
         ]
       },
       "educationSummaryZh": "1974年至1977年就读英国布里斯托理工学院，获测量及物业管理学士。",
@@ -60935,21 +61320,25 @@
       "gaps": [
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-20；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-20; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
       "reviewedSourceIds": [
         "full_twhkmo_leung",
         "full_twhkmo_leung_birth",
-        "full_twhkmo_occupy_2014"
+        "full_twhkmo_occupy_2014",
+        "review_2026_hmo_tung_memorial"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_carrie_lam",
@@ -60989,7 +61378,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-04",
       "birthDate": "1957",
       "deathDate": null,
       "claims": [
@@ -61587,6 +61976,14 @@
           "url": "https://calendar.hku.hk/succession-lists/",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_carrie_lam_reception",
+          "url": "https://www.info.gov.hk/gia/general/202609/04/P2026090400498.htm",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月4日港府活动致辞的开场称谓列出前行政长官林郑月娥；该现场称谓支持当日活动及前任身份，不推断其后情况。",
+          "evidenceNoteEn": "The opening salutations in the government’s 4 September event speech identify former chief executive Carrie Lam among attendees; this supports that dated activity and former-office description only."
         }
       ],
       "notes": [],
@@ -61716,9 +62113,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-06-23",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-09-04",
+      "statusNoteZh": "9月4日港府活动致辞的开场称谓列出前行政长官林郑月娥；该现场称谓支持当日活动及前任身份，不推断其后情况。",
+      "statusNoteEn": "The opening salutations in the government’s 4 September event speech identify former chief executive Carrie Lam among attendees; this supports that dated activity and former-office description only.",
       "summaryZh": "林郑月娥1980年毕业于香港大学并加入政务职系，长期在社会福利、规划、驻伦敦经贸及民政岗位工作。2007年任发展局局长，2012年任政务司司长，2017年就任行政长官。2019年宣布撤回逃犯条例修订草案，2020年签署公布香港国安法，2022年任期结束；2024年赴上海交通大学接受名誉博士学位。",
       "summaryEn": "Carrie Lam graduated from the University of Hong Kong and entered the Administrative Service in 1980. Her career covered welfare, planning, London trade representation and home affairs before she became development secretary and chief secretary. She was chief executive from 2017 to 2022. During the 2019 protests she announced withdrawal of the fugitive offenders bill, and in 2020 signed the promulgation of the Hong Kong national security law. In 2024 she received an honorary doctorate in Shanghai.",
       "fieldEvidence": {
@@ -61727,7 +62124,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_lam_sjtu"
+          "review_2026_carrie_lam_reception"
         ],
         "summaryZh": [
           "full_twhkmo_lam_birth",
@@ -61758,7 +62155,7 @@
           "full_twhkmo_lam"
         ],
         "statusAsOf": [
-          "full_twhkmo_lam_sjtu"
+          "review_2026_carrie_lam_reception"
         ]
       },
       "educationSummaryZh": "1980年香港大学社会科学学士；名誉博士不作为修读学位。",
@@ -61796,8 +62193,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-04；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-04; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlace",
@@ -61812,13 +62209,17 @@
         "full_twhkmo_lam_sjtu",
         "full_twhkmo_lam_withdraw",
         "full_twhkmo_lam_nsl",
-        "full_twhkmo_hku_terms"
+        "full_twhkmo_hku_terms",
+        "review_2026_carrie_lam_reception"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_john_lee",
@@ -61858,7 +62259,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-09-20",
       "birthDate": "1957",
       "deathDate": null,
       "claims": [
@@ -62345,7 +62746,9 @@
           "sourceId": "hk_ce_bio",
           "url": "https://www.ceo.gov.hk/en/biography.html",
           "relationship": "reviewed_profile_source",
-          "evidenceStatus": "reviewed_source"
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日公祭报道明确记载香港行政长官李家超出席；港府简历另标最近修订为2026年9月。以有明确日期的活动补齐原为空的statusAsOf。",
+          "evidenceNoteEn": "The 20 September memorial report identifies Hong Kong Chief Executive John Lee as an attendee. His official biography separately shows a September 2026 revision. The dated event resolves the previously empty statusAsOf field."
         },
         {
           "sourceId": "full_twhkmo_john_beijing",
@@ -62364,6 +62767,14 @@
           "url": "https://www.news.gov.hk/chi/2019/06/20190619/20190619_173902_053.html",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_hmo_tung_memorial",
+          "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "9月20日公祭报道明确记载香港行政长官李家超出席；港府简历另标最近修订为2026年9月。以有明确日期的活动补齐原为空的statusAsOf。",
+          "evidenceNoteEn": "The 20 September memorial report identifies Hong Kong Chief Executive John Lee as an attendee. His official biography separately shows a September 2026 revision. The dated event resolves the previously empty statusAsOf field."
         }
       ],
       "notes": [],
@@ -62551,9 +62962,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": null,
-      "statusNoteZh": "现行港府简历最近修订为2026年9月；状态按这一资料月份确认。",
-      "statusNoteEn": "The current government biography was last revised in September 2026; status is confirmed to that month.",
+      "statusAsOf": "2026-09-20",
+      "statusNoteZh": "9月20日公祭报道明确记载香港行政长官李家超出席；港府简历另标最近修订为2026年9月。以有明确日期的活动补齐原为空的statusAsOf。",
+      "statusNoteEn": "The 20 September memorial report identifies Hong Kong Chief Executive John Lee as an attendee. His official biography separately shows a September 2026 revision. The dated event resolves the previously empty statusAsOf field.",
       "summaryZh": "李家超1977年加入香港警队，逐步升至警务处副处长。2012年转任保安局副局长，2017年任局长，2021年任政务司司长，2022年当选并就任第六任行政长官。其教育资料记载澳大利亚查尔斯特大学硕士，但不足以证明在澳生活。2024年签署维护国家安全条例；官式简历更新至2026年9月。",
       "summaryEn": "John Lee joined the Hong Kong Police Force in 1977 and rose to deputy commissioner. He moved to the Security Bureau in 2012, became security secretary in 2017 and chief secretary in 2021, and took office as chief executive in July 2022. His official biography records a Charles Sturt University master’s degree but does not establish residence in Australia. He signed the Safeguarding National Security Ordinance in March 2024. The biography was last revised in September 2026.",
       "fieldEvidence": {
@@ -62562,6 +62973,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
+          "review_2026_hmo_tung_memorial",
           "hk_ce_bio"
         ],
         "summaryZh": [
@@ -62587,6 +62999,7 @@
           "hk_ce_bio"
         ],
         "statusAsOf": [
+          "review_2026_hmo_tung_memorial",
           "hk_ce_bio"
         ]
       },
@@ -62636,8 +63049,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-20；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-20; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlace",
@@ -62654,13 +63067,17 @@
       "reviewedSourceIds": [
         "hk_ce_bio",
         "full_twhkmo_john_beijing",
-        "full_twhkmo_john_law"
+        "full_twhkmo_john_law",
+        "review_2026_hmo_tung_memorial"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_edmund_ho",
@@ -62703,7 +63120,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-10-01",
       "birthDate": "1955-03",
       "deathDate": null,
       "claims": [
@@ -63777,6 +64194,14 @@
           "url": "https://www.cppcc.gov.cn/zxww/2023/03/11/ARTI1678473142416622.shtml",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_macao_national_day",
+          "url": "https://www.gov.mo/zh-hant/news/1270617/",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "澳门新闻局10月1日国庆招待会报道列何厚铧为全国政协副主席，并记载其参加该日活动；状态不外推至资料截止日。",
+          "evidenceNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Edmund Ho as CPPCC vice chairman and records participation that day. Status is not extrapolated to the dataset cutoff."
         }
       ],
       "notes": [],
@@ -64017,9 +64442,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2023-03-11",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-10-01",
+      "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列何厚铧为全国政协副主席，并记载其参加该日活动；状态不外推至资料截止日。",
+      "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Edmund Ho as CPPCC vice chairman and records participation that day. Status is not extrapolated to the dataset cutoff.",
       "summaryZh": "何厚铧出生于澳门，1969年赴加拿大留学，取得约克大学商科学位及会计师资格，曾在香港工作后返澳从事银行业。随后进入立法会并参与澳门基本法起草及回归筹备，1999年至2009年担任澳门特区首两任行政长官。卸任后担任全国政协副主席，2023年简历记载其为第十四届全国政协副主席。",
       "summaryEn": "Edmund Ho was born in Macao, studied in Canada and obtained a York University business degree and accounting qualifications. After working in Hong Kong, he returned to banking in Macao. He served in the legislature and helped prepare the Basic Law and the establishment of the SAR. He was Macao’s chief executive from 1999 to 2009 and subsequently became a CPPCC vice chairman. A March 2023 official biography records his service in the 14th CPPCC.",
       "fieldEvidence": {
@@ -64028,7 +64453,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_ho_2023"
+          "review_2026_macao_national_day"
         ],
         "summaryZh": [
           "expansion_url_011_01",
@@ -64055,7 +64480,7 @@
           "expansion_url_011_01"
         ],
         "statusAsOf": [
-          "full_twhkmo_ho_2023"
+          "review_2026_macao_national_day"
         ]
       },
       "educationSummaryZh": "1969年赴加拿大；1978年约克大学工商管理学士；1981年取得加拿大会计师和核数师资格。",
@@ -64279,8 +64704,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
@@ -64288,13 +64713,17 @@
         "expansion_url_011_01",
         "full_twhkmo_ho_2023",
         "full_twhkmo_ho_gaming",
-        "ho_cppcc_2013"
+        "ho_cppcc_2013",
+        "review_2026_macao_national_day"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_fernando_chui",
@@ -64326,7 +64755,7 @@
       "recordStatus": "major_life_stages_reviewed",
       "candidateStatus": "major_life_stages_reviewed",
       "sourceGrades": [],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-10-01",
       "birthDate": "1957",
       "deathDate": null,
       "claims": [
@@ -64922,6 +65351,14 @@
           "url": "https://www.gov.mo/zh-hant/news/312054/",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_macao_national_day",
+          "url": "https://www.gov.mo/zh-hant/news/1270617/",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "澳门新闻局10月1日国庆招待会报道列崔世安为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+          "evidenceNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Fernando Chui as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
         }
       ],
       "notes": [],
@@ -64981,9 +65418,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2019-12-20",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-10-01",
+      "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列崔世安为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+      "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Fernando Chui as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff.",
       "summaryZh": "崔世安出生于澳门，祖籍广东新会，赴美国接受城市卫生及公共卫生教育。曾任学校校长、第五届澳门立法会议员，1999年出任特区社会文化司司长，2004年续任。2009年当选第三任行政长官并于同年就职，2014年连任第四任，至2019年任期结束；其履历涉及卫生、教育和社会文化事务。",
       "summaryEn": "Fernando Chui was born in Macao, with family origins in Xinhui, Guangdong, and studied urban health and public health in the United States. He worked in education and served in the fifth Macao Legislative Assembly. Appointed secretary for social affairs and culture in 1999, he was reappointed in 2004. He became the third-term chief executive in December 2009 and began a second term in December 2014. His chief executive service ended in 2019.",
       "fieldEvidence": {
@@ -64992,7 +65429,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_chui_end"
+          "review_2026_macao_national_day"
         ],
         "summaryZh": [
           "full_twhkmo_chui",
@@ -65017,7 +65454,7 @@
           "full_twhkmo_chui"
         ],
         "statusAsOf": [
-          "full_twhkmo_chui_end"
+          "review_2026_macao_national_day"
         ]
       },
       "educationSummaryZh": "澳门岭南中学；美国加州州立大学城市卫生管理学士；俄克拉荷马大学公共卫生相关硕士及博士，学位具体名称另见说明。",
@@ -65044,21 +65481,25 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
       "reviewedSourceIds": [
         "full_twhkmo_chui",
         "full_twhkmo_chui_end",
-        "full_twhkmo_chui_fiveyear"
+        "full_twhkmo_chui_fiveyear",
+        "review_2026_macao_national_day"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_ho_iat_seng",
@@ -65093,7 +65534,7 @@
       "recordStatus": "major_life_stages_reviewed",
       "candidateStatus": "major_life_stages_reviewed",
       "sourceGrades": [],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-10-01",
       "birthDate": "1957-06",
       "deathDate": null,
       "claims": [
@@ -65623,6 +66064,14 @@
           "url": "https://www.gov.mo/zh-hans/news/798390/",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_macao_national_day",
+          "url": "https://www.gov.mo/zh-hant/news/1270617/",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "澳门新闻局10月1日国庆招待会报道列贺一诚为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+          "evidenceNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Ho Iat Seng as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
         }
       ],
       "notes": [],
@@ -65681,9 +66130,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-08-21",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-10-01",
+      "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列贺一诚为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+      "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Ho Iat Seng as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff.",
       "summaryZh": "贺一诚出生于澳门，早年在家族工厂工作，1992年赴浙江大学进修机电及经济。历任浙江省政协委员、全国人大代表和常委、澳门行政会成员及立法会副主席与主席。2019年当选并就任澳门第五任行政长官，任内参与横琴粤澳深度合作区建设。2024年宣布不参加下一届选举，并于同年完成任期。",
       "summaryEn": "Ho Iat Seng was born in Macao and began work in his family’s factory. He studied electromechanical subjects and economics at Zhejiang University in 1992. His political career included Zhejiang provincial CPPCC service, the National People’s Congress and its Standing Committee, Macao’s Executive Council and legislative leadership. He became chief executive in 2019 and participated in the development of the Hengqin cooperation zone. In August 2024 he announced that he would not seek the next term, which ended that December.",
       "fieldEvidence": {
@@ -65692,7 +66141,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_iat_not_run"
+          "review_2026_macao_national_day"
         ],
         "summaryZh": [
           "full_twhkmo_iat",
@@ -65723,7 +66172,7 @@
           "full_twhkmo_iat"
         ],
         "statusAsOf": [
-          "full_twhkmo_iat_not_run"
+          "review_2026_macao_national_day"
         ]
       },
       "educationSummaryZh": "1992年在浙江大学进修机电和经济专业，后获聘客座研究员；未将进修误写为取得学士学位。",
@@ -65745,8 +66194,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ],
       "corrections": [],
@@ -65756,13 +66205,17 @@
         "full_twhkmo_iat_hengqin",
         "full_twhkmo_iat_not_run",
         "full_twhkmo_iat_inaug",
-        "full_twhkmo_sam_inaug"
+        "full_twhkmo_sam_inaug",
+        "review_2026_macao_national_day"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_sam_hou_fai",
@@ -65805,7 +66258,7 @@
       "sourceGrades": [
         "A"
       ],
-      "lifeStatusAsOf": null,
+      "lifeStatusAsOf": "2026-10-01",
       "birthDate": "1962-05",
       "deathDate": null,
       "claims": [
@@ -66287,6 +66740,14 @@
           "url": "https://www.gov.mo/zh-hans/news/798390/",
           "relationship": "reviewed_profile_source",
           "evidenceStatus": "reviewed_source"
+        },
+        {
+          "sourceId": "review_2026_macao_national_day",
+          "url": "https://www.gov.mo/zh-hant/news/1270617/",
+          "relationship": "reviewed_profile_source",
+          "evidenceStatus": "reviewed_source",
+          "evidenceNoteZh": "澳门新闻局10月1日国庆招待会报道列岑浩辉为行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+          "evidenceNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Sam Hou Fai as chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
         }
       ],
       "notes": [],
@@ -66502,9 +66963,9 @@
         }
       ],
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-12-20",
-      "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
-      "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+      "statusAsOf": "2026-10-01",
+      "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列岑浩辉为行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+      "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Sam Hou Fai as chief executive and records participation that day. Status is not extrapolated to the dataset cutoff.",
       "summaryZh": "岑浩辉1962年出生于中国内地，北京大学法律系毕业，曾在内地执业，并在葡萄牙及澳门接受法律和司法训练。1993年从葡萄牙返澳，1997年成为法官，1999年至2024年任澳门终审法院院长。2024年辞去司法职务、当选行政长官候任人，经国务院任命后于12月20日就任第六任行政长官。",
       "summaryEn": "Sam Hou Fai was born in mainland China in May 1962 and graduated from Peking University’s law department. He practised law on the mainland and undertook Portuguese and Macao legal and judicial training. Returning from Portugal in 1993, he became a judge in 1997 and headed Macao’s Court of Final Appeal from December 1999 to August 2024. He was elected chief executive designate in October 2024 and took office on 20 December following appointment by the State Council.",
       "fieldEvidence": {
@@ -66513,7 +66974,7 @@
         ],
         "deathDate": [],
         "lifeStatus": [
-          "full_twhkmo_sam_inaug"
+          "review_2026_macao_national_day"
         ],
         "summaryZh": [
           "full_twhkmo_sam",
@@ -66536,7 +66997,7 @@
           "full_twhkmo_sam"
         ],
         "statusAsOf": [
-          "full_twhkmo_sam_inaug"
+          "review_2026_macao_national_day"
         ]
       },
       "educationSummaryZh": "北京大学法律系；科英布拉大学葡语文化及法律课程、澳门大学法律导论、澳门司法官培训。",
@@ -66598,8 +67059,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlacePrecision",
@@ -66610,13 +67071,17 @@
       "corrections": [],
       "reviewedSourceIds": [
         "full_twhkmo_sam",
-        "full_twhkmo_sam_inaug"
+        "full_twhkmo_sam_inaug",
+        "review_2026_macao_national_day"
       ],
       "reviewNoteZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
       "reviewNoteEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
       "reviewedAt": "2026-10-05",
       "notesEn": "Reviewed event-by-event against official biographies, timelines and specialist records. Existing supported event IDs are retained. Office jurisdictions are separated from documented personal presence.",
-      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。"
+      "notesZh": "逐事件核对官方年表、简历或专门资料；既有来源支持的事件保留原ID。职务辖区与个人到场分开，资料缺少日期或在场证据时不生成迁移路线。",
+      "statusReviewedAt": "2026-10-05",
+      "statusDatePrecision": "day",
+      "statusEvidenceType": "dated_activity"
     },
     {
       "id": "p_lin_zexu",
@@ -73226,7 +73691,11 @@
           }
         }
       ],
-      "source_id": "hk_ce_bio"
+      "source_id": "hk_ce_bio",
+      "sourceDate": "2026-09",
+      "sourceDatePrecision": "month",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Current biography body reviewed. States assumption of office on 1 July 2022; footer says last revision September 2026. Month precision is preserved."
     },
     {
       "id": "hk_ce_list",
@@ -75403,7 +75872,9 @@
         }
       ],
       "title": "President Tsai Ing-wen — biography and timeline | Office of the President",
-      "source_id": "expansion_url_009_01"
+      "source_id": "expansion_url_009_01",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Former-president biography body reviewed: Cornell LLM and LSE PhD are stated, with return to Taiwan in 1984. It does not independently supply the 1980 Cornell award year."
     },
     {
       "id": "expansion_url_010_01",
@@ -76652,9 +77123,11 @@
       "url": "https://www.zlb.gov.cn/2021-06/16/c_1211203544.htm",
       "title": "叶挺：生平与澳门经历",
       "tier": "A_official",
-      "retrievalNote": "已读取正文或搜索索引中的完整相关段落；仅提取所支持的事实。",
+      "retrievalNote": "Body reviewed again: death in the 8 April 1946 aircraft accident is explicit. The page combines party-history, newspaper and historical-magazine material; official hosting does not establish neutral or independent sourcing.",
       "sourceDate": "2021-06-16",
-      "source_id": "full_prc_ye"
+      "source_id": "full_prc_ye",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05"
     },
     {
       "id": "full_prc_ye_edu",
@@ -76796,9 +77269,11 @@
       "url": "https://www.fmprc.gov.cn/zyxw/202609/t20260923_12029875.shtml",
       "title": "李强在杭州会见吉尔吉斯斯坦总理",
       "tier": "A_official",
-      "retrievalNote": "已读取正文或搜索索引中的完整相关段落；仅提取所支持的事实。",
+      "retrievalNote": "Body reviewed: Li Qiang, explicitly identified as State Council premier, met the Kyrgyz prime minister in Hangzhou on 23 September 2026.",
       "sourceDate": "2026-09-23",
-      "source_id": "full_prc_current_li"
+      "source_id": "full_prc_current_li",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05"
     },
     {
       "id": "full_prc_retired2026",
@@ -76841,9 +77316,12 @@
       "url": "https://www.president.gov.tw/Page/694",
       "title": "总统府：赖清德简历与活动年表",
       "tier": "A_official",
-      "retrievalNote": "正文读取",
-      "sourceDate": "2026-08-27",
-      "source_id": "full_twhkmo_lai"
+      "retrievalNote": "Current presidential timeline read: latest dated entry is 27 August 2026, chairing the eighth Healthy Taiwan Promotion Committee meeting. The entry date is not a publication date.",
+      "sourceDate": null,
+      "source_id": "full_twhkmo_lai",
+      "sourceDatePrecision": "unknown",
+      "lastDatedEntry": "2026-08-27",
+      "reviewedAt": "2026-10-05"
     },
     {
       "id": "full_twhkmo_chiang",
@@ -77528,6 +78006,214 @@
       "sourceDate": "2022-05-30",
       "retrievalNote": "网页正文已打开；有序恢复不等同所有区域立即解除管控。",
       "source_id": "context_c_shanghai_reopen"
+    },
+    {
+      "id": "review_2026_hmo_tung_memorial",
+      "source_id": "review_2026_hmo_tung_memorial",
+      "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+      "title": "董建華先生公祭儀式在香港舉行",
+      "publisher": "新华社／国务院港澳事务办公室",
+      "tier": "A_official",
+      "sourceDate": "2026-09-20",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Full article text reviewed. Gives Tung’s death date and the 20 September memorial attendees; condolences by Hu Jintao are not assigned an exact action date. A later direct-open retry timed out, but the complete indexed article text was read again.",
+      "evidenceFamily": "Xinhua memorial report, 2026-09-20"
+    },
+    {
+      "id": "review_2026_legco_tung_mourning",
+      "source_id": "review_2026_legco_tung_mourning",
+      "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900340p.htm",
+      "title": "立法會對全國政協原副主席、香港特區首任行政長官董建華逝世深表哀悼",
+      "publisher": "香港立法会秘书处",
+      "tier": "A_official",
+      "sourceDate": "2026-09-09",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Official mourning release body reviewed. Corroborates death by 9 September; it is not the source for the exact 8 September date. Subsequent retrieval retries timed out.",
+      "evidenceFamily": "Hong Kong Legislative Council release"
+    },
+    {
+      "id": "review_2026_macao_national_day",
+      "source_id": "review_2026_macao_national_day",
+      "url": "https://www.gov.mo/zh-hant/news/1270617/",
+      "title": "岑浩輝：澳門前行離不開祖國的關懷支持和溫暖托舉",
+      "publisher": "澳门新闻局",
+      "tier": "A_official",
+      "sourceDate": "2026-10-01",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Main release body and attendance list reviewed. Records Sam Hou Fai’s speech, Edmund Ho and former chief executives Fernando Chui and Ho Iat Seng at the 1 October reception. Later direct-open retries timed out.",
+      "evidenceFamily": "Macao Government Information Bureau event report"
+    },
+    {
+      "id": "review_2026_carrie_lam_reception",
+      "source_id": "review_2026_carrie_lam_reception",
+      "url": "https://www.info.gov.hk/gia/general/202609/04/P2026090400498.htm",
+      "title": "政務司副司長出席香港江蘇各界人士慶祝中華人民共和國成立七十七周年暨香港江蘇青年總會第七屆會董會就職典禮致辭",
+      "publisher": "香港特别行政区政府",
+      "tier": "A_official",
+      "sourceDate": "2026-09-04",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Speech body reviewed; the opening salutations identify Carrie Lam as a former chief executive attending the occasion.",
+      "evidenceFamily": "HK Deputy Chief Secretary speech"
+    },
+    {
+      "id": "review_2026_donald_tsang_flag",
+      "source_id": "review_2026_donald_tsang_flag",
+      "url": "https://www.881903.com/news/amp/local/2638274",
+      "title": "回歸29周年｜李家超等官員出席升旗儀式",
+      "publisher": "香港商业电台",
+      "tier": "B_reference",
+      "sourceDate": "2026-07-01",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Reporter’s event report and caption reviewed. Lists Donald Tsang among former chief executives attending the 1 July flag-raising ceremony; no later office is inferred.",
+      "evidenceFamily": "Commercial Radio Hong Kong firsthand event reporting"
+    },
+    {
+      "id": "review_2026_chen_shui_bian_xizhuang",
+      "source_id": "review_2026_chen_shui_bian_xizhuang",
+      "url": "https://www.cna.com.tw/news/aloc/202609060141.aspx",
+      "title": "陳水扁見證故鄉西庄重設里　未回應陳幸妤離婚議題",
+      "publisher": "中央通讯社",
+      "tier": "B_reference",
+      "sourceDate": "2026-09-06",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Full event report reviewed; only Chen’s attendance at the Xizhuang neighborhood-office unveiling on 6 September is used. Private-family reporting is not incorporated.",
+      "evidenceFamily": "CNA reporter Yang Ssu-jui event reporting"
+    },
+    {
+      "id": "review_2026_ma_statement",
+      "source_id": "review_2026_ma_statement",
+      "url": "https://www.cna.com.tw/news/aipl/202605220168.aspx",
+      "title": "馬英九：周美青馬以南未經同意發聲明　深感錯愕與遺憾",
+      "publisher": "中央通讯社",
+      "tier": "B_reference",
+      "sourceDate": "2026-05-22",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Body reviewed: the foundation released a statement attributed to Ma and an image of his manuscript on 22 May. Used only as dated status evidence; medical allegations are not adopted.",
+      "evidenceFamily": "CNA report of Ma foundation statement"
+    },
+    {
+      "id": "review_2026_tsai_italy",
+      "source_id": "review_2026_tsai_italy",
+      "url": "https://www.cna.com.tw/news/aipl/202606270068.aspx",
+      "title": "外交部：蔡英文出席女性領袖峰會　會義大利朝野國會議員",
+      "publisher": "中央通讯社",
+      "tier": "B_reference",
+      "sourceDate": "2026-06-27",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Body reviewed. Cites a foreign-ministry release on Tsai’s participation in Italy during 22–25 June; report publication on 27 June is separated from the activity window.",
+      "evidenceFamily": "Taiwan Ministry of Foreign Affairs release via CNA"
+    },
+    {
+      "id": "review_2026_xi_national_day",
+      "source_id": "review_2026_xi_national_day",
+      "url": "https://www.cac.gov.cn/2026-09/30/c_1792520315601130.htm",
+      "title": "庆祝中华人民共和国成立77周年招待会在京举行 习近平发表重要讲话",
+      "publisher": "新华社／中央网信办",
+      "tier": "A_official",
+      "sourceDate": "2026-09-30",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Full report reviewed; explicitly identifies Xi as CPC general secretary, PRC president and CMC chairman at the 30 September reception.",
+      "evidenceFamily": "Xinhua national-day reception report"
+    },
+    {
+      "id": "review_2026_retired_leaders",
+      "source_id": "review_2026_retired_leaders",
+      "url": "https://www.spp.gov.cn/spp/tt/202602/t20260213_719855.shtml",
+      "title": "中央领导同志看望老同志",
+      "publisher": "新华社／最高人民检察院",
+      "tier": "A_official",
+      "sourceDate": "2026-02-13",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Complete indexed article text reviewed after direct open failed. Names Hu Jintao and Wen Jiabao among retired leaders visited before publication; the individual visit dates are unspecified. This is the same Xinhua report family as the existing newspaper PDF, not independent corroboration.",
+      "evidenceFamily": "Xinhua retired-leaders report, 2026-02-13"
+    },
+    {
+      "id": "review_iolani_sun_history",
+      "source_id": "review_iolani_sun_history",
+      "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+      "title": "Dr. Sun Yat-sen",
+      "publisher": "ʻIolani School",
+      "tier": "A_official",
+      "sourceDate": null,
+      "sourceDatePrecision": "unknown",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "School-history body reviewed: Sun boarded in 1879 and graduated in 1882. The page’s 2016 celebration mention is not treated as its publication date.",
+      "evidenceFamily": "ʻIolani institutional school history"
+    },
+    {
+      "id": "review_deng_french_years_1988",
+      "source_id": "review_deng_french_years_1988",
+      "url": "https://www.persee.fr/doc/xxs_0294-1759_1988_num_20_1_2793?pageId=T1_19",
+      "title": "Les années françaises de Deng Xiaoping",
+      "publisher": "Geneviève Barman and Nicole Dulioust; Vingtième Siècle. Revue d’histoire, no. 20, pp. 17–34",
+      "tier": "B_academic",
+      "sourceDate": "1988",
+      "sourceDatePrecision": "year",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Article page 19 reviewed, including passenger-list evidence: departure on 11 September 1920 and arrival in Marseille on 19 October. DOI: 10.3406/xxs.1988.2793. The event retains year precision rather than an unsupported summer label.",
+      "evidenceFamily": "Barman and Dulioust archival study"
+    },
+    {
+      "id": "review_nankai_zhou_school_report",
+      "source_id": "review_nankai_zhou_school_report",
+      "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+      "title": "关于周恩来同志在南开中学、南开大学上学和解放后几次来南开大学情况的报告",
+      "publisher": "南开大学档案馆／南开新闻网",
+      "tier": "A_official",
+      "sourceDate": "2016-01-07",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Full report body reviewed. Original report dated 10 January 1976 cites alumni/enrollment records, June 1917 graduation, subsequent Japan study and departure for France in 1920. Later editorial corrections in the report are respected.",
+      "evidenceFamily": "Nankai archival and enrollment report"
+    },
+    {
+      "id": "review_pku_chen_history",
+      "source_id": "review_pku_chen_history",
+      "url": "https://www.pku.edu.cn/detail/905.html",
+      "title": "五四前后的北京大学",
+      "publisher": "北京大学",
+      "tier": "A_official",
+      "sourceDate": null,
+      "sourceDatePrecision": "unknown",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Institutional-history body reviewed: Chen Duxiu’s appointment as dean and arrival in 1917 are stated. This additional source supports the year and role, not the original event’s January precision.",
+      "evidenceFamily": "Peking University institutional history"
+    },
+    {
+      "id": "review_nankai_liang_history",
+      "source_id": "review_nankai_liang_history",
+      "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+      "title": "梁启超",
+      "publisher": "南开大学历史学院",
+      "tier": "A_official",
+      "sourceDate": null,
+      "sourceDatePrecision": "unknown",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Biography body reviewed. Describes Liang’s Tsinghua teaching from the period after 1925; corroborates institution and role. Exact 1925 appointment remains sourced to the original Tsinghua archive. No publication date is inferred solely from the URL.",
+      "evidenceFamily": "Nankai History School biographical account"
+    },
+    {
+      "id": "review_locpg_ye_jianying_moscow",
+      "source_id": "review_locpg_ye_jianying_moscow",
+      "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+      "title": "叶剑英避居香港",
+      "publisher": "中央政府驻香港联络办公室",
+      "tier": "A_official",
+      "sourceDate": "2021-07-15",
+      "sourceDatePrecision": "day",
+      "reviewedAt": "2026-10-05",
+      "retrievalNote": "Full body reviewed: assignment to Soviet study in autumn 1928 and arrival in Moscow near year-end are stated. Intermediate stops are not converted into new atlas events.",
+      "evidenceFamily": "HK Liaison Office historical account"
     }
   ],
   "correctionLog": [
@@ -77659,6 +78345,64 @@
       "date": "2026-10-05",
       "scope": "all_72_profiles",
       "change": "Unified source-backed chronology review; original records retained. Native places, offices and personal presence separated. Irrelevant person-level citations replaced."
+    },
+    {
+      "id": "review_ye_ting_pre_prc_entity",
+      "personId": "p_ye_ting",
+      "field": "politicalEntities",
+      "rawValues": [
+        "中国共产党",
+        "中华人民共和国"
+      ],
+      "normalizedValues": [
+        "中国共产党"
+      ],
+      "reasonZh": "叶挺于1946年4月8日逝世，不能具有1949年成立的中华人民共和国的本人任职或活动归属。移除这一后见性政权标签；保留有生平证据的中共关联。",
+      "reason": "Ye Ting died on 8 April 1946, before the PRC was founded in 1949. Remove the retrospective regime affiliation while retaining the documented CPC relationship.",
+      "sourceIds": [
+        "full_prc_ye"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "id": "review_tung_death_2026",
+      "personId": "p_tung_chee_hwa",
+      "field": "lifeStatus/deathDate",
+      "rawValues": [
+        "living_as_of_source",
+        null
+      ],
+      "normalizedValues": [
+        "deceased",
+        "2026-09-08"
+      ],
+      "reasonZh": "以2026年9月的公祭报道及立法会声明替代2018年的过时在世状态；未新增事件或迁移节点。",
+      "reason": "Replace the stale 2018 living-status evidence with the September 2026 memorial report and Legislative Council statement; no event or route node was added.",
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial",
+        "review_2026_legco_tung_mourning"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "id": "review_deng_france_date_precision",
+      "personId": "p_deng_xiaoping",
+      "field": "p_deng_xiaoping:full:03.dateText",
+      "rawValues": [
+        "1920夏",
+        "Summer 1920"
+      ],
+      "normalizedValues": [
+        "1920",
+        "1920"
+      ],
+      "reasonZh": "删去与档案研究启航及抵达日期冲突的季节标记，保留共同支持的1920年。",
+      "reason": "Remove the seasonal label contradicted by departure and arrival dates in the archival study; preserve the mutually supported year 1920.",
+      "sourceIds": [
+        "moe_deng_bio",
+        "review_deng_french_years_1988"
+      ],
+      "reviewedAt": "2026-10-05"
     }
   ],
   "rawRecords": {

@@ -81,6 +81,14 @@ def last_possible_year(event):
     return None
 
 
+def period_overlap(event, period):
+    """Closed, source-dated ranges only; never extend an open interval."""
+    end = last_possible_year(event)
+    return (end is not None and end >= event["yearStart"]
+            and event["yearStart"] <= period["endYear"]
+            and end >= period["startYear"])
+
+
 def destination_groups(event):
     found = {group["id"] for group in DESTINATION_GROUPS if event.get("mapKey") in group["mapKeys"]}
     found.update(EXPLICIT_DESTINATIONS.get(event["id"], []))
@@ -147,11 +155,11 @@ def build(data, input_bytes):
         "claimZh": f"现有 {len(people)} 人中，{first_n} 人有本人在日本、英法德、莫斯科或其他苏联学习地点、北美大陆或檀香山学习与受训的来源记录。",
         "claimEn": f"{first_n} of {len(people)} profiles document learning or training in Japan; Britain, France or Germany; Moscow or other recorded Soviet locations; continental North America; or Honolulu.",
         "numerator": first_n, "denominator": len(people),
-        "denominatorLabelZh": "全部 72 位入选人物", "denominatorLabelEn": "All 72 indexed people",
+        "denominatorLabelZh": f"全部 {len(people)} 位入选人物", "denominatorLabelEn": f"All {len(people)} indexed people",
         "methodZh": "按人物去重。只纳入有事件级来源、明确本人到场的教育事件；学习包括学校、军事考察、勤工俭学和工厂实习，排除执教、担任院长和名誉学位。地点按这里明示的五组筛选；港澳台不被归为外国，也不纳入这五组。地名不代表当时国界：1921 年莫斯科与 1879 年檀香山分别保留原时空语境。段祺瑞的德国、周恩来的日本与法国按事件正文纳入，无单点坐标要求。",
         "methodEn": "Count unique people, using event-level sources and documented personal presence. Learning includes schooling, military study visits, work-study and factory training; teaching, institutional leadership and honorary degrees are excluded. The five named destination groups are an explicit geographic query, not a national-border classification. Hong Kong, Macao and Taiwan are neither labeled foreign nor included in these groups. Moscow in 1921 and Honolulu in 1879 retain their historical context. Duan Qirui’s German and Zhou Enlai’s Japanese/French study are classified from explicit event wording without assigning a single map point.",
-        "limitationsZh": "这不是完整的留学率或国境流动统计。未命中可能是未记录、无本人到场依据，或地点不属于预设组；不代表从未在外求学。仅记授予学位的机构、未证实本人到场的 4 人另列。事件可无年份，因此本卡不排列旅行先后；各地点组人数可重叠，不能相加。",
-        "limitationsEn": "This is neither a complete study-abroad rate nor a border-crossing statistic. A non-match may reflect incomplete records, missing personal-presence evidence or a destination outside the selected groups; it does not establish that a person never studied elsewhere. Four additional profiles have institution-only qualifications in these groups and are listed separately. Undated learning can count here, so this card does not establish travel order. Group counts overlap and must not be added.",
+        "limitationsZh": f"这不是完整的留学率或国境流动统计。未命中可能是未记录、无本人到场依据，或地点不属于预设组；不代表从未在外求学。仅记授予学位的机构、未证实本人到场的 {len(institution_only)} 人另列。事件可无年份，因此本卡不排列旅行先后；各地点组人数可重叠，不能相加。",
+        "limitationsEn": f"This is neither a complete study-abroad rate nor a border-crossing statistic. A non-match may reflect incomplete records, missing personal-presence evidence or a destination outside the selected groups; it does not establish that a person never studied elsewhere. {len(institution_only)} additional profiles have institution-only qualifications in these groups and are listed separately. Undated learning can count here, so this card does not establish travel order. Group counts overlap and must not be added.",
         "destinationGroups": group_counts, "matches": learning_members,
         "denominatorPersonIds": list(by_person),
         "nonMatchingPersonIds": [p["id"] for p in people if p["id"] not in {m["personId"] for m in learning_members}],
@@ -176,6 +184,37 @@ def build(data, input_bytes):
             if len(centers) >= 2:
                 multi_members.append(entry)
     second_n, second_d = len(multi_members), len(center_members)
+    period_breakdown = []
+    for period in data["periods"]:
+        period_denominator, period_matches, boundary_records = [], [], []
+        available_people = []
+        for person in people:
+            dated_records = [e for e in person["placeLeads"] if supported(e) and period_overlap(e, period)]
+            if dated_records:
+                available_people.append(person["id"])
+            selected = [e for e in dated_records if center_event(e)]
+            if not selected:
+                continue
+            centers = sorted({e["mapKey"] for e in selected})
+            entry = member(person, selected, centerIds=centers)
+            period_denominator.append(entry)
+            if len(centers) >= 2:
+                period_matches.append(entry)
+            spanning = [e for e in selected if e["yearStart"] < period["startYear"] or last_possible_year(e) > period["endYear"]]
+            if spanning:
+                boundary_records.append(member(person, spanning))
+        period_breakdown.append({
+            "id": period["id"], "labelEn": period["labelEn"], "labelZh": period["labelZh"],
+            "startYear": period["startYear"], "endYear": period["endYear"],
+            "numerator": len(period_matches), "denominator": len(period_denominator),
+            "matches": period_matches, "denominatorPeople": period_denominator,
+            "denominatorPersonIds": [m["personId"] for m in period_denominator],
+            "boundarySpanningPeople": boundary_records,
+            "coverage": {"peopleWithDatedSupportedRecords": len(available_people), "peopleWithDatedSupportedRecordIds": available_people,
+                         "boundarySpanningEventCount": sum(len(m["eventIds"]) for m in boundary_records)},
+        })
+    excluded_period_dates = [member(p, events) for p in people
+        if (events := [e for e in p["placeLeads"] if center_event(e) and last_possible_year(e) is None])]
     second = {
         "id": "multiple-centers", "titleZh": "不止一个政治中心", "titleEn": "More than one political center",
         "claimZh": f"{second_d} 人有本人在北京、南京或广州发生政治、军政或职业事件的记录；其中 {second_n} 人在至少两座城市留下这类记录。",
@@ -192,6 +231,12 @@ def build(data, input_bytes):
         "noQualifyingCenterEvidencePersonIds": [p["id"] for p in people if p["id"] not in {m["personId"] for m in center_members}],
         "centerCounts": [{"id": key, "labelZh": labels[0], "labelEn": labels[1], "peopleCount": sum(key in m["centerIds"] for m in center_members)} for key, labels in CENTERS.items()],
         "examples": examples(multi_members, ["p_sun_yat_sen", "p_chen_duxiu", "p_ye_jianying"]),
+        "periodBreakdown": period_breakdown,
+        "periodDateExclusions": excluded_period_dates,
+        "periodMethodEn": "Within each period, count unique people with a dated, sourced personal political, military or career event in Beijing, Nanjing or Guangzhou; the numerator records at least two of these cities. An event's closed year interval must overlap the period. This uses event dates, not the profile's period tags. Undated or open-ended records are excluded here but can remain in the pooled finding above.",
+        "periodMethodZh": "每个时期内，以有日期、来源与本人到场依据的北京、南京或广州政治、军政及职业事件筛选人物；其中至少涉及两座城市者进入分子。事件的闭合年份区间须与该时期相交，使用事件日期而非人物时期标签。未定年或终点不明的记录不进入本分期统计，但仍可进入上方全生涯统计。",
+        "periodLimitsEn": "The five periods overlap, including 1949 and 1978 at shared boundaries; rows must not be added. A spanning interval can enter more than one row and does not establish presence in every year or a visit to both cities during a narrower year. These are recorded-person proportions, not historical rates of power or migration. Different period lengths, selected people and documentation prevent a direct ranking of eras. Coverage reports people with any dated supported record, not raw event volume.",
+        "periodLimitsZh": "五个时期彼此重叠，1949与1978也属于相邻区间，行数不可相加。跨期区间可进入多行，但不能证明每年持续在场，或在更窄的某一年到过两座城市。这是已记录人物中的比例，不是历史权力或迁移发生率。时期长短、人物选择及资料详略不同，不能直接给时代排名。覆盖指标统计有任意可定年来源记录的人数，不以原始事件量比较。",
     }
 
     # F3: Compare all pairs, not just a visually convenient single route.
@@ -244,25 +289,54 @@ def build(data, input_bytes):
             for event in match["events"]:
                 assert event["sourceRefs"] and event["spatialRelation"] == "documented_presence"
                 assert all_events[event["id"]] in by_person[match["personId"]]["placeLeads"]
+    for row in period_breakdown:
+        assert row["denominator"] == len(set(row["denominatorPersonIds"]))
+        assert row["numerator"] == len(row["matches"])
+        assert row["numerator"] <= row["denominator"] <= row["coverage"]["peopleWithDatedSupportedRecords"]
+        for entry in row["denominatorPeople"]:
+            for event in entry["events"]:
+                assert center_event(all_events[event["id"]]) and period_overlap(all_events[event["id"]], row)
+    supported_events = [e for e in all_events.values() if supported(e)]
+    # Distinct cited URLs measure reference coverage, not source independence.
+    source_counts = Counter(len({r.get("url") or sources[r["sourceId"]]["url"]
+                               for r in e.get("sourceRefs", []) if r.get("evidenceStatus") == "event_supported"})
+                            for e in supported_events)
+    coverage_rows = []
+    for period in data["periods"]:
+        indexed = [p for p in people if period["id"] in p.get("periodIds", [])]
+        tiers = {tier: [p["id"] for p in indexed if p.get("layer") == tier] for tier in ["A", "B", "C"]}
+        tiers["unresolved"] = [p["id"] for p in indexed if p.get("layer") not in {"A", "B", "C"}]
+        coverage_rows.append({"id": period["id"], "labelEn": period["labelEn"], "labelZh": period["labelZh"],
+                              "startYear": period["startYear"], "endYear": period["endYear"],
+                              "peopleCount": len(indexed), "personIds": [p["id"] for p in indexed],
+                              "tiers": {tier: {"count": len(ids), "personIds": ids} for tier, ids in tiers.items()}})
     referenced_source_ids = sorted({r["sourceId"] for finding in findings for match in finding["matches"] for event in match["events"] for r in event["sourceRefs"]})
     return {
         "meta": {
-            "version": "findings.v1", "computedFromVersion": data["meta"].get("version"),
+            "version": "findings.v2", "computedFromVersion": data["meta"].get("version"),
             "dataAsOf": data["meta"].get("asOf"), "inputSha256": hashlib.sha256(input_bytes).hexdigest(),
             "peopleCount": len(people), "eventCount": sum(supported(e) for e in all_events.values()),
             "unit": "unique people", "sampling": "curated purposive sample; not representative",
             "coordinatePolicy": "Schematic positions; no distances or direct travel inferred.",
-            "reproduce": "python3 compute_findings.py --input atlas-data.json --output findings.json",
+            "reproduce": "python3 build.py",
         },
-        "introZh": "以下发现只描述这 72 位入选人物的现有来源记录。每个数字都能展开到全部贡献人物、事件与原始链接；未命中记录不视为否定证据。",
-        "introEn": "These findings describe the current source records for 72 selected people. Every count can be expanded to all contributing people, events and source links. Missing records are never treated as negative evidence.",
+        "introZh": f"以下发现只描述这 {len(people)} 位入选人物的现有来源记录。每个数字都能展开到全部贡献人物、事件与原始链接；未命中记录不视为否定证据。",
+        "introEn": f"These findings describe the current source records for {len(people)} selected people. Every count can be expanded to all contributing people, events and source links. Missing records are never treated as negative evidence.",
         "findings": findings,
+        "coverage": {
+            "supportedEventCount": len(supported_events), "singleReferenceEventCount": source_counts[1],
+            "multipleReferenceEventCount": sum(count for refs, count in source_counts.items() if refs >= 2),
+            "missingDateEventCount": sum(not dated(e) for e in supported_events),
+            "pendingLeadCount": sum(e.get("pending", False) for e in all_events.values()),
+            "periodTierRows": coverage_rows,
+            "referencePolicy": "Distinct event-supporting source URLs, not proof of independent corroboration; outlets can reproduce the same material.",
+        },
         "audit": {
             "nonLearningEducationEvents": NON_LEARNING_EDUCATION_EVENTS,
             "explicitTextDestinationAssignments": EXPLICIT_DESTINATIONS,
             "referencedSourceIds": referenced_source_ids,
             "referencedSourceCount": len(referenced_source_ids),
-            "crossPeriodPolicy": "No period comparison is claimed. Person-period memberships overlap; lifetime records may precede 1840. Records are not reweighted by period or political entity.",
+            "crossPeriodPolicy": "Finding two additionally groups closed dated center-event intervals by intersection with each overlapping period. All five rows are descriptive and non-additive; durations and documentation differ. Method coverage uses profile period tags separately. Neither is a representative historical rate.",
             "sourcePolicy": "This script audits structure and computes existing reviewed data. It does not independently re-read or corroborate each historical source.",
         },
     }

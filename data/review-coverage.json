@@ -1,15 +1,15 @@
 {
-  "version": "0.6",
+  "version": "0.7",
   "reviewedAt": "2026-10-05",
   "scope": "All 72 indexed people, major life stages and all existing place leads; not exhaustive historical coverage.",
   "peopleCount": 72,
   "sourcedEvents": 1098,
   "unresolvedOriginalLeads": 35,
-  "sourceCatalogCount": 285,
-  "eventSourceCount": 232,
+  "sourceCatalogCount": 301,
+  "eventSourceCount": 238,
   "undatedSourcedEvents": 71,
-  "loggedResearchGaps": 103,
-  "schematicConnections": 251,
+  "loggedResearchGaps": 102,
+  "schematicConnections": 215,
   "profiles": [
     {
       "personId": "p_zeng_guofan",
@@ -982,7 +982,7 @@
       "birthDate": "1942-12",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2026-02-13",
+      "statusAsOf": "2026-09-20",
       "sourcedEvents": 18,
       "routeEligibleEvents": 4,
       "unresolvedOriginalLeads": 1,
@@ -1066,7 +1066,7 @@
       "birthDate": "1950",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2025-01-16",
+      "statusAsOf": "2026-09-06",
       "sourcedEvents": 17,
       "routeEligibleEvents": 1,
       "unresolvedOriginalLeads": 0,
@@ -1083,8 +1083,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-06；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-06; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1095,7 +1095,7 @@
       "birthDate": "1950",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2016-05-20",
+      "statusAsOf": "2026-05-22",
       "sourcedEvents": 16,
       "routeEligibleEvents": 1,
       "unresolvedOriginalLeads": 0,
@@ -1112,8 +1112,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-05-22；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-05-22; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1124,7 +1124,7 @@
       "birthDate": "1956",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-05-20",
+      "statusAsOf": "2026-06-25",
       "sourcedEvents": 20,
       "routeEligibleEvents": 5,
       "unresolvedOriginalLeads": 0,
@@ -1136,8 +1136,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-06-25；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-06-25; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1160,8 +1160,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-08-27；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-08-27; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1194,19 +1194,13 @@
       "nameZh": "董建华",
       "nameEn": "Tung Chee-hwa",
       "birthDate": "1937-05-29",
-      "deathDate": null,
-      "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2018-03-14",
+      "deathDate": "2026-09-08",
+      "lifeStatus": "deceased",
+      "statusAsOf": "2026-09-08",
       "sourcedEvents": 22,
       "routeEligibleEvents": 4,
       "unresolvedOriginalLeads": 0,
-      "researchGaps": [
-        {
-          "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
-        }
-      ]
+      "researchGaps": []
     },
     {
       "personId": "p_donald_tsang",
@@ -1215,7 +1209,7 @@
       "birthDate": "1944",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2019-06-26",
+      "statusAsOf": "2026-07-01",
       "sourcedEvents": 17,
       "routeEligibleEvents": 1,
       "unresolvedOriginalLeads": 0,
@@ -1227,8 +1221,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-07-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-07-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1239,15 +1233,15 @@
       "birthDate": "1954-08-12",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2018-03-14",
+      "statusAsOf": "2026-09-20",
       "sourcedEvents": 15,
       "routeEligibleEvents": 3,
       "unresolvedOriginalLeads": 0,
       "researchGaps": [
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-20；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-20; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1258,7 +1252,7 @@
       "birthDate": "1957",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-06-23",
+      "statusAsOf": "2026-09-04",
       "sourcedEvents": 15,
       "routeEligibleEvents": 2,
       "unresolvedOriginalLeads": 0,
@@ -1275,8 +1269,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-04；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-04; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlace",
@@ -1292,7 +1286,7 @@
       "birthDate": "1957",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": null,
+      "statusAsOf": "2026-09-20",
       "sourcedEvents": 13,
       "routeEligibleEvents": 0,
       "unresolvedOriginalLeads": 0,
@@ -1304,8 +1298,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-09-20；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-09-20; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlace",
@@ -1326,7 +1320,7 @@
       "birthDate": "1955-03",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2023-03-11",
+      "statusAsOf": "2026-10-01",
       "sourcedEvents": 21,
       "routeEligibleEvents": 5,
       "unresolvedOriginalLeads": 0,
@@ -1338,8 +1332,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1350,7 +1344,7 @@
       "birthDate": "1957",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2019-12-20",
+      "statusAsOf": "2026-10-01",
       "sourcedEvents": 16,
       "routeEligibleEvents": 1,
       "unresolvedOriginalLeads": 0,
@@ -1367,8 +1361,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1379,7 +1373,7 @@
       "birthDate": "1957-06",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-08-21",
+      "statusAsOf": "2026-10-01",
       "sourcedEvents": 13,
       "routeEligibleEvents": 1,
       "unresolvedOriginalLeads": 0,
@@ -1391,8 +1385,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         }
       ]
     },
@@ -1403,7 +1397,7 @@
       "birthDate": "1962-05",
       "deathDate": null,
       "lifeStatus": "living_as_of_source",
-      "statusAsOf": "2024-12-20",
+      "statusAsOf": "2026-10-01",
       "sourcedEvents": 13,
       "routeEligibleEvents": 2,
       "unresolvedOriginalLeads": 0,
@@ -1415,8 +1409,8 @@
         },
         {
           "field": "later_life_status",
-          "reasonZh": "在世及任职资料只截至statusAsOf或状态说明的来源时点；未声称此后没有变化。",
-          "reasonEn": "Life and office status are bounded by the specified source date; no claim is made that nothing later changed."
+          "reasonZh": "状态依据所列来源截至2026-10-01；本轮没有将其延伸到2026-10-05，也未宣称覆盖该日期后的活动。",
+          "reasonEn": "Status is bounded by the cited evidence at 2026-10-01; it is not extrapolated to 5 October 2026 or claimed to cover later activity."
         },
         {
           "field": "birthPlacePrecision",
@@ -1525,5 +1519,23 @@
         }
       ]
     }
-  ]
+  ],
+  "evidenceReview": "evidence-review.json",
+  "sourceReferenceCoverage": {
+    "verifiedEvents": 1098,
+    "eventsWithNoSourceReference": 0,
+    "eventsWithOneSourceReference": 1037,
+    "eventsWithMultipleSourceReferences": 61,
+    "sourceCatalogCount": 301,
+    "eventSourceCount": 238
+  },
+  "statusReviewCoverage": {
+    "profilesSelected": 17,
+    "profilesReviewed": 17,
+    "profilesLivingAfterReview": 16,
+    "profilesCorrectedToDeceased": [
+      "p_tung_chee_hwa"
+    ],
+    "profilesWithMissingStatusDate": 0
+  }
 }

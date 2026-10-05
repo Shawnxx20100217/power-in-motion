@@ -1,0 +1,1516 @@
+{
+  "version": "1.0",
+  "reviewedAt": "2026-10-05",
+  "cutoff": "2026-10-05",
+  "scope": "Targeted correction of political-entity chronology; refreshed status evidence for the 17 profiles previously marked living; nine additional references for selected existing events. This is not a new review of all 1,098 event claims.",
+  "scopeZh": "本轮仅校正政治实体年代、复查原17份在世人物档案的状态证据，并为9项既有事件补充来源；并非重新核验全部1098项事件。",
+  "newSources": [
+    {
+      "sourceId": "review_2026_hmo_tung_memorial",
+      "url": "https://big5.hmo.gov.cn/gate/big5/www.hmo.gov.cn/2026/09/20/ARTIhzUtyFywKillWZ4qlHTn260920.shtml",
+      "sourceDate": "2026-09-20",
+      "reviewNote": "Full article text reviewed. Gives Tung’s death date and the 20 September memorial attendees; condolences by Hu Jintao are not assigned an exact action date. A later direct-open retry timed out, but the complete indexed article text was read again."
+    },
+    {
+      "sourceId": "review_2026_legco_tung_mourning",
+      "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900340p.htm",
+      "sourceDate": "2026-09-09",
+      "reviewNote": "Official mourning release body reviewed. Corroborates death by 9 September; it is not the source for the exact 8 September date. Subsequent retrieval retries timed out."
+    },
+    {
+      "sourceId": "review_2026_macao_national_day",
+      "url": "https://www.gov.mo/zh-hant/news/1270617/",
+      "sourceDate": "2026-10-01",
+      "reviewNote": "Main release body and attendance list reviewed. Records Sam Hou Fai’s speech, Edmund Ho and former chief executives Fernando Chui and Ho Iat Seng at the 1 October reception. Later direct-open retries timed out."
+    },
+    {
+      "sourceId": "review_2026_carrie_lam_reception",
+      "url": "https://www.info.gov.hk/gia/general/202609/04/P2026090400498.htm",
+      "sourceDate": "2026-09-04",
+      "reviewNote": "Speech body reviewed; the opening salutations identify Carrie Lam as a former chief executive attending the occasion."
+    },
+    {
+      "sourceId": "review_2026_donald_tsang_flag",
+      "url": "https://www.881903.com/news/amp/local/2638274",
+      "sourceDate": "2026-07-01",
+      "reviewNote": "Reporter’s event report and caption reviewed. Lists Donald Tsang among former chief executives attending the 1 July flag-raising ceremony; no later office is inferred."
+    },
+    {
+      "sourceId": "review_2026_chen_shui_bian_xizhuang",
+      "url": "https://www.cna.com.tw/news/aloc/202609060141.aspx",
+      "sourceDate": "2026-09-06",
+      "reviewNote": "Full event report reviewed; only Chen’s attendance at the Xizhuang neighborhood-office unveiling on 6 September is used. Private-family reporting is not incorporated."
+    },
+    {
+      "sourceId": "review_2026_ma_statement",
+      "url": "https://www.cna.com.tw/news/aipl/202605220168.aspx",
+      "sourceDate": "2026-05-22",
+      "reviewNote": "Body reviewed: the foundation released a statement attributed to Ma and an image of his manuscript on 22 May. Used only as dated status evidence; medical allegations are not adopted."
+    },
+    {
+      "sourceId": "review_2026_tsai_italy",
+      "url": "https://www.cna.com.tw/news/aipl/202606270068.aspx",
+      "sourceDate": "2026-06-27",
+      "reviewNote": "Body reviewed. Cites a foreign-ministry release on Tsai’s participation in Italy during 22–25 June; report publication on 27 June is separated from the activity window."
+    },
+    {
+      "sourceId": "review_2026_xi_national_day",
+      "url": "https://www.cac.gov.cn/2026-09/30/c_1792520315601130.htm",
+      "sourceDate": "2026-09-30",
+      "reviewNote": "Full report reviewed; explicitly identifies Xi as CPC general secretary, PRC president and CMC chairman at the 30 September reception."
+    },
+    {
+      "sourceId": "review_2026_retired_leaders",
+      "url": "https://www.spp.gov.cn/spp/tt/202602/t20260213_719855.shtml",
+      "sourceDate": "2026-02-13",
+      "reviewNote": "Complete indexed article text reviewed after direct open failed. Names Hu Jintao and Wen Jiabao among retired leaders visited before publication; the individual visit dates are unspecified. This is the same Xinhua report family as the existing newspaper PDF, not independent corroboration."
+    },
+    {
+      "sourceId": "review_iolani_sun_history",
+      "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+      "sourceDate": null,
+      "reviewNote": "School-history body reviewed: Sun boarded in 1879 and graduated in 1882. The page’s 2016 celebration mention is not treated as its publication date."
+    },
+    {
+      "sourceId": "review_deng_french_years_1988",
+      "url": "https://www.persee.fr/doc/xxs_0294-1759_1988_num_20_1_2793?pageId=T1_19",
+      "sourceDate": "1988",
+      "reviewNote": "Article page 19 reviewed, including passenger-list evidence: departure on 11 September 1920 and arrival in Marseille on 19 October. DOI: 10.3406/xxs.1988.2793. The event retains year precision rather than an unsupported summer label."
+    },
+    {
+      "sourceId": "review_nankai_zhou_school_report",
+      "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+      "sourceDate": "2016-01-07",
+      "reviewNote": "Full report body reviewed. Original report dated 10 January 1976 cites alumni/enrollment records, June 1917 graduation, subsequent Japan study and departure for France in 1920. Later editorial corrections in the report are respected."
+    },
+    {
+      "sourceId": "review_pku_chen_history",
+      "url": "https://www.pku.edu.cn/detail/905.html",
+      "sourceDate": null,
+      "reviewNote": "Institutional-history body reviewed: Chen Duxiu’s appointment as dean and arrival in 1917 are stated. This additional source supports the year and role, not the original event’s January precision."
+    },
+    {
+      "sourceId": "review_nankai_liang_history",
+      "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+      "sourceDate": null,
+      "reviewNote": "Biography body reviewed. Describes Liang’s Tsinghua teaching from the period after 1925; corroborates institution and role. Exact 1925 appointment remains sourced to the original Tsinghua archive. No publication date is inferred solely from the URL."
+    },
+    {
+      "sourceId": "review_locpg_ye_jianying_moscow",
+      "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+      "sourceDate": "2021-07-15",
+      "reviewNote": "Full body reviewed: assignment to Soviet study in autumn 1928 and arrival in Moscow near year-end are stated. Intermediate stops are not converted into new atlas events."
+    }
+  ],
+  "updatedExistingSources": [
+    {
+      "sourceId": "full_prc_current_li",
+      "changes": {
+        "sourceDate": "2026-09-23",
+        "sourceDatePrecision": "day",
+        "reviewedAt": "2026-10-05",
+        "retrievalNote": "Body reviewed: Li Qiang, explicitly identified as State Council premier, met the Kyrgyz prime minister in Hangzhou on 23 September 2026."
+      }
+    },
+    {
+      "sourceId": "hk_ce_bio",
+      "changes": {
+        "sourceDate": "2026-09",
+        "sourceDatePrecision": "month",
+        "reviewedAt": "2026-10-05",
+        "retrievalNote": "Current biography body reviewed. States assumption of office on 1 July 2022; footer says last revision September 2026. Month precision is preserved."
+      }
+    },
+    {
+      "sourceId": "full_twhkmo_lai",
+      "changes": {
+        "sourceDate": null,
+        "sourceDatePrecision": "unknown",
+        "lastDatedEntry": "2026-08-27",
+        "reviewedAt": "2026-10-05",
+        "retrievalNote": "Current presidential timeline read: latest dated entry is 27 August 2026, chairing the eighth Healthy Taiwan Promotion Committee meeting. The entry date is not a publication date."
+      }
+    },
+    {
+      "sourceId": "expansion_url_009_01",
+      "changes": {
+        "reviewedAt": "2026-10-05",
+        "retrievalNote": "Former-president biography body reviewed: Cornell LLM and LSE PhD are stated, with return to Taiwan in 1984. It does not independently supply the 1980 Cornell award year."
+      }
+    },
+    {
+      "sourceId": "full_prc_ye",
+      "changes": {
+        "sourceDate": "2021-06-16",
+        "sourceDatePrecision": "day",
+        "reviewedAt": "2026-10-05",
+        "retrievalNote": "Body reviewed again: death in the 8 April 1946 aircraft accident is explicit. The page combines party-history, newspaper and historical-magazine material; official hosting does not establish neutral or independent sourcing."
+      }
+    }
+  ],
+  "statusReviews": [
+    {
+      "personId": "p_hu_jintao",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-02-13",
+        "statusNoteZh": "2026年2月13日新华社报道列入看望的退休领导人名单。",
+        "statusNoteEn": "Named among retired leaders visited in the Xinhua report of 13 February 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-20",
+        "statusNoteZh": "9月20日新华社公祭报道记载胡锦涛在董建华逝世后表示哀悼；具体致哀日期未载，状态以报道时点为限，不推断其出席公祭或担任现职。",
+        "statusNoteEn": "The 20 September Xinhua report names Hu among those sending condolences after Tung’s death. The individual action date is unspecified; this does not establish attendance at the memorial or current office."
+      },
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial"
+      ],
+      "dateBasis": "dated_report_of_prior_activity",
+      "factInterval": [
+        "2026-09-08",
+        "2026-09-20"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_wen_jiabao",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-02-13",
+        "statusNoteZh": "2026年2月13日新华社报道列入看望的退休领导人名单。",
+        "statusNoteEn": "Named among retired leaders visited in the Xinhua report of 13 February 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-02-13",
+        "statusNoteZh": "2月13日新华社报道将温家宝列为春节前获看望的老同志；个人探望日未详，在世状态以该报道为限。",
+        "statusNoteEn": "The 13 February Xinhua report lists Wen among retired leaders visited before the Spring Festival. His visit date is unspecified; status is bounded by this report."
+      },
+      "sourceIds": [
+        "review_2026_retired_leaders"
+      ],
+      "dateBasis": "dated_report_of_prior_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_xi_jinping",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-30",
+        "statusNoteZh": "2026年9月30日报道确认总书记、国家主席、中央军委主席职务。",
+        "statusNoteEn": "Party general secretary, president and military chair titles confirmed on 30 September 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-30",
+        "statusNoteZh": "9月30日招待会报道明确列习近平为中共中央总书记、国家主席和中央军委主席；任职与在世状态仅确认至该活动日。",
+        "statusNoteEn": "The 30 September reception report explicitly identifies Xi as CPC general secretary, PRC president and CMC chairman. Life and office status are confirmed to that event date only."
+      },
+      "sourceIds": [
+        "review_2026_xi_national_day"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_li_qiang",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-23",
+        "statusNoteZh": "2026年9月23日外交部报道确认国务院总理职务。",
+        "statusNoteEn": "Premiership confirmed by the Foreign Ministry report of 23 September 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-23",
+        "statusNoteZh": "9月23日外交部报道记载国务院总理李强在杭州会见吉尔吉斯斯坦总理；状态与职务以该日活动为限。",
+        "statusNoteEn": "The 23 September MFA report records State Council Premier Li Qiang meeting the Kyrgyz prime minister in Hangzhou. Status and title are bounded by that event."
+      },
+      "sourceIds": [
+        "full_prc_current_li"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_chen_shui_bian",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2025-01-16",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-06",
+        "statusNoteZh": "中央社9月6日现场报道记载陈水扁出席西庄里办公室揭牌；仅据此确认当日活动和在世状态。",
+        "statusNoteEn": "CNA’s 6 September event report records Chen at the Xizhuang neighborhood-office unveiling. It supports activity and living status on that day only."
+      },
+      "sourceIds": [
+        "review_2026_chen_shui_bian_xizhuang"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_ma_ying_jeou",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2016-05-20",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-05-22",
+        "statusNoteZh": "中央社5月22日报道基金会发布马英九的声明及手稿；仅采用这项有日期的发声证据，不采纳报道中的医疗指称，也不推断现职。",
+        "statusNoteEn": "CNA reported on 22 May that Ma’s foundation released his statement and manuscript. This is dated statement evidence only; medical allegations and any inference of current office are excluded."
+      },
+      "sourceIds": [
+        "review_2026_ma_statement"
+      ],
+      "dateBasis": "dated_statement_report",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_tsai_ing_wen",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2024-05-20",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-06-25",
+        "statusNoteZh": "中央社6月27日引述外交部称蔡英文于6月22日至25日在意大利出席女性领袖峰会；状态日期取所报活动区间终点，而非报道发表日。",
+        "statusNoteEn": "CNA’s 27 June report cites the foreign ministry on Tsai’s participation in an Italian women-leaders summit during 22–25 June. Status uses the reported activity-window endpoint, not the publication date."
+      },
+      "sourceIds": [
+        "review_2026_tsai_italy"
+      ],
+      "dateBasis": "dated_activity_interval",
+      "factInterval": [
+        "2026-06-22",
+        "2026-06-25"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_lai_ching_te",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-08-27",
+        "statusNoteZh": "总统府现行简历及活动年表记载至2026-08-27；在世与任职仅确认至该资料时点。",
+        "statusNoteEn": "The current presidential biography includes activity through 27 August 2026; status is bounded by that date."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-08-27",
+        "statusNoteZh": "总统府现行年表最后一项有日期的记录为8月27日主持健康台湾推动委员会第八次会议；不将网页在本轮可访问视为10月5日任职证明。",
+        "statusNoteEn": "The latest dated item in the current presidential timeline is the 27 August Healthy Taiwan Promotion Committee meeting. Accessibility of the page at this review is not evidence of office through 5 October."
+      },
+      "sourceIds": [
+        "full_twhkmo_lai"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_tung_chee_hwa",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2018-03-14",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026.",
+        "deathDate": null
+      },
+      "after": {
+        "lifeStatus": "deceased",
+        "statusAsOf": "2026-09-08",
+        "statusNoteZh": "9月20日新华社公祭报道明确记载董建华于2026年9月8日在香港逝世；9月9日立法会哀悼声明另行确认其逝世。已撤销旧的在世标签。",
+        "statusNoteEn": "The 20 September Xinhua memorial report dates Tung’s death in Hong Kong to 8 September 2026; a 9 September Legislative Council release separately confirms his death. The old living-status label has been removed.",
+        "deathDate": "2026-09-08"
+      },
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial",
+        "review_2026_legco_tung_mourning"
+      ],
+      "dateBasis": "documented_death",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_donald_tsang",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2019-06-26",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-07-01",
+        "statusNoteZh": "商业电台7月1日现场报道记载曾荫权出席回归纪念升旗仪式；该证据只确认当日活动，不恢复或推断任何现职。",
+        "statusNoteEn": "Commercial Radio’s 1 July event report lists Tsang at the handover-anniversary flag-raising ceremony. It establishes activity on that date, not a current office."
+      },
+      "sourceIds": [
+        "review_2026_donald_tsang_flag"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_leung_chun_ying",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2018-03-14",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-20",
+        "statusNoteZh": "9月20日公祭报道明确记载全国政协副主席梁振英出席并主持仪式；状态和职务确认至该日。",
+        "statusNoteEn": "The 20 September memorial report identifies Leung as CPPCC vice chairman and records him attending and presiding over the ceremony; status and office are bounded by that day."
+      },
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_carrie_lam",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2024-06-23",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-04",
+        "statusNoteZh": "9月4日港府活动致辞的开场称谓列出前行政长官林郑月娥；该现场称谓支持当日活动及前任身份，不推断其后情况。",
+        "statusNoteEn": "The opening salutations in the government’s 4 September event speech identify former chief executive Carrie Lam among attendees; this supports that dated activity and former-office description only."
+      },
+      "sourceIds": [
+        "review_2026_carrie_lam_reception"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_john_lee",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": null,
+        "statusNoteZh": "现行港府简历最近修订为2026年9月；状态按这一资料月份确认。",
+        "statusNoteEn": "The current government biography was last revised in September 2026; status is confirmed to that month."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-09-20",
+        "statusNoteZh": "9月20日公祭报道明确记载香港行政长官李家超出席；港府简历另标最近修订为2026年9月。以有明确日期的活动补齐原为空的statusAsOf。",
+        "statusNoteEn": "The 20 September memorial report identifies Hong Kong Chief Executive John Lee as an attendee. His official biography separately shows a September 2026 revision. The dated event resolves the previously empty statusAsOf field."
+      },
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial",
+        "hk_ce_bio"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_edmund_ho",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2023-03-11",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-10-01",
+        "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列何厚铧为全国政协副主席，并记载其参加该日活动；状态不外推至资料截止日。",
+        "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Edmund Ho as CPPCC vice chairman and records participation that day. Status is not extrapolated to the dataset cutoff."
+      },
+      "sourceIds": [
+        "review_2026_macao_national_day"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_fernando_chui",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2019-12-20",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-10-01",
+        "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列崔世安为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+        "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Fernando Chui as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
+      },
+      "sourceIds": [
+        "review_2026_macao_national_day"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_ho_iat_seng",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2024-08-21",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-10-01",
+        "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列贺一诚为前行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+        "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Ho Iat Seng as former chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
+      },
+      "sourceIds": [
+        "review_2026_macao_national_day"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "personId": "p_sam_hou_fai",
+      "before": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2024-12-20",
+        "statusNoteZh": "在世信息以所列来源时点为限，不把旧简历的“现任”延伸到2026年。",
+        "statusNoteEn": "Living status is limited to the source date; historical current-office wording is not extrapolated to 2026."
+      },
+      "after": {
+        "lifeStatus": "living_as_of_source",
+        "statusAsOf": "2026-10-01",
+        "statusNoteZh": "澳门新闻局10月1日国庆招待会报道列岑浩辉为行政长官，并记载其参加该日活动；状态不外推至资料截止日。",
+        "statusNoteEn": "The Macao Government Information Bureau’s 1 October reception report identifies Sam Hou Fai as chief executive and records participation that day. Status is not extrapolated to the dataset cutoff."
+      },
+      "sourceIds": [
+        "review_2026_macao_national_day"
+      ],
+      "dateBasis": "dated_activity",
+      "factInterval": null,
+      "reviewedAt": "2026-10-05"
+    }
+  ],
+  "eventReferenceChanges": [
+    {
+      "personId": "p_sun_yat_sen",
+      "eventId": "p_sun_yat_sen:full:honolulu-school",
+      "beforeSourceIds": [
+        "audit_zs_sun"
+      ],
+      "addedSourceId": "review_iolani_sun_history",
+      "supportedFields": [
+        "year",
+        "institution",
+        "place"
+      ],
+      "independenceAssessment": "distinct_institutional_record",
+      "noteZh": "学校历史页记载孙中山于1879年入读并寄宿、1882年毕业，补证1879年檀香山求学；学校自身记录与中山市传记分属不同机构来源。",
+      "noteEn": "The school history records boarding in 1879 and graduation in 1882, supporting the 1879 Honolulu schooling event. This is distinct institutional provenance from the Zhongshan biography."
+    },
+    {
+      "personId": "p_deng_xiaoping",
+      "eventId": "p_deng_xiaoping:full:03",
+      "beforeSourceIds": [
+        "moe_deng_bio"
+      ],
+      "addedSourceId": "review_deng_french_years_1988",
+      "supportedFields": [
+        "year",
+        "country",
+        "departure_and_arrival_chronology"
+      ],
+      "independenceAssessment": "independent_scholarly_archival_account",
+      "noteZh": "论文第19页依据旅客名单记载1920年9月11日启航、10月19日抵马赛；支持1920年赴法，不能支持旧条目的“夏”。保留年度精度，不把法国区域点改成精确航线。",
+      "noteEn": "Page 19 uses passenger-list evidence for departure on 11 September and arrival in Marseille on 19 October 1920. It supports the year and France, but contradicts the former summer label. No exact itinerary is inferred from the regional node."
+    },
+    {
+      "personId": "p_chen_duxiu",
+      "eventId": "p_chen_duxiu:full:pku",
+      "beforeSourceIds": [
+        "full_republic_chen_party"
+      ],
+      "addedSourceId": "review_pku_chen_history",
+      "supportedFields": [
+        "year",
+        "institution",
+        "role"
+      ],
+      "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+      "noteZh": "北大校史同时记载蔡元培聘陈独秀任文科学长及陈于1917年来校；补证学校、职务和年份。1月这一月份仍仅由原党史来源支持。",
+      "noteEn": "Peking University’s history records Cai’s appointment of Chen as dean and Chen’s arrival in 1917. It corroborates institution, office and year; January still relies on the original party-history source."
+    },
+    {
+      "personId": "p_zhou_enlai",
+      "eventId": "p_zhou_enlai:full:02",
+      "beforeSourceIds": [
+        "seed_aw002"
+      ],
+      "addedSourceId": "review_nankai_zhou_school_report",
+      "supportedFields": [
+        "year",
+        "institution",
+        "graduation"
+      ],
+      "independenceAssessment": "distinct_archival_record",
+      "noteZh": "南开档案报告依据同学录与学籍记录记载1913年至1917年就读，并于1917年6月毕业；补证天津南开毕业的学校和年份。",
+      "noteEn": "The Nankai archival report cites alumni and enrollment records for attendance in 1913–1917 and graduation in June 1917, corroborating the school and graduation year."
+    },
+    {
+      "personId": "p_zhou_enlai",
+      "eventId": "p_zhou_enlai:full:03",
+      "beforeSourceIds": [
+        "seed_aw002"
+      ],
+      "addedSourceId": "review_nankai_zhou_school_report",
+      "supportedFields": [
+        "countries",
+        "study_sequence"
+      ],
+      "independenceAssessment": "distinct_archival_record",
+      "noteZh": "南开报告记载1917年毕业后赴日本、1920年赴法国；支持原条目的两国求学经历。该合并条目未拆为新事件，也未被赋予一个虚构的共同日期。",
+      "noteEn": "The Nankai report records Japan study after the 1917 graduation and departure for France in 1920. It supports the two-country study record; this composite event is neither split nor assigned an invented single date."
+    },
+    {
+      "personId": "p_liang_qichao",
+      "eventId": "p_liang_qichao:full:tsinghua",
+      "beforeSourceIds": [
+        "full_lateqing_liangtsinghua"
+      ],
+      "addedSourceId": "review_nankai_liang_history",
+      "supportedFields": [
+        "institution",
+        "role"
+      ],
+      "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+      "noteZh": "南开历史学院传记提及1925年以后任教清华及国学四大导师身份，补证学校和职务；1925年这一确切任职年仍依原清华档案，不把此任教记录当成就学。",
+      "noteEn": "Nankai’s biography places Liang’s Tsinghua teaching in the period after 1925 and identifies the tutorial role. It corroborates institution and role; the exact appointment year remains based on the original Tsinghua archive. This is a teaching, not student, event."
+    },
+    {
+      "personId": "p_tsai_ing_wen",
+      "eventId": "p_tsai_ing_wen:event:cornell-degree",
+      "beforeSourceIds": [
+        "cornell_tsai_2016"
+      ],
+      "addedSourceId": "expansion_url_009_01",
+      "supportedFields": [
+        "institution",
+        "degree",
+        "country"
+      ],
+      "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+      "noteZh": "总统府卸任总统传记列康奈尔法律硕士及赴美求学，补证学校、学位与国家；未列1980年授予日期，年份仍依康奈尔原来源。",
+      "noteEn": "The former-president biography lists a Cornell LLM and study in the United States. It corroborates institution, degree and country, but not the 1980 award date, which remains sourced to Cornell."
+    },
+    {
+      "personId": "p_tsai_ing_wen",
+      "eventId": "p_tsai_ing_wen:event:lse-degree",
+      "beforeSourceIds": [
+        "lse_tsai_degree_2019"
+      ],
+      "addedSourceId": "expansion_url_009_01",
+      "supportedFields": [
+        "institution",
+        "degree",
+        "country"
+      ],
+      "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+      "noteZh": "总统府传记列伦敦政经学院博士及1984年返台；补证学校、学位与留英经历。确切博士授予年仍采用伦敦政经学院原声明。",
+      "noteEn": "The presidential biography lists an LSE PhD, study in Britain and return to Taiwan in 1984. It corroborates institution, degree and country; the exact award year remains sourced to LSE’s statement."
+    },
+    {
+      "personId": "p_ye_jianying",
+      "eventId": "p_ye_jianying:full:04",
+      "beforeSourceIds": [
+        "full_prc_ye_jianying"
+      ],
+      "addedSourceId": "review_locpg_ye_jianying_moscow",
+      "supportedFields": [
+        "year",
+        "city",
+        "education"
+      ],
+      "independenceAssessment": "separate_institutional_account_underlying_independence_unestablished",
+      "noteZh": "文章记载1928年秋受派赴苏、年底抵莫斯科并入中国劳动者共产主义大学；补证年份、城市和学习性质。两篇官方历史叙述是否共享底本尚未确立，不称为完全独立证据。",
+      "noteEn": "The account records assignment to Soviet study in autumn 1928 and arrival in Moscow near year-end to enter the Communist University of the Toilers of China. It supports year, city and study; independence from the original official biography’s underlying material is not established."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "review_ye_ting_pre_prc_entity",
+      "personId": "p_ye_ting",
+      "field": "politicalEntities",
+      "rawValues": [
+        "中国共产党",
+        "中华人民共和国"
+      ],
+      "normalizedValues": [
+        "中国共产党"
+      ],
+      "reasonZh": "叶挺于1946年4月8日逝世，不能具有1949年成立的中华人民共和国的本人任职或活动归属。移除这一后见性政权标签；保留有生平证据的中共关联。",
+      "reason": "Ye Ting died on 8 April 1946, before the PRC was founded in 1949. Remove the retrospective regime affiliation while retaining the documented CPC relationship.",
+      "sourceIds": [
+        "full_prc_ye"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "id": "review_tung_death_2026",
+      "personId": "p_tung_chee_hwa",
+      "field": "lifeStatus/deathDate",
+      "rawValues": [
+        "living_as_of_source",
+        null
+      ],
+      "normalizedValues": [
+        "deceased",
+        "2026-09-08"
+      ],
+      "reasonZh": "以2026年9月的公祭报道及立法会声明替代2018年的过时在世状态；未新增事件或迁移节点。",
+      "reason": "Replace the stale 2018 living-status evidence with the September 2026 memorial report and Legislative Council statement; no event or route node was added.",
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial",
+        "review_2026_legco_tung_mourning"
+      ],
+      "reviewedAt": "2026-10-05"
+    },
+    {
+      "id": "review_deng_france_date_precision",
+      "personId": "p_deng_xiaoping",
+      "field": "p_deng_xiaoping:full:03.dateText",
+      "rawValues": [
+        "1920夏",
+        "Summer 1920"
+      ],
+      "normalizedValues": [
+        "1920",
+        "1920"
+      ],
+      "reasonZh": "删去与档案研究启航及抵达日期冲突的季节标记，保留共同支持的1920年。",
+      "reason": "Remove the seasonal label contradicted by departure and arrival dates in the archival study; preserve the mutually supported year 1920.",
+      "sourceIds": [
+        "moe_deng_bio",
+        "review_deng_french_years_1988"
+      ],
+      "reviewedAt": "2026-10-05"
+    }
+  ],
+  "limitations": [
+    "Source grades describe provenance, not neutrality or independence. Two URLs, two hosts, or two institutions do not necessarily mean two independent accounts.",
+    "Additional references sometimes support only the institution, location or year; unsupported finer precision continues to depend on the original citation and is stated in the reference note.",
+    "Living status is bounded by a dated activity or report. No profile is certified alive or in office through the dataset cutoff merely because the review occurred then.",
+    "The entity audit checks all 72 active profile labels against recorded lifespans and biographies for clear anachronisms. It is not a comprehensive independent verification of every affiliation.",
+    "No people, event IDs, locations or new route nodes were added. Raw legacy records remain available and may contain superseded values."
+  ],
+  "entityAudit": {
+    "peopleChecked": 72,
+    "activeEntityLabelsChecked": 139,
+    "correctionIds": [
+      "review_ye_ting_pre_prc_entity"
+    ],
+    "alignedArrays": true,
+    "findings": "Only Ye Ting’s PRC attribution was a certain lifespan contradiction in the active arrays. Labels include states, parties, administrations and military organizations; presence of a label is not proof of citizenship or continuous membership.",
+    "profileChecks": [
+      {
+        "personId": "p_zeng_guofan",
+        "birthDate": "1811",
+        "deathDate": "1872",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zuo_zongtang",
+        "birthDate": "1812",
+        "deathDate": "1885-09-05",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_hongzhang",
+        "birthDate": "1823-02-15",
+        "deathDate": "1901-11-07",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhang_zhidong",
+        "birthDate": "1837",
+        "deathDate": "1909",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_cixi",
+        "birthDate": "1835",
+        "deathDate": "1908-11-15",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_guangxu",
+        "birthDate": "1871-08-14",
+        "deathDate": "1908-11-14",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_kang_youwei",
+        "birthDate": "1858",
+        "deathDate": "1927",
+        "entities": [
+          "清帝国",
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_liang_qichao",
+        "birthDate": "1873-02-23",
+        "deathDate": "1929-01-19",
+        "entities": [
+          "清帝国",
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_yuan_shikai",
+        "birthDate": "1859",
+        "deathDate": "1916-06-06",
+        "entities": [
+          "清帝国",
+          "中华民国",
+          "洪宪帝制"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_sun_yat_sen",
+        "birthDate": "1866-11-12",
+        "deathDate": "1925-03-12",
+        "entities": [
+          "清帝国",
+          "兴中会",
+          "中国同盟会",
+          "中华民国",
+          "中国国民党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_tan_sitong",
+        "birthDate": "1865-03-10",
+        "deathDate": "1898-09-28",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhang_jian",
+        "birthDate": "1853",
+        "deathDate": "1926-08-24",
+        "entities": [
+          "清帝国",
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_yuanhong",
+        "birthDate": "1864-10-19",
+        "deathDate": "1928-06-03",
+        "entities": [
+          "清帝国",
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_duan_qirui",
+        "birthDate": "1865-03-06",
+        "deathDate": "1936",
+        "entities": [
+          "清帝国",
+          "中华民国",
+          "皖系"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_feng_guozhang",
+        "birthDate": "1859-01-07",
+        "deathDate": "1919-12-28",
+        "entities": [
+          "清帝国",
+          "中华民国",
+          "直系"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhang_zuolin",
+        "birthDate": "1875",
+        "deathDate": "1928-06-04",
+        "entities": [
+          "清帝国",
+          "中华民国",
+          "奉系"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_wu_peifu",
+        "birthDate": "1874-04-22",
+        "deathDate": "1939-12-04",
+        "entities": [
+          "清帝国",
+          "中华民国",
+          "直系"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_chiang_kaishek",
+        "birthDate": "1887",
+        "deathDate": "1975-04-05",
+        "entities": [
+          "清帝国",
+          "同盟会",
+          "中国国民党",
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_wang_jingwei",
+        "birthDate": "1883-05-04",
+        "deathDate": "1944-11-10",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_hu_hanmin",
+        "birthDate": "1879-12-09",
+        "deathDate": "1936-05-12",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_song_jiaoren",
+        "birthDate": "1882-04-05",
+        "deathDate": "1913-03-22",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_song_qingling",
+        "birthDate": "1893-01-27",
+        "deathDate": "1981-05-29",
+        "entities": [
+          "中华民国",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_zongren",
+        "birthDate": "1891-08-13",
+        "deathDate": "1969-01-30",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhang_xueliang",
+        "birthDate": "1901-06-03",
+        "deathDate": "2001-10",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_chen_duxiu",
+        "birthDate": "1879-10-09",
+        "deathDate": "1942-05-27",
+        "entities": [
+          "中华民国",
+          "中国共产党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_dazhao",
+        "birthDate": "1889-10-29",
+        "deathDate": "1927-04-28",
+        "entities": [
+          "中华民国",
+          "中国共产党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_mao_zedong",
+        "birthDate": "1893-12-26",
+        "deathDate": "1976-09-09",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhou_enlai",
+        "birthDate": "1898-03-05",
+        "deathDate": "1976-01-08",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhu_de",
+        "birthDate": "1886-12-01",
+        "deathDate": "1976-07-06",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_peng_dehuai",
+        "birthDate": "1898-10-24",
+        "deathDate": "1974-11-29",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_ye_ting",
+        "birthDate": "1896",
+        "deathDate": "1946-04-08",
+        "entities": [
+          "中国共产党"
+        ],
+        "outcome": "corrected_clear_anachronism"
+      },
+      {
+        "personId": "p_ye_jianying",
+        "birthDate": "1897-04-28",
+        "deathDate": "1986-10-22",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhang_zizhong",
+        "birthDate": "1891",
+        "deathDate": "1940-05-16",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_bai_chongxi",
+        "birthDate": "1893",
+        "deathDate": "1966-12-02",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_xue_yue",
+        "birthDate": "1896",
+        "deathDate": "1998-05-03",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_he_yingqin",
+        "birthDate": "1890-04-02",
+        "deathDate": "1987-10-21",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_yang_jingyu",
+        "birthDate": "1905-02-13",
+        "deathDate": "1940-02-23",
+        "entities": [
+          "中华民国",
+          "中国共产党",
+          "东北抗日联军"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhou_baozhong",
+        "birthDate": "1902-02-07",
+        "deathDate": "1964-02-22",
+        "entities": [
+          "中华民国",
+          "中国共产党",
+          "东北抗日联军",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_liu_shaoqi",
+        "birthDate": "1898-11-24",
+        "deathDate": "1969-11-12",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_chen_yun",
+        "birthDate": "1905-06-13",
+        "deathDate": "1995-04-10",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_nie_rongzhen",
+        "birthDate": "1899-12-29",
+        "deathDate": "1992-05-14",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_he_long",
+        "birthDate": "1896-03-22",
+        "deathDate": "1969-06-09",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_xiannian",
+        "birthDate": "1909",
+        "deathDate": "1992-06-21",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_deng_xiaoping",
+        "birthDate": "1904-08-22",
+        "deathDate": "1997-02-19",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhao_ziyang",
+        "birthDate": "1919-10-17",
+        "deathDate": "2005-01-17",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_jiang_zemin",
+        "birthDate": "1926-08-17",
+        "deathDate": "2022-11-30",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhu_rongji",
+        "birthDate": "1928-10-23",
+        "deathDate": "2026-08-12",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_hu_jintao",
+        "birthDate": "1942-12",
+        "deathDate": null,
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_wen_jiabao",
+        "birthDate": "1942-09",
+        "deathDate": null,
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_xi_jinping",
+        "birthDate": "1953-06",
+        "deathDate": null,
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_keqiang",
+        "birthDate": "1955-07-03",
+        "deathDate": "2023-10-27",
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_li_qiang",
+        "birthDate": "1959-07",
+        "deathDate": null,
+        "entities": [
+          "中国共产党",
+          "中华人民共和国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_lee_teng_hui",
+        "birthDate": "1923-01-15",
+        "deathDate": "2020-07-30",
+        "entities": [
+          "中华民国",
+          "中国国民党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_chen_shui_bian",
+        "birthDate": "1950",
+        "deathDate": null,
+        "entities": [
+          "中华民国",
+          "民主进步党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_ma_ying_jeou",
+        "birthDate": "1950",
+        "deathDate": null,
+        "entities": [
+          "中华民国",
+          "中国国民党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_tsai_ing_wen",
+        "birthDate": "1956",
+        "deathDate": null,
+        "entities": [
+          "中华民国",
+          "民主进步党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_lai_ching_te",
+        "birthDate": "1959",
+        "deathDate": null,
+        "entities": [
+          "中华民国",
+          "民主进步党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_chiang_ching_kuo",
+        "birthDate": "1910",
+        "deathDate": "1988-01-13",
+        "entities": [
+          "中华民国",
+          "中国国民党"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_tung_chee_hwa",
+        "birthDate": "1937-05-29",
+        "deathDate": "2026-09-08",
+        "entities": [
+          "中华人民共和国",
+          "香港特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_donald_tsang",
+        "birthDate": "1944",
+        "deathDate": null,
+        "entities": [
+          "英属香港政府",
+          "中华人民共和国香港特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_leung_chun_ying",
+        "birthDate": "1954-08-12",
+        "deathDate": null,
+        "entities": [
+          "中华人民共和国",
+          "香港特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_carrie_lam",
+        "birthDate": "1957",
+        "deathDate": null,
+        "entities": [
+          "英属香港政府",
+          "中华人民共和国香港特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_john_lee",
+        "birthDate": "1957",
+        "deathDate": null,
+        "entities": [
+          "中华人民共和国香港特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_edmund_ho",
+        "birthDate": "1955-03",
+        "deathDate": null,
+        "entities": [
+          "中华人民共和国",
+          "澳门特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_fernando_chui",
+        "birthDate": "1957",
+        "deathDate": null,
+        "entities": [
+          "葡萄牙管治澳门",
+          "中华人民共和国澳门特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_ho_iat_seng",
+        "birthDate": "1957-06",
+        "deathDate": null,
+        "entities": [
+          "中华人民共和国",
+          "澳门特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_sam_hou_fai",
+        "birthDate": "1962-05",
+        "deathDate": null,
+        "entities": [
+          "中华人民共和国",
+          "澳门特别行政区"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_lin_zexu",
+        "birthDate": "1785-08-30",
+        "deathDate": "1850-11-22",
+        "entities": [
+          "清帝国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_cai_e",
+        "birthDate": "1882-12-18",
+        "deathDate": "1916-11-08",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_feng_yuxiang",
+        "birthDate": "1882",
+        "deathDate": "1948-09-01",
+        "entities": [
+          "中华民国"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zhao_shangzhi",
+        "birthDate": "1908-10-26",
+        "deathDate": "1942-02-12",
+        "entities": [
+          "中华民国",
+          "中国共产党",
+          "东北抗日联军"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      },
+      {
+        "personId": "p_zuo_quan",
+        "birthDate": "1905",
+        "deathDate": "1942-05-25",
+        "entities": [
+          "中华民国",
+          "中国共产党",
+          "中国工农红军",
+          "八路军"
+        ],
+        "outcome": "no_certain_lifespan_contradiction_identified"
+      }
+    ]
+  },
+  "coverageBefore": {
+    "verifiedEvents": 1098,
+    "eventsWithNoSourceReference": 0,
+    "eventsWithOneSourceReference": 1046,
+    "eventsWithMultipleSourceReferences": 52,
+    "sourceCatalogCount": 285,
+    "eventSourceCount": 232
+  },
+  "coverageAfter": {
+    "verifiedEvents": 1098,
+    "eventsWithNoSourceReference": 0,
+    "eventsWithOneSourceReference": 1037,
+    "eventsWithMultipleSourceReferences": 61,
+    "sourceCatalogCount": 301,
+    "eventSourceCount": 238
+  },
+  "statusCoverage": {
+    "profilesSelected": 17,
+    "profilesReviewed": 17,
+    "profilesLivingAfterReview": 16,
+    "profilesCorrectedToDeceased": [
+      "p_tung_chee_hwa"
+    ],
+    "profilesWithMissingStatusDate": 0
+  },
+  "additionalReferenceSummary": {
+    "eventCount": 9,
+    "peopleCount": 7,
+    "strongerDistinctRecordOrScholarlyProvenanceCount": 4,
+    "caveat": "Counts of added references do not certify complete-event corroboration or independence; see supportedFields and independenceAssessment on every changed reference."
+  },
+  "retrievalLimitations": [
+    {
+      "sourceIds": [
+        "review_2026_hmo_tung_memorial",
+        "review_2026_legco_tung_mourning",
+        "review_2026_macao_national_day"
+      ],
+      "issue": "Full bodies were read earlier in the review; later direct-open retries timed out. HMO’s complete indexed article was also read again."
+    },
+    {
+      "sourceIds": [
+        "review_2026_retired_leaders"
+      ],
+      "issue": "Direct open failed; the full indexed article body was reviewed, not only a short search snippet."
+    },
+    {
+      "sourceIds": [
+        "full_prc_current_xi"
+      ],
+      "issue": "Old People’s Daily link returned an error. A separately opened Xinhua report on the CAC site supports the same 30 September activity; no independent-source claim is made."
+    },
+    {
+      "sourceIds": [
+        "full_lateqing_liangtsinghua"
+      ],
+      "issue": "Original Tsinghua page could not be reopened in this targeted review. Exact 1925 appointment remains an existing claim, not newly reverified here."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "reviewedAt": "2026-10-05",
   "titleEn": "Method & evidence",
   "titleZh": "方法与证据",
@@ -11,26 +11,32 @@
       "titleEn": "The research question",
       "titleZh": "研究问题",
       "paragraphsEn": [
+        "Studying geography has made me attentive to spatial patterns. Alongside my interest in politics, this led me to ask where people who influenced historical change came from, how they were distributed, and how they moved over their lives.",
         "How did education, political organization, warfare and public office connect the places in influential political lives across modern Chinese history?",
         "The atlas compares documented experiences across five overlapping periods. It asks which places recur, which kinds of events connect them, and how those patterns vary with period and political context. These are questions for exploration, not a claim that geography alone explains political power."
       ],
       "paragraphsZh": [
+        "我学习地理，也对政治感兴趣。对空间分布的敏感，让我开始追问：那些推动历史变化的人来自哪里、如何分布，又在一生中经历了怎样的迁移？",
         "教育、政治组织、战争与公共职务，如何把中国近现代重要政治人物一生中的不同地点联系起来？",
         "本图谱比较五个可重叠时期中有资料支持的经历，考察哪些地点反复出现、哪些事件把地点连接起来，以及这些分布如何随时期与政治语境变化。这些问题用于引导探索，并不预设地理因素能够单独解释政治权力。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "scope",
       "titleEn": "A curated sample, not a census",
       "titleZh": "经过选择的样本，并非总体普查",
       "paragraphsEn": [
-        "This edition contains 72 people whose major life stages have been reviewed. Inclusion combines a verifiable political, governmental, military, revolutionary or reform role with evidence of historical influence. The selection is purposeful rather than random; its size does not make it representative of everyone who exercised political influence.",
+        "This edition contains {{peopleCount}} people whose major life stages have been reviewed. Inclusion combines a verifiable political, governmental, military, revolutionary or reform role with evidence of historical influence. The selection is purposeful rather than random; its size does not make it representative of everyone who exercised political influence.",
         "Local administrations, non-governing parties, revolutionary organizations and military networks are within scope. Intellectuals, business figures, activists and foreign participants qualify only where evidence demonstrates direct involvement in government, war, institutions, diplomacy or major reform. Their inclusion is not an endorsement."
       ],
       "paragraphsZh": [
-        "本版收录72位人物，已统一整理其主要人生阶段。纳入标准同时考虑可核验的政治、政府、军事、革命或改革角色，以及历史影响的证据。名单属于有目的的选择，并非随机抽样；人数本身不能保证它代表所有具有政治影响的人。",
+        "本版收录{{peopleCount}}位人物，已统一整理其主要人生阶段。纳入标准同时考虑可核验的政治、政府、军事、革命或改革角色，以及历史影响的证据。名单属于有目的的选择，并非随机抽样；人数本身不能保证它代表所有具有政治影响的人。",
         "地方政权、非执政党、革命组织与军事网络也属于研究范围。思想家、企业家、社会活动家及外国参与者，仅在有证据显示其直接参与政权、战争、制度、外交或重大改革时纳入。收录不代表对人物或其立场的认可。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "tiers",
@@ -61,25 +67,27 @@
       "titleZh": "五个时期，允许重叠",
       "paragraphsEn": [
         "Period membership follows recorded political activity, not simply a birth year or lifespan. A person can belong to several periods. Counts across period filters therefore cannot be added as though they were separate populations.",
-        "The war period overlaps the Republican period, and the transition years 1949 and 1978 belong to adjacent ranges. Taiwan, Hong Kong and Macao remain in the scope of later chronological ranges without being treated as the same political entity. Earlier births may appear to explain the background of a life active after 1840."
+        "The war period overlaps the Republican period, and the transition years 1949 and 1978 belong to adjacent ranges. Taiwan, Hong Kong and Macao remain in the scope of later chronological ranges without being treated as the same political entity. Earlier births may appear to explain the background of a life active after 1840.",
+        "In the atlas, “Events in this period” limits dated records to the selected interval; “Complete life” restores the full biography. A period tag describes a person’s historical grouping, while an event is tested using its own date. Undated records are not assigned to a period by guesswork."
       ],
       "paragraphsZh": [
         "时期归属以记录中的政治活动为依据，不仅由出生年份或寿命决定。人物可以属于多个时期，因此不同筛选时期的人数不能直接相加，视为互不重复的总体。",
-        "抗日战争时期与民国时期重叠；1949年与1978年作为转折年，同时落在相邻区间。台湾、香港与澳门的人物仍可进入后续时间范围，但这不把它们视为同一政治实体。为交代1840年以后活跃人物的背景，年表可以保留更早的出生记录。"
+        "抗日战争时期与民国时期重叠；1949年与1978年作为转折年，同时落在相邻区间。台湾、香港与澳门的人物仍可进入后续时间范围，但这不把它们视为同一政治实体。为交代1840年以后活跃人物的背景，年表可以保留更早的出生记录。",
+        "地图中的“本时期事件”按所选区间显示有日期的事件，“完整生平”恢复全生涯。人物时期标签描述历史分组，事件则使用自身日期判断；未定年记录不会被猜测分配到某个时期。"
       ],
       "bulletsEn": [
         "Late Qing: 1840–1911.",
         "Republican period: 1912–1949.",
         "War of Resistance against Japan: 1937–1945.",
         "PRC founding to reform: 1949–1978.",
-        "Reform and Opening onward: 1978–2026; this edition’s review date is 5 October 2026."
+        "Reform and Opening onward: 1978–2026; this edition’s review date is {{dataAsOf}}."
       ],
       "bulletsZh": [
         "晚清：1840—1911。",
         "民国时期：1912—1949。",
         "抗日战争时期：1937—1945。",
         "建国至改革开放：1949—1978。",
-        "改革开放至今：1978—2026；本版资料审查日期为2026年10月5日。"
+        "改革开放至今：1978—2026；本版资料审查日期为{{dataAsOf}}。"
       ]
     },
     {
@@ -118,7 +126,9 @@
       "paragraphsZh": [
         "出生地、籍贯或祖籍、教育经历、本人到场、职务辖区与组织关联，是不同的地点关系。担任某省职务不能证明持续居住在某座城市；也不能由籍贯推定出生地。",
         "资料允许时保留历史地名，并以现代名称帮助定位。地图节点用于示意排布，并非已核验经纬度、测绘边界或机构的精确地址。一条事件没有地图节点，并不代表其历史事实没有来源支持。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "paths",
@@ -131,7 +141,9 @@
       "paragraphsZh": [
         "连线要求事件具备日期、事件级来源、本人到场证据与明确的示意位置；前一事件的结束时间必须早于后一事件的开始时间。目前采用年份层面的时序判断，同年或时间段重叠的事件不会被强行排序。",
         "线条连接的是选定记录，并非完整行程，可能跨过尚未收录的年份与中间停留地。祖籍、仅有任职辖区、缺失日期和身后事件，都不能证明本人迁移。不能由图中连线推算距离、速度、交通路径或连续居住。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "entities",
@@ -144,7 +156,9 @@
       "paragraphsZh": [
         "研究范围涉及晚清、北洋与国民政府、战争时期的政权及组织、中华人民共和国，以及台湾、香港与澳门相关政治史。人物经历有资料支持时，也展示海外地点。",
         "政治实体标签用于区分历史归属与制度语境。一个人物关联多个实体，不代表同时隶属于全部实体。时期名称与示意轮廓不用于裁定主权问题、表示固定历史边界，或把今天的边界套用于过去。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "findings",
@@ -152,38 +166,48 @@
       "titleZh": "如何阅读研究发现",
       "paragraphsEn": [
         "Findings describe this edition’s recorded sample. Each card specifies its count, denominator, event criteria, evidence and limits; its evidence view returns to the relevant people and records. A person may contribute once to a people-based comparison but several times to an event-based count. Those measures answer different questions.",
-        "A frequent city may reflect political centrality, the initial selection of people, the survival of records or the detail of available biographies. An education event followed by an appointment establishes a recorded sequence, not proof that education caused political advancement. Comparing periods also requires accounting for different durations and unequal documentation."
+        "A frequent city may reflect political centrality, the initial selection of people, the survival of records or the detail of available biographies. An education event followed by an appointment establishes a recorded sequence, not proof that education caused political advancement. Comparing periods also requires accounting for different durations and unequal documentation.",
+        "The second finding includes a five-period breakdown of the same three-center query. Closed event-year intervals are counted where they intersect a period; undated and open-ended records are excluded. Spanning intervals and overlapping periods are exposed, so the rows cannot be summed or read as migration rates. The coverage table below the grouping section separately uses profile period tags."
       ],
       "paragraphsZh": [
         "研究发现描述的是本版已记录样本。每张卡片说明数量、分母、事件条件、证据与局限，并可返回相关人物和记录。按人物统计时，同一人可能只计一次；按事件统计时，同一人可能贡献多条记录。这两类指标回答不同问题。",
-        "某座城市频繁出现，可能与其政治中心地位、最初的人物选择、史料保存或传记详略有关。教育事件早于任职事件，只能说明已记录的先后关系，不能证明教育导致政治晋升。跨时期比较还需要考虑时期长短与资料覆盖不均。"
-      ]
+        "某座城市频繁出现，可能与其政治中心地位、最初的人物选择、史料保存或传记详略有关。教育事件早于任职事件，只能说明已记录的先后关系，不能证明教育导致政治晋升。跨时期比较还需要考虑时期长短与资料覆盖不均。",
+        "第二项发现在相同三中心查询内增加五个时期的比较。闭合事件年份区间与时期相交时纳入；未定年及终点不明的记录不计入。跨期区间与重叠时期均公开说明，行数不能相加，也不是迁移发生率。人物分组章节的覆盖表则单独使用人物时期标签。"
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "limits",
       "titleEn": "What remains incomplete",
       "titleZh": "目前仍有哪些限制",
       "paragraphsEn": [
-        "The database covers major stages of 72 selected lives, not all influential people or every event in those lives. Central elites and well-documented institutions are more visible than many local actors, women and less-preserved political networks. Missing evidence means unknown, not that an event did not happen.",
+        "The database covers major stages of {{peopleCount}} selected lives, not all influential people or every event in those lives. Central elites and well-documented institutions are more visible than many local actors, women and less-preserved political networks. Missing evidence means unknown, not that an event did not happen.",
         "Dates retain the precision supported by sources. Conflicts and unresolved place leads remain in each profile; an undated event does not silently receive a guessed year. The review date is separate from the date supporting a living person’s status or current office. Counts will change when new evidence or corrections alter the dataset."
       ],
       "paragraphsZh": [
-        "数据库覆盖72位选定人物的主要人生阶段，并非所有重要人物，也并非每个人的一切事件。中央精英及资料较完整的机构，比许多地方人物、女性与史料保存较少的政治网络更容易进入视野。缺少证据表示未知，不代表事件没有发生。",
+        "数据库覆盖{{peopleCount}}位选定人物的主要人生阶段，并非所有重要人物，也并非每个人的一切事件。中央精英及资料较完整的机构，比许多地方人物、女性与史料保存较少的政治网络更容易进入视野。缺少证据表示未知，不代表事件没有发生。",
         "日期保留来源实际支持的精度。人物档案保留史料冲突与未决地点线索；没有明确日期的事件不会被猜测填年。审查日期与支持在世状态、现任职务的来源日期分别记录。新增证据或更正数据后，统计数量也会改变。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     },
     {
       "id": "provenance",
       "titleEn": "Compilation and accountability",
       "titleZh": "整理过程与可追溯性",
       "paragraphsEn": [
+        "The project author formulated the spatial research question, chose the historical and geographic scope, and reviewed the bilingual presentation and interface direction. These decisions are the author’s contribution at this stage; original archival reading or expert historical verification is not claimed.",
         "This edition was assembled with AI assistance for source discovery, bilingual drafting, data structuring and interface development. Source checks record whether an accessible text supports a stated fact; they do not constitute peer review or independent expert verification. The project does not claim original archival research for every entry.",
         "Event links and evidence notes let readers inspect the underlying material. The data retain review dates, unresolved questions and correction records so that a revision can be traced. English wording is an editorial translation; Chinese personal names, historical place names and original source titles preserve the source context."
       ],
       "paragraphsZh": [
+        "作者提出空间研究问题，确定历史与地理范围，并审阅双语呈现及界面方向。这些是目前已确认的作者贡献；不据此宣称已经完成原创档案研究或专业历史鉴定。",
         "本版在来源检索、双语起草、数据整理与界面开发中使用了人工智能辅助。来源核对记录可访问文本是否支持所述事实，不等同于同行评审或独立专家鉴定。本项目不宣称每一条记录都来自原创档案研究。",
         "事件链接与证据说明让读者能够检查底层材料。数据保留审查日期、未决问题及更正记录，以便追溯修订。英文表述属于编辑性翻译；中文姓名、历史地名与原始来源标题保留资料语境。"
-      ]
+      ],
+      "bulletsEn": [],
+      "bulletsZh": []
     }
   ],
   "guidedTour": {

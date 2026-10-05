@@ -1,15 +1,15 @@
 {
   "meta": {
-    "version": "findings.v1",
-    "computedFromVersion": "0.6",
+    "version": "findings.v2",
+    "computedFromVersion": "0.7",
     "dataAsOf": "2026-10-05",
-    "inputSha256": "15762ba8ad50d3eafc275de6714bb743ce80b8b2c8441caf623b03d437ffb65d",
+    "inputSha256": "44fadec1998da8db41cf5051dc574a4871fcc63012a85be34a25a6acc613c9a8",
     "peopleCount": 72,
     "eventCount": 1098,
     "unit": "unique people",
     "sampling": "curated purposive sample; not representative",
     "coordinatePolicy": "Schematic positions; no distances or direct travel inferred.",
-    "reproduce": "python3 compute_findings.py --input atlas-data.json --output findings.json"
+    "reproduce": "python3 build.py"
   },
   "introZh": "以下发现只描述这 72 位入选人物的现有来源记录。每个数字都能展开到全部贡献人物、事件与原始链接；未命中记录不视为否定证据。",
   "introEn": "These findings describe the current source records for 72 selected people. Every count can be expanded to all contributing people, events and source links. Missing records are never treated as negative evidence.",
@@ -27,7 +27,7 @@
       "methodZh": "按人物去重。只纳入有事件级来源、明确本人到场的教育事件；学习包括学校、军事考察、勤工俭学和工厂实习，排除执教、担任院长和名誉学位。地点按这里明示的五组筛选；港澳台不被归为外国，也不纳入这五组。地名不代表当时国界：1921 年莫斯科与 1879 年檀香山分别保留原时空语境。段祺瑞的德国、周恩来的日本与法国按事件正文纳入，无单点坐标要求。",
       "methodEn": "Count unique people, using event-level sources and documented personal presence. Learning includes schooling, military study visits, work-study and factory training; teaching, institutional leadership and honorary degrees are excluded. The five named destination groups are an explicit geographic query, not a national-border classification. Hong Kong, Macao and Taiwan are neither labeled foreign nor included in these groups. Moscow in 1921 and Honolulu in 1879 retain their historical context. Duan Qirui’s German and Zhou Enlai’s Japanese/French study are classified from explicit event wording without assigning a single map point.",
       "limitationsZh": "这不是完整的留学率或国境流动统计。未命中可能是未记录、无本人到场依据，或地点不属于预设组；不代表从未在外求学。仅记授予学位的机构、未证实本人到场的 4 人另列。事件可无年份，因此本卡不排列旅行先后；各地点组人数可重叠，不能相加。",
-      "limitationsEn": "This is neither a complete study-abroad rate nor a border-crossing statistic. A non-match may reflect incomplete records, missing personal-presence evidence or a destination outside the selected groups; it does not establish that a person never studied elsewhere. Four additional profiles have institution-only qualifications in these groups and are listed separately. Undated learning can count here, so this card does not establish travel order. Group counts overlap and must not be added.",
+      "limitationsEn": "This is neither a complete study-abroad rate nor a border-crossing statistic. A non-match may reflect incomplete records, missing personal-presence evidence or a destination outside the selected groups; it does not establish that a person never studied elsewhere. 4 additional profiles have institution-only qualifications in these groups and are listed separately. Undated learning can count here, so this card does not establish travel order. Group counts overlap and must not be added.",
       "destinationGroups": [
         {
           "id": "japan",
@@ -114,6 +114,11 @@
                   "sourceId": "audit_zs_sun",
                   "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
                   "title": "中山市南朗街道：孙中山"
+                },
+                {
+                  "sourceId": "review_iolani_sun_history",
+                  "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+                  "title": "Dr. Sun Yat-sen"
                 }
               ]
             }
@@ -481,6 +486,11 @@
                   "sourceId": "seed_aw002",
                   "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
                   "title": "外交部人物资料;含早期职务与抗战经历"
+                },
+                {
+                  "sourceId": "review_nankai_zhou_school_report",
+                  "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+                  "title": "关于周恩来同志在南开中学、南开大学上学和解放后几次来南开大学情况的报告"
                 }
               ]
             }
@@ -612,6 +622,11 @@
                   "sourceId": "full_prc_ye_jianying",
                   "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
                   "title": "叶剑英生平"
+                },
+                {
+                  "sourceId": "review_locpg_ye_jianying_moscow",
+                  "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+                  "title": "叶剑英避居香港"
                 }
               ]
             }
@@ -822,8 +837,8 @@
               "type": "education",
               "placeZh": "法国",
               "placeEn": "France",
-              "dateZh": "1920夏",
-              "dateEn": "Summer 1920",
+              "dateZh": "1920",
+              "dateEn": "1920",
               "yearStart": 1920,
               "yearEnd": 1920,
               "mapKey": "france",
@@ -833,6 +848,11 @@
                   "sourceId": "moe_deng_bio",
                   "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3579/moe_90/tnull_2554.html",
                   "title": "邓小平同志光辉战斗的一生｜教育部政府门户网站"
+                },
+                {
+                  "sourceId": "review_deng_french_years_1988",
+                  "url": "https://www.persee.fr/doc/xxs_0294-1759_1988_num_20_1_2793?pageId=T1_19",
+                  "title": "Les années françaises de Deng Xiaoping"
                 }
               ]
             },
@@ -1003,6 +1023,11 @@
                   "sourceId": "cornell_tsai_2016",
                   "url": "https://news.cornell.edu/stories/2016/01/taiwan-elects-its-second-cornell-alumnus-president",
                   "title": "Taiwan elects its second Cornell alumnus as president｜Cornell Chronicle"
+                },
+                {
+                  "sourceId": "expansion_url_009_01",
+                  "url": "https://english.president.gov.tw/Page/646",
+                  "title": "Expansion candidate source"
                 }
               ]
             },
@@ -1024,6 +1049,11 @@
                   "sourceId": "lse_tsai_degree_2019",
                   "url": "https://www.lse.ac.uk/news/latest-news-from-lse/j-october-2019/lse-statement-on-phd-of-dr-tsai-ing-wen",
                   "title": "LSE statement on PhD of Dr Tsai Ing-wen"
+                },
+                {
+                  "sourceId": "expansion_url_009_01",
+                  "url": "https://english.president.gov.tw/Page/646",
+                  "title": "Expansion candidate source"
                 }
               ]
             }
@@ -2047,6 +2077,11 @@
                   "sourceId": "full_republic_chen_party",
                   "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
                   "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                },
+                {
+                  "sourceId": "review_pku_chen_history",
+                  "url": "https://www.pku.edu.cn/detail/905.html",
+                  "title": "五四前后的北京大学"
                 }
               ]
             },
@@ -2571,6 +2606,11 @@
                   "sourceId": "full_lateqing_liangtsinghua",
                   "url": "https://www.tacl.tsinghua.edu.cn/info/1082/1222.htm",
                   "title": "五大导师：梁启超｜清华大学国学研究院"
+                },
+                {
+                  "sourceId": "review_nankai_liang_history",
+                  "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+                  "title": "梁启超"
                 }
               ]
             }
@@ -3270,6 +3310,11 @@
                   "sourceId": "full_republic_chen_party",
                   "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
                   "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                },
+                {
+                  "sourceId": "review_pku_chen_history",
+                  "url": "https://www.pku.edu.cn/detail/905.html",
+                  "title": "五四前后的北京大学"
                 }
               ]
             },
@@ -4145,7 +4190,2797 @@
             "p_ye_jianying:full:07"
           ]
         }
-      ]
+      ],
+      "periodBreakdown": [
+        {
+          "id": "late_qing_1840_1911",
+          "labelEn": "Late Qing",
+          "labelZh": "晚清",
+          "startYear": 1840,
+          "endYear": 1911,
+          "numerator": 0,
+          "denominator": 11,
+          "matches": [],
+          "denominatorPeople": [
+            {
+              "personId": "p_zuo_zongtang",
+              "nameZh": "左宗棠",
+              "nameEn": "Zuo Zongtang",
+              "eventIds": [
+                "p_zuo_zongtang:full:beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_zuo_zongtang:full:beijing",
+                  "titleZh": "入京任军机大臣",
+                  "titleEn": "Entered Beijing to serve on the Grand Council",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1881",
+                  "dateEn": "1881",
+                  "yearStart": 1881,
+                  "yearEnd": 1881,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_zuo",
+                      "url": "https://css.hunan.gov.cn/tslm/hxws/gywc/201609/t20160905_3253837.html",
+                      "title": "左宗棠的传奇人生｜湖南省文史研究馆"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_zhang_zhidong",
+              "nameZh": "张之洞",
+              "nameEn": "Zhang Zhidong",
+              "eventIds": [
+                "p_zhang_zhidong:full:beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_zhang_zhidong:full:beijing",
+                  "titleZh": "回北京任军机大臣并管理学部",
+                  "titleEn": "Returned to Beijing for Grand Council and education duties",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1907",
+                  "dateEn": "1907",
+                  "yearStart": 1907,
+                  "yearEnd": 1907,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_zhangedu",
+                      "url": "https://pedia.cloud.edu.tw/Entry/Detail/?search=%E6%B9%96%E5%BB%A3&title=%E5%BC%B5%E4%B9%8B%E6%B4%9E",
+                      "title": "张之洞｜教育部教育百科、国家教育研究院教育大辞书"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_cixi",
+              "nameZh": "慈禧太后",
+              "nameEn": "Empress Dowager Cixi",
+              "eventIds": [
+                "p_cixi:full:palace",
+                "p_cixi:full:coup1861"
+              ],
+              "events": [
+                {
+                  "id": "p_cixi:full:palace",
+                  "titleZh": "入宫封兰贵人，居储秀宫",
+                  "titleEn": "Entered the palace as Noble Lady Lan",
+                  "type": "career",
+                  "placeZh": "北京储秀宫",
+                  "placeEn": "Chuxiu Palace, Beijing",
+                  "dateZh": "1852",
+                  "dateEn": "1852",
+                  "yearStart": 1852,
+                  "yearEnd": 1852,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_cixi",
+                      "url": "https://www.dpm.org.cn/court/figure/102753.html",
+                      "title": "慈禧太后｜故宫博物院"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_cixi:full:coup1861",
+                  "titleZh": "参与辛酉政变，开始垂帘听政",
+                  "titleEn": "Launched the Xinyou coup and began the regency",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1861",
+                  "dateEn": "1861",
+                  "yearStart": 1861,
+                  "yearEnd": 1861,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_cixi",
+                      "url": "https://www.dpm.org.cn/court/figure/102753.html",
+                      "title": "慈禧太后｜故宫博物院"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_guangxu",
+              "nameZh": "光绪帝",
+              "nameEn": "Guangxu Emperor",
+              "eventIds": [
+                "p_guangxu:full:reform",
+                "p_guangxu:full:confinement"
+              ],
+              "events": [
+                {
+                  "id": "p_guangxu:full:reform",
+                  "titleZh": "颁布定国是诏，推动变法",
+                  "titleEn": "Issued the reform edict",
+                  "type": "political_activity",
+                  "placeZh": "北京紫禁城",
+                  "placeEn": "Forbidden City, Beijing",
+                  "dateZh": "1898-06-11",
+                  "dateEn": "1898-06-11",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_guangxudate",
+                      "url": "https://legalinfo.moj.gov.cn/zhfxfzwh/fzwhfsgs/202302/t20230223_472542.html",
+                      "title": "瀛台泣血录｜司法部智慧普法平台"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_guangxu:full:confinement",
+                  "titleZh": "政变后被幽禁于瀛台",
+                  "titleEn": "Confined at Yingtai after the coup",
+                  "type": "regional_base",
+                  "placeZh": "北京中南海瀛台",
+                  "placeEn": "Yingtai, Zhongnanhai, Beijing",
+                  "dateZh": "1898",
+                  "dateEn": "1898",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_coup",
+                      "url": "https://www.dpm.org.cn/lemmas/241776.html",
+                      "title": "戊戌政变｜故宫博物院"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_kang_youwei",
+              "nameZh": "康有为",
+              "nameEn": "Kang Youwei",
+              "eventIds": [
+                "p_kang_youwei:full:petition",
+                "p_kang_youwei:full:petition1895",
+                "p_kang_youwei:full:reform"
+              ],
+              "events": [
+                {
+                  "id": "p_kang_youwei:full:petition",
+                  "titleZh": "入京应试并上书请求变法",
+                  "titleEn": "Petitioned for reform while in Beijing for examinations",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1888",
+                  "dateEn": "1888",
+                  "yearStart": 1888,
+                  "yearEnd": 1888,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_kang",
+                      "url": "https://www.beijinglu.yuexiu.gov.cn/bjl/pc_bjl/lydl_bjl/ls_bjl/gfrw_bjl/20181120/detail-210003.shtml",
+                      "title": "康有为｜越秀区北京路文化旅游区"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_kang_youwei:full:petition1895",
+                  "titleZh": "在京发起公车上书与强学会",
+                  "titleEn": "Organized petitions and the Qiangxue Society in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1895",
+                  "dateEn": "1895",
+                  "yearStart": 1895,
+                  "yearEnd": 1895,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_kang",
+                      "url": "https://www.beijinglu.yuexiu.gov.cn/bjl/pc_bjl/lydl_bjl/ls_bjl/gfrw_bjl/20181120/detail-210003.shtml",
+                      "title": "康有为｜越秀区北京路文化旅游区"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_kang_youwei:full:reform",
+                  "titleZh": "获光绪帝召见并参与变法",
+                  "titleEn": "Received an imperial audience and joined the reform administration",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1898",
+                  "dateEn": "1898",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_kang",
+                      "url": "https://www.beijinglu.yuexiu.gov.cn/bjl/pc_bjl/lydl_bjl/ls_bjl/gfrw_bjl/20181120/detail-210003.shtml",
+                      "title": "康有为｜越秀区北京路文化旅游区"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_liang_qichao",
+              "nameZh": "梁启超",
+              "nameEn": "Liang Qichao",
+              "eventIds": [
+                "p_liang_qichao:full:petitions",
+                "p_liang_qichao:full:reform"
+              ],
+              "events": [
+                {
+                  "id": "p_liang_qichao:full:petitions",
+                  "titleZh": "在北京参与公车上书与强学会",
+                  "titleEn": "Joined petitions and the Qiangxue Society in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1895",
+                  "dateEn": "1895",
+                  "yearStart": 1895,
+                  "yearEnd": 1895,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_liang",
+                      "url": "https://www.xinhui.gov.cn/zlxh/lsrw/xhmr/content/post_3307422.html",
+                      "title": "梁启超｜新会县志、新会区政府"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_liang_qichao:full:reform",
+                  "titleZh": "入京参与变法，政变后流亡",
+                  "titleEn": "Joined reform in Beijing and fled after the coup",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1898",
+                  "dateEn": "1898",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_liang",
+                      "url": "https://www.xinhui.gov.cn/zlxh/lsrw/xhmr/content/post_3307422.html",
+                      "title": "梁启超｜新会县志、新会区政府"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_yuan_shikai",
+              "nameZh": "袁世凯",
+              "nameEn": "Yuan Shikai",
+              "eventIds": [
+                "p_yuan_shikai:full:recall"
+              ],
+              "events": [
+                {
+                  "id": "p_yuan_shikai:full:recall",
+                  "titleZh": "被清廷召回主持内阁",
+                  "titleEn": "Recalled to head the Qing cabinet",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1911",
+                  "dateEn": "1911",
+                  "yearStart": 1911,
+                  "yearEnd": 1911,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_yuanmodern",
+                      "url": "https://www.bjrd.gov.cn/fwhd/bjrdzz/2025n/d4q/bjsq04/202504/t20250430_4079476.html",
+                      "title": "近代北京的发展脉络｜北京市人大常委会"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_sun_yat_sen",
+              "nameZh": "孙中山",
+              "nameEn": "Sun Yat-sen",
+              "eventIds": [
+                "p_sun_yat_sen:full:guangzhou-uprising"
+              ],
+              "events": [
+                {
+                  "id": "p_sun_yat_sen:full:guangzhou-uprising",
+                  "titleZh": "在广州筹备起义，失败后流亡",
+                  "titleEn": "Prepared the Guangzhou uprising and went into exile",
+                  "type": "political_activity",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1895",
+                  "dateEn": "1895",
+                  "yearStart": 1895,
+                  "yearEnd": 1895,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_tan_sitong",
+              "nameZh": "谭嗣同",
+              "nameEn": "Tan Sitong",
+              "eventIds": [
+                "p_tan_sitong:full:beijing",
+                "p_tan_sitong:full:coup"
+              ],
+              "events": [
+                {
+                  "id": "p_tan_sitong:full:beijing",
+                  "titleZh": "入京参与新政并任军机章京",
+                  "titleEn": "Joined the reform administration in Beijing",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1898",
+                  "dateEn": "1898",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_tanren",
+                      "url": "https://www.sxfj.gov.cn/jing_cai_zhuan_ti/267e63/10905280.shtml",
+                      "title": "谭嗣同：愿以颈血刷污政｜湖南省纪委监委"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_tan_sitong:full:coup",
+                  "titleZh": "戊戌政变后被捕",
+                  "titleEn": "Arrested following the reform coup",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1898",
+                  "dateEn": "1898",
+                  "yearStart": 1898,
+                  "yearEnd": 1898,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_tanren",
+                      "url": "https://www.sxfj.gov.cn/jing_cai_zhuan_ti/267e63/10905280.shtml",
+                      "title": "谭嗣同：愿以颈血刷污政｜湖南省纪委监委"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_zhang_jian",
+              "nameZh": "张謇",
+              "nameEn": "Zhang Jian",
+              "eventIds": [
+                "p_zhang_jian:full:staff"
+              ],
+              "events": [
+                {
+                  "id": "p_zhang_jian:full:staff",
+                  "titleZh": "任江宁发审局书记",
+                  "titleEn": "Worked as a clerk at Jiangning’s judicial bureau",
+                  "type": "career",
+                  "placeZh": "江宁（南京）",
+                  "placeEn": "Jiangning (Nanjing)",
+                  "dateZh": "1874",
+                  "dateEn": "1874",
+                  "yearStart": 1874,
+                  "yearEnd": 1874,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_jian",
+                      "url": "https://www.haimen.gov.cn/hmsrmzf/hmmr/content/71F310F9-7433-9DC8-E053-FD7F52026FB4.html",
+                      "title": "张謇｜海门区党史办"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_li_yuanhong",
+              "nameZh": "黎元洪",
+              "nameEn": "Li Yuanhong",
+              "eventIds": [
+                "p_li_yuanhong:full:nanjing"
+              ],
+              "events": [
+                {
+                  "id": "p_li_yuanhong:full:nanjing",
+                  "titleZh": "甲午战后赴南京投张之洞",
+                  "titleEn": "Went to Nanjing to work under Zhang Zhidong",
+                  "type": "career",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1894",
+                  "dateEn": "1894",
+                  "yearStart": 1894,
+                  "yearEnd": 1894,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_liyuanhong",
+                      "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799588.shtml",
+                      "title": "黎元洪｜湖北省志、湖北省文化和旅游厅"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            }
+          ],
+          "denominatorPersonIds": [
+            "p_zuo_zongtang",
+            "p_zhang_zhidong",
+            "p_cixi",
+            "p_guangxu",
+            "p_kang_youwei",
+            "p_liang_qichao",
+            "p_yuan_shikai",
+            "p_sun_yat_sen",
+            "p_tan_sitong",
+            "p_zhang_jian",
+            "p_li_yuanhong"
+          ],
+          "boundarySpanningPeople": [],
+          "coverage": {
+            "peopleWithDatedSupportedRecords": 50,
+            "peopleWithDatedSupportedRecordIds": [
+              "p_zeng_guofan",
+              "p_zuo_zongtang",
+              "p_li_hongzhang",
+              "p_zhang_zhidong",
+              "p_cixi",
+              "p_guangxu",
+              "p_kang_youwei",
+              "p_liang_qichao",
+              "p_yuan_shikai",
+              "p_sun_yat_sen",
+              "p_tan_sitong",
+              "p_zhang_jian",
+              "p_li_yuanhong",
+              "p_duan_qirui",
+              "p_feng_guozhang",
+              "p_zhang_zuolin",
+              "p_wu_peifu",
+              "p_chiang_kaishek",
+              "p_wang_jingwei",
+              "p_hu_hanmin",
+              "p_song_jiaoren",
+              "p_song_qingling",
+              "p_li_zongren",
+              "p_zhang_xueliang",
+              "p_chen_duxiu",
+              "p_li_dazhao",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_peng_dehuai",
+              "p_ye_ting",
+              "p_ye_jianying",
+              "p_zhang_zizhong",
+              "p_bai_chongxi",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_yang_jingyu",
+              "p_zhou_baozhong",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian",
+              "p_deng_xiaoping",
+              "p_chiang_ching_kuo",
+              "p_lin_zexu",
+              "p_cai_e",
+              "p_feng_yuxiang",
+              "p_zhao_shangzhi",
+              "p_zuo_quan"
+            ],
+            "boundarySpanningEventCount": 0
+          }
+        },
+        {
+          "id": "roc_1912_1949",
+          "labelEn": "Republic of China",
+          "labelZh": "中华民国时期",
+          "startYear": 1912,
+          "endYear": 1949,
+          "numerator": 5,
+          "denominator": 20,
+          "matches": [
+            {
+              "personId": "p_sun_yat_sen",
+              "nameZh": "孙中山",
+              "nameEn": "Sun Yat-sen",
+              "eventIds": [
+                "p_sun_yat_sen:full:president",
+                "p_sun_yat_sen:full:protection",
+                "p_sun_yat_sen:full:guangzhou-president",
+                "p_sun_yat_sen:full:generalissimo",
+                "p_sun_yat_sen:full:reorganization"
+              ],
+              "events": [
+                {
+                  "id": "p_sun_yat_sen:full:president",
+                  "titleZh": "在南京就任临时大总统",
+                  "titleEn": "Took office as provisional president in Nanjing",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1912-01-01",
+                  "dateEn": "1912-01-01",
+                  "yearStart": 1912,
+                  "yearEnd": 1912,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    },
+                    {
+                      "sourceId": "roc_founding",
+                      "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+                      "title": "中華民國之肇建｜行政院/國史館资料"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:protection",
+                  "titleZh": "在广州组织护法军政府",
+                  "titleEn": "Organized a constitutional-protection government in Guangzhou",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1917-09",
+                  "dateEn": "1917-09",
+                  "yearStart": 1917,
+                  "yearEnd": 1917,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:guangzhou-president",
+                  "titleZh": "在广州任非常大总统",
+                  "titleEn": "Became extraordinary president in Guangzhou",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1921",
+                  "dateEn": "1921",
+                  "yearStart": 1921,
+                  "yearEnd": 1921,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:generalissimo",
+                  "titleZh": "设立大元帅大本营",
+                  "titleEn": "Established the generalissimo’s headquarters",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1923",
+                  "dateEn": "1923",
+                  "yearStart": 1923,
+                  "yearEnd": 1923,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:reorganization",
+                  "titleZh": "主持国民党一大与创办黄埔军校",
+                  "titleEn": "Led KMT reorganization and founded Whampoa Academy",
+                  "type": "political_activity",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_chiang_kaishek",
+              "nameZh": "蒋介石",
+              "nameEn": "Chiang Kai-shek",
+              "eventIds": [
+                "p_chiang_kaishek:full:whampoa",
+                "p_chiang_kaishek:full:president"
+              ],
+              "events": [
+                {
+                  "id": "p_chiang_kaishek:full:whampoa",
+                  "titleZh": "任黄埔军校首任校长",
+                  "titleEn": "Became first commandant of Whampoa Academy",
+                  "type": "office",
+                  "placeZh": "广州黄埔军校",
+                  "placeEn": "Whampoa Academy, Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_cks_en",
+                      "url": "https://www.cksmh.gov.tw/EN/cp.aspx?n=6477",
+                      "title": "National Chiang Kai-shek Memorial Hall: President Chiang Kai-shek and the Republic of China"
+                    },
+                    {
+                      "sourceId": "cks_memorial",
+                      "url": "https://www.cksmh.gov.tw/en/cp.aspx?n=6412",
+                      "title": "蔣介石総統と中華民国｜國立中正紀念堂"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_chiang_kaishek:full:president",
+                  "titleZh": "在南京就任行宪总统",
+                  "titleEn": "Inaugurated as constitutional president in Nanjing",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1948-05-20",
+                  "dateEn": "1948-05-20",
+                  "yearStart": 1948,
+                  "yearEnd": 1948,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_cks_en",
+                      "url": "https://www.cksmh.gov.tw/EN/cp.aspx?n=6477",
+                      "title": "National Chiang Kai-shek Memorial Hall: President Chiang Kai-shek and the Republic of China"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_chen_duxiu",
+              "nameZh": "陈独秀",
+              "nameEn": "Chen Duxiu",
+              "eventIds": [
+                "p_chen_duxiu:full:pku",
+                "p_chen_duxiu:full:guangzhou"
+              ],
+              "events": [
+                {
+                  "id": "p_chen_duxiu:full:pku",
+                  "titleZh": "任北京大学文科学长",
+                  "titleEn": "Became Peking University dean of letters",
+                  "type": "career",
+                  "placeZh": "北京大学",
+                  "placeEn": "Peking University, Beijing",
+                  "dateZh": "1917-01",
+                  "dateEn": "1917-01",
+                  "yearStart": 1917,
+                  "yearEnd": 1917,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_chen_party",
+                      "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
+                      "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                    },
+                    {
+                      "sourceId": "review_pku_chen_history",
+                      "url": "https://www.pku.edu.cn/detail/905.html",
+                      "title": "五四前后的北京大学"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_chen_duxiu:full:guangzhou",
+                  "titleZh": "参与重组广州共产党早期组织",
+                  "titleEn": "Reorganized the Guangzhou communist group",
+                  "type": "political_activity",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1921",
+                  "dateEn": "1921",
+                  "yearStart": 1921,
+                  "yearEnd": 1921,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "expansion_url_006_01",
+                      "url": "https://cpc.people.com.cn/GB/64162/4507364.html",
+                      "title": "Expansion candidate source"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing",
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_ye_jianying",
+              "nameZh": "叶剑英",
+              "nameEn": "Ye Jianying",
+              "eventIds": [
+                "p_ye_jianying:full:03",
+                "p_ye_jianying:full:07"
+              ],
+              "events": [
+                {
+                  "id": "p_ye_jianying:full:03",
+                  "titleZh": "参与广州起义",
+                  "titleEn": "Guangzhou uprising",
+                  "type": "war",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1927",
+                  "dateEn": "1927",
+                  "yearStart": 1927,
+                  "yearEnd": 1927,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_ye_jianying",
+                      "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
+                      "title": "叶剑英生平"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_ye_jianying:full:07",
+                  "titleZh": "在北平任军事调处执行部中共代表",
+                  "titleEn": "Truce executive representative",
+                  "type": "political_activity",
+                  "placeZh": "北平",
+                  "placeEn": "Beiping",
+                  "dateZh": "1946",
+                  "dateEn": "1946",
+                  "yearStart": 1946,
+                  "yearEnd": 1946,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_ye_jianying",
+                      "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
+                      "title": "叶剑英生平"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing",
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_he_yingqin",
+              "nameZh": "何应钦",
+              "nameEn": "He Yingqin",
+              "eventIds": [
+                "p_he_yingqin:full:whampoa",
+                "p_he_yingqin:full:surrender"
+              ],
+              "events": [
+                {
+                  "id": "p_he_yingqin:full:whampoa",
+                  "titleZh": "任黄埔军校总教官",
+                  "titleEn": "Became Whampoa Academy chief instructor",
+                  "type": "career",
+                  "placeZh": "广州黄埔",
+                  "placeEn": "Huangpu, Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_he_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000003",
+                      "title": "国立公共资讯图书馆民国近代史：何应钦"
+                    },
+                    {
+                      "sourceId": "full_republic_he_taipei",
+                      "url": "https://www-ws.gov.taipei/Download.ashx?icon=.pdf&n=5Lit5q2j5Y2A6KqMLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzE4L3JlbGZpbGUvMC8xMzM5OC8xMWM3ZmViYS1iNGJlLTRlNTMtOTc3MS02ZmEzNmFjOGJiMDIucGRm",
+                      "title": "台北市中正区志：何应钦"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_he_yingqin:full:surrender",
+                  "titleZh": "在南京接受日军投降",
+                  "titleEn": "Accepted the Japanese surrender in Nanjing",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1945-09-09",
+                  "dateEn": "1945-09-09",
+                  "yearStart": 1945,
+                  "yearEnd": 1945,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_he_surrender",
+                      "url": "https://www.mjib.gov.tw/FileUploads/eBooks/e02260f0b33844b7ba9e84f03b155505/Book_file/5ececc3dc35447a3977da8a69075330a.pdf",
+                      "title": "调查局出版物：南京受降纪事"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            }
+          ],
+          "denominatorPeople": [
+            {
+              "personId": "p_liang_qichao",
+              "nameZh": "梁启超",
+              "nameEn": "Liang Qichao",
+              "eventIds": [
+                "p_liang_qichao:full:tsinghua"
+              ],
+              "events": [
+                {
+                  "id": "p_liang_qichao:full:tsinghua",
+                  "titleZh": "任清华国学研究院导师",
+                  "titleEn": "Joined Tsinghua’s Institute of Chinese Studies",
+                  "type": "career",
+                  "placeZh": "北京清华大学",
+                  "placeEn": "Tsinghua University, Beijing",
+                  "dateZh": "1925",
+                  "dateEn": "1925",
+                  "yearStart": 1925,
+                  "yearEnd": 1925,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_liangtsinghua",
+                      "url": "https://www.tacl.tsinghua.edu.cn/info/1082/1222.htm",
+                      "title": "五大导师：梁启超｜清华大学国学研究院"
+                    },
+                    {
+                      "sourceId": "review_nankai_liang_history",
+                      "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+                      "title": "梁启超"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_yuan_shikai",
+              "nameZh": "袁世凯",
+              "nameEn": "Yuan Shikai",
+              "eventIds": [
+                "p_yuan_shikai:full:empire"
+              ],
+              "events": [
+                {
+                  "id": "p_yuan_shikai:full:empire",
+                  "titleZh": "宣布恢复帝制",
+                  "titleEn": "Announced the restoration of monarchy",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1915-12",
+                  "dateEn": "1915-12",
+                  "yearStart": 1915,
+                  "yearEnd": 1915,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_yuanmodern",
+                      "url": "https://www.bjrd.gov.cn/fwhd/bjrdzz/2025n/d4q/bjsq04/202504/t20250430_4079476.html",
+                      "title": "近代北京的发展脉络｜北京市人大常委会"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_sun_yat_sen",
+              "nameZh": "孙中山",
+              "nameEn": "Sun Yat-sen",
+              "eventIds": [
+                "p_sun_yat_sen:full:president",
+                "p_sun_yat_sen:full:protection",
+                "p_sun_yat_sen:full:guangzhou-president",
+                "p_sun_yat_sen:full:generalissimo",
+                "p_sun_yat_sen:full:reorganization"
+              ],
+              "events": [
+                {
+                  "id": "p_sun_yat_sen:full:president",
+                  "titleZh": "在南京就任临时大总统",
+                  "titleEn": "Took office as provisional president in Nanjing",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1912-01-01",
+                  "dateEn": "1912-01-01",
+                  "yearStart": 1912,
+                  "yearEnd": 1912,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    },
+                    {
+                      "sourceId": "roc_founding",
+                      "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+                      "title": "中華民國之肇建｜行政院/國史館资料"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:protection",
+                  "titleZh": "在广州组织护法军政府",
+                  "titleEn": "Organized a constitutional-protection government in Guangzhou",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1917-09",
+                  "dateEn": "1917-09",
+                  "yearStart": 1917,
+                  "yearEnd": 1917,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:guangzhou-president",
+                  "titleZh": "在广州任非常大总统",
+                  "titleEn": "Became extraordinary president in Guangzhou",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1921",
+                  "dateEn": "1921",
+                  "yearStart": 1921,
+                  "yearEnd": 1921,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:generalissimo",
+                  "titleZh": "设立大元帅大本营",
+                  "titleEn": "Established the generalissimo’s headquarters",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1923",
+                  "dateEn": "1923",
+                  "yearStart": 1923,
+                  "yearEnd": 1923,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_sun_yat_sen:full:reorganization",
+                  "titleZh": "主持国民党一大与创办黄埔军校",
+                  "titleEn": "Led KMT reorganization and founded Whampoa Academy",
+                  "type": "political_activity",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_zs_sun",
+                      "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
+                      "title": "中山市南朗街道：孙中山"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_li_yuanhong",
+              "nameZh": "黎元洪",
+              "nameEn": "Li Yuanhong",
+              "eventIds": [
+                "p_li_yuanhong:full:beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_li_yuanhong:full:beijing",
+                  "titleZh": "被迫到北京并受约束居住",
+                  "titleEn": "Compelled to move to Beijing and placed under restriction",
+                  "type": "regional_base",
+                  "placeZh": "北京瀛台",
+                  "placeEn": "Yingtai, Beijing",
+                  "dateZh": "1913-12",
+                  "dateEn": "1913-12",
+                  "yearStart": 1913,
+                  "yearEnd": 1913,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_liyuanhong",
+                      "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799588.shtml",
+                      "title": "黎元洪｜湖北省志、湖北省文化和旅游厅"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_zhang_zuolin",
+              "nameZh": "张作霖",
+              "nameEn": "Zhang Zuolin",
+              "eventIds": [
+                "p_zhang_zuolin:full:generalissimo"
+              ],
+              "events": [
+                {
+                  "id": "p_zhang_zuolin:full:generalissimo",
+                  "titleZh": "在北京就任陆海军大元帅",
+                  "titleEn": "Became generalissimo in Beijing",
+                  "type": "office",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1927-06-18",
+                  "dateEn": "1927-06-18",
+                  "yearStart": 1927,
+                  "yearEnd": 1927,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_zzlmarshal",
+                      "url": "https://www.hebzx.gov.cn/system/2024/06/23/030294474.shtml",
+                      "title": "张作霖大元帅任职史事｜河北政协文史精华"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_wu_peifu",
+              "nameZh": "吴佩孚",
+              "nameEn": "Wu Peifu",
+              "eventIds": [
+                "p_wu_peifu:full:beiping"
+              ],
+              "events": [
+                {
+                  "id": "p_wu_peifu:full:beiping",
+                  "titleZh": "九一八事变后寓居北平",
+                  "titleEn": "Settled in Beiping after the Mukden Incident",
+                  "type": "regional_base",
+                  "placeZh": "北平（北京）",
+                  "placeEn": "Beiping (Beijing)",
+                  "dateZh": "1931",
+                  "dateEn": "1931",
+                  "yearStart": 1931,
+                  "yearEnd": 1931,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_lateqing_wu",
+                      "url": "https://www.dpm.org.cn/lemmas/245523.html",
+                      "title": "吴佩孚｜故宫博物院"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_chiang_kaishek",
+              "nameZh": "蒋介石",
+              "nameEn": "Chiang Kai-shek",
+              "eventIds": [
+                "p_chiang_kaishek:full:whampoa",
+                "p_chiang_kaishek:full:president"
+              ],
+              "events": [
+                {
+                  "id": "p_chiang_kaishek:full:whampoa",
+                  "titleZh": "任黄埔军校首任校长",
+                  "titleEn": "Became first commandant of Whampoa Academy",
+                  "type": "office",
+                  "placeZh": "广州黄埔军校",
+                  "placeEn": "Whampoa Academy, Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_cks_en",
+                      "url": "https://www.cksmh.gov.tw/EN/cp.aspx?n=6477",
+                      "title": "National Chiang Kai-shek Memorial Hall: President Chiang Kai-shek and the Republic of China"
+                    },
+                    {
+                      "sourceId": "cks_memorial",
+                      "url": "https://www.cksmh.gov.tw/en/cp.aspx?n=6412",
+                      "title": "蔣介石総統と中華民国｜國立中正紀念堂"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_chiang_kaishek:full:president",
+                  "titleZh": "在南京就任行宪总统",
+                  "titleEn": "Inaugurated as constitutional president in Nanjing",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1948-05-20",
+                  "dateEn": "1948-05-20",
+                  "yearStart": 1948,
+                  "yearEnd": 1948,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "audit_cks_en",
+                      "url": "https://www.cksmh.gov.tw/EN/cp.aspx?n=6477",
+                      "title": "National Chiang Kai-shek Memorial Hall: President Chiang Kai-shek and the Republic of China"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_wang_jingwei",
+              "nameZh": "汪精卫",
+              "nameEn": "Wang Jingwei",
+              "eventIds": [
+                "p_wang_jingwei:full:nanjing"
+              ],
+              "events": [
+                {
+                  "id": "p_wang_jingwei:full:nanjing",
+                  "titleZh": "在南京另组亲日政权",
+                  "titleEn": "Established a Japanese-backed government",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1940-03",
+                  "dateEn": "1940-03",
+                  "yearStart": 1940,
+                  "yearEnd": 1940,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_wang_archive",
+                      "url": "https://ahonline.drnh.gov.tw/docs/zong/118.pdf",
+                      "title": "国史馆：汪兆铭史料"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_song_qingling",
+              "nameZh": "宋庆龄",
+              "nameEn": "Soong Ching-ling",
+              "eventIds": [
+                "p_song_qingling:full:cppcc"
+              ],
+              "events": [
+                {
+                  "id": "p_song_qingling:full:cppcc",
+                  "titleZh": "参加政协，当选中央人民政府副主席",
+                  "titleEn": "Joined the CPPCC and became a government vice chair",
+                  "type": "office",
+                  "placeZh": "北平",
+                  "placeEn": "Beiping",
+                  "dateZh": "1949-09",
+                  "dateEn": "1949-09",
+                  "yearStart": 1949,
+                  "yearEnd": 1949,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_songq_cppcc",
+                      "url": "https://www.cppcc.gov.cn/2011/09/28/ARTI1317197421328349.shtml",
+                      "title": "全国政协：宋庆龄（1893—1981）"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_li_zongren",
+              "nameZh": "李宗仁",
+              "nameEn": "Li Zongren",
+              "eventIds": [
+                "p_li_zongren:full:nanjing"
+              ],
+              "events": [
+                {
+                  "id": "p_li_zongren:full:nanjing",
+                  "titleZh": "返回南京处理政府事务",
+                  "titleEn": "Returned to Nanjing for government affairs",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1949-02-25",
+                  "dateEn": "1949-02-25",
+                  "yearStart": 1949,
+                  "yearEnd": 1949,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_li_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000016",
+                      "title": "国立公共资讯图书馆民国近代史：李宗仁"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_zhang_xueliang",
+              "nameZh": "张学良",
+              "nameEn": "Zhang Xueliang",
+              "eventIds": [
+                "p_zhang_xueliang:full:beiping",
+                "p_zhang_xueliang:full:mukden"
+              ],
+              "events": [
+                {
+                  "id": "p_zhang_xueliang:full:beiping",
+                  "titleZh": "率军进入北京",
+                  "titleEn": "Entered Beijing with his forces",
+                  "type": "war",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_zhangx_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000031",
+                      "title": "国立公共资讯图书馆民国近代史：张学良"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_zhang_xueliang:full:mukden",
+                  "titleZh": "在北平期间发生九一八事变，下令不抵抗",
+                  "titleEn": "Ordered nonresistance while in Beiping during the invasion",
+                  "type": "political_activity",
+                  "placeZh": "北平",
+                  "placeEn": "Beiping",
+                  "dateZh": "1931",
+                  "dateEn": "1931",
+                  "yearStart": 1931,
+                  "yearEnd": 1931,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_zhangx_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000031",
+                      "title": "国立公共资讯图书馆民国近代史：张学良"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_chen_duxiu",
+              "nameZh": "陈独秀",
+              "nameEn": "Chen Duxiu",
+              "eventIds": [
+                "p_chen_duxiu:full:pku",
+                "p_chen_duxiu:full:guangzhou"
+              ],
+              "events": [
+                {
+                  "id": "p_chen_duxiu:full:pku",
+                  "titleZh": "任北京大学文科学长",
+                  "titleEn": "Became Peking University dean of letters",
+                  "type": "career",
+                  "placeZh": "北京大学",
+                  "placeEn": "Peking University, Beijing",
+                  "dateZh": "1917-01",
+                  "dateEn": "1917-01",
+                  "yearStart": 1917,
+                  "yearEnd": 1917,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_chen_party",
+                      "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
+                      "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                    },
+                    {
+                      "sourceId": "review_pku_chen_history",
+                      "url": "https://www.pku.edu.cn/detail/905.html",
+                      "title": "五四前后的北京大学"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_chen_duxiu:full:guangzhou",
+                  "titleZh": "参与重组广州共产党早期组织",
+                  "titleEn": "Reorganized the Guangzhou communist group",
+                  "type": "political_activity",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1921",
+                  "dateEn": "1921",
+                  "yearStart": 1921,
+                  "yearEnd": 1921,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "expansion_url_006_01",
+                      "url": "https://cpc.people.com.cn/GB/64162/4507364.html",
+                      "title": "Expansion candidate source"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing",
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_li_dazhao",
+              "nameZh": "李大钊",
+              "nameEn": "Li Dazhao",
+              "eventIds": [
+                "p_li_dazhao:full:beijing",
+                "p_li_dazhao:full:arrest"
+              ],
+              "events": [
+                {
+                  "id": "p_li_dazhao:full:beijing",
+                  "titleZh": "领导北京共产党早期组织",
+                  "titleEn": "Led the early Beijing communist group",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1920-10",
+                  "dateEn": "1920-10",
+                  "yearStart": 1920,
+                  "yearEnd": 1920,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "expansion_url_006_01",
+                      "url": "https://cpc.people.com.cn/GB/64162/4507364.html",
+                      "title": "Expansion candidate source"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_li_dazhao:full:arrest",
+                  "titleZh": "在北京被捕",
+                  "titleEn": "Arrested in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1927-04-06",
+                  "dateEn": "1927-04-06",
+                  "yearStart": 1927,
+                  "yearEnd": 1927,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_lid_tba",
+                      "url": "https://www.tba.gov.cn/slbthlyglj/dsxxjysflrw/content/8d80a4bb-d247-4f14-bcd8-517c89ce6b98.html",
+                      "title": "太湖流域管理局转载共产党员网：李大钊"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_zhou_enlai",
+              "nameZh": "周恩来",
+              "nameEn": "Zhou Enlai",
+              "eventIds": [
+                "p_zhou_enlai:full:05"
+              ],
+              "events": [
+                {
+                  "id": "p_zhou_enlai:full:05",
+                  "titleZh": "任黄埔军校政治部主任",
+                  "titleEn": "Whampoa political director",
+                  "type": "office",
+                  "placeZh": "广州黄埔军校",
+                  "placeEn": "Whampoa Military Academy, Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "seed_aw002",
+                      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
+                      "title": "外交部人物资料;含早期职务与抗战经历"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_ye_ting",
+              "nameZh": "叶挺",
+              "nameEn": "Ye Ting",
+              "eventIds": [
+                "p_ye_ting:full:10"
+              ],
+              "events": [
+                {
+                  "id": "p_ye_ting:full:10",
+                  "titleZh": "参加广州起义",
+                  "titleEn": "Guangzhou uprising",
+                  "type": "war",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1927",
+                  "dateEn": "1927",
+                  "yearStart": 1927,
+                  "yearEnd": 1927,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_ye",
+                      "url": "https://www.zlb.gov.cn/2021-06/16/c_1211203544.htm",
+                      "title": "叶挺：生平与澳门经历"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_ye_jianying",
+              "nameZh": "叶剑英",
+              "nameEn": "Ye Jianying",
+              "eventIds": [
+                "p_ye_jianying:full:03",
+                "p_ye_jianying:full:07"
+              ],
+              "events": [
+                {
+                  "id": "p_ye_jianying:full:03",
+                  "titleZh": "参与广州起义",
+                  "titleEn": "Guangzhou uprising",
+                  "type": "war",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1927",
+                  "dateEn": "1927",
+                  "yearStart": 1927,
+                  "yearEnd": 1927,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_ye_jianying",
+                      "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
+                      "title": "叶剑英生平"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_ye_jianying:full:07",
+                  "titleZh": "在北平任军事调处执行部中共代表",
+                  "titleEn": "Truce executive representative",
+                  "type": "political_activity",
+                  "placeZh": "北平",
+                  "placeEn": "Beiping",
+                  "dateZh": "1946",
+                  "dateEn": "1946",
+                  "yearStart": 1946,
+                  "yearEnd": 1946,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_ye_jianying",
+                      "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
+                      "title": "叶剑英生平"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing",
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_he_yingqin",
+              "nameZh": "何应钦",
+              "nameEn": "He Yingqin",
+              "eventIds": [
+                "p_he_yingqin:full:whampoa",
+                "p_he_yingqin:full:surrender"
+              ],
+              "events": [
+                {
+                  "id": "p_he_yingqin:full:whampoa",
+                  "titleZh": "任黄埔军校总教官",
+                  "titleEn": "Became Whampoa Academy chief instructor",
+                  "type": "career",
+                  "placeZh": "广州黄埔",
+                  "placeEn": "Huangpu, Guangzhou",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_he_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000003",
+                      "title": "国立公共资讯图书馆民国近代史：何应钦"
+                    },
+                    {
+                      "sourceId": "full_republic_he_taipei",
+                      "url": "https://www-ws.gov.taipei/Download.ashx?icon=.pdf&n=5Lit5q2j5Y2A6KqMLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzE4L3JlbGZpbGUvMC8xMzM5OC8xMWM3ZmViYS1iNGJlLTRlNTMtOTc3MS02ZmEzNmFjOGJiMDIucGRm",
+                      "title": "台北市中正区志：何应钦"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_he_yingqin:full:surrender",
+                  "titleZh": "在南京接受日军投降",
+                  "titleEn": "Accepted the Japanese surrender in Nanjing",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1945-09-09",
+                  "dateEn": "1945-09-09",
+                  "yearStart": 1945,
+                  "yearEnd": 1945,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_he_surrender",
+                      "url": "https://www.mjib.gov.tw/FileUploads/eBooks/e02260f0b33844b7ba9e84f03b155505/Book_file/5ececc3dc35447a3977da8a69075330a.pdf",
+                      "title": "调查局出版物：南京受降纪事"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_liu_shaoqi",
+              "nameZh": "刘少奇",
+              "nameEn": "Liu Shaoqi",
+              "eventIds": [
+                "p_liu_shaoqi:full:04"
+              ],
+              "events": [
+                {
+                  "id": "p_liu_shaoqi:full:04",
+                  "titleZh": "在广州代理总工会委员长",
+                  "titleEn": "Labor federation leadership",
+                  "type": "office",
+                  "placeZh": "广州",
+                  "placeEn": "Guangzhou",
+                  "dateZh": "1926",
+                  "dateEn": "1926",
+                  "yearStart": 1926,
+                  "yearEnd": 1926,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_liu",
+                      "url": "https://cpc.people.com.cn/GB/143527/147174/10536454.html",
+                      "title": "刘少奇大事年表"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_nie_rongzhen",
+              "nameZh": "聂荣臻",
+              "nameEn": "Nie Rongzhen",
+              "eventIds": [
+                "p_nie_rongzhen:full:05"
+              ],
+              "events": [
+                {
+                  "id": "p_nie_rongzhen:full:05",
+                  "titleZh": "任黄埔军校秘书兼教官",
+                  "titleEn": "Whampoa staff and teaching",
+                  "type": "office",
+                  "placeZh": "黄埔军校",
+                  "placeEn": "Whampoa Military Academy",
+                  "dateZh": "1925",
+                  "dateEn": "1925",
+                  "yearStart": 1925,
+                  "yearEnd": 1925,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_nie",
+                      "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593527.html",
+                      "title": "聂荣臻生平"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou"
+              ]
+            },
+            {
+              "personId": "p_feng_yuxiang",
+              "nameZh": "冯玉祥",
+              "nameEn": "Feng Yuxiang",
+              "eventIds": [
+                "p_feng_yuxiang:full:beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_feng_yuxiang:full:beijing",
+                  "titleZh": "发动北京政变并组织国民军",
+                  "titleEn": "Launched the Beijing coup and organized the Guominjun",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1924",
+                  "dateEn": "1924",
+                  "yearStart": 1924,
+                  "yearEnd": 1924,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_feng_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000035",
+                      "title": "国立公共资讯图书馆民国近代史：冯玉祥"
+                    },
+                    {
+                      "sourceId": "full_republic_feng_palace",
+                      "url": "https://www.dpm.org.cn/lemmas/241802.html",
+                      "title": "故宫博物院：冯玉祥"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            }
+          ],
+          "denominatorPersonIds": [
+            "p_liang_qichao",
+            "p_yuan_shikai",
+            "p_sun_yat_sen",
+            "p_li_yuanhong",
+            "p_zhang_zuolin",
+            "p_wu_peifu",
+            "p_chiang_kaishek",
+            "p_wang_jingwei",
+            "p_song_qingling",
+            "p_li_zongren",
+            "p_zhang_xueliang",
+            "p_chen_duxiu",
+            "p_li_dazhao",
+            "p_zhou_enlai",
+            "p_ye_ting",
+            "p_ye_jianying",
+            "p_he_yingqin",
+            "p_liu_shaoqi",
+            "p_nie_rongzhen",
+            "p_feng_yuxiang"
+          ],
+          "boundarySpanningPeople": [],
+          "coverage": {
+            "peopleWithDatedSupportedRecords": 50,
+            "peopleWithDatedSupportedRecordIds": [
+              "p_kang_youwei",
+              "p_liang_qichao",
+              "p_yuan_shikai",
+              "p_sun_yat_sen",
+              "p_zhang_jian",
+              "p_li_yuanhong",
+              "p_duan_qirui",
+              "p_feng_guozhang",
+              "p_zhang_zuolin",
+              "p_wu_peifu",
+              "p_chiang_kaishek",
+              "p_wang_jingwei",
+              "p_hu_hanmin",
+              "p_song_jiaoren",
+              "p_song_qingling",
+              "p_li_zongren",
+              "p_zhang_xueliang",
+              "p_chen_duxiu",
+              "p_li_dazhao",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_peng_dehuai",
+              "p_ye_ting",
+              "p_ye_jianying",
+              "p_zhang_zizhong",
+              "p_bai_chongxi",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_yang_jingyu",
+              "p_zhou_baozhong",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_zhu_rongji",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_lee_teng_hui",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_donald_tsang",
+              "p_cai_e",
+              "p_feng_yuxiang",
+              "p_zhao_shangzhi",
+              "p_zuo_quan"
+            ],
+            "boundarySpanningEventCount": 0
+          }
+        },
+        {
+          "id": "war_1937_1945",
+          "labelEn": "War of Resistance",
+          "labelZh": "抗日战争时期",
+          "startYear": 1937,
+          "endYear": 1945,
+          "numerator": 0,
+          "denominator": 2,
+          "matches": [],
+          "denominatorPeople": [
+            {
+              "personId": "p_wang_jingwei",
+              "nameZh": "汪精卫",
+              "nameEn": "Wang Jingwei",
+              "eventIds": [
+                "p_wang_jingwei:full:nanjing"
+              ],
+              "events": [
+                {
+                  "id": "p_wang_jingwei:full:nanjing",
+                  "titleZh": "在南京另组亲日政权",
+                  "titleEn": "Established a Japanese-backed government",
+                  "type": "office",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1940-03",
+                  "dateEn": "1940-03",
+                  "yearStart": 1940,
+                  "yearEnd": 1940,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_wang_archive",
+                      "url": "https://ahonline.drnh.gov.tw/docs/zong/118.pdf",
+                      "title": "国史馆：汪兆铭史料"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_he_yingqin",
+              "nameZh": "何应钦",
+              "nameEn": "He Yingqin",
+              "eventIds": [
+                "p_he_yingqin:full:surrender"
+              ],
+              "events": [
+                {
+                  "id": "p_he_yingqin:full:surrender",
+                  "titleZh": "在南京接受日军投降",
+                  "titleEn": "Accepted the Japanese surrender in Nanjing",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1945-09-09",
+                  "dateEn": "1945-09-09",
+                  "yearStart": 1945,
+                  "yearEnd": 1945,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_he_surrender",
+                      "url": "https://www.mjib.gov.tw/FileUploads/eBooks/e02260f0b33844b7ba9e84f03b155505/Book_file/5ececc3dc35447a3977da8a69075330a.pdf",
+                      "title": "调查局出版物：南京受降纪事"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "nanjing"
+              ]
+            }
+          ],
+          "denominatorPersonIds": [
+            "p_wang_jingwei",
+            "p_he_yingqin"
+          ],
+          "boundarySpanningPeople": [],
+          "coverage": {
+            "peopleWithDatedSupportedRecords": 33,
+            "peopleWithDatedSupportedRecordIds": [
+              "p_wu_peifu",
+              "p_chiang_kaishek",
+              "p_wang_jingwei",
+              "p_song_qingling",
+              "p_li_zongren",
+              "p_chen_duxiu",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_peng_dehuai",
+              "p_ye_ting",
+              "p_ye_jianying",
+              "p_zhang_zizhong",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_yang_jingyu",
+              "p_zhou_baozhong",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_lee_teng_hui",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_donald_tsang",
+              "p_zhao_shangzhi",
+              "p_zuo_quan"
+            ],
+            "boundarySpanningEventCount": 0
+          }
+        },
+        {
+          "id": "prc_1949_1978",
+          "labelEn": "Early PRC & pre-reform",
+          "labelZh": "建国至改革开放",
+          "startYear": 1949,
+          "endYear": 1978,
+          "numerator": 1,
+          "denominator": 5,
+          "matches": [
+            {
+              "personId": "p_li_zongren",
+              "nameZh": "李宗仁",
+              "nameEn": "Li Zongren",
+              "eventIds": [
+                "p_li_zongren:full:nanjing",
+                "p_li_zongren:full:return"
+              ],
+              "events": [
+                {
+                  "id": "p_li_zongren:full:nanjing",
+                  "titleZh": "返回南京处理政府事务",
+                  "titleEn": "Returned to Nanjing for government affairs",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1949-02-25",
+                  "dateEn": "1949-02-25",
+                  "yearStart": 1949,
+                  "yearEnd": 1949,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_li_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000016",
+                      "title": "国立公共资讯图书馆民国近代史：李宗仁"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_li_zongren:full:return",
+                  "titleZh": "经广州返回中国大陆",
+                  "titleEn": "Returned to mainland China via Guangzhou",
+                  "type": "political_activity",
+                  "placeZh": "广州白云机场",
+                  "placeEn": "Baiyun Airport, Guangzhou",
+                  "dateZh": "1965-07-18",
+                  "dateEn": "1965-07-18",
+                  "yearStart": 1965,
+                  "yearEnd": 1965,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "expansion_url_002_03",
+                      "url": "https://www.bjtzb.gov.cn/wwwroot/sdtyzx/publish/article/40/8015.shtml",
+                      "title": "Expansion candidate source"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            }
+          ],
+          "denominatorPeople": [
+            {
+              "personId": "p_song_qingling",
+              "nameZh": "宋庆龄",
+              "nameEn": "Soong Ching-ling",
+              "eventIds": [
+                "p_song_qingling:full:cppcc"
+              ],
+              "events": [
+                {
+                  "id": "p_song_qingling:full:cppcc",
+                  "titleZh": "参加政协，当选中央人民政府副主席",
+                  "titleEn": "Joined the CPPCC and became a government vice chair",
+                  "type": "office",
+                  "placeZh": "北平",
+                  "placeEn": "Beiping",
+                  "dateZh": "1949-09",
+                  "dateEn": "1949-09",
+                  "yearStart": 1949,
+                  "yearEnd": 1949,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_songq_cppcc",
+                      "url": "https://www.cppcc.gov.cn/2011/09/28/ARTI1317197421328349.shtml",
+                      "title": "全国政协：宋庆龄（1893—1981）"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_li_zongren",
+              "nameZh": "李宗仁",
+              "nameEn": "Li Zongren",
+              "eventIds": [
+                "p_li_zongren:full:nanjing",
+                "p_li_zongren:full:return"
+              ],
+              "events": [
+                {
+                  "id": "p_li_zongren:full:nanjing",
+                  "titleZh": "返回南京处理政府事务",
+                  "titleEn": "Returned to Nanjing for government affairs",
+                  "type": "political_activity",
+                  "placeZh": "南京",
+                  "placeEn": "Nanjing",
+                  "dateZh": "1949-02-25",
+                  "dateEn": "1949-02-25",
+                  "yearStart": 1949,
+                  "yearEnd": 1949,
+                  "mapKey": "nanjing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_republic_li_library",
+                      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000016",
+                      "title": "国立公共资讯图书馆民国近代史：李宗仁"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_li_zongren:full:return",
+                  "titleZh": "经广州返回中国大陆",
+                  "titleEn": "Returned to mainland China via Guangzhou",
+                  "type": "political_activity",
+                  "placeZh": "广州白云机场",
+                  "placeEn": "Baiyun Airport, Guangzhou",
+                  "dateZh": "1965-07-18",
+                  "dateEn": "1965-07-18",
+                  "yearStart": 1965,
+                  "yearEnd": 1965,
+                  "mapKey": "guangzhou",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "expansion_url_002_03",
+                      "url": "https://www.bjtzb.gov.cn/wwwroot/sdtyzx/publish/article/40/8015.shtml",
+                      "title": "Expansion candidate source"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "guangzhou",
+                "nanjing"
+              ]
+            },
+            {
+              "personId": "p_mao_zedong",
+              "nameZh": "毛泽东",
+              "nameEn": "Mao Zedong",
+              "eventIds": [
+                "p_mao_zedong:full:17"
+              ],
+              "events": [
+                {
+                  "id": "p_mao_zedong:full:17",
+                  "titleZh": "在北京会见尼克松",
+                  "titleEn": "Meeting Nixon in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京中南海",
+                  "placeEn": "Zhongnanhai, Beijing",
+                  "dateZh": "1972",
+                  "dateEn": "1972",
+                  "yearStart": 1972,
+                  "yearEnd": 1972,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_mao",
+                      "url": "https://cpc.people.com.cn/GB/143527/143544/10536428.html",
+                      "title": "毛泽东大事年表"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_peng_dehuai",
+              "nameZh": "彭德怀",
+              "nameEn": "Peng Dehuai",
+              "eventIds": [
+                "p_peng_dehuai:full:14"
+              ],
+              "events": [
+                {
+                  "id": "p_peng_dehuai:full:14",
+                  "titleZh": "被押送北京",
+                  "titleEn": "Taken to Beijing in custody",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1966",
+                  "dateEn": "1966",
+                  "yearStart": 1966,
+                  "yearEnd": 1966,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_peng_late",
+                      "url": "https://cpc.people.com.cn/GB/67481/71472/4844883.html",
+                      "title": "彭德怀大事年表：晚年"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_hu_jintao",
+              "nameZh": "胡锦涛",
+              "nameEn": "Hu Jintao",
+              "eventIds": [
+                "p_hu_jintao:full:03"
+              ],
+              "events": [
+                {
+                  "id": "p_hu_jintao:full:03",
+                  "titleZh": "清华科研工作",
+                  "titleEn": "Research at Tsinghua",
+                  "type": "career",
+                  "placeZh": "清华大学",
+                  "placeEn": "Tsinghua University",
+                  "dateZh": "1965–1968",
+                  "dateEn": "1965–1968",
+                  "yearStart": 1965,
+                  "yearEnd": 1968,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_hu",
+                      "url": "https://politics.people.com.cn/n/2012/1116/c1001-19601460.html",
+                      "title": "胡锦涛同志简历"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            }
+          ],
+          "denominatorPersonIds": [
+            "p_song_qingling",
+            "p_li_zongren",
+            "p_mao_zedong",
+            "p_peng_dehuai",
+            "p_hu_jintao"
+          ],
+          "boundarySpanningPeople": [],
+          "coverage": {
+            "peopleWithDatedSupportedRecords": 41,
+            "peopleWithDatedSupportedRecordIds": [
+              "p_chiang_kaishek",
+              "p_song_qingling",
+              "p_li_zongren",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_peng_dehuai",
+              "p_ye_jianying",
+              "p_bai_chongxi",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_zhou_baozhong",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_zhu_rongji",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_xi_jinping",
+              "p_li_keqiang",
+              "p_li_qiang",
+              "p_lee_teng_hui",
+              "p_chen_shui_bian",
+              "p_ma_ying_jeou",
+              "p_tsai_ing_wen",
+              "p_lai_ching_te",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_donald_tsang",
+              "p_leung_chun_ying",
+              "p_carrie_lam",
+              "p_john_lee",
+              "p_edmund_ho",
+              "p_fernando_chui",
+              "p_ho_iat_seng",
+              "p_sam_hou_fai"
+            ],
+            "boundarySpanningEventCount": 0
+          }
+        },
+        {
+          "id": "reform_1978_2026",
+          "labelEn": "Reform & Opening to the present",
+          "labelZh": "改革开放至今",
+          "startYear": 1978,
+          "endYear": 2026,
+          "numerator": 0,
+          "denominator": 6,
+          "matches": [],
+          "denominatorPeople": [
+            {
+              "personId": "p_zhao_ziyang",
+              "nameZh": "赵紫阳",
+              "nameEn": "Zhao Ziyang",
+              "eventIds": [
+                "p_zhao_ziyang:supp:may19",
+                "p_zhao_ziyang:supp:house-arrest"
+              ],
+              "events": [
+                {
+                  "id": "p_zhao_ziyang:supp:may19",
+                  "titleZh": "赴天安门广场看望示威学生",
+                  "titleEn": "Visits demonstrators in Tiananmen Square",
+                  "type": "political_activity",
+                  "placeZh": "北京天安门广场",
+                  "placeEn": "Tiananmen Square, Beijing",
+                  "dateZh": "1989-05-19",
+                  "dateEn": "1989-05-19",
+                  "yearStart": 1989,
+                  "yearEnd": 1989,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_supp_zhao_may19",
+                      "url": "https://www.hrw.org/news/2007/06/01/china-tiananmen-legacy-defies-olympic-gloss",
+                      "title": "Human Rights Watch：1989年5月19日赵紫阳访问示威学生"
+                    }
+                  ]
+                },
+                {
+                  "id": "p_zhao_ziyang:supp:house-arrest",
+                  "titleZh": "反对武力后被撤职并长期软禁",
+                  "titleEn": "Removed after opposing force; kept under house arrest",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "1989–2005",
+                  "dateEn": "1989–2005",
+                  "yearStart": 1989,
+                  "yearEnd": 2005,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_supp_zhao_abc",
+                      "url": "https://www.abc.net.au/news/2005-01-17/former-chinese-communist-party-head-dies/620372",
+                      "title": "ABC News：赵紫阳逝世与软禁背景"
+                    },
+                    {
+                      "sourceId": "full_prc_supp_zhao_voa",
+                      "url": "https://www.voachinese.com/amp/a-21-a-2005-01-17-17-1-57783572/1056666.html",
+                      "title": "美国之音：赵紫阳简历"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_xi_jinping",
+              "nameZh": "习近平",
+              "nameEn": "Xi Jinping",
+              "eventIds": [
+                "p_xi_jinping:full:16"
+              ],
+              "events": [
+                {
+                  "id": "p_xi_jinping:full:16",
+                  "titleZh": "在北京出席国庆招待会",
+                  "titleEn": "National Day reception in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京人民大会堂",
+                  "placeEn": "Great Hall of the People, Beijing",
+                  "dateZh": "2026-09-30",
+                  "dateEn": "2026-09-30",
+                  "yearStart": 2026,
+                  "yearEnd": 2026,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_current_xi",
+                      "url": "https://politics.people.com.cn/n1/2026/0930/c1024-40808431.html",
+                      "title": "2026年国庆招待会：领导人职务与到场"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_li_keqiang",
+              "nameZh": "李克强",
+              "nameEn": "Li Keqiang",
+              "eventIds": [
+                "p_li_keqiang:full:05"
+              ],
+              "events": [
+                {
+                  "id": "p_li_keqiang:full:05",
+                  "titleZh": "北京大学团委书记",
+                  "titleEn": "University Youth League secretary",
+                  "type": "career",
+                  "placeZh": "北京大学",
+                  "placeEn": "Peking University",
+                  "dateZh": "1982",
+                  "dateEn": "1982",
+                  "yearStart": 1982,
+                  "yearEnd": 1982,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_li_keqiang",
+                      "url": "https://www.cac.gov.cn/2023-11/02/c_1700583696696685.htm",
+                      "title": "李克强同志生平（新华社）"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_li_qiang",
+              "nameZh": "李强",
+              "nameEn": "Li Qiang",
+              "eventIds": [
+                "p_li_qiang:full:14"
+              ],
+              "events": [
+                {
+                  "id": "p_li_qiang:full:14",
+                  "titleZh": "获任国务院总理",
+                  "titleEn": "Appointed premier",
+                  "type": "office",
+                  "placeZh": "北京人民大会堂",
+                  "placeEn": "Great Hall of the People, Beijing",
+                  "dateZh": "2023-03-11",
+                  "dateEn": "2023-03-11",
+                  "yearStart": 2023,
+                  "yearEnd": 2023,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_prc_li_qiang_2023",
+                      "url": "https://www.cac.gov.cn/2023-03/12/c_1680256719146467.htm",
+                      "title": "李强获任国务院总理"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_john_lee",
+              "nameZh": "李家超",
+              "nameEn": "John Lee",
+              "eventIds": [
+                "p_john_lee:full:beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_john_lee:full:beijing",
+                  "titleZh": "在北京接受行政长官任命令并获习近平接见",
+                  "titleEn": "Receives appointment instrument and meets Xi Jinping in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "2022-05-30",
+                  "dateEn": "2022-05-30",
+                  "yearStart": 2022,
+                  "yearEnd": 2022,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_twhkmo_john_beijing",
+                      "url": "https://www.info.gov.hk/gia/general/202205/30/P2022053000570.htm",
+                      "title": "李家超在北京接受任命令"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            },
+            {
+              "personId": "p_fernando_chui",
+              "nameZh": "崔世安",
+              "nameEn": "Fernando Chui Sai-on",
+              "eventIds": [
+                "p_fernando_chui:full:fiveyear-beijing"
+              ],
+              "events": [
+                {
+                  "id": "p_fernando_chui:full:fiveyear-beijing",
+                  "titleZh": "率五年发展规划编制团队在北京听取意见",
+                  "titleEn": "Leads five-year development planning team to consultations in Beijing",
+                  "type": "political_activity",
+                  "placeZh": "北京",
+                  "placeEn": "Beijing",
+                  "dateZh": "2016-08-16",
+                  "dateEn": "2016-08-16",
+                  "yearStart": 2016,
+                  "yearEnd": 2016,
+                  "mapKey": "beijing",
+                  "spatialRelation": "documented_presence",
+                  "sourceRefs": [
+                    {
+                      "sourceId": "full_twhkmo_chui_fiveyear",
+                      "url": "https://www.gcs.gov.mo/news/detail/zh-hant/N16HPYoqIn",
+                      "title": "澳门政府：崔世安带领五年规划编制团队在北京听取意见"
+                    }
+                  ]
+                }
+              ],
+              "centerIds": [
+                "beijing"
+              ]
+            }
+          ],
+          "denominatorPersonIds": [
+            "p_zhao_ziyang",
+            "p_xi_jinping",
+            "p_li_keqiang",
+            "p_li_qiang",
+            "p_john_lee",
+            "p_fernando_chui"
+          ],
+          "boundarySpanningPeople": [],
+          "coverage": {
+            "peopleWithDatedSupportedRecords": 34,
+            "peopleWithDatedSupportedRecordIds": [
+              "p_song_qingling",
+              "p_zhang_xueliang",
+              "p_ye_jianying",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_nie_rongzhen",
+              "p_li_xiannian",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_zhu_rongji",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_xi_jinping",
+              "p_li_keqiang",
+              "p_li_qiang",
+              "p_lee_teng_hui",
+              "p_chen_shui_bian",
+              "p_ma_ying_jeou",
+              "p_tsai_ing_wen",
+              "p_lai_ching_te",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_donald_tsang",
+              "p_leung_chun_ying",
+              "p_carrie_lam",
+              "p_john_lee",
+              "p_edmund_ho",
+              "p_fernando_chui",
+              "p_ho_iat_seng",
+              "p_sam_hou_fai",
+              "p_zhao_shangzhi"
+            ],
+            "boundarySpanningEventCount": 0
+          }
+        }
+      ],
+      "periodDateExclusions": [
+        {
+          "personId": "p_cixi",
+          "nameZh": "慈禧太后",
+          "nameEn": "Empress Dowager Cixi",
+          "eventIds": [
+            "p_cixi:full:return"
+          ],
+          "events": [
+            {
+              "id": "p_cixi:full:return",
+              "titleZh": "辛丑条约后回到北京",
+              "titleEn": "Returned to Beijing after the Boxer Protocol",
+              "type": "regional_base",
+              "placeZh": "北京",
+              "placeEn": "Beijing",
+              "dateZh": "日期未详",
+              "dateEn": "Date unspecified",
+              "yearStart": null,
+              "yearEnd": null,
+              "mapKey": "beijing",
+              "spatialRelation": "documented_presence",
+              "sourceRefs": [
+                {
+                  "sourceId": "full_lateqing_cixi",
+                  "url": "https://www.dpm.org.cn/court/figure/102753.html",
+                  "title": "慈禧太后｜故宫博物院"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "personId": "p_kang_youwei",
+          "nameZh": "康有为",
+          "nameEn": "Kang Youwei",
+          "eventIds": [
+            "p_kang_youwei:full:academy"
+          ],
+          "events": [
+            {
+              "id": "p_kang_youwei:full:academy",
+              "titleZh": "设学舍讲学，后称万木草堂",
+              "titleEn": "Taught at the school later called Wanmu Caotang",
+              "type": "career",
+              "placeZh": "广州",
+              "placeEn": "Guangzhou",
+              "dateZh": "日期未详",
+              "dateEn": "Date unspecified",
+              "yearStart": null,
+              "yearEnd": null,
+              "mapKey": "guangzhou",
+              "spatialRelation": "documented_presence",
+              "sourceRefs": [
+                {
+                  "sourceId": "full_lateqing_kang",
+                  "url": "https://www.beijinglu.yuexiu.gov.cn/bjl/pc_bjl/lydl_bjl/ls_bjl/gfrw_bjl/20181120/detail-210003.shtml",
+                  "title": "康有为｜越秀区北京路文化旅游区"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "periodMethodEn": "Within each period, count unique people with a dated, sourced personal political, military or career event in Beijing, Nanjing or Guangzhou; the numerator records at least two of these cities. An event's closed year interval must overlap the period. This uses event dates, not the profile's period tags. Undated or open-ended records are excluded here but can remain in the pooled finding above.",
+      "periodMethodZh": "每个时期内，以有日期、来源与本人到场依据的北京、南京或广州政治、军政及职业事件筛选人物；其中至少涉及两座城市者进入分子。事件的闭合年份区间须与该时期相交，使用事件日期而非人物时期标签。未定年或终点不明的记录不进入本分期统计，但仍可进入上方全生涯统计。",
+      "periodLimitsEn": "The five periods overlap, including 1949 and 1978 at shared boundaries; rows must not be added. A spanning interval can enter more than one row and does not establish presence in every year or a visit to both cities during a narrower year. These are recorded-person proportions, not historical rates of power or migration. Different period lengths, selected people and documentation prevent a direct ranking of eras. Coverage reports people with any dated supported record, not raw event volume.",
+      "periodLimitsZh": "五个时期彼此重叠，1949与1978也属于相邻区间，行数不可相加。跨期区间可进入多行，但不能证明每年持续在场，或在更窄的某一年到过两座城市。这是已记录人物中的比例，不是历史权力或迁移发生率。时期长短、人物选择及资料详略不同，不能直接给时代排名。覆盖指标统计有任意可定年来源记录的人数，不以原始事件量比较。"
     },
     {
       "id": "learning-before-center",
@@ -4254,6 +7089,11 @@
                   "sourceId": "full_lateqing_liangtsinghua",
                   "url": "https://www.tacl.tsinghua.edu.cn/info/1082/1222.htm",
                   "title": "五大导师：梁启超｜清华大学国学研究院"
+                },
+                {
+                  "sourceId": "review_nankai_liang_history",
+                  "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+                  "title": "梁启超"
                 }
               ]
             }
@@ -4320,6 +7160,11 @@
                   "sourceId": "audit_zs_sun",
                   "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
                   "title": "中山市南朗街道：孙中山"
+                },
+                {
+                  "sourceId": "review_iolani_sun_history",
+                  "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+                  "title": "Dr. Sun Yat-sen"
                 }
               ]
             },
@@ -5197,6 +8042,11 @@
                   "sourceId": "full_republic_chen_party",
                   "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
                   "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                },
+                {
+                  "sourceId": "review_pku_chen_history",
+                  "url": "https://www.pku.edu.cn/detail/905.html",
+                  "title": "五四前后的北京大学"
                 }
               ]
             },
@@ -5462,6 +8312,11 @@
                   "sourceId": "seed_aw002",
                   "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
                   "title": "外交部人物资料;含早期职务与抗战经历"
+                },
+                {
+                  "sourceId": "review_nankai_zhou_school_report",
+                  "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+                  "title": "关于周恩来同志在南开中学、南开大学上学和解放后几次来南开大学情况的报告"
                 }
               ]
             },
@@ -5593,6 +8448,11 @@
                   "sourceId": "full_prc_ye_jianying",
                   "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
                   "title": "叶剑英生平"
+                },
+                {
+                  "sourceId": "review_locpg_ye_jianying_moscow",
+                  "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+                  "title": "叶剑英避居香港"
                 }
               ]
             },
@@ -6223,6 +9083,11 @@
                   "sourceId": "full_lateqing_liangtsinghua",
                   "url": "https://www.tacl.tsinghua.edu.cn/info/1082/1222.htm",
                   "title": "五大导师：梁启超｜清华大学国学研究院"
+                },
+                {
+                  "sourceId": "review_nankai_liang_history",
+                  "url": "https://history.nankai.edu.cn/2019/0911/c16034a202501/page.htm",
+                  "title": "梁启超"
                 }
               ]
             }
@@ -6271,6 +9136,11 @@
                   "sourceId": "audit_zs_sun",
                   "url": "https://www.zs.gov.cn/nlz/zjnl/nlgk/lsmr/content/post_1308324.html",
                   "title": "中山市南朗街道：孙中山"
+                },
+                {
+                  "sourceId": "review_iolani_sun_history",
+                  "url": "https://www.iolani.org/school/history/dr-sun-yat-sen",
+                  "title": "Dr. Sun Yat-sen"
                 }
               ]
             },
@@ -7012,6 +9882,11 @@
                   "sourceId": "full_republic_chen_party",
                   "url": "https://www.dswxyjy.org.cn/n/2012/0926/c244516-19117515.html",
                   "title": "中共中央党史和文献研究院：陈独秀的人生历程"
+                },
+                {
+                  "sourceId": "review_pku_chen_history",
+                  "url": "https://www.pku.edu.cn/detail/905.html",
+                  "title": "五四前后的北京大学"
                 }
               ]
             },
@@ -7236,6 +10111,11 @@
                   "sourceId": "seed_aw002",
                   "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
                   "title": "外交部人物资料;含早期职务与抗战经历"
+                },
+                {
+                  "sourceId": "review_nankai_zhou_school_report",
+                  "url": "https://news.nankai.edu.cn/ztbd/system/2016/01/07/000264084.shtml",
+                  "title": "关于周恩来同志在南开中学、南开大学上学和解放后几次来南开大学情况的报告"
                 }
               ]
             },
@@ -7360,6 +10240,11 @@
                   "sourceId": "full_prc_ye_jianying",
                   "url": "https://cpc.people.com.cn/daohang/n/2013/0225/c357210-20593623.html",
                   "title": "叶剑英生平"
+                },
+                {
+                  "sourceId": "review_locpg_ye_jianying_moscow",
+                  "url": "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240505.htm",
+                  "title": "叶剑英避居香港"
                 }
               ]
             },
@@ -8604,6 +11489,493 @@
       ]
     }
   ],
+  "coverage": {
+    "supportedEventCount": 1098,
+    "singleReferenceEventCount": 1037,
+    "multipleReferenceEventCount": 61,
+    "missingDateEventCount": 71,
+    "pendingLeadCount": 35,
+    "periodTierRows": [
+      {
+        "id": "late_qing_1840_1911",
+        "labelEn": "Late Qing",
+        "labelZh": "晚清",
+        "startYear": 1840,
+        "endYear": 1911,
+        "peopleCount": 26,
+        "personIds": [
+          "p_zeng_guofan",
+          "p_zuo_zongtang",
+          "p_li_hongzhang",
+          "p_zhang_zhidong",
+          "p_cixi",
+          "p_guangxu",
+          "p_kang_youwei",
+          "p_liang_qichao",
+          "p_yuan_shikai",
+          "p_sun_yat_sen",
+          "p_tan_sitong",
+          "p_zhang_jian",
+          "p_li_yuanhong",
+          "p_duan_qirui",
+          "p_feng_guozhang",
+          "p_zhang_zuolin",
+          "p_wu_peifu",
+          "p_wang_jingwei",
+          "p_hu_hanmin",
+          "p_song_jiaoren",
+          "p_chen_duxiu",
+          "p_zhu_de",
+          "p_bai_chongxi",
+          "p_lin_zexu",
+          "p_cai_e",
+          "p_feng_yuxiang"
+        ],
+        "tiers": {
+          "A": {
+            "count": 8,
+            "personIds": [
+              "p_cixi",
+              "p_guangxu",
+              "p_yuan_shikai",
+              "p_sun_yat_sen",
+              "p_li_yuanhong",
+              "p_duan_qirui",
+              "p_wang_jingwei",
+              "p_zhu_de"
+            ]
+          },
+          "B": {
+            "count": 12,
+            "personIds": [
+              "p_zeng_guofan",
+              "p_zuo_zongtang",
+              "p_zhang_zhidong",
+              "p_kang_youwei",
+              "p_liang_qichao",
+              "p_feng_guozhang",
+              "p_zhang_zuolin",
+              "p_wu_peifu",
+              "p_hu_hanmin",
+              "p_song_jiaoren",
+              "p_chen_duxiu",
+              "p_bai_chongxi"
+            ]
+          },
+          "C": {
+            "count": 2,
+            "personIds": [
+              "p_tan_sitong",
+              "p_zhang_jian"
+            ]
+          },
+          "unresolved": {
+            "count": 4,
+            "personIds": [
+              "p_li_hongzhang",
+              "p_lin_zexu",
+              "p_cai_e",
+              "p_feng_yuxiang"
+            ]
+          }
+        }
+      },
+      {
+        "id": "roc_1912_1949",
+        "labelEn": "Republic of China",
+        "labelZh": "中华民国时期",
+        "startYear": 1912,
+        "endYear": 1949,
+        "peopleCount": 44,
+        "personIds": [
+          "p_kang_youwei",
+          "p_liang_qichao",
+          "p_yuan_shikai",
+          "p_sun_yat_sen",
+          "p_zhang_jian",
+          "p_li_yuanhong",
+          "p_duan_qirui",
+          "p_feng_guozhang",
+          "p_zhang_zuolin",
+          "p_wu_peifu",
+          "p_chiang_kaishek",
+          "p_wang_jingwei",
+          "p_hu_hanmin",
+          "p_song_jiaoren",
+          "p_song_qingling",
+          "p_li_zongren",
+          "p_zhang_xueliang",
+          "p_chen_duxiu",
+          "p_li_dazhao",
+          "p_mao_zedong",
+          "p_zhou_enlai",
+          "p_zhu_de",
+          "p_peng_dehuai",
+          "p_ye_ting",
+          "p_ye_jianying",
+          "p_zhang_zizhong",
+          "p_bai_chongxi",
+          "p_xue_yue",
+          "p_he_yingqin",
+          "p_yang_jingyu",
+          "p_zhou_baozhong",
+          "p_liu_shaoqi",
+          "p_chen_yun",
+          "p_nie_rongzhen",
+          "p_he_long",
+          "p_li_xiannian",
+          "p_deng_xiaoping",
+          "p_zhao_ziyang",
+          "p_jiang_zemin",
+          "p_chiang_ching_kuo",
+          "p_cai_e",
+          "p_feng_yuxiang",
+          "p_zhao_shangzhi",
+          "p_zuo_quan"
+        ],
+        "tiers": {
+          "A": {
+            "count": 17,
+            "personIds": [
+              "p_yuan_shikai",
+              "p_sun_yat_sen",
+              "p_li_yuanhong",
+              "p_duan_qirui",
+              "p_chiang_kaishek",
+              "p_wang_jingwei",
+              "p_li_zongren",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_ye_jianying",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_chiang_ching_kuo"
+            ]
+          },
+          "B": {
+            "count": 20,
+            "personIds": [
+              "p_kang_youwei",
+              "p_liang_qichao",
+              "p_feng_guozhang",
+              "p_zhang_zuolin",
+              "p_wu_peifu",
+              "p_hu_hanmin",
+              "p_song_jiaoren",
+              "p_song_qingling",
+              "p_zhang_xueliang",
+              "p_chen_duxiu",
+              "p_li_dazhao",
+              "p_peng_dehuai",
+              "p_ye_ting",
+              "p_zhang_zizhong",
+              "p_bai_chongxi",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian"
+            ]
+          },
+          "C": {
+            "count": 3,
+            "personIds": [
+              "p_zhang_jian",
+              "p_yang_jingyu",
+              "p_zhou_baozhong"
+            ]
+          },
+          "unresolved": {
+            "count": 4,
+            "personIds": [
+              "p_cai_e",
+              "p_feng_yuxiang",
+              "p_zhao_shangzhi",
+              "p_zuo_quan"
+            ]
+          }
+        }
+      },
+      {
+        "id": "war_1937_1945",
+        "labelEn": "War of Resistance",
+        "labelZh": "抗日战争时期",
+        "startYear": 1937,
+        "endYear": 1945,
+        "peopleCount": 29,
+        "personIds": [
+          "p_wu_peifu",
+          "p_chiang_kaishek",
+          "p_wang_jingwei",
+          "p_song_qingling",
+          "p_li_zongren",
+          "p_zhang_xueliang",
+          "p_chen_duxiu",
+          "p_mao_zedong",
+          "p_zhou_enlai",
+          "p_zhu_de",
+          "p_peng_dehuai",
+          "p_ye_ting",
+          "p_ye_jianying",
+          "p_zhang_zizhong",
+          "p_bai_chongxi",
+          "p_xue_yue",
+          "p_he_yingqin",
+          "p_yang_jingyu",
+          "p_zhou_baozhong",
+          "p_liu_shaoqi",
+          "p_chen_yun",
+          "p_nie_rongzhen",
+          "p_he_long",
+          "p_li_xiannian",
+          "p_deng_xiaoping",
+          "p_chiang_ching_kuo",
+          "p_feng_yuxiang",
+          "p_zhao_shangzhi",
+          "p_zuo_quan"
+        ],
+        "tiers": {
+          "A": {
+            "count": 11,
+            "personIds": [
+              "p_chiang_kaishek",
+              "p_wang_jingwei",
+              "p_li_zongren",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_ye_jianying",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_deng_xiaoping",
+              "p_chiang_ching_kuo"
+            ]
+          },
+          "B": {
+            "count": 13,
+            "personIds": [
+              "p_wu_peifu",
+              "p_song_qingling",
+              "p_zhang_xueliang",
+              "p_chen_duxiu",
+              "p_peng_dehuai",
+              "p_ye_ting",
+              "p_zhang_zizhong",
+              "p_bai_chongxi",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian"
+            ]
+          },
+          "C": {
+            "count": 2,
+            "personIds": [
+              "p_yang_jingyu",
+              "p_zhou_baozhong"
+            ]
+          },
+          "unresolved": {
+            "count": 3,
+            "personIds": [
+              "p_feng_yuxiang",
+              "p_zhao_shangzhi",
+              "p_zuo_quan"
+            ]
+          }
+        }
+      },
+      {
+        "id": "prc_1949_1978",
+        "labelEn": "Early PRC & pre-reform",
+        "labelZh": "建国至改革开放",
+        "startYear": 1949,
+        "endYear": 1978,
+        "peopleCount": 31,
+        "personIds": [
+          "p_chiang_kaishek",
+          "p_song_qingling",
+          "p_li_zongren",
+          "p_mao_zedong",
+          "p_zhou_enlai",
+          "p_zhu_de",
+          "p_peng_dehuai",
+          "p_ye_jianying",
+          "p_xue_yue",
+          "p_he_yingqin",
+          "p_zhou_baozhong",
+          "p_liu_shaoqi",
+          "p_chen_yun",
+          "p_nie_rongzhen",
+          "p_he_long",
+          "p_li_xiannian",
+          "p_deng_xiaoping",
+          "p_zhao_ziyang",
+          "p_jiang_zemin",
+          "p_zhu_rongji",
+          "p_hu_jintao",
+          "p_wen_jiabao",
+          "p_xi_jinping",
+          "p_li_keqiang",
+          "p_li_qiang",
+          "p_lee_teng_hui",
+          "p_chiang_ching_kuo",
+          "p_tung_chee_hwa",
+          "p_donald_tsang",
+          "p_leung_chun_ying",
+          "p_john_lee"
+        ],
+        "tiers": {
+          "A": {
+            "count": 22,
+            "personIds": [
+              "p_chiang_kaishek",
+              "p_li_zongren",
+              "p_mao_zedong",
+              "p_zhou_enlai",
+              "p_zhu_de",
+              "p_ye_jianying",
+              "p_liu_shaoqi",
+              "p_chen_yun",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_zhu_rongji",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_xi_jinping",
+              "p_li_keqiang",
+              "p_li_qiang",
+              "p_lee_teng_hui",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_leung_chun_ying",
+              "p_john_lee"
+            ]
+          },
+          "B": {
+            "count": 8,
+            "personIds": [
+              "p_song_qingling",
+              "p_peng_dehuai",
+              "p_xue_yue",
+              "p_he_yingqin",
+              "p_nie_rongzhen",
+              "p_he_long",
+              "p_li_xiannian",
+              "p_donald_tsang"
+            ]
+          },
+          "C": {
+            "count": 1,
+            "personIds": [
+              "p_zhou_baozhong"
+            ]
+          },
+          "unresolved": {
+            "count": 0,
+            "personIds": []
+          }
+        }
+      },
+      {
+        "id": "reform_1978_2026",
+        "labelEn": "Reform & Opening to the present",
+        "labelZh": "改革开放至今",
+        "startYear": 1978,
+        "endYear": 2026,
+        "peopleCount": 30,
+        "personIds": [
+          "p_song_qingling",
+          "p_zhang_xueliang",
+          "p_ye_jianying",
+          "p_he_yingqin",
+          "p_chen_yun",
+          "p_li_xiannian",
+          "p_deng_xiaoping",
+          "p_zhao_ziyang",
+          "p_jiang_zemin",
+          "p_zhu_rongji",
+          "p_hu_jintao",
+          "p_wen_jiabao",
+          "p_xi_jinping",
+          "p_li_keqiang",
+          "p_li_qiang",
+          "p_lee_teng_hui",
+          "p_chen_shui_bian",
+          "p_ma_ying_jeou",
+          "p_tsai_ing_wen",
+          "p_lai_ching_te",
+          "p_chiang_ching_kuo",
+          "p_tung_chee_hwa",
+          "p_donald_tsang",
+          "p_leung_chun_ying",
+          "p_carrie_lam",
+          "p_john_lee",
+          "p_edmund_ho",
+          "p_fernando_chui",
+          "p_ho_iat_seng",
+          "p_sam_hou_fai"
+        ],
+        "tiers": {
+          "A": {
+            "count": 25,
+            "personIds": [
+              "p_ye_jianying",
+              "p_chen_yun",
+              "p_deng_xiaoping",
+              "p_zhao_ziyang",
+              "p_jiang_zemin",
+              "p_zhu_rongji",
+              "p_hu_jintao",
+              "p_wen_jiabao",
+              "p_xi_jinping",
+              "p_li_keqiang",
+              "p_li_qiang",
+              "p_lee_teng_hui",
+              "p_chen_shui_bian",
+              "p_ma_ying_jeou",
+              "p_tsai_ing_wen",
+              "p_lai_ching_te",
+              "p_chiang_ching_kuo",
+              "p_tung_chee_hwa",
+              "p_leung_chun_ying",
+              "p_carrie_lam",
+              "p_john_lee",
+              "p_edmund_ho",
+              "p_fernando_chui",
+              "p_ho_iat_seng",
+              "p_sam_hou_fai"
+            ]
+          },
+          "B": {
+            "count": 5,
+            "personIds": [
+              "p_song_qingling",
+              "p_zhang_xueliang",
+              "p_he_yingqin",
+              "p_li_xiannian",
+              "p_donald_tsang"
+            ]
+          },
+          "C": {
+            "count": 0,
+            "personIds": []
+          },
+          "unresolved": {
+            "count": 0,
+            "personIds": []
+          }
+        }
+      }
+    ],
+    "referencePolicy": "Distinct event-supporting source URLs, not proof of independent corroboration; outlets can reproduce the same material."
+  },
   "audit": {
     "nonLearningEducationEvents": {
       "p_mao_zedong:full:05": "Directed the Peasant Movement Training Institute; teaching/leadership.",
@@ -8627,6 +11999,7 @@
       "cornell_tsai_2016",
       "expansion_url_002_03",
       "expansion_url_006_01",
+      "expansion_url_009_01",
       "expansion_url_010_01",
       "expansion_url_011_01",
       "full_lateqing_duan",
@@ -8671,12 +12044,18 @@
       "lse_tsai_degree_2019",
       "moe_deng_bio",
       "moe_ye_ting",
+      "review_deng_french_years_1988",
+      "review_iolani_sun_history",
+      "review_locpg_ye_jianying_moscow",
+      "review_nankai_liang_history",
+      "review_nankai_zhou_school_report",
+      "review_pku_chen_history",
       "roc_founding",
       "seed_aw002",
       "seed_aw003"
     ],
-    "referencedSourceCount": 54,
-    "crossPeriodPolicy": "No period comparison is claimed. Person-period memberships overlap; lifetime records may precede 1840. Records are not reweighted by period or political entity.",
+    "referencedSourceCount": 61,
+    "crossPeriodPolicy": "Finding two additionally groups closed dated center-event intervals by intersection with each overlapping period. All five rows are descriptive and non-additive; durations and documentation differ. Method coverage uses profile period tags separately. Neither is a representative historical rate.",
     "sourcePolicy": "This script audits structure and computes existing reviewed data. It does not independently re-read or corroborate each historical source."
   }
 }
