@@ -1,0 +1,640 @@
+{
+  "xianxiang": {
+    "labelEn": "Xiangxiang",
+    "detailEn": "Xiangxiang"
+  },
+  "shaoshan": {
+    "labelEn": "Shaoshan",
+    "detailEn": "Shaoshan"
+  },
+  "guangan": {
+    "labelEn": "Guang’an",
+    "detailEn": "Guang’an"
+  },
+  "huizhou": {
+    "labelEn": "Huizhou",
+    "detailEn": "Huizhou"
+  },
+  "xiangshan": {
+    "labelEn": "Xiangshan",
+    "detailEn": "Xiangshan (now Zhongshan)",
+    "noteEn": "Sun Yat-sen’s birth record uses Cuiheng, Xiangshan, with present-day Zhongshan as a reference; the map retains Xiangshan.",
+    "noteZh": "孙中山出生记录使用香山县翠亨村，并附今中山对照；地图保留香山。"
+  },
+  "fenghua": {
+    "labelEn": "Fenghua",
+    "detailEn": "Fenghua"
+  },
+  "yangzhou": {
+    "labelEn": "Yangzhou",
+    "detailEn": "Yangzhou"
+  },
+  "beijing": {
+    "labelEn": "Beijing",
+    "detailEn": "Beijing",
+    "noteEn": "This shared point includes records named Beijing and Beiping. Each event retains its period and recorded place name.",
+    "noteZh": "本节点汇集使用北京或北平名称的记录；具体时期与原文地名见各条事件。"
+  },
+  "yanan": {
+    "labelEn": "Yan’an",
+    "detailEn": "Yan’an"
+  },
+  "xian": {
+    "labelEn": "Xi’an",
+    "detailEn": "Xi’an"
+  },
+  "huaian": {
+    "labelEn": "Huai’an",
+    "detailEn": "Huai’an"
+  },
+  "shanghai": {
+    "labelEn": "Shanghai",
+    "detailEn": "Shanghai"
+  },
+  "nanjing": {
+    "labelEn": "Nanjing",
+    "detailEn": "Nanjing",
+    "noteEn": "Records at this shared point use Nanjing, Jiangning and Tianjing; event-specific names are retained.",
+    "noteZh": "本节点汇集南京、江宁与天京的相关记录；名称随事件语境保留。"
+  },
+  "wuhan": {
+    "labelEn": "Wuhan",
+    "detailEn": "Wuhan",
+    "noteEn": "This shared point includes Wuchang and Wuhan records; the more specific place name is retained in each event.",
+    "noteZh": "本节点包含武昌与武汉的记录；事件中的具体地名保留原样。"
+  },
+  "chongqing": {
+    "labelEn": "Chongqing",
+    "detailEn": "Chongqing"
+  },
+  "guangzhou": {
+    "labelEn": "Guangzhou",
+    "detailEn": "Guangzhou"
+  },
+  "hongkong": {
+    "labelEn": "Hong Kong",
+    "detailEn": "Hong Kong"
+  },
+  "macau": {
+    "labelEn": "Macao",
+    "detailEn": "Macao"
+  },
+  "taipei": {
+    "labelEn": "Taipei",
+    "detailEn": "Taipei"
+  },
+  "qingdao": {
+    "labelEn": "Qingdao",
+    "detailEn": "Qingdao"
+  },
+  "paris": {
+    "labelEn": "Paris",
+    "detailEn": "Paris"
+  },
+  "france": {
+    "labelEn": "France",
+    "detailEn": "France"
+  },
+  "baise": {
+    "labelEn": "Baise",
+    "detailEn": "Baise"
+  },
+  "tokyo": {
+    "labelEn": "Tokyo",
+    "detailEn": "Tokyo"
+  },
+  "honolulu": {
+    "labelEn": "Honolulu",
+    "detailEn": "Honolulu"
+  },
+  "haicheng": {
+    "labelEn": "Haicheng",
+    "detailEn": "Haicheng"
+  },
+  "shenyang": {
+    "labelEn": "Fengtian / Shenyang",
+    "detailEn": "Fengtian / Shenyang",
+    "noteEn": "This shared point includes Fengtian and Shenyang records; the event-specific historical name is retained.",
+    "noteZh": "本节点包含奉天与沈阳的记录，不将两种名称统一改写为同一时期名称。"
+  },
+  "tianjin": {
+    "labelEn": "Tianjin",
+    "detailEn": "Tianjin"
+  },
+  "changsha": {
+    "labelEn": "Changsha",
+    "detailEn": "Changsha"
+  },
+  "fuzhou": {
+    "labelEn": "Fuzhou",
+    "detailEn": "Fuzhou",
+    "noteEn": "Records include Fuzhou and Gudong Street, Houguan (now Fuzhou); each event keeps its recorded place name.",
+    "noteZh": "相关记录既有福州，也有侯官鼓东街（今福州）；具体地名见事件原文。"
+  },
+  "nanchang": {
+    "labelEn": "Nanchang",
+    "detailEn": "Nanchang"
+  },
+  "kunming": {
+    "labelEn": "Kunming",
+    "detailEn": "Kunming"
+  },
+  "hangzhou": {
+    "labelEn": "Hangzhou",
+    "detailEn": "Hangzhou"
+  },
+  "jilin": {
+    "labelEn": "Jilin",
+    "detailEn": "Jilin"
+  },
+  "lanzhou": {
+    "labelEn": "Lanzhou",
+    "detailEn": "Lanzhou"
+  },
+  "urumqi": {
+    "labelEn": "Dihua",
+    "detailEn": "Dihua (now Ürümqi)",
+    "noteEn": "The 1937 record names Dihua, now Ürümqi; the English map retains Dihua.",
+    "noteZh": "1937 年事件记作迪化（今乌鲁木齐）；英文地图保留 Dihua。"
+  },
+  "dali": {
+    "labelEn": "Dali",
+    "detailEn": "Dali"
+  },
+  "苏联": {
+    "labelEn": "Soviet Union",
+    "detailEn": "Soviet Union",
+    "noteEn": "The Soviet Union name is retained from the event records rather than replaced by a present-day state name.",
+    "noteZh": "保留事件中的苏联名称，不替换为当代国家名称。"
+  },
+  "美国": {
+    "labelEn": "United States",
+    "detailEn": "United States"
+  },
+  "英国": {
+    "labelEn": "United Kingdom",
+    "detailEn": "United Kingdom"
+  },
+  "伊犁": {
+    "labelEn": "Ili",
+    "detailEn": "Ili"
+  },
+  "新疆": {
+    "labelEn": "Xinjiang",
+    "detailEn": "Xinjiang"
+  },
+  "西藏": {
+    "labelEn": "Tibet",
+    "detailEn": "Tibet"
+  },
+  "sanzhi": {
+    "labelEn": "Sanzhi",
+    "detailEn": "Sanzhi",
+    "noteEn": "The birth record retains its historical Taipei County context rather than substituting present-day administrative divisions.",
+    "noteZh": "出生记录保留历史台北县语境，不改写成当代行政区划。"
+  },
+  "taiwan_region": {
+    "labelEn": "Taiwan",
+    "detailEn": "Taiwan",
+    "noteEn": "A schematic regional point rather than an exact address; see each event for period and political-entity context.",
+    "noteZh": "区域示意节点，不表示精确地址；政治实体与时期见相关事件。"
+  },
+  "shuangfeng": {
+    "labelEn": "Xiangxiang Co.",
+    "detailEn": "Xiangxiang County (now Shuangfeng)",
+    "noteEn": "Zeng Guofan’s birth and early schooling records refer to historical Xiangxiang County; the birth record also gives present-day Shuangfeng.",
+    "noteZh": "曾国藩的出生与早年学习记录指向历史湘乡县，出生记录附今双峰县对照。"
+  },
+  "huiyang": {
+    "labelEn": "Guishan",
+    "detailEn": "Guishan (now Huiyang)",
+    "noteEn": "The place label retains Guishan (now Huiyang); the event’s recorded location is Zhoutian village, Huiyang.",
+    "noteZh": "地图地点表保留归善（今惠阳）；事件地点原文为惠阳周田村。"
+  },
+  "canada": {
+    "labelEn": "Canada",
+    "detailEn": "Canada"
+  },
+  "york_university": {
+    "labelEn": "York Univ.",
+    "detailEn": "York University, Toronto"
+  },
+  "cornell": {
+    "labelEn": "Cornell Univ.",
+    "detailEn": "Cornell University"
+  },
+  "london": {
+    "labelEn": "London",
+    "detailEn": "London"
+  },
+  "liverpool": {
+    "labelEn": "Liverpool",
+    "detailEn": "Liverpool"
+  },
+  "xiangtan": {
+    "labelEn": "Xiangtan",
+    "detailEn": "Xiangtan"
+  },
+  "yilong": {
+    "labelEn": "Yilong",
+    "detailEn": "Yilong"
+  },
+  "jinggangshan": {
+    "labelEn": "Jinggang Mts.",
+    "detailEn": "Jinggang Mountains"
+  },
+  "ruijin": {
+    "labelEn": "Ruijin",
+    "detailEn": "Ruijin"
+  },
+  "zunyi": {
+    "labelEn": "Zunyi",
+    "detailEn": "Zunyi"
+  },
+  "pingjiang": {
+    "labelEn": "Pingjiang",
+    "detailEn": "Pingjiang"
+  },
+  "lushan": {
+    "labelEn": "Mount Lu",
+    "detailEn": "Mount Lu"
+  },
+  "chengdu": {
+    "labelEn": "Chengdu",
+    "detailEn": "Chengdu"
+  },
+  "qingpu": {
+    "labelEn": "Qingpu",
+    "detailEn": "Qingpu",
+    "noteEn": "The birth record retains the recorded administrative context, Qingpu, Jiangsu.",
+    "noteZh": "出生记录保留江苏青浦的原文行政语境。"
+  },
+  "ningxiang": {
+    "labelEn": "Ningxiang",
+    "detailEn": "Ningxiang"
+  },
+  "anyuan": {
+    "labelEn": "Anyuan",
+    "detailEn": "Anyuan"
+  },
+  "kaifeng": {
+    "labelEn": "Kaifeng",
+    "detailEn": "Kaifeng"
+  },
+  "sangzhi": {
+    "labelEn": "Sangzhi",
+    "detailEn": "Sangzhi"
+  },
+  "luochuan": {
+    "labelEn": "Luochuan",
+    "detailEn": "Luochuan"
+  },
+  "baoding": {
+    "labelEn": "Baoding",
+    "detailEn": "Baoding"
+  },
+  "hongan": {
+    "labelEn": "Huang’an",
+    "detailEn": "Huang’an (now Hong’an)",
+    "noteEn": "The 1909 birth record names Huang’an, now Hong’an; the English map retains Huang’an.",
+    "noteZh": "1909 年出生记录记作黄安（今红安）；英文地图保留 Huang’an。"
+  },
+  "longzhou": {
+    "labelEn": "Longzhou",
+    "detailEn": "Longzhou"
+  },
+  "changchun": {
+    "labelEn": "Changchun",
+    "detailEn": "Changchun"
+  },
+  "jiujiang": {
+    "labelEn": "Jiujiang",
+    "detailEn": "Jiujiang"
+  },
+  "liujiaxia": {
+    "labelEn": "Liujiaxia",
+    "detailEn": "Liujiaxia"
+  },
+  "liangjiahe": {
+    "labelEn": "Liangjiahe",
+    "detailEn": "Liangjiahe"
+  },
+  "hefei": {
+    "labelEn": "Hefei",
+    "detailEn": "Hefei"
+  },
+  "fengyang": {
+    "labelEn": "Fengyang",
+    "detailEn": "Fengyang"
+  },
+  "ruian": {
+    "labelEn": "Rui’an",
+    "detailEn": "Rui’an"
+  },
+  "ningbo": {
+    "labelEn": "Ningbo",
+    "detailEn": "Ningbo"
+  },
+  "shenzhen": {
+    "labelEn": "Shenzhen",
+    "detailEn": "Shenzhen"
+  },
+  "zhuhai": {
+    "labelEn": "Zhuhai",
+    "detailEn": "Zhuhai"
+  },
+  "foshan": {
+    "labelEn": "Foshan",
+    "detailEn": "Foshan"
+  },
+  "taoyuan_hunan": {
+    "labelEn": "Taoyuan, Hunan",
+    "detailEn": "Taoyuan, Hunan"
+  },
+  "anqing": {
+    "labelEn": "Anqing / Huaining",
+    "detailEn": "Anqing / Huaining"
+  },
+  "wuhu": {
+    "labelEn": "Wuhu",
+    "detailEn": "Wuhu"
+  },
+  "jiangjin": {
+    "labelEn": "Jiangjin",
+    "detailEn": "Jiangjin",
+    "noteEn": "The records retain the original administrative context, Jiangjin, Sichuan.",
+    "noteZh": "相关记录保留四川江津的原文行政语境。"
+  },
+  "leting": {
+    "labelEn": "Laoting",
+    "detailEn": "Laoting"
+  },
+  "jinan": {
+    "labelEn": "Jinan",
+    "detailEn": "Jinan"
+  },
+  "linyi": {
+    "labelEn": "Linyi",
+    "detailEn": "Linyi"
+  },
+  "huangchuan": {
+    "labelEn": "Huangchuan",
+    "detailEn": "Huangchuan"
+  },
+  "yicheng": {
+    "labelEn": "Yicheng",
+    "detailEn": "Yicheng"
+  },
+  "queshan": {
+    "labelEn": "Queshan",
+    "detailEn": "Queshan"
+  },
+  "fushun": {
+    "labelEn": "Fushun",
+    "detailEn": "Fushun"
+  },
+  "shaoyang": {
+    "labelEn": "Shaoyang",
+    "detailEn": "Shaoyang"
+  },
+  "chaoyang": {
+    "labelEn": "Chaoyang",
+    "detailEn": "Chaoyang"
+  },
+  "liling": {
+    "labelEn": "Liling",
+    "detailEn": "Liling"
+  },
+  "harbin": {
+    "labelEn": "Harbin",
+    "detailEn": "Harbin"
+  },
+  "xibaipo": {
+    "labelEn": "Xibaipo",
+    "detailEn": "Xibaipo"
+  },
+  "tainan": {
+    "labelEn": "Tainan",
+    "detailEn": "Tainan"
+  },
+  "tamsui": {
+    "labelEn": "Tamsui",
+    "detailEn": "Tamsui"
+  },
+  "wanli": {
+    "labelEn": "Wanli",
+    "detailEn": "Wanli",
+    "noteEn": "The birth record uses Wanli and includes present-day New Taipei City as a reference.",
+    "noteZh": "出生记录为万里，并附今新北市万里区对照。"
+  },
+  "kinmen": {
+    "labelEn": "Kinmen",
+    "detailEn": "Kinmen"
+  },
+  "hengqin": {
+    "labelEn": "Hengqin",
+    "detailEn": "Hengqin"
+  },
+  "kyoto": {
+    "labelEn": "Kyoto",
+    "detailEn": "Kyoto"
+  },
+  "yokohama": {
+    "labelEn": "Yokohama",
+    "detailEn": "Yokohama"
+  },
+  "nagoya": {
+    "labelEn": "Nagoya",
+    "detailEn": "Nagoya"
+  },
+  "fukuoka": {
+    "labelEn": "Fukuoka",
+    "detailEn": "Fukuoka"
+  },
+  "hanoi": {
+    "labelEn": "Hanoi",
+    "detailEn": "Hanoi"
+  },
+  "macon": {
+    "labelEn": "Macon",
+    "detailEn": "Macon"
+  },
+  "newyork": {
+    "labelEn": "New York",
+    "detailEn": "New York"
+  },
+  "iowa": {
+    "labelEn": "Iowa State",
+    "detailEn": "Iowa State University"
+  },
+  "bristol": {
+    "labelEn": "Bristol",
+    "detailEn": "Bristol"
+  },
+  "singapore": {
+    "labelEn": "Singapore",
+    "detailEn": "Singapore"
+  },
+  "manila": {
+    "labelEn": "Manila",
+    "detailEn": "Manila"
+  },
+  "berlin": {
+    "labelEn": "Berlin",
+    "detailEn": "Berlin"
+  },
+  "gottingen": {
+    "labelEn": "Göttingen",
+    "detailEn": "Göttingen"
+  },
+  "moscow": {
+    "labelEn": "Moscow",
+    "detailEn": "Moscow"
+  },
+  "washington": {
+    "labelEn": "Washington, DC",
+    "detailEn": "Washington, DC"
+  },
+  "korea": {
+    "labelEn": "Korea",
+    "detailEn": "Korea",
+    "noteEn": "A schematic regional point; event context is retained and does not imply present-day borders.",
+    "noteZh": "区域示意节点；事件保留其历史语境，不等同于当代国界。"
+  },
+  "romania": {
+    "labelEn": "Romania",
+    "detailEn": "Romania"
+  },
+  "mexico": {
+    "labelEn": "Mexico",
+    "detailEn": "Mexico"
+  },
+  "japan_region": {
+    "labelEn": "Japan",
+    "detailEn": "Japan"
+  },
+  "xiangyin": {
+    "labelEn": "Xiangyin",
+    "detailEn": "Xiangyin"
+  },
+  "xinhuichakeng": {
+    "labelEn": "Chakeng, Xinhui",
+    "detailEn": "Chakeng, Xinhui"
+  },
+  "xiangcheng": {
+    "labelEn": "Xiangcheng",
+    "detailEn": "Xiangcheng"
+  },
+  "nantong": {
+    "labelEn": "Nantong",
+    "detailEn": "Nantong"
+  },
+  "huangpi": {
+    "labelEn": "Huangpi",
+    "detailEn": "Huangpi"
+  },
+  "luan": {
+    "labelEn": "Lu’an",
+    "detailEn": "Lu’an"
+  },
+  "weihai": {
+    "labelEn": "Weihai",
+    "detailEn": "Weihai"
+  },
+  "hejian": {
+    "labelEn": "Hejian",
+    "detailEn": "Hejian"
+  },
+  "hengyang": {
+    "labelEn": "Hengyang",
+    "detailEn": "Hengyang"
+  },
+  "luoyang": {
+    "labelEn": "Luoyang",
+    "detailEn": "Luoyang"
+  },
+  "cairo": {
+    "labelEn": "Cairo",
+    "detailEn": "Cairo"
+  },
+  "hsinchu": {
+    "labelEn": "Hsinchu",
+    "detailEn": "Hsinchu"
+  },
+  "geneva": {
+    "labelEn": "Geneva",
+    "detailEn": "Geneva"
+  },
+  "bandung": {
+    "labelEn": "Bandung",
+    "detailEn": "Bandung"
+  },
+  "linqing": {
+    "labelEn": "Linqing",
+    "detailEn": "Linqing"
+  },
+  "xinmin": {
+    "labelEn": "Xinmin",
+    "detailEn": "Xinmin"
+  },
+  "panshi": {
+    "labelEn": "Panshi",
+    "detailEn": "Panshi"
+  },
+  "jingyu": {
+    "labelEn": "Mengjiang",
+    "detailEn": "Mengjiang (now Jingyu)",
+    "noteEn": "The 1940 record names Sandaowaizi, Mengjiang, now Jingyu; the English map retains Mengjiang.",
+    "noteZh": "1940 年事件记作濛江（今靖宇）三道崴子；英文地图保留 Mengjiang。"
+  },
+  "marseille": {
+    "labelEn": "Marseille",
+    "detailEn": "Marseille"
+  },
+  "ganzi": {
+    "labelEn": "Garzê",
+    "detailEn": "Garzê"
+  },
+  "huaxian": {
+    "labelEn": "Hua County",
+    "detailEn": "Hua County"
+  },
+  "xiamen": {
+    "labelEn": "Xiamen",
+    "detailEn": "Xiamen"
+  },
+  "humen": {
+    "labelEn": "Humen",
+    "detailEn": "Humen"
+  },
+  "puning": {
+    "labelEn": "Puning",
+    "detailEn": "Puning"
+  },
+  "qingxian": {
+    "labelEn": "Qingxian",
+    "detailEn": "Qingxian"
+  },
+  "wuyuan": {
+    "labelEn": "Wuyuan",
+    "detailEn": "Wuyuan"
+  },
+  "taishan": {
+    "labelEn": "Mount Tai",
+    "detailEn": "Mount Tai"
+  },
+  "shangzhi": {
+    "labelEn": "Zhuhe",
+    "detailEn": "Zhuhe (now Shangzhi)",
+    "noteEn": "The 1933 activity record names Zhuhe, now Shangzhi; the English map retains Zhuhe.",
+    "noteZh": "1933 年活动记录记作珠河（今尚志）；英文地图保留 Zhuhe。"
+  },
+  "hegang": {
+    "labelEn": "Hegang",
+    "detailEn": "Hegang"
+  },
+  "liaoxian": {
+    "labelEn": "Liaoxian",
+    "detailEn": "Liaoxian"
+  }
+}

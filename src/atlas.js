@@ -25,6 +25,8 @@
     };
     Object.assign(placeDefs, atlasData.schematicPlaces || {});
     const places = placeDefs;
+    // Presentation only: keys, coordinates and historical event records remain unchanged.
+    const placeDisplay = __PLACE_DISPLAY__;
     const roleEn = {
       '革命': 'Revolutionary', '政党': 'Party leadership', '政治': 'Political leadership', '军事': 'Military', '改革': 'Reform', '思想': 'Political thought',
       '外交': 'Diplomacy', '行政': 'Public administration', '安全治理': 'Security governance', '组织': 'Organization', '司法': 'Judiciary', '港澳治理': 'Hong Kong & Macao governance',
@@ -33,6 +35,20 @@
     };
     const typeEn = { career: 'Career', birth: 'Birth / birth date', ancestral: 'Ancestral origin', upbringing: 'Upbringing', education: 'Education', political_activity: 'Political activity', activity: 'Political activity', office: 'Public office', appointment: 'Public office', war: 'War / theatre', regional_base: 'Regional base', death: 'Death / event', key: 'Key place', unknown: 'Place lead' };
     const typeZh = { career: '职业经历', birth: '出生 / 日期', ancestral: '籍贯 / 祖籍', upbringing: '成长地', education: '教育', political_activity: '政治活动', activity: '政治活动', office: '任职', appointment: '任职', war: '战争 / 战区', regional_base: '区域基地', death: '死亡 / 事件', key: '地点线索', unknown: '地点线索' };
+    const eventLayers = [
+      {id:'birth',types:['birth'],marker:'birth',en:'Birthplace',zh:'出生地'},
+      {id:'ancestral',types:['ancestral'],marker:'ancestral',en:'Ancestral origin',zh:'籍贯 / 祖籍'},
+      {id:'upbringing',types:['upbringing'],marker:'ancestral',en:'Upbringing / residence',zh:'成长 / 居住'},
+      {id:'education',types:['education'],marker:'education',en:'Education',zh:'教育'},
+      {id:'political_activity',types:['political_activity','activity'],marker:'activity',en:'Political activity',zh:'政治活动'},
+      {id:'office',types:['office','appointment'],marker:'appointment',en:'Public office',zh:'任职'},
+      {id:'career',types:['career'],marker:'key',en:'Career',zh:'职业经历'},
+      {id:'key',types:['key','unknown','war','regional_base','death'],marker:'key',en:'Other records',zh:'其他记录'}
+    ];
+    const eventLayerById = new Map(eventLayers.map(layer=>[layer.id,layer]));
+    const eventLayerByType = new Map(eventLayers.flatMap(layer=>layer.types.map(type=>[type,layer])));
+    const eventLayer = type => eventLayerByType.get(type) || eventLayerById.get('key');
+    typeEn.upbringing='Upbringing / residence';typeZh.upbringing='成长 / 居住';
     const state = { period: 'all', layer: 'all', mode: 'guided', search: '', verifiedOnly: false, timeScope: 'period', placeKey: null, selectedId: atlasData.people?.find(person => person.nameZh === '孙中山')?.id || atlasData.people?.[0]?.id || null, lang: 'en' };
     const periodList = document.getElementById('periodList');
     const layerList = document.getElementById('layerList');
@@ -94,7 +110,7 @@
     function displayName(person) { return state.lang === 'en' ? person.nameEn : person.nameZh; }
     function secondaryName(person) { return state.lang === 'en' ? person.nameZh : person.nameEn; }
     function roleLabel(role) { return state.lang === 'en' ? (roleEn[role] || role) : role; }
-    function mapPlaceLabel(key) { return places[key]?.name || key || '待核地点'; }
+    function mapPlaceLabel(key, lang=state.lang) { return lang==='en' ? (placeDisplay[key]?.labelEn || places[key]?.name || key || 'Place pending') : (places[key]?.name || key || '待核地点'); }
     function pathLabel(item) { return state.lang === 'en' ? (typeEn[item.type] || item.label || 'Place lead') : (typeZh[item.type] || item.label || '地点线索'); }
     function pathNote(item) {
       if (item.status === 'verified') return state.lang === 'en' ? (item.qualifierEn || (item.place ? 'Source checked; map position is schematic.' : 'Source checked; no map position assigned.')) : (item.qualifierZh || (item.place ? '已核对事件来源；地图位置为示意。' : '已核对来源，未指定地图坐标。'));
@@ -104,18 +120,11 @@
     }
     function eventEvidenceState(item) { return !item.pending && item.status === 'verified' ? 'verified' : item.type && item.type !== 'unknown' ? 'typed' : 'lead'; }
     function layerMatches(item, layer) {
-      if (layer === 'all') return true;
-      if (layer === 'birth') return item.type === 'birth';
-      if (layer === 'ancestral') return item.type === 'ancestral';
-      if (layer === 'upbringing') return item.type === 'upbringing';
-      if (layer === 'office') return ['office', 'appointment'].includes(item.type);
-      if (layer === 'political_activity') return ['political_activity', 'activity'].includes(item.type);
-      if (layer === 'key') return ['key', 'unknown', 'war', 'regional_base', 'death'].includes(item.type);
-      return item.type === layer;
+      return layer === 'all' || eventLayer(item.type).id === layer;
     }
     function selectedPerson() { return peopleById.get(state.selectedId) || null; }
     function currentPeople() { return people.filter(person => { const periodMatch = state.period === 'all' || person.periods.includes(state.period); const haystack = [person.nameZh, person.nameEn, ...(person.roles || []), ...(person.rolesEn || []), ...(person.entities || []), ...(person.politicalEntitiesEn || []), ...(person.politicalEntitiesZh || []), person.notesZh, person.notesEn, person.claim, person.claimZh, person.inclusionBasisEn, person.officeImpactEn].filter(Boolean).join(' ').toLowerCase(); return periodMatch && (!state.verifiedOnly || person.placeLeads.some(item=>isVerified(item)&&supportedRefs(item).length)) && (!state.search || haystack.includes(state.search.toLowerCase())); }); }
-    function pathClass(type) { return type === 'birth' ? 'birth' : type === 'ancestral' ? 'ancestral' : type === 'upbringing' ? 'upbringing' : type === 'education' ? 'education' : type === 'political_activity' || type === 'activity' ? 'activity' : ['key', 'career'].includes(type) ? 'key' : 'appointment'; }
+    function pathClass(type) { return eventLayer(type).marker; }
     function eventYear(event) {
       const value = event.yearStart ?? event.year ?? event.startYear ?? event.dateYear;
       if (value == null || value === '') return null;
@@ -199,11 +208,13 @@
       document.documentElement.lang = en ? 'en' : 'zh-CN';
       document.documentElement.dataset.lang = state.lang;
       document.title = en ? 'Power in Motion — A Digital Atlas of Modern China' : '权力迁徙图 · 中国近现代政治人物地图';
-      document.querySelectorAll('.sea-label').forEach((label,index)=>{label.textContent=['东海','南海','地理示意图'][index];});
+      document.querySelectorAll('.sea-label').forEach((label,index)=>{label.textContent=(en?['East China Sea','South China Sea','Schematic map']:['东海','南海','地理示意图'])[index];});
       document.querySelectorAll('[data-lang]').forEach(button=>{button.classList.toggle('active',button.dataset.lang===state.lang);button.setAttribute('aria-pressed',String(button.dataset.lang===state.lang));});
       const allEvidence = evidenceCounts(people.flatMap(person=>person.placeLeads));
       labelText('topStatus',en ? `Research collection · ${atlasData.meta?.asOf || '2026-10-05'} · ${quality.people} people · ${allEvidence.supported} sourced events` : `研究样本 · ${atlasData.meta?.asOf || '2026-10-05'} · ${quality.people} 位人物 · ${allEvidence.supported} 条有来源事件`);
       document.querySelector('.brand-name').innerHTML=en?'POWER IN MOTION <span class="cn-note">权力迁徙图</span>':'权力迁徙图 <span class="cn-note">POWER IN MOTION</span>';
+      document.querySelector('.brand-name').href=`#?lang=${state.lang}`;
+      document.querySelector('.brand-name').setAttribute('aria-label',en?'Power in Motion — Home':'权力迁徙图 — 返回首页');
       labelText('heroEyebrow',en?'1840 — 2026 · MODERN CHINA':'1840 — 2026 · 中国近现代');
       document.getElementById('hero-title').innerHTML=en?'Where do<br><em>political lives begin?</em><span class="cn-note">政治人物从哪里来？</span>':'政治人物<br><em>从哪里来？</em><span class="cn-note">Where do political lives begin?</span>';
       labelText('heroDek',en?'Explore the places that shaped political lives in modern China: local communities, schools, movements, and centers of power. Open each biography to inspect its sources and limits.':'从地方社会、学校、政治组织到权力中心，探索中国近现代政治人物的空间经历。打开人物档案，逐项检查来源与证据边界。');
@@ -216,7 +227,7 @@
       document.querySelector('.section-intro > p').textContent=en?`${quality.people} curated profiles across five overlapping periods. Select a person, inspect an event, then follow its source.`:`${quality.people} 份人物档案，横跨五个重叠时期。选择人物、查看事件，再追溯来源。`;
       labelText('modeLabel',en?'Viewing mode':'查看模式',document.querySelector('.mode-switch')?.previousElementSibling);
       labelText('periodsLabel',en?'Periods':'历史时期',periodList.previousElementSibling);
-      labelText('layersLabel',en?'Location layers':'地点类型',layerList.previousElementSibling);
+      labelText('layersLabel',en?'Event type':'事件类型',layerList.previousElementSibling);
       labelText('peopleLabel',en?`People · ${currentPeople().length}/${quality.people}`:`人物 · ${currentPeople().length}/${quality.people}`,personSearch.closest('.control-block')?.querySelector('.panel-label'));
       labelText('filterToggle',en?'Explore & filter':'探索与筛选');
       document.querySelector('.mode-switch').setAttribute('aria-label',en?'Viewing mode':'查看模式');
@@ -227,7 +238,8 @@
       personSearch.placeholder=en?'Search name, role, or entity':'搜索姓名、角色或政治实体';personSearch.setAttribute('aria-label',personSearch.placeholder);
       document.querySelector('.map-panel').setAttribute('aria-label',en?'Schematic map of biographical places':'人物履历地点示意图');
       document.querySelector('.map-key').setAttribute('aria-label',en?'Location legend':'地点图例');
-      document.querySelector('.map-key').innerHTML=(en?[['birth','Birthplace'],['ancestral','Ancestral origin'],['education','Education'],['activity','Political activity'],['appointment','Office / institution'],['key','Other records'],['ghost','Unreviewed lead']]:[['birth','出生地'],['ancestral','籍贯 / 祖籍'],['education','教育'],['activity','政治活动'],['appointment','任职 / 机构'],['key','其他记录'],['ghost','待核线索']]).map(([kind,label])=>`<div class="key-row"><span class="key-mark ${kind}"></span>${label}</div>`).join('');
+      const legendGroups=new Map();eventLayers.forEach(layer=>{if(!legendGroups.has(layer.marker))legendGroups.set(layer.marker,[]);legendGroups.get(layer.marker).push(layer[en?'en':'zh']);});
+      document.querySelector('.map-key').innerHTML=[...legendGroups].map(([kind,labels])=>`<div class="key-row"><span class="key-mark ${kind}"></span>${escapeHTML(labels.join(' · '))}</div>`).join('')+`<div class="key-row"><span class="key-mark ghost"></span>${en?'Unreviewed lead':'待核线索'}</div>`;
       document.querySelector('.timeline-head span').textContent=en?'OVERLAPPING PERIODS':'重叠时期';
       document.querySelector('.discovery-label').textContent=en?'RESEARCH NOTE · READING THE EVIDENCE':'研究说明 · 阅读证据';
       document.querySelector('#discovery h3').textContent=en?'A line is a way to read a life. It is not proof of a journey.':'连线帮助阅读履历，并不证明一次旅程。';
@@ -251,7 +263,7 @@
       controls.querySelectorAll('[data-scope]').forEach(button=>button.addEventListener('click',()=>{state.timeScope=button.dataset.scope;state.placeKey=null;syncUI();}));
     }
     function renderLayers() {
-      const labels=state.lang==='en'?[['all','All event types'],['birth','Birthplace'],['ancestral','Ancestral origin'],['upbringing','Upbringing'],['education','Education'],['political_activity','Political activity'],['office','Office / institution'],['career','Career'],['key','Other records']]:[['all','全部事件类型'],['birth','出生地'],['ancestral','籍贯 / 祖籍'],['upbringing','成长地'],['education','教育'],['political_activity','政治活动'],['office','任职 / 机构'],['career','职业经历'],['key','其他记录']];
+      const labels=[['all',state.lang==='en'?'All event types':'全部事件类型'],...eventLayers.map(layer=>[layer.id,layer[state.lang==='en'?'en':'zh']])];
       layerList.innerHTML=labels.map(([id,label])=>`<button class="${state.layer===id?'active':''}" data-layer="${id}" data-focus-key="layer-${id}" aria-pressed="${state.layer===id}">${label}</button>`).join('');
       layerList.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{state.layer=button.dataset.layer;state.placeKey=null;syncUI();}));
     }
@@ -403,7 +415,9 @@
       const entries=dots.get(state.placeKey)||[],en=state.lang==='en';
       panel.hidden=!entries.length;if(!entries.length){panel.innerHTML='';return;}
       const grouped=new Map();entries.forEach(entry=>{if(!grouped.has(entry.person.id))grouped.set(entry.person.id,{person:entry.person,events:[]});grouped.get(entry.person.id).events.push(entry.item);});
-      panel.innerHTML=`<div class="place-details-head"><div><p class="eyebrow">${en?'SHARED PLACE':'共同地点'}</p><h4 tabindex="-1">${escapeHTML(mapPlaceLabel(state.placeKey))}</h4><p>${en?`${grouped.size} people · ${entries.length} records within the current filters`:`当前筛选下 ${grouped.size} 位人物 · ${entries.length} 条记录`}</p></div><button type="button" id="closePlaceDetails" aria-label="${en?'Close place records':'关闭地点记录'}">${en?'Close':'关闭'} ×</button></div><div class="place-people">${[...grouped.values()].map(({person,events})=>`<section class="place-person"><h5>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h5><ul class="place-event-list">${events.sort((a,b)=>(eventYear(a)??9999)-(eventYear(b)??9999)).map(event=>`<li><button type="button" data-open-person="${escapeHTML(person.id)}" data-open-event="${escapeHTML(event.id)}"><strong>${escapeHTML((en?event.dateTextEn:event.dateTextZh)||event.dateText||eventYear(event)||(en?'Undated':'日期未定'))}</strong> ${escapeHTML((en?event.titleEn:event.titleZh)||event.raw||pathLabel(event))}<span>${en?'Open event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ul></section>`).join('')}</div>`;
+      const naming=placeDisplay[state.placeKey]||{};
+      const nameNote=en?naming.noteEn:naming.noteZh;
+      panel.innerHTML=`<div class="place-details-head"><div><p class="eyebrow">${en?'SHARED PLACE':'共同地点'}</p><h4 tabindex="-1">${escapeHTML(en?(naming.detailEn||mapPlaceLabel(state.placeKey)):mapPlaceLabel(state.placeKey))}</h4>${en?`<p class="place-original-name" lang="zh-CN">${escapeHTML(mapPlaceLabel(state.placeKey,'zh'))}</p>`:''}${nameNote?`<p class="place-name-note">${escapeHTML(nameNote)}</p>`:''}<p>${en?`${grouped.size} ${grouped.size===1?'person':'people'} · ${entries.length} ${entries.length===1?'record':'records'} within the current filters`:`当前筛选下 ${grouped.size} 位人物 · ${entries.length} 条记录`}</p></div><button type="button" id="closePlaceDetails" aria-label="${en?'Close place records':'关闭地点记录'}">${en?'Close':'关闭'} ×</button></div><div class="place-people">${[...grouped.values()].map(({person,events})=>`<section class="place-person"><h5>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h5><ul class="place-event-list">${events.sort((a,b)=>(eventYear(a)??9999)-(eventYear(b)??9999)).map(event=>`<li><button type="button" data-open-person="${escapeHTML(person.id)}" data-open-event="${escapeHTML(event.id)}"><strong>${escapeHTML((en?event.dateTextEn:event.dateTextZh)||event.dateText||eventYear(event)||(en?'Undated':'日期未定'))}</strong> ${escapeHTML((en?event.titleEn:event.titleZh)||event.raw||pathLabel(event))}<span class="place-record-location">${escapeHTML(en?(event.placeEn||mapPlaceLabel(event.place)):(event.placeText||mapPlaceLabel(event.place)))}${en&&event.placeText?`<span lang="zh-CN">${escapeHTML(event.placeText)}</span>`:''}</span><span>${en?'Open event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ul></section>`).join('')}</div>`;
       panel.querySelectorAll('[data-open-person]').forEach(button=>button.addEventListener('click',()=>openAtlasRecord(button.dataset.openPerson,[button.dataset.openEvent])));
       document.getElementById('closePlaceDetails').addEventListener('click',()=>{const key=state.placeKey;state.placeKey=null;panel.hidden=true;window.atlasScrollMap();placeLayer.querySelector(`[data-place="${CSS.escape(key)}"]`)?.focus({preventScroll:true});});
     }
@@ -412,7 +426,7 @@
       const person=peopleById.get('p_sun_yat_sen'),en=state.lang==='en';if(!person)return;
       const ids=['honolulu-school','tongmenghui','president','reorganization'].map(id=>`p_sun_yat_sen:full:${id}`);
       const events=ids.map(id=>person.placeLeads.find(event=>event.id===id)).filter(Boolean);
-      container.innerHTML=`<div class="hero-record-head"><span class="eyebrow">${en?'ONE LIFE · FOUR SOURCED RECORDS':'一位人物 · 四条有来源记录'}</span><h2>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h2></div><ol class="hero-record-timeline">${events.map(event=>`<li class="hero-record-step"><button type="button" data-hero-event="${escapeHTML(event.id)}"><time>${eventYear(event)}</time><strong>${escapeHTML(en?(event.placeEn||mapPlaceLabel(event.place)):mapPlaceLabel(event.place))}<span lang="${en?'zh-CN':'en'}">${escapeHTML(en?mapPlaceLabel(event.place):(event.placeEn||mapPlaceLabel(event.place)))}</span></strong><span>${escapeHTML((en?event.titleEn:event.titleZh)||'')}</span><span class="hero-record-source">${en?'Read event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ol><p class="hero-record-note">${en?'Selected biographical records; connecting marks are schematic, not a reconstructed travel route.':'精选履历记录；连接标记为示意，不是实际行程还原。'}</p>`;
+      container.innerHTML=`<div class="hero-record-head"><span class="eyebrow">${en?'ONE LIFE · FOUR SOURCED RECORDS':'一位人物 · 四条有来源记录'}</span><h2>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h2></div><ol class="hero-record-timeline">${events.map(event=>`<li class="hero-record-step"><button type="button" data-hero-event="${escapeHTML(event.id)}"><time>${eventYear(event)}</time><strong>${escapeHTML(en?(event.placeEn||mapPlaceLabel(event.place)):mapPlaceLabel(event.place))}<span lang="${en?'zh-CN':'en'}">${escapeHTML(en?mapPlaceLabel(event.place,'zh'):(event.placeEn||mapPlaceLabel(event.place)))}</span></strong><span>${escapeHTML((en?event.titleEn:event.titleZh)||'')}</span><span class="hero-record-source">${en?'Read event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ol><p class="hero-record-note">${en?'Selected biographical records; connecting marks are schematic, not a reconstructed travel route.':'精选履历记录；连接标记为示意，不是实际行程还原。'}</p>`;
       container.querySelectorAll('[data-hero-event]').forEach(button=>button.addEventListener('click',()=>openAtlasRecord(person.id,[button.dataset.heroEvent])));
     }
     function openAtlasRecord(personId,eventIds=[]) {
@@ -431,17 +445,26 @@
     }
     window.atlasShowRecord=(eventIds=[])=>{const event=eventIds.map(id=>document.getElementById(`event-${id}`)).find(Boolean);if(event){let parent=event.parentElement;while(parent&&parent!==dossier){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}}scrollToElement(event||dossier);};
     window.atlasScrollMap=()=>scrollToElement(document.querySelector('.map-panel'));
+    function focusFilterControl() {
+      (disclosure?.open ? personSearch : document.getElementById('filterToggle')).focus({preventScroll:true});
+    }
+    function clearAtlasFilters() {
+      state.period='all';state.layer='all';state.search='';state.verifiedOnly=false;state.timeScope='period';state.placeKey=null;
+      personSearch.value='';syncUI();focusFilterControl();
+    }
     function renderActiveFilters() {
-      let node=document.getElementById('activeFilters');if(!node){node=document.createElement('div');node.id='activeFilters';(document.querySelector('.filter-inner')||document.querySelector('.filter-panel')).prepend(node);}
+      const node=document.getElementById('activeFilters');
       const en=state.lang==='en',chips=[];
       if(state.search)chips.push(['search',state.search]);
       if(state.period!=='all')chips.push(['period',periodLabel(selectedPeriod())]);
-      if(state.layer!=='all')chips.push(['layer',en?(typeEn[state.layer]||state.layer):(typeZh[state.layer]||state.layer)]);
+      if(state.layer!=='all')chips.push(['layer',eventLayerById.get(state.layer)?.[en?'en':'zh']||state.layer]);
+      if(state.period!=='all'&&state.timeScope==='life')chips.push(['timeScope',en?'Full lives':'完整生平']);
       if(state.verifiedOnly)chips.push(['verifiedOnly',en?'Sourced only':'仅有来源']);
       node.className='active-filter-bar';node.hidden=!chips.length;
+      node.setAttribute('role','group');node.setAttribute('aria-label',en?'Current filters':'当前筛选');
       node.innerHTML=chips.map(([key,label])=>`<button class="filter-chip" type="button" data-remove-filter="${key}" data-focus-key="remove-${key}" aria-label="${escapeHTML((en?'Remove filter: ':'移除筛选：')+label)}">${escapeHTML(label)} ×</button>`).join('')+`<button type="button" id="clearFilters">${en?'Clear all':'清除全部'}</button>`;
-      node.querySelectorAll('[data-remove-filter]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.removeFilter;state[key]=key==='search'?'':key==='verifiedOnly'?false:'all';if(key==='search')personSearch.value='';if(key==='period')state.timeScope='period';state.placeKey=null;syncUI();if(node.hidden)personSearch.focus({preventScroll:true});}));
-      node.querySelector('#clearFilters')?.addEventListener('click',()=>{state.period='all';state.layer='all';state.search='';state.verifiedOnly=false;state.timeScope='period';state.placeKey=null;personSearch.value='';syncUI();personSearch.focus({preventScroll:true});});
+      node.querySelectorAll('[data-remove-filter]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.removeFilter;state[key]=key==='search'?'':key==='verifiedOnly'?false:key==='timeScope'?'period':'all';if(key==='search')personSearch.value='';if(key==='period')state.timeScope='period';state.placeKey=null;syncUI();if(node.hidden)focusFilterControl();}));
+      node.querySelector('#clearFilters')?.addEventListener('click',clearAtlasFilters);
     }
     function syncUI() {
       const active=document.activeElement;
@@ -453,7 +476,7 @@
       miniList.scrollTop=listScroll;
       const target=focusKey?document.querySelector(`[data-focus-key="${CSS.escape(focusKey)}"]`):focusId?document.getElementById(focusId):null;
       if(target&&target!==document.activeElement)target.focus({preventScroll:true});
-      else if(!target&&focusKey?.startsWith('remove-'))(document.getElementById('clearFilters')||personSearch).focus({preventScroll:true});
+      else if(!target&&focusKey?.startsWith('remove-')){const clear=document.getElementById('clearFilters');if(clear&&!clear.closest('[hidden]'))clear.focus({preventScroll:true});else focusFilterControl();}
     }
     const topbar=document.querySelector('.topbar');
     if(topbar){

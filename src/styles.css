@@ -37,7 +37,7 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 .cn-note{display:block;color:var(--muted);font:14px/1.6 var(--font-zh-text);letter-spacing:.035em;margin-top:10px}
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:30px;min-height:80px;padding:16px 4vw;background:var(--paper);border-bottom:1px solid var(--line)}
 .brand-lockup{min-width:0}
-.brand-name{font:21px/1.25 var(--serif);letter-spacing:.025em;white-space:nowrap}
+.brand-name{font:21px/1.25 var(--serif);letter-spacing:.025em;white-space:nowrap;color:inherit;text-decoration:none}
 .brand-name .cn-note{margin-left:12px}
 .brand-kicker,.status-dot,#topStatus{display:none}
 .site-nav{display:flex;align-items:center;gap:24px;margin-left:auto}
@@ -111,7 +111,7 @@ html[data-lang="zh"] .section-intro h2{line-height:1.3;letter-spacing:0}
 .coverage-filter{width:100%;padding:8px 0;margin:8px 0;border:0;background:none;font-size:12px;text-align:left;min-height:36px;color:var(--muted)}
 .coverage-filter::before{content:'○';margin-right:7px}
 .coverage-filter.active::before{content:'●'}
-.active-filter-bar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}
+.active-filter-bar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:12px 0;margin:0 16px;border-top:1px solid var(--line);font-size:12px}
 .filter-chip{border:1px solid var(--line-strong);padding:6px 8px;background:var(--paper-bright);font-size:12px;text-align:left;max-width:100%;overflow-wrap:anywhere}
 .active-filter-bar button{min-height:36px}
 .map-panel{grid-column:2;min-width:0;background:var(--paper-bright)}
@@ -167,6 +167,8 @@ html[data-lang="zh"] .section-intro h2{line-height:1.3;letter-spacing:0}
 .place-details-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:20px}
 .place-details-head h3{font-size:25px;line-height:1.35;margin:0}
 .place-details-head p{font-size:13px;margin:4px 0 0;color:var(--muted)}
+.place-details-head .place-original-name{font-size:15px;color:var(--ink);margin-top:6px}
+.place-details-head .place-name-note{max-width:62ch;line-height:1.7;margin-block:10px}
 .place-details-head button{background:none;border:1px solid var(--line-strong);padding:8px 12px;font-size:13px}
 .place-person{padding:18px 0;border-top:1px solid var(--line)}
 .place-person h4{font-size:22px;line-height:1.35;margin:0 0 8px}
@@ -203,7 +205,9 @@ html[data-lang="zh"] .dossier h3{line-height:1.25;letter-spacing:0}
 .path-list{padding-left:22px;position:relative}
 .path-list::before{content:'';position:absolute;left:4px;top:8px;bottom:24px;width:1px;background:var(--line-strong)}
 .path-item{position:relative;padding:0 0 28px 10px;scroll-margin-top:calc(var(--header-height) + 28px)}
-.path-item::before{content:'';position:absolute;left:-22px;top:7px;width:9px;height:9px;border:2px solid var(--paper-bright);border-radius:50%;background:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.path-item::before{content:'';position:absolute;left:-22px;top:7px;width:9px;height:9px;border:2px solid var(--paper-bright);border-radius:50%;background:var(--ink-soft);box-shadow:0 0 0 1px var(--ink-soft)}
+.path-item.appointment::before{background:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.path-item.ancestral::before,.path-item.upbringing::before{background:var(--paper-bright);border-color:var(--vermilion);box-shadow:none}
 .path-item.birth::before{background:var(--vermilion);box-shadow:0 0 0 1px var(--vermilion)}
 .path-item.education::before{background:var(--cyan);box-shadow:0 0 0 1px var(--cyan)}
 .path-item.activity::before{background:var(--ochre);box-shadow:0 0 0 1px var(--ochre)}
@@ -220,7 +224,7 @@ html[data-lang="zh"] .dossier h3{line-height:1.25;letter-spacing:0}
 .event-evidence summary{cursor:pointer;padding:5px 0}
 .event-evidence p{margin:9px 0 0;color:var(--ink-soft)}
 .path-item.evidence-focus{background:#f1e7d1;outline:1px solid #b79a66;outline-offset:10px;margin-bottom:24px}
-.pending-event::before{background:var(--paper-bright);box-shadow:0 0 0 1px var(--muted)}
+.path-item.pending-event::before{background:var(--paper-bright);border:1.5px dashed var(--muted);box-shadow:none}
 .pending-event small{color:var(--muted)}
 .pending-details,.profile-gaps,.evidence-details{margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}
 .pending-details>summary,.profile-gaps>summary,.evidence-details>summary{font-size:15px;line-height:1.7;cursor:pointer;padding:5px 0}
@@ -390,8 +394,10 @@ td{color:var(--ink-soft)}
 .place-details-head h4{font:29px/1.4 var(--serif);margin:0}
 .place-person h5{font:24px/1.4 var(--serif);margin:0 0 12px}
 .place-person h5 small{font:13px/1.5 var(--sans);display:block;color:var(--muted);margin-top:4px}
-.place-event-list button{border:0;border-bottom:1px solid var(--line);background:none;padding:9px 0;width:100%;font-size:14px;line-height:1.7}
+.place-event-list button{display:block;border:0;border-bottom:1px solid var(--line);background:none;padding:9px 0;width:100%;font-size:14px;line-height:1.7}
 .place-event-list button>span{display:block;font-size:12px;color:var(--vermilion);margin-top:4px}
+.place-event-list button>.place-record-location{font-size:13px;color:var(--ink-soft)}
+.place-record-location>span{display:block}
 .method-position{font:12px/1.6 var(--sans);color:var(--vermilion);padding:0 8px;margin:0 0 9px}
 .denominator-people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none!important;margin:14px 0;padding:0!important;gap:3px 18px}
 .denominator-people li{margin:0!important;min-width:0}

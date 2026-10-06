@@ -233,6 +233,9 @@
   function startTour(){stopTimer();tour={active:true,index:0,auto:false,remaining:20,timer:null};document.body.classList.add('touring');goTour(0,'next');}
   document.addEventListener('click',event=>{
     const target=event.target.closest('button,a');if(!target)return;
+    // A real link handles keyboard activation and preserves language. Repeated
+    // home clicks need an explicit scroll because the hash may already match.
+    if(target.hasAttribute('data-home')&&target.hash===location.hash&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey){event.preventDefault();routeFromHash();}
     if(target.dataset.view){event.preventDefault();navigate(target.dataset.view);}
     if(target.dataset.methodSection){event.preventDefault();navigate('method',{section:target.dataset.methodSection});}
     if(target.dataset.openFindingAudit){

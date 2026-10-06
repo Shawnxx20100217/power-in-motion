@@ -14,7 +14,7 @@
     <header class="topbar">
       <div class="brand-lockup">
         <span class="brand-kicker">POLITICAL ATLAS / V0</span>
-        <span class="brand-name">POWER IN MOTION <span class="cn-note" style="display:inline;font-size:11px;letter-spacing:.08em">权力迁徙图</span></span>
+        <a class="brand-name" href="#?lang=en" data-home aria-label="Power in Motion — Home">POWER IN MOTION <span class="cn-note" style="display:inline;font-size:11px;letter-spacing:.08em">权力迁徙图</span></a>
       </div>
       <nav class="site-nav" aria-label="Main navigation"><a href="#atlas" data-view="atlas" aria-current="page">Atlas</a><a href="#findings" data-view="findings">Findings</a><a href="#method" data-view="method">Method</a><button id="startTour" type="button">90-second tour</button></nav>
       <div class="topbar-meta"><span class="status-dot" aria-hidden="true"></span><span id="topStatus">Research prototype · 05 Oct 2026</span><div class="language-switch" aria-label="Language"><button class="active" data-lang="en">EN</button><button data-lang="zh">中文</button></div></div>
@@ -43,7 +43,8 @@
 
         <div id="evidenceReturn" hidden></div>
         <div class="workspace">
-          <details class="filter-panel" id="filterDisclosure" open>
+          <div class="filter-panel">
+          <details id="filterDisclosure" open>
             <summary id="filterToggle">People & filters</summary>
             <div class="filter-inner">
               <div class="control-block people-controls">
@@ -68,6 +69,8 @@
               </div>
             </div>
           </details>
+          <div id="activeFilters" class="active-filter-bar" hidden></div>
+          </div>
 
           <section class="map-panel" aria-label="Political life paths map">
             <div id="selectionBar" class="selection-bar"></div>

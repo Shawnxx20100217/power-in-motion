@@ -31,9 +31,10 @@ research = {
 html = (root / 'src/index.template.html').read_text()
 for token, name in [('__SITE_CSS__', 'styles.css'), ('__ATLAS_JS__', 'atlas.js'), ('__RESEARCH_JS__', 'research.js')]:
     html = html.replace(token, (root / 'src' / name).read_text())
-for token, value in [('__ATLAS_DATA__', data), ('__RESEARCH_DATA__', research)]:
+place_display = json.loads((root / 'src/place-display.json').read_text())
+for token, value in [('__ATLAS_DATA__', data), ('__RESEARCH_DATA__', research), ('__PLACE_DISPLAY__', place_display)]:
     html = html.replace(token, json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
-for token in ('__SITE_CSS__', '__ATLAS_JS__', '__RESEARCH_JS__', '__ATLAS_DATA__', '__RESEARCH_DATA__'):
+for token in ('__SITE_CSS__', '__ATLAS_JS__', '__RESEARCH_JS__', '__ATLAS_DATA__', '__RESEARCH_DATA__', '__PLACE_DISPLAY__'):
     if token in html:
         raise ValueError(f'Unresolved build token: {token}')
 (root / 'index.html').write_text(html, encoding='utf-8')
