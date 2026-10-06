@@ -26,10 +26,9 @@
 html{overflow-anchor:none;scroll-behavior:auto;scroll-padding-top:calc(var(--header-height) + 24px)}
 body{margin:0;min-width:min(320px,100%);background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);text-wrap:pretty}
 html[data-lang="zh"]{--sans:var(--font-zh-text);--serif:var(--font-zh-display)}
-html[data-lang="zh"] body{line-height:1.8}
+html[data-lang="zh"] body{line-height:1.8;line-break:strict}
 h1,h2,h3,h4,p{margin-top:0}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:500;text-wrap:balance}
-html[data-lang="zh"] h1,html[data-lang="zh"] h2,html[data-lang="zh"] h3{letter-spacing:.025em;line-height:1.5}
 button,input,select{font:inherit;color:inherit}
 button,summary,a,input{touch-action:manipulation}
 button,a,summary{-webkit-tap-highlight-color:transparent}
@@ -60,6 +59,7 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 /* An opening spread: editorial question and a handful of actual records. */
 .hero{max-width:1540px;margin:auto;display:grid;grid-template-columns:1.08fr 1fr;gap:6vw;align-items:center;padding:64px 5vw 60px;border-bottom:1px solid var(--line)}
 .hero h1{font:clamp(42px,4.7vw,68px)/1.08 var(--serif);letter-spacing:-.035em;margin:0 0 24px;max-width:650px}
+html[data-lang="zh"] .hero h1{line-height:1.22;letter-spacing:0}
 .hero h1 em{font-style:normal}
 .hero h1 .cn-note{font-size:16px;letter-spacing:.04em;margin-top:18px}
 .hero-dek{font:17px/1.75 var(--sans);color:var(--ink-soft);max-width:570px;margin-bottom:28px}
@@ -88,6 +88,7 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 .atlas-wrap{padding:44px 4vw 64px;max-width:1600px;margin:auto}
 .section-intro{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:24px}
 .section-intro h2{font:32px/1.25 var(--serif);letter-spacing:-.02em;margin:0}
+html[data-lang="zh"] .section-intro h2{line-height:1.3;letter-spacing:0}
 .section-intro .cn-note{margin-top:6px}
 .section-intro>p{max-width:440px;font-size:14px;line-height:1.65;color:var(--muted);margin:0}
 .workspace{display:grid;grid-template-columns:230px minmax(0,1fr);align-items:start;border:1px solid var(--line-strong);background:var(--paper-bright);box-shadow:var(--shadow)}
@@ -172,11 +173,11 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 .timeline-segment.active{border-color:var(--vermilion);background:#eadfd5}
 .place-details{padding:24px;border-top:1px solid var(--line-strong);background:#f4eee3}
 .place-details-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:20px}
-.place-details-head h3{font-size:25px;margin:0}
+.place-details-head h3{font-size:25px;line-height:1.35;margin:0}
 .place-details-head p{font-size:13px;margin:4px 0 0;color:var(--muted)}
 .place-details-head button{background:none;border:1px solid var(--line-strong);padding:8px 12px;font-size:13px}
 .place-person{padding:18px 0;border-top:1px solid var(--line)}
-.place-person h4{font-size:22px;margin:0 0 8px}
+.place-person h4{font-size:22px;line-height:1.35;margin:0 0 8px}
 .place-person button{padding:7px 10px;min-height:40px;border:1px solid var(--line-strong);background:var(--paper-bright);font-size:13px;text-align:left}
 .place-event-list{padding-left:20px;margin:10px 0 0;font-size:14px}
 .place-event-list li{padding:4px 0}
@@ -187,6 +188,7 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 .dossier-badge{font-size:12px;color:var(--muted)}
 .profile-map-return{display:block;position:sticky;top:calc(var(--header-height) + 8px);z-index:5;width:max-content;max-width:100%;margin:0 0 20px auto;border:1px solid var(--line-strong);background:var(--paper);padding:8px 12px;font-size:13px;box-shadow:0 4px 15px rgba(25,45,61,.06)}
 .dossier h3{font:42px/1.2 var(--serif);letter-spacing:-.02em;margin-bottom:6px}
+html[data-lang="zh"] .dossier h3{line-height:1.25;letter-spacing:0}
 .dossier-name-en{font-size:16px;line-height:1.6;color:var(--muted);margin-bottom:18px}
 .tag-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:22px}
 .tag{font:12px/1.5 var(--sans);padding:4px 8px;border:1px solid var(--line);color:var(--ink-soft)}
@@ -251,17 +253,20 @@ html[data-lang="zh"] .eyebrow{letter-spacing:.09em}
 .discovery-side{border-left:1px solid var(--line);padding-left:28px;align-self:center;font-size:13px;line-height:1.8;color:var(--muted)}
 .discovery-side strong{display:block;font:22px/1.4 var(--serif);margin-bottom:12px;color:var(--ink)}
 .method-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:40px}
-.method-item h3{font-size:23px;margin-bottom:10px}
+.method-item h3{font-size:23px;line-height:1.4;margin-bottom:10px}
 .method-item p{font-size:14px;line-height:1.8;color:var(--ink-soft);margin:0}
 .method-item .eyebrow{font-size:12px;margin-bottom:12px;color:var(--vermilion)}
 footer{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding:24px 4vw;font-size:12px;line-height:1.7;color:var(--muted)}
 /* Findings and method share the same type scale, with distinct reading density. */
-.research-view{max-width:1400px;margin:auto;padding:56px 5vw 80px}
-.research-header{display:grid;grid-template-columns:1.4fr .8fr;align-items:end;gap:64px;margin-bottom:46px}
-.research-header h1{font:clamp(40px,4.7vw,64px)/1.12 var(--serif);letter-spacing:-.03em;margin:0 0 22px;max-width:780px}
-.research-header p{font-size:17px;line-height:1.8;color:var(--ink-soft);max-width:720px;margin-bottom:0}
-.research-aside{border-top:1px solid var(--vermilion);padding-top:18px;font-size:14px;line-height:1.8;color:var(--ink-soft)}
-.research-aside strong{display:block;font:34px/1.35 var(--serif);color:var(--ink);margin-bottom:10px}
+.research-view{max-width:1400px;margin:auto;padding:40px 5vw 80px}
+.research-header{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);align-items:start;gap:64px;margin-bottom:32px}
+.research-header h1{font:clamp(40px,4.7vw,64px)/1.12 var(--serif);letter-spacing:-.03em;margin:0 0 18px;max-width:780px}
+.research-header .eyebrow{font-size:13px;line-height:1.5;margin-bottom:12px}
+html[data-lang="zh"] .research-header h1{font-size:50px;line-height:1.24;letter-spacing:0}
+.finding-title-line{display:block;white-space:nowrap}
+.research-intro{font-size:17px;line-height:1.8;color:var(--ink-soft);max-width:720px;margin-bottom:0}
+.research-aside{border-top:1px solid var(--vermilion);margin-top:32px;padding-top:14px;font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.research-aside strong{display:block;font:28px/1.35 var(--serif);color:var(--ink);margin-bottom:10px}
 .finding-card{border-top:1px solid var(--line-strong);padding:36px 0 42px;scroll-margin-top:calc(var(--header-height) + 24px)}
 .finding-main{display:grid;grid-template-columns:148px minmax(0,1fr);gap:36px}
 .finding-number{font:12px/1.5 var(--sans);letter-spacing:.07em;color:var(--vermilion)}
@@ -269,10 +274,15 @@ footer{display:flex;justify-content:space-between;gap:24px;border-top:1px solid 
 .finding-ratio small{font-size:25px;color:var(--muted)}
 .finding-metric-label{font-size:13px;line-height:1.7;color:var(--muted)}
 .finding-card h2{font:32px/1.3 var(--serif);margin:0 0 16px;letter-spacing:-.015em}
-.finding-claim{font-size:18px;line-height:1.8;margin-bottom:24px;color:var(--ink-soft)}
+html[data-lang="zh"] .finding-card h2{letter-spacing:0}
+.finding-claim{font-size:18px;line-height:1.8;margin-bottom:6px;color:var(--ink-soft)}
+.finding-evidence-link{display:block;width:fit-content;max-width:100%;min-height:40px;padding:7px 0;margin:0 0 22px;border:0;background:none;color:var(--vermilion);font:14px/1.7 var(--sans);text-align:left;text-decoration:underline;text-underline-offset:4px}
+.finding-evidence-link:hover{color:var(--ink)}
 .finding-notes{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.finding-notes h3{font:600 13px/1.5 var(--sans);color:var(--vermilion);margin:0 0 9px;text-transform:uppercase;letter-spacing:.035em}
+.finding-notes h3{font:600 14px/1.5 var(--sans);color:var(--vermilion);margin:0 0 9px;text-transform:uppercase;letter-spacing:.035em}
 .finding-notes p{font-size:15px;line-height:1.85;color:var(--ink-soft);margin:0}
+.note-prose p+p{margin-top:12px}
+.note-prose strong{font-weight:600;color:var(--ink)}
 .finding-audit{padding:14px 0;margin-top:20px;border-block:1px solid var(--line)}
 .finding-audit summary{font-size:15px;line-height:1.7;padding:6px 0;cursor:pointer}
 .finding-records{margin-top:20px;padding:0 0 0 18px;border-left:1px solid var(--line-strong)}
@@ -306,7 +316,7 @@ footer{display:flex;justify-content:space-between;gap:24px;border-top:1px solid 
 .research-flow li{font-size:13px;padding:8px 12px;border:1px solid var(--line);background:var(--paper-bright)}
 .research-flow li+li::before{content:'→';margin-right:10px;color:var(--muted)}
 .period-comparison,.coverage-matrix{margin:26px 0;padding:20px 0;border-block:1px solid var(--line)}
-.period-comparison h3,.coverage-matrix h3{font-size:23px;margin-bottom:12px}
+.period-comparison h3,.coverage-matrix h3{font-size:23px;line-height:1.4;margin-bottom:12px}
 .period-comparison p,.coverage-matrix p{font-size:14px;line-height:1.8;color:var(--ink-soft)}
 .table-scroll{overflow-x:auto;overscroll-behavior:contain}
 table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.7;text-align:left}
@@ -344,7 +354,7 @@ td{color:var(--ink-soft)}
   .topbar{gap:18px;padding:14px 3vw}.brand-name{font-size:18px}.site-nav{gap:16px}.site-nav a,.site-nav button{font-size:13px}
   .language-switch button{min-width:35px}.hero{grid-template-columns:1fr 1fr;gap:30px;padding:42px 4vw}.hero h1{font-size:43px}.hero-dek{font-size:16px}.hero-record-head{display:block}.hero-record-head strong{font-size:25px}.hero-record-step{grid-template-columns:48px 1fr;gap:10px}.hero-record-source{grid-column:2}.hero-record-step button{font-size:18px}.hero-actions{gap:12px}.hero-research-line a{margin-left:0;display:block}
   .section-intro{display:block}.section-intro>p{margin-top:14px;max-width:650px}.atlas-wrap{padding:32px 3vw 48px}.section-intro h2{font-size:29px}
-  .research-view{padding:40px 4vw 64px}.research-header{grid-template-columns:1fr;gap:26px;margin-bottom:36px}.research-header h1{font-size:48px}.research-aside strong{font-size:29px}.research-aside{max-width:700px}
+  .research-view{padding:40px 4vw 64px}.research-header{grid-template-columns:1fr;gap:22px;margin-bottom:30px}.research-header h1{font-size:48px}html[data-lang="zh"] .research-header h1{font-size:44px}.research-aside strong{font-size:26px}.research-aside{max-width:700px;margin-top:0}
   .finding-main{grid-template-columns:115px minmax(0,1fr);gap:26px}.finding-notes{grid-template-columns:1fr;gap:22px}.finding-card h2{font-size:29px}.finding-ratio{font-size:47px}.finding-record{grid-template-columns:1fr;gap:10px}
   .method-layout{display:block}.method-index{position:static;max-height:none;overflow:visible;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px;margin-bottom:32px}.method-index a{font-size:13px}.method-section p,.method-section li{font-size:17px}
 }
@@ -365,7 +375,7 @@ td{color:var(--ink-soft)}
   .dossier{padding:25px 20px}.dossier-kicker{display:block;font-size:12px;margin-bottom:18px}.dossier-badge{display:block;margin-top:6px}.dossier h3{font-size:36px}.dossier-name-en{font-size:15px}.record-summary{font-size:16px;line-height:1.9}.tag-row{gap:6px}.tag{font-size:12px}
   .life-facts{gap:20px}.life-facts strong{font-size:16px}.meta-grid{grid-template-columns:1fr;gap:12px}.meta-item{font-size:14px}.info-section p{font-size:15px}.path-title strong{font-size:24px}.path-title span{font-size:12px}.path-list{padding-left:16px}.path-item{padding-left:10px;padding-bottom:28px}.path-item::before{left:-16px}.path-item strong{font-size:16px}.path-item>span{font-size:14px}.path-item small{font-size:13px}.event-evidence{font-size:13px}.profile-map-return{top:calc(var(--header-height) + 5px);font-size:12px;padding:8px 10px}
   .discovery-strip{display:block;margin:28px 7px 0;padding:24px 0}.discovery-side{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;margin-top:20px}.discovery-strip h3{font-size:24px}.method-strip{display:block;margin:28px 7px 0}.method-item{padding:18px 0;border-bottom:1px solid var(--line)}
-  .research-view{padding:34px 22px 54px}.research-header h1{font-size:41px;line-height:1.18}.research-header p{font-size:16px;line-height:1.85}.research-aside{font-size:13px}.research-aside strong{font-size:29px}.finding-main{display:block}.finding-metric{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 18px;margin-bottom:22px}.finding-number{flex-basis:100%}.finding-ratio{font-size:48px;margin:0}.finding-metric-label{flex:1;min-width:160px;font-size:13px}.finding-card h2{font-size:29px}.finding-claim{font-size:17px}.finding-notes p{font-size:15px}.finding-audit summary{font-size:14px}.finding-records{padding-left:12px}.finding-record li{font-size:14px}.finding-record h4{font-size:24px}.finding-record a{font-size:13px}.research-download{font-size:14px;display:block}.research-download a{display:block;margin-bottom:12px}
+  .research-view{padding:28px 22px 54px}.research-header h1{font-size:41px;line-height:1.18;margin-bottom:16px}html[data-lang="zh"] .research-header h1{font-size:36px;line-height:1.25}.research-intro{font-size:16px;line-height:1.85}.research-aside{font-size:13px}.research-aside strong{font-size:26px}.finding-main{display:block}.finding-metric{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 18px;margin-bottom:22px}.finding-number{flex-basis:100%}.finding-ratio{font-size:48px;margin:0}.finding-metric-label{flex:1;min-width:160px;font-size:13px}.finding-card h2{font-size:29px}.finding-claim{font-size:17px}.finding-notes p{font-size:15px}.finding-audit summary{font-size:14px}.finding-records{padding-left:12px}.finding-record li{font-size:14px}.finding-record h4{font-size:24px}.finding-record a{font-size:13px}.research-download{font-size:14px;display:block}.research-download a{display:block;margin-bottom:12px}
   .method-index{grid-template-columns:1fr;gap:0}.method-index a{min-height:40px;font-size:14px}.method-section h2{font-size:28px}.method-section p,.method-section li{font-size:16px;line-height:1.9}.table-scroll{margin-inline:-3px}table{font-size:12px}th,td{padding:10px 7px}
   .tour-panel{margin:14px 12px 0;padding:16px}.tour-panel h2{font-size:24px}.tour-panel p{font-size:14px}.tour-controls{gap:8px;justify-content:space-between}.tour-controls button{padding:9px 12px}.tour-panel .tour-hint{font-size:12px}
   footer{display:block;padding:24px 20px;font-size:12px}footer span{display:block;margin-bottom:10px}
@@ -1100,10 +1110,29 @@ td{color:var(--ink-soft)}
     const paragraphs=synthesis[state.lang==='en'?'paragraphsEn':'paragraphsZh'];
     return `<section class="research-synthesis" id="finding-synthesis" aria-labelledby="synthesis-title"><div class="synthesis-text"><h2 id="synthesis-title">${safe(field(synthesis,'title'))}</h2>${paragraphs.map(parts=>`<p>${parts.map(part=>part.href?`<a href="${safe(part.href)}">${safe(part.text)}</a>`:safe(part.text)).join('')}</p>`).join('')}</div></section>`;
   }
+  function noteProse(value) {
+    // Keep every original character; paragraph boundaries only change presentation.
+    const sentences=value.split(/(?<=[。！？])|(?<=[.!?])(?=\s)/);
+    const paragraphs=[];
+    const limit=state.lang==='en'?240:90;
+    sentences.forEach(sentence=>{
+      const previous=paragraphs.at(-1);
+      if(previous!==undefined&&previous.length+sentence.length<=limit)paragraphs[paragraphs.length-1]+=sentence;
+      else paragraphs.push(sentence);
+    });
+    const emphasis=state.lang==='en'?
+      ['Count unique people','Deduplicate by person and city.','count unique people.','documented personal presence','does not establish that a person never studied elsewhere','does not imply holding power','not a causal effect of education']:
+      ['按人物去重','按人物与城市去重','事件级来源、明确本人到场','不代表从未在外求学','不等同于掌权','不证明学习导致从政'];
+    return `<div class="note-prose">${paragraphs.map(paragraph=>{
+      let html=safe(paragraph);
+      emphasis.forEach(phrase=>{html=html.replace(safe(phrase),`<strong>${safe(phrase)}</strong>`);});
+      return `<p>${html}</p>`;
+    }).join('')}</div>`;
+  }
   function renderFindings() {
-    viewNodes.findings.innerHTML=`<header class="research-header"><div><p class="eyebrow">02 / ${tr('FINDINGS','研究发现')}</p><h1 tabindex="-1">${tr('Patterns, with their evidence.','让每个发现，都能回到证据。')}</h1><p>${safe(field(research.findings,'intro'))}</p></div><aside class="research-aside"><strong>${research.findings.meta.peopleCount} ${tr('lives','位人物')}</strong>${tr('Three descriptive queries. Different questions use different denominators. These results describe the current records, not all political lives in modern China.','三个描述性查询，不同问题使用不同分母。结果描述当前资料，不能代表中国近现代全部政治人物。')}<br><span>${tr('Data reviewed','资料审查')} · ${safe(research.findings.meta.dataAsOf||'')}</span></aside></header><div class="findings-list">${findings.map((f,index)=>{
+    viewNodes.findings.innerHTML=`<header class="research-header"><div><p class="eyebrow">02 / ${tr('FINDINGS','研究发现')}</p><h1 class="findings-title" tabindex="-1">${tr('Patterns, with their evidence.','<span class="finding-title-line">让每个发现，</span><span class="finding-title-line">都能回到证据。</span>')}</h1><p class="research-intro">${safe(field(research.findings,'intro'))}</p></div><aside class="research-aside"><strong>${research.findings.meta.peopleCount} ${tr('lives','位人物')}</strong>${tr('Three descriptive queries. Different questions use different denominators. These results describe the current records, not all political lives in modern China.','三个描述性查询，不同问题使用不同分母。结果描述当前资料，不能代表中国近现代全部政治人物。')}<br><span>${tr('Data reviewed','资料审查')} · ${safe(research.findings.meta.dataAsOf||'')}</span></aside></header><div class="findings-list">${findings.map((f,index)=>{
       const exceptions=f.institutionOnlyEvidence || [];
-      return `<article class="finding-card" id="finding-${safe(f.id)}"><div class="finding-main"><div class="finding-metric"><span class="finding-number">${String(index+1).padStart(2,'0')} / ${tr('OBSERVATION','观察')}</span><div class="finding-ratio">${f.numerator}<small> / ${f.denominator}</small></div><div class="finding-metric-label">${safe(field(f,'denominatorLabel'))}</div></div><div><h2>${safe(field(f,'title'))}</h2><p class="finding-claim">${safe(field(f,'claim'))}</p><div class="finding-notes"><div><h3>${tr('How this was counted','如何统计')}</h3><p>${safe(field(f,'method'))}</p></div><div><h3>${tr('What this cannot establish','这不能证明什么')}</h3><p>${safe(field(f,'limitations'))}</p></div></div><details class="finding-audit" id="audit-${safe(f.id)}"><summary>${tr('Inspect the contributing records','核对贡献这些统计的记录')} · ${f.matches.length} ${tr('people','人')}</summary><div class="finding-records">${f.matches.map(p=>recordRow(p,f.id)).join('')}</div></details>${denominatorAudit(f)}${exceptions.length?`<details class="finding-audit"><summary>${tr('Institution-only qualifications excluded from the count','仅有授予学位的机构记录，未计入')} · ${exceptions.length}</summary><div class="finding-records">${exceptions.map(p=>recordRow(p,f.id)).join('')}</div></details>`:''}${periodComparison(f)}</div></div></article>`;
+      return `<article class="finding-card" id="finding-${safe(f.id)}"><div class="finding-main"><div class="finding-metric"><span class="finding-number">${String(index+1).padStart(2,'0')} / ${tr('OBSERVATION','观察')}</span><div class="finding-ratio">${f.numerator}<small> / ${f.denominator}</small></div><div class="finding-metric-label">${safe(field(f,'denominatorLabel'))}</div></div><div><h2>${safe(field(f,'title'))}</h2><p class="finding-claim">${safe(field(f,'claim'))}</p><button type="button" class="finding-evidence-link" data-open-finding-audit="${safe(f.id)}" aria-controls="audit-${safe(f.id)}">${tr('View contributing records','查看贡献记录')} · ${f.matches.length} ${tr('people','人')} <span aria-hidden="true">↓</span></button><div class="finding-notes"><div><h3>${tr('How this was counted','如何统计')}</h3>${noteProse(field(f,'method'))}</div><div><h3>${tr('What this cannot establish','这不能证明什么')}</h3>${noteProse(field(f,'limitations'))}</div></div><details class="finding-audit" id="audit-${safe(f.id)}"><summary>${tr('Inspect the contributing records','核对贡献这些统计的记录')} · ${f.matches.length} ${tr('people','人')}</summary><div class="finding-records">${f.matches.map(p=>recordRow(p,f.id)).join('')}</div></details>${denominatorAudit(f)}${exceptions.length?`<details class="finding-audit"><summary>${tr('Institution-only qualifications excluded from the count','仅有授予学位的机构记录，未计入')} · ${exceptions.length}</summary><div class="finding-records">${exceptions.map(p=>recordRow(p,f.id)).join('')}</div></details>`:''}${periodComparison(f)}</div></div></article>`;
     }).join('')}</div>${renderSynthesis()}<div class="research-download"><a href="data/findings.json" download>${tr('Download the findings & event references','下载发现与事件依据')} ↓</a><a href="#method" data-view="method">${tr('Read the full method','阅读完整方法')} ↗</a></div>`;
     if(keepSynthesisOnLanguageChange){keepSynthesisOnLanguageChange=false;requestAnimationFrame(()=>scrollToNode(document.getElementById('finding-synthesis')));}
   }
@@ -1121,7 +1150,7 @@ td{color:var(--ink-soft)}
   }
   function renderMethod() {
     const contentsOpen=viewNodes.method.querySelector('#methodContents')?.open ?? (window.innerWidth>850);
-    viewNodes.method.innerHTML=`<header class="research-header"><div><p class="eyebrow">03 / ${tr('METHOD','研究方法')}</p><h1 tabindex="-1">${safe(field(method,'title'))}</h1><p>${safe(field(method,'intro'))}</p></div><aside class="research-aside"><strong>${tr('Make the method visible.','方法，也应当可见。')}</strong>${tr('An exploratory digital humanities project. Source notes, uncertainty and reproducible counts are part of the argument.','一项探索性的数字人文项目。来源说明、不确定性与可复算的统计，都是研究本身的一部分。')}</aside></header><div class="method-layout"><details id="methodContents" class="method-contents" ${contentsOpen?'open':''}><summary>${tr('Contents','目录')}</summary><nav class="method-index" aria-label="${tr('Method sections','方法章节')}"><p class="method-position" aria-live="off"></p>${method.sections.map((s,i)=>`<a href="#method/${s.id}" data-method-section="${s.id}">${String(i+1).padStart(2,'0')} · ${safe(field(s,'title'))}</a>`).join('')}</nav></details><div>${method.sections.map(s=>`<section class="method-section" id="method-${s.id}" tabindex="-1"><h2>${safe(field(s,'title'))}</h2>${(s['paragraphs'+(state.lang==='en'?'En':'Zh')]||[]).map(p=>`<p>${methodText(p)}</p>`).join('')}${s.bulletsEn?.length?`<ul>${(s.id==='periods'?atlasData.periods.map(p=>field(p,'label')+': '+p.startYear+'–'+p.endYear):s['bullets'+(state.lang==='en'?'En':'Zh')]||[]).map(p=>`<li>${methodText(p)}</li>`).join('')}</ul>`:''}${s.id==='tiers'?coverageMatrix():''}${s.id==='sources'?sourceCoverage():''}</section>`).join('')}<div class="research-download"><a href="data/atlas-data.json" download>${tr('Download the research dataset','下载研究数据')} ↓</a><a href="data/review-coverage.json" download>${tr('View the coverage audit','查看资料覆盖审查')} ↓</a><a href="data/evidence-review.json" download>${tr('Read the evidence correction log','查看证据更正记录')} ↓</a><a href="https://github.com/Shawnxx20100217/power-in-motion" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div>`;
+    viewNodes.method.innerHTML=`<header class="research-header"><div><p class="eyebrow">03 / ${tr('METHOD','研究方法')}</p><h1 tabindex="-1">${safe(field(method,'title'))}</h1><p class="research-intro">${safe(field(method,'intro'))}</p></div><aside class="research-aside"><strong>${tr('Make the method visible.','方法，也应当可见。')}</strong>${tr('An exploratory digital humanities project. Source notes, uncertainty and reproducible counts are part of the argument.','一项探索性的数字人文项目。来源说明、不确定性与可复算的统计，都是研究本身的一部分。')}</aside></header><div class="method-layout"><details id="methodContents" class="method-contents" ${contentsOpen?'open':''}><summary>${tr('Contents','目录')}</summary><nav class="method-index" aria-label="${tr('Method sections','方法章节')}"><p class="method-position" aria-live="off"></p>${method.sections.map((s,i)=>`<a href="#method/${s.id}" data-method-section="${s.id}">${String(i+1).padStart(2,'0')} · ${safe(field(s,'title'))}</a>`).join('')}</nav></details><div>${method.sections.map(s=>`<section class="method-section" id="method-${s.id}" tabindex="-1"><h2>${safe(field(s,'title'))}</h2>${(s['paragraphs'+(state.lang==='en'?'En':'Zh')]||[]).map(p=>`<p>${methodText(p)}</p>`).join('')}${s.bulletsEn?.length?`<ul>${(s.id==='periods'?atlasData.periods.map(p=>field(p,'label')+': '+p.startYear+'–'+p.endYear):s['bullets'+(state.lang==='en'?'En':'Zh')]||[]).map(p=>`<li>${methodText(p)}</li>`).join('')}</ul>`:''}${s.id==='tiers'?coverageMatrix():''}${s.id==='sources'?sourceCoverage():''}</section>`).join('')}<div class="research-download"><a href="data/atlas-data.json" download>${tr('Download the research dataset','下载研究数据')} ↓</a><a href="data/review-coverage.json" download>${tr('View the coverage audit','查看资料覆盖审查')} ↓</a><a href="data/evidence-review.json" download>${tr('Read the evidence correction log','查看证据更正记录')} ↓</a><a href="https://github.com/Shawnxx20100217/power-in-motion" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div>`;
     requestAnimationFrame(updateMethodPosition);
   }
   function updateMethodPosition() {
@@ -1259,6 +1288,10 @@ td{color:var(--ink-soft)}
     const target=event.target.closest('button,a');if(!target)return;
     if(target.dataset.view){event.preventDefault();navigate(target.dataset.view);}
     if(target.dataset.methodSection){event.preventDefault();navigate('method',{section:target.dataset.methodSection});}
+    if(target.dataset.openFindingAudit){
+      const audit=document.getElementById('audit-'+target.dataset.openFindingAudit);
+      if(audit){audit.open=true;const summary=audit.querySelector('summary');summary?.focus({preventScroll:true});scrollToNode(summary||audit);}
+    }
     if(target.dataset.evidencePerson){if(tour.active)setAutoplay(false);openEvidence(target.dataset.evidencePerson,(target.dataset.evidenceEvents||'').split('|').filter(Boolean),target.dataset.returnFinding);}
     if(target.hasAttribute('data-back-finding'))navigate('findings',{section:target.dataset.backFinding});
     if(target.id==='startTour'||target.id==='guidedMode'){event.preventDefault();startTour();}
