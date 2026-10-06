@@ -10,6 +10,7 @@
   let activeView = 'atlas', lastLanguage = '', returnFinding = null, activeEvidence = null;
   let routeInitialized = false;
   let keepSynthesisOnLanguageChange = false;
+  let methodSectionOnLanguageChange = null;
   let tour = {active:false, index:0, auto:false, remaining:20, timer:null};
   const tr = (en, zh) => state.lang === 'en' ? en : zh;
   const field = (value, prefix) => value[prefix + (state.lang === 'en' ? 'En' : 'Zh')] || '';
@@ -17,6 +18,12 @@
   window.researchBeforeLanguageChange=function () {
     const rect=viewNodes.findings.querySelector('.research-synthesis')?.getBoundingClientRect();
     keepSynthesisOnLanguageChange=activeView==='findings'&&rect&&rect.top<window.innerHeight&&rect.bottom>document.querySelector('.topbar').getBoundingClientRect().height;
+    methodSectionOnLanguageChange=null;
+    if(activeView==='method'&&!tour.active){
+      const header=document.querySelector('.topbar').getBoundingClientRect().height;
+      const current=[...viewNodes.method.querySelectorAll('.method-section')].filter(section=>section.getBoundingClientRect().top<=header+48).at(-1);
+      if(current&&current.getBoundingClientRect().bottom>header)methodSectionOnLanguageChange=current.id;
+    }
   };
   function scrollToNode(node) {
     if (!node) return;
@@ -134,17 +141,30 @@
   }
   window.researchRefresh=function () {
     const languageChanged=lastLanguage!==state.lang;
+    const methodSection=methodSectionOnLanguageChange;
+    const methodRoute=location.hash;
+    methodSectionOnLanguageChange=null;
     renderNavigation();
     if(lastLanguage!==state.lang){renderFindings();renderMethod();lastLanguage=state.lang;}
+    if(languageChanged&&activeView==='method'&&methodSection)requestAnimationFrame(()=>{
+      if(activeView!=='method'||tour.active||location.hash!==methodRoute)return;
+      scrollToNode(document.getElementById(methodSection));
+      updateMethodPosition();
+    });
     restoreEvidence();
     if(routeInitialized && location.hash.startsWith('#atlas?')){
       const params=new URLSearchParams(location.hash.split('?')[1]);params.set('lang',state.lang);
       if(activeEvidence&&activeEvidence.personId===state.selectedId){params.set('person',state.selectedId);if(activeEvidence.eventIds.length)params.set('events',activeEvidence.eventIds.join('|'));else params.delete('events');}
       else if(params.get('person')!==state.selectedId){params.set('person',state.selectedId||'');params.delete('events');activeEvidence=null;}
       history.replaceState(null,'','#atlas?'+params);
+    }else if(routeInitialized&&languageChanged&&['','#'].includes(location.hash.split('?')[0])){
+      const params=new URLSearchParams(location.hash.split('?')[1]);params.set('lang',state.lang);
+      history.replaceState(null,'','#?'+params);
     }
     if(tour.active) renderTour();
-    if(languageChanged&&activeView==='atlas'&&activeEvidence?.personId===state.selectedId)requestAnimationFrame(()=>{
+    const evidenceRoute=location.hash;
+    if(languageChanged&&activeView==='atlas'&&evidenceRoute.startsWith('#atlas?')&&activeEvidence?.personId===state.selectedId)requestAnimationFrame(()=>{
+      if(activeView!=='atlas'||location.hash!==evidenceRoute)return;
       restoreEvidence();
       if(tour.active){dockTour();scrollToNode(panel);}
       else {const target=activeEvidence.eventIds.map(id=>document.getElementById('event-'+id)).find(Boolean);if(target)scrollToNode(target);}
