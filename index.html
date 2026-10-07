@@ -232,6 +232,16 @@ html[data-lang="zh"] .dossier h3{line-height:1.25;letter-spacing:0}
 .event-evidence{font-size:13px;color:var(--muted);line-height:1.8;margin-top:5px}
 .event-evidence summary{cursor:pointer;padding:5px 0}
 .event-evidence p{margin:9px 0 0;color:var(--ink-soft)}
+.event-source-locator{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.event-source-locator-label{font:11px/1.5 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--vermilion)!important;margin:0 0 8px!important}
+.event-source-card{padding:10px 0;border-top:1px solid rgba(31,48,66,.12)}
+.event-source-card:first-of-type{border-top:0;padding-top:0}
+.event-source-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.event-source-card-title{font-size:13px;line-height:1.6;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.event-source-card-head>span{flex:none;font:10px/1.5 var(--font-mono);color:var(--muted);letter-spacing:.04em}
+.event-source-card-meta{display:flex;flex-wrap:wrap;gap:3px 11px;margin:4px 0 0!important;font:11px/1.6 var(--font-mono)!important;color:var(--muted)!important}
+.event-source-card-field,.event-source-card-note{font-size:12px!important;line-height:1.7!important;margin-top:6px!important}
+.event-source-card-field strong,.event-source-card-note strong{display:inline-block;margin-right:7px;font:11px/1.5 var(--font-mono);letter-spacing:.02em;color:var(--muted)}
 .path-item.evidence-focus{background:#f1e7d1;outline:1px solid #b79a66;outline-offset:10px;margin-bottom:24px}
 .path-item.pending-event::before{background:var(--paper-bright);border:1.5px dashed var(--muted);box-shadow:none}
 .pending-event small{color:var(--muted)}
@@ -327,8 +337,20 @@ html[data-lang="zh"] .finding-card h2{letter-spacing:0}
 .aggregate-row strong small{font:11px/1.4 var(--sans);color:var(--muted);margin-left:5px}
 .aggregate-lens-note{font-size:12px;line-height:1.75;color:var(--muted);margin:16px 0 0}
 .aggregate-lens-note a{color:var(--vermilion);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.aggregate-period-card{grid-column:1/-1}
+.aggregate-periods{list-style:none;padding:0;margin:0}
+.aggregate-periods li{border-top:1px solid var(--line)}
+.aggregate-period-row{display:grid;grid-template-columns:minmax(180px,1.05fr) minmax(120px,2fr) auto minmax(150px,1fr);align-items:center;gap:14px;width:100%;padding:10px 0;color:var(--ink);text-decoration:none}
+.aggregate-period-row:hover .aggregate-period-label,.aggregate-period-row:focus-visible .aggregate-period-label{color:var(--vermilion)}
+.aggregate-period-label{font:14px/1.5 var(--sans)}
+.aggregate-period-label small{display:block;font:12px/1.5 var(--font-mono);color:var(--muted);margin-top:2px}
+.aggregate-period-bar{height:7px;background:var(--paper-deep);overflow:hidden}
+.aggregate-period-bar span{display:block;height:100%;background:var(--vermilion)}
+.aggregate-period-row strong{font:24px/1 var(--serif);white-space:nowrap;text-align:right}
+.aggregate-period-row strong small{font:16px/1 var(--serif);color:var(--muted)}
+.aggregate-period-coverage{font-size:12px;line-height:1.5;color:var(--muted);text-align:right}
 @media(max-width:850px){.synthesis-text{margin-left:141px}.aggregate-lens-grid{grid-template-columns:1fr;gap:28px}}
-@media(max-width:600px){.synthesis-text{margin-left:0}.research-synthesis h2{font-size:28px}.research-synthesis p{font-size:16px}.aggregate-lens{padding:30px 0 34px}.aggregate-lens-header h2{font-size:28px}.aggregate-lens-header>div>p:last-child{font-size:14px}.aggregate-row{grid-template-columns:minmax(96px,1.1fr) minmax(64px,1.7fr) auto;gap:8px}.aggregate-row-label{font-size:13px}.aggregate-row strong{font-size:22px}.aggregate-lens-note{font-size:12px}}
+@media(max-width:600px){.synthesis-text{margin-left:0}.research-synthesis h2{font-size:28px}.research-synthesis p{font-size:16px}.aggregate-lens{padding:30px 0 34px}.aggregate-lens-header h2{font-size:28px}.aggregate-lens-header>div>p:last-child{font-size:14px}.aggregate-row{grid-template-columns:minmax(96px,1.1fr) minmax(64px,1.7fr) auto;gap:8px}.aggregate-row-label{font-size:13px}.aggregate-row strong{font-size:22px}.aggregate-period-row{grid-template-columns:minmax(96px,1.1fr) minmax(64px,1.7fr) auto;gap:8px}.aggregate-period-label{font-size:13px}.aggregate-period-row strong{font-size:22px}.aggregate-period-coverage{grid-column:1/-1;margin-left:0;text-align:left}.aggregate-lens-note{font-size:12px}}
 .method-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:56px;align-items:start}
 .method-index{position:sticky;top:calc(var(--header-height) + 20px);border-top:1px solid var(--line);padding-top:12px;max-height:calc(100vh - var(--header-height) - 45px);overflow:auto}
 .method-index a{display:block;font-size:13px;line-height:1.55;color:var(--muted);text-decoration:none;padding:9px 8px;border-left:2px solid transparent}
@@ -741,6 +763,44 @@ td{color:var(--ink-soft)}
       const date = item.chronologyStatus === 'dated' ? (item.temporalExtent === 'interval' ? ['Dated interval', '已定时间段'] : ['Dated year', '已定年份']) : ['Date not established', '时间未核定'];
       return [en ? tier.en.join(' · ') : tier.zh.join(' · '), en ? precision[0] : precision[1], en ? relation[0] : relation[1], en ? date[0] : date[1]];
     }
+    function sourceTierText(source) {
+      const raw = source?.tier || source?.tiers?.[0] || '';
+      const labels = { A_official: ['Official', '官方'], A_official_archive: ['Official archive', '官方档案'], A: ['Official', '官方'], B_academic: ['Academic', '学术'], B_reference: ['Reference', '参考'] };
+      const pair = labels[raw] || (raw ? [raw, raw] : ['Tier not assigned', '来源等级未分配']);
+      return state.lang === 'en' ? pair[0] : pair[1];
+    }
+    function sourceTypeText(source) {
+      // These are source-catalog fields, not inferred classifications. Keep a
+      // neutral label when the catalog has not assigned a type or publisher.
+      const value = source?.publisher || source?.evidenceFamily || source?.sourceType || source?.type || '';
+      return value || (state.lang === 'en' ? 'Source type not assigned' : '来源类型未分配');
+    }
+    function sourceScopeText(source) {
+      const scopes = Array.isArray(source?.scopes) ? source.scopes : [];
+      return source?.scope || scopes[0] || '';
+    }
+    function sourceRelationText(ref) {
+      const labels = {
+        event_evidence: ['Event evidence', '事件依据'],
+        candidate_entrypoint: ['Candidate entry point', '候选入口'],
+        seed_record_source: ['Seed record source', '初始记录来源'],
+        expansion_record_source: ['Expansion record source', '扩展记录来源']
+      };
+      const pair = labels[ref?.relationship] || [ref?.relationship || 'Relationship not assigned', ref?.relationship || '关系未分配'];
+      const status = ref?.evidenceStatus === 'event_supported' ? (state.lang === 'en' ? ' · supports this event' : ' · 支持此事件') : '';
+      return (state.lang === 'en' ? pair[0] : pair[1]) + status;
+    }
+    function sourceLocatorCards(refs) {
+      const en = state.lang === 'en';
+      return refs.map((ref, index) => {
+        const source = sourceRecord(ref);
+        if (!source?.url) return '';
+        const note = en ? (ref.evidenceNoteEn || source.evidenceNoteEn || '') : (ref.evidenceNoteZh || source.evidenceNoteZh || '');
+        const scope = sourceScopeText(source);
+        const type = sourceTypeText(source);
+        return `<article class="event-source-card"><div class="event-source-card-head"><a class="event-source-card-title" href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title || (en ? 'Open source' : '打开来源'))} ↗</a><span>${en ? 'Source' : '来源'} ${index + 1}</span></div><p class="event-source-card-meta"><span>${escapeHTML(sourceTierText(source))}</span><span>${escapeHTML(type)}</span><span>${escapeHTML(sourceRelationText(ref))}</span></p>${scope ? `<p class="event-source-card-field"><strong>${en ? 'Scope' : '范围'}</strong>${escapeHTML(scope)}</p>` : ''}${note ? `<p class="event-source-card-note"><strong>${en ? 'Evidence note' : '证据说明'}</strong>${escapeHTML(note)}</p>` : ''}</article>`;
+      }).join('');
+    }
     function eventEvidenceState(item) { return !item.pending && item.status === 'verified' ? 'verified' : item.type && item.type !== 'unknown' ? 'typed' : 'lead'; }
     function layerMatches(item, layer) {
       return layer === 'all' || eventLayer(item.type).id === layer;
@@ -903,7 +963,7 @@ td{color:var(--ink-soft)}
       const refs = verified ? uniqueEventSources(item) : [];
       const links = refs.map((ref, index) => `<a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(ref.title)}"><span class="source-number">${en ? 'Source' : '来源'} ${index + 1}</span><span class="source-title">${escapeHTML(ref.title)} ↗</span></a>`).join('');
       const notes = [...new Set(refs.map(ref => en ? ref.evidenceNoteEn : ref.evidenceNoteZh).filter(Boolean))];
-      const evidence = (notes.length || refs.length) ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p class="event-evidence-meta">${evidenceMeta(item, refs).map(value => `<span>${escapeHTML(value)}</span>`).join('')}</p>${notes.length ? `<p>${notes.filter(note=>!notes.some(other=>other!==note&&other.includes(note))).map(escapeHTML).join(' ')}</p>` : ''}</details>` : '';
+      const evidence = (notes.length || refs.length) ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p class="event-evidence-meta">${evidenceMeta(item, refs).map(value => `<span>${escapeHTML(value)}</span>`).join('')}</p>${refs.length ? `<div class="event-source-locator"><p class="event-source-locator-label">${en ? 'Source location' : '来源定位'}</p>${sourceLocatorCards(refs)}</div>` : ''}</details>` : '';
       const strength = refs.length ? `<span class="evidence-strength">${refs.length === 1 ? (en ? '1 cited source' : '1 条引用来源') : (en ? `${refs.length} cited source URLs` : `${refs.length} 条引用来源`)}</span>` : '';
       const unavailable = verified && !verifiedEvents({placeLeads:[item]}).length ? (en ? 'Shown in the record; excluded from route connections.' : '保留于档案，不参与路径连线。') : '';
       return `<div id="event-${escapeHTML(item.id)}" class="path-item ${pathClass(item.type)} ${verified ? 'verified-event' : 'pending-event'}"><small>${escapeHTML(date)} · ${escapeHTML(pathLabel(item))}</small><strong>${escapeHTML(title)}</strong><span>${escapeHTML(verified ? ((en ? item.placeEn : item.placeText) || item.placeText || '') + ' · ' + (item.spatialRelation==='jurisdiction' ? (en?'Jurisdiction; presence not inferred':'任职辖区，不推断到场') : item.spatialRelation==='ancestral_origin' ? (en?'Native place; not a travel event':'籍贯，不代表迁移事件') : pathNote(item)) : (en ? 'Event details awaiting source review.' : '事件细节待逐项核验。'))} ${escapeHTML(unavailable)}</span>${links ? `<div class="event-sources">${links}</div>` : ''}${strength}${evidence}</div>`;
@@ -1238,11 +1298,23 @@ td{color:var(--ink-soft)}
     const max=Math.max(...rows.map(row=>Number(row.peopleCount)||0),1);
     return `<ol class="aggregate-bars">${rows.map(row=>{const count=Number(row.peopleCount)||0;const width=Math.max(count?6:0,Math.round(count/max*100));const label=field(row,'label');return `<li><a class="aggregate-row" href="#findings/${safe(findingId)}" aria-label="${safe(label)} · ${count} ${tr('people','人')} · ${tr('open the full finding','查看完整发现')}"><span class="aggregate-row-label">${safe(label)}</span><span class="aggregate-bar" aria-hidden="true"><span style="width:${width}%"></span></span><strong>${count}<small> ${tr('people','人')}</small></strong></a></li>`;}).join('')}</ol>`;
   }
+  function periodAggregateRows(finding) {
+    const rows=finding?.periodBreakdown||[];
+    if(!rows.length)return '';
+    return `<ol class="aggregate-periods">${rows.map(row=>{
+      const numerator=Number(row.numerator)||0;
+      const denominator=Number(row.denominator)||0;
+      const width=denominator?Math.round(numerator/denominator*100):0;
+      const label=field(row,'label');
+      const coverage=Number(row.coverage?.peopleWithDatedSupportedRecords)||0;
+      return `<li><a class="aggregate-period-row" href="#findings/${safe(finding.id)}" aria-label="${safe(label)} · ${row.startYear}–${row.endYear} · ${numerator} / ${denominator} ${tr('people','人')} · ${tr('open the full finding','查看完整发现')}"><span class="aggregate-period-label">${safe(label)}<small>${row.startYear}–${row.endYear}</small></span><span class="aggregate-period-bar" aria-hidden="true"><span style="width:${width}%"></span></span><strong>${numerator}<small> / ${denominator}</small></strong><span class="aggregate-period-coverage">${coverage} ${tr('profiles with dated evidence','人有可定年来源记录')}</span></a></li>`;
+    }).join('')}</ol>`;
+  }
   function renderAggregateSnapshot() {
     const learning=findings.find(f=>f.id==='learning-destinations');
     const centers=findings.find(f=>f.id==='multiple-centers');
     if(!learning&&!centers)return '';
-    return `<section class="aggregate-lens" id="finding-aggregate" aria-labelledby="aggregate-title"><header class="aggregate-lens-header"><div><p class="eyebrow">${tr('CROSS-PERSON VIEW','跨人物视角')} · ${tr('SOURCE AGGREGATION','资料聚合')}</p><h2 id="aggregate-title">${tr('Across the indexed sample','跨人物观察')}</h2><p>${tr('Two views of the same records: where documented learning appears, and which selected political centers recur. People may appear in more than one row; these counts are descriptive, not migration rates or rankings of historical importance.','把同一批资料放在两个视角下阅读：有本人到场记录的学习地点组，以及反复出现的所选政治中心。人物可以出现在多个行中；这些是描述性计数，不是迁移率，也不是历史重要性排名。')}</p></div></header><div class="aggregate-lens-grid">${learning?`<section class="aggregate-lens-card"><div class="aggregate-lens-card-head"><div><h3>${tr('Recorded learning destinations','有本人到场记录的学习地点组')}</h3><p>${learning.numerator} / ${learning.denominator} ${tr('profiles across five preselected groups','位人物涉及五个预先设定地点组')}</p></div><span>${tr('unique people','人物去重')}</span></div>${aggregateRows(learning.destinationGroups,learning.id)}<p class="aggregate-lens-note">${tr('Bar length compares counts within this query. Groups overlap and cannot be added.','条带只比较同一查询中的人数。地点组可以重叠，人数不可相加。')} <a href="#findings/${safe(learning.id)}">${tr('Open the full finding ↗','查看完整发现 ↗')}</a></p></section>`:''}${centers?`<section class="aggregate-lens-card"><div class="aggregate-lens-card-head"><div><h3>${tr('Selected political centers','所选政治中心')}</h3><p>${centers.denominator} ${tr('profiles with at least one selected-center record','位人物至少有一项所选中心记录')}</p></div><span>${tr('unique people','人物去重')}</span></div>${aggregateRows(centers.centerCounts,centers.id)}<p class="aggregate-lens-note">${tr('Bar length compares counts within this query. Centers overlap and do not establish historical centrality.','条带只比较同一查询中的人数。中心可以重叠，不代表历史中心性。')} <a href="#findings/${safe(centers.id)}">${tr('Open the full finding ↗','查看完整发现 ↗')}</a></p></section>`:''}</div></section>`;
+    return `<section class="aggregate-lens" id="finding-aggregate" aria-labelledby="aggregate-title"><header class="aggregate-lens-header"><div><p class="eyebrow">${tr('CROSS-PERSON VIEW','跨人物视角')} · ${tr('SOURCE AGGREGATION','资料聚合')}</p><h2 id="aggregate-title">${tr('Across the indexed sample','跨人物观察')}</h2><p>${tr('Three descriptive views of the same records: where documented learning appears, which selected political centers recur, and how the multi-center query reads within overlapping periods. People may appear in more than one row; these counts are not migration rates or rankings of historical importance.','把同一批资料放在三个描述性视角下阅读：有本人到场记录的学习地点组、反复出现的所选政治中心，以及按重叠时期读取多中心查询。人物可以出现在多个行中；这些计数不是迁移率，也不是历史重要性排名。')}</p></div></header><div class="aggregate-lens-grid">${learning?`<section class="aggregate-lens-card"><div class="aggregate-lens-card-head"><div><h3>${tr('Recorded learning destinations','有本人到场记录的学习地点组')}</h3><p>${learning.numerator} / ${learning.denominator} ${tr('profiles across five preselected groups','位人物涉及五个预先设定地点组')}</p></div><span>${tr('unique people','人物去重')}</span></div>${aggregateRows(learning.destinationGroups,learning.id)}<p class="aggregate-lens-note">${tr('Bar length compares counts within this query. Groups overlap and cannot be added.','条带只比较同一查询中的人数。地点组可以重叠，人数不可相加。')} <a href="#findings/${safe(learning.id)}">${tr('Open the full finding ↗','查看完整发现 ↗')}</a></p></section>`:''}${centers?`<section class="aggregate-lens-card"><div class="aggregate-lens-card-head"><div><h3>${tr('Selected political centers','所选政治中心')}</h3><p>${centers.denominator} ${tr('profiles with at least one selected-center record','位人物至少有一项所选中心记录')}</p></div><span>${tr('unique people','人物去重')}</span></div>${aggregateRows(centers.centerCounts,centers.id)}<p class="aggregate-lens-note">${tr('Bar length compares counts within this query. Centers overlap and do not establish historical centrality.','条带只比较同一查询中的人数。中心可以重叠，不代表历史中心性。')} <a href="#findings/${safe(centers.id)}">${tr('Open the full finding ↗','查看完整发现 ↗')}</a></p></section>`:''}${centers?.periodBreakdown?.length?`<section class="aggregate-lens-card aggregate-period-card"><div class="aggregate-lens-card-head"><div><h3>${tr('Multi-center records by period','按时期比较多中心记录')}</h3><p>${tr('People with at least two selected centers / people with any selected-center record in that period','每期至少两座所选中心 / 该期至少一座中心记录的人物')}</p></div><span>${tr('dated evidence','可定年资料')}</span></div>${periodAggregateRows(centers)}<p class="aggregate-lens-note">${tr('The bar shows the within-period proportion. Periods overlap, denominators differ, and rows cannot be added; this is a descriptive view of the indexed records, not a trend or migration rate.','条带显示每期内部比例。时期彼此重叠，分母不同，行数不可相加；这是对现有资料的描述性视角，不是趋势或迁移率。')} <a href="#findings/${safe(centers.id)}">${tr('Open the full finding ↗','查看完整发现 ↗')}</a></p></section>`:''}</div></section>`;
   }
   function updateMethodPosition() {
     if(activeView!=='method')return;
