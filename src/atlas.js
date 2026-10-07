@@ -118,6 +118,21 @@
       if (item.pending) return state.lang === 'en' ? 'Event-level verification pending.' : '事件级核验待完成。';
       return state.lang === 'en' ? (item.qualifierEn || item.qualifier || '') : (item.qualifierZh || item.qualifier || '');
     }
+    function evidenceTierLabel(refs) {
+      const tiers = [...new Set(refs.map(ref => sourceRecord(ref)?.tier).filter(Boolean))];
+      const labels = { A_official: ['Official', '官方'], A: ['Official', '官方'], B_academic: ['Academic', '学术'], B_reference: ['Reference', '参考'] };
+      const pairs = tiers.map(tier => labels[tier] || [tier, tier]);
+      const unique = (index) => [...new Set(pairs.map(pair => pair[index]))];
+      return tiers.length ? { en: unique(0), zh: unique(1) } : { en: ['Tier not assigned'], zh: ['来源等级未分配'] };
+    }
+    function evidenceMeta(item, refs) {
+      const en = state.lang === 'en';
+      const tier = evidenceTierLabel(refs);
+      const precision = { city: ['Schematic city', '示意城市'], region: ['Schematic region', '示意区域'], unknown: ['Location precision not assigned', '地点精度未分配'] }[item.coordinatePrecision || 'unknown'];
+      const relation = { documented_presence: ['Documented presence', '本人到场记录'], jurisdiction: ['Jurisdiction; presence not inferred', '任职辖区，不推断到场'], organizational_affiliation: ['Organizational affiliation', '组织或行动关联'], ancestral_origin: ['Ancestral origin; not a travel event', '籍贯，不代表迁移事件'], unknown: ['Spatial relation not assigned', '空间关系未分配'] }[item.spatialRelation || 'unknown'];
+      const date = item.chronologyStatus === 'dated' ? (item.temporalExtent === 'interval' ? ['Dated interval', '已定时间段'] : ['Dated year', '已定年份']) : ['Date not established', '时间未核定'];
+      return [en ? tier.en.join(' · ') : tier.zh.join(' · '), en ? precision[0] : precision[1], en ? relation[0] : relation[1], en ? date[0] : date[1]];
+    }
     function eventEvidenceState(item) { return !item.pending && item.status === 'verified' ? 'verified' : item.type && item.type !== 'unknown' ? 'typed' : 'lead'; }
     function layerMatches(item, layer) {
       return layer === 'all' || eventLayer(item.type).id === layer;
@@ -280,7 +295,7 @@
       const refs = verified ? uniqueEventSources(item) : [];
       const links = refs.map((ref, index) => `<a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(ref.title)}"><span class="source-number">${en ? 'Source' : '来源'} ${index + 1}</span><span class="source-title">${escapeHTML(ref.title)} ↗</span></a>`).join('');
       const notes = [...new Set(refs.map(ref => en ? ref.evidenceNoteEn : ref.evidenceNoteZh).filter(Boolean))];
-      const evidence = notes.length ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p>${notes.filter(note=>!notes.some(other=>other!==note&&other.includes(note))).map(escapeHTML).join(' ')}</p></details>` : '';
+      const evidence = (notes.length || refs.length) ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p class="event-evidence-meta">${evidenceMeta(item, refs).map(value => `<span>${escapeHTML(value)}</span>`).join('')}</p>${notes.length ? `<p>${notes.filter(note=>!notes.some(other=>other!==note&&other.includes(note))).map(escapeHTML).join(' ')}</p>` : ''}</details>` : '';
       const strength = refs.length ? `<span class="evidence-strength">${refs.length === 1 ? (en ? '1 cited source' : '1 条引用来源') : (en ? `${refs.length} cited source URLs` : `${refs.length} 条引用来源`)}</span>` : '';
       const unavailable = verified && !verifiedEvents({placeLeads:[item]}).length ? (en ? 'Shown in the record; excluded from route connections.' : '保留于档案，不参与路径连线。') : '';
       return `<div id="event-${escapeHTML(item.id)}" class="path-item ${pathClass(item.type)} ${verified ? 'verified-event' : 'pending-event'}"><small>${escapeHTML(date)} · ${escapeHTML(pathLabel(item))}</small><strong>${escapeHTML(title)}</strong><span>${escapeHTML(verified ? ((en ? item.placeEn : item.placeText) || item.placeText || '') + ' · ' + (item.spatialRelation==='jurisdiction' ? (en?'Jurisdiction; presence not inferred':'任职辖区，不推断到场') : item.spatialRelation==='ancestral_origin' ? (en?'Native place; not a travel event':'籍贯，不代表迁移事件') : pathNote(item)) : (en ? 'Event details awaiting source review.' : '事件细节待逐项核验。'))} ${escapeHTML(unavailable)}</span>${links ? `<div class="event-sources">${links}</div>` : ''}${strength}${evidence}</div>`;
@@ -426,7 +441,7 @@
       const person=peopleById.get('p_sun_yat_sen'),en=state.lang==='en';if(!person)return;
       const ids=['honolulu-school','tongmenghui','president','reorganization'].map(id=>`p_sun_yat_sen:full:${id}`);
       const events=ids.map(id=>person.placeLeads.find(event=>event.id===id)).filter(Boolean);
-      container.innerHTML=`<div class="hero-record-head"><span class="eyebrow">${en?'ONE LIFE · FOUR SOURCED RECORDS':'一位人物 · 四条有来源记录'}</span><h2>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h2></div><ol class="hero-record-timeline">${events.map(event=>`<li class="hero-record-step"><button type="button" data-hero-event="${escapeHTML(event.id)}"><time>${eventYear(event)}</time><strong>${escapeHTML(en?(event.placeEn||mapPlaceLabel(event.place)):mapPlaceLabel(event.place))}<span lang="${en?'zh-CN':'en'}">${escapeHTML(en?mapPlaceLabel(event.place,'zh'):(event.placeEn||mapPlaceLabel(event.place)))}</span></strong><span>${escapeHTML((en?event.titleEn:event.titleZh)||'')}</span><span class="hero-record-source">${en?'Read event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ol><p class="hero-record-note">${en?'Selected biographical records; connecting marks are schematic, not a reconstructed travel route.':'精选履历记录；连接标记为示意，不是实际行程还原。'}</p>`;
+      container.innerHTML=`<div class="hero-record-head"><span class="eyebrow">${en?'ONE LIFE · FOUR SOURCED RECORDS':'一位人物 · 四条有来源记录'}</span><h2>${escapeHTML(displayName(person))}<small>${escapeHTML(secondaryName(person))}</small></h2></div><ol class="hero-record-timeline">${events.map((event,index)=>`<li class="hero-record-step${index===0?' hero-record-step--anchor':''}"><button type="button" data-hero-event="${escapeHTML(event.id)}">${index===0?`<span class="hero-record-anchor-label">${en?'FIRST SOURCED RECORD':'第一条有来源记录'}</span>`:''}<time>${eventYear(event)}</time><strong>${escapeHTML(en?(event.placeEn||mapPlaceLabel(event.place)):mapPlaceLabel(event.place))}<span lang="${en?'zh-CN':'en'}">${escapeHTML(en?mapPlaceLabel(event.place,'zh'):(event.placeEn||mapPlaceLabel(event.place)))}</span></strong><span>${escapeHTML((en?event.titleEn:event.titleZh)||'')}</span><span class="hero-record-source">${en?'Read event & source ↗':'查看事件与来源 ↗'}</span></button></li>`).join('')}</ol><p class="hero-record-note">${en?'Selected biographical records; connecting marks are schematic, not a reconstructed travel route.':'精选履历记录；连接标记为示意，不是实际行程还原。'}</p>`;
       container.querySelectorAll('[data-hero-event]').forEach(button=>button.addEventListener('click',()=>openAtlasRecord(person.id,[button.dataset.heroEvent])));
     }
     function openAtlasRecord(personId,eventIds=[]) {
