@@ -133,6 +133,44 @@
       const date = item.chronologyStatus === 'dated' ? (item.temporalExtent === 'interval' ? ['Dated interval', '已定时间段'] : ['Dated year', '已定年份']) : ['Date not established', '时间未核定'];
       return [en ? tier.en.join(' · ') : tier.zh.join(' · '), en ? precision[0] : precision[1], en ? relation[0] : relation[1], en ? date[0] : date[1]];
     }
+    function sourceTierText(source) {
+      const raw = source?.tier || source?.tiers?.[0] || '';
+      const labels = { A_official: ['Official', '官方'], A_official_archive: ['Official archive', '官方档案'], A: ['Official', '官方'], B_academic: ['Academic', '学术'], B_reference: ['Reference', '参考'] };
+      const pair = labels[raw] || (raw ? [raw, raw] : ['Tier not assigned', '来源等级未分配']);
+      return state.lang === 'en' ? pair[0] : pair[1];
+    }
+    function sourceTypeText(source) {
+      // These are source-catalog fields, not inferred classifications. Keep a
+      // neutral label when the catalog has not assigned a type or publisher.
+      const value = source?.publisher || source?.evidenceFamily || source?.sourceType || source?.type || '';
+      return value || (state.lang === 'en' ? 'Source type not assigned' : '来源类型未分配');
+    }
+    function sourceScopeText(source) {
+      const scopes = Array.isArray(source?.scopes) ? source.scopes : [];
+      return source?.scope || scopes[0] || '';
+    }
+    function sourceRelationText(ref) {
+      const labels = {
+        event_evidence: ['Event evidence', '事件依据'],
+        candidate_entrypoint: ['Candidate entry point', '候选入口'],
+        seed_record_source: ['Seed record source', '初始记录来源'],
+        expansion_record_source: ['Expansion record source', '扩展记录来源']
+      };
+      const pair = labels[ref?.relationship] || [ref?.relationship || 'Relationship not assigned', ref?.relationship || '关系未分配'];
+      const status = ref?.evidenceStatus === 'event_supported' ? (state.lang === 'en' ? ' · supports this event' : ' · 支持此事件') : '';
+      return (state.lang === 'en' ? pair[0] : pair[1]) + status;
+    }
+    function sourceLocatorCards(refs) {
+      const en = state.lang === 'en';
+      return refs.map((ref, index) => {
+        const source = sourceRecord(ref);
+        if (!source?.url) return '';
+        const note = en ? (ref.evidenceNoteEn || source.evidenceNoteEn || '') : (ref.evidenceNoteZh || source.evidenceNoteZh || '');
+        const scope = sourceScopeText(source);
+        const type = sourceTypeText(source);
+        return `<article class="event-source-card"><div class="event-source-card-head"><a class="event-source-card-title" href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title || (en ? 'Open source' : '打开来源'))} ↗</a><span>${en ? 'Source' : '来源'} ${index + 1}</span></div><p class="event-source-card-meta"><span>${escapeHTML(sourceTierText(source))}</span><span>${escapeHTML(type)}</span><span>${escapeHTML(sourceRelationText(ref))}</span></p>${scope ? `<p class="event-source-card-field"><strong>${en ? 'Scope' : '范围'}</strong>${escapeHTML(scope)}</p>` : ''}${note ? `<p class="event-source-card-note"><strong>${en ? 'Evidence note' : '证据说明'}</strong>${escapeHTML(note)}</p>` : ''}</article>`;
+      }).join('');
+    }
     function eventEvidenceState(item) { return !item.pending && item.status === 'verified' ? 'verified' : item.type && item.type !== 'unknown' ? 'typed' : 'lead'; }
     function layerMatches(item, layer) {
       return layer === 'all' || eventLayer(item.type).id === layer;
@@ -295,7 +333,7 @@
       const refs = verified ? uniqueEventSources(item) : [];
       const links = refs.map((ref, index) => `<a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(ref.title)}"><span class="source-number">${en ? 'Source' : '来源'} ${index + 1}</span><span class="source-title">${escapeHTML(ref.title)} ↗</span></a>`).join('');
       const notes = [...new Set(refs.map(ref => en ? ref.evidenceNoteEn : ref.evidenceNoteZh).filter(Boolean))];
-      const evidence = (notes.length || refs.length) ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p class="event-evidence-meta">${evidenceMeta(item, refs).map(value => `<span>${escapeHTML(value)}</span>`).join('')}</p>${notes.length ? `<p>${notes.filter(note=>!notes.some(other=>other!==note&&other.includes(note))).map(escapeHTML).join(' ')}</p>` : ''}</details>` : '';
+      const evidence = (notes.length || refs.length) ? `<details class="event-evidence"><summary>${en ? 'What the source supports' : '来源支持的内容'}</summary><p class="event-evidence-meta">${evidenceMeta(item, refs).map(value => `<span>${escapeHTML(value)}</span>`).join('')}</p>${refs.length ? `<div class="event-source-locator"><p class="event-source-locator-label">${en ? 'Source location' : '来源定位'}</p>${sourceLocatorCards(refs)}</div>` : ''}</details>` : '';
       const strength = refs.length ? `<span class="evidence-strength">${refs.length === 1 ? (en ? '1 cited source' : '1 条引用来源') : (en ? `${refs.length} cited source URLs` : `${refs.length} 条引用来源`)}</span>` : '';
       const unavailable = verified && !verifiedEvents({placeLeads:[item]}).length ? (en ? 'Shown in the record; excluded from route connections.' : '保留于档案，不参与路径连线。') : '';
       return `<div id="event-${escapeHTML(item.id)}" class="path-item ${pathClass(item.type)} ${verified ? 'verified-event' : 'pending-event'}"><small>${escapeHTML(date)} · ${escapeHTML(pathLabel(item))}</small><strong>${escapeHTML(title)}</strong><span>${escapeHTML(verified ? ((en ? item.placeEn : item.placeText) || item.placeText || '') + ' · ' + (item.spatialRelation==='jurisdiction' ? (en?'Jurisdiction; presence not inferred':'任职辖区，不推断到场') : item.spatialRelation==='ancestral_origin' ? (en?'Native place; not a travel event':'籍贯，不代表迁移事件') : pathNote(item)) : (en ? 'Event details awaiting source review.' : '事件细节待逐项核验。'))} ${escapeHTML(unavailable)}</span>${links ? `<div class="event-sources">${links}</div>` : ''}${strength}${evidence}</div>`;
