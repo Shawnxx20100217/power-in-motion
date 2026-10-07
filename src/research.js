@@ -121,7 +121,7 @@
       const width=denominator?Math.round(numerator/denominator*100):0;
       const label=field(row,'label');
       const coverage=Number(row.coverage?.peopleWithDatedSupportedRecords)||0;
-      return `<li><a class="aggregate-period-row" href="#findings/${safe(finding.id)}" aria-label="${safe(label)} · ${row.startYear}–${row.endYear} · ${numerator} / ${denominator} ${tr('people','people')} · ${tr('open the full finding','查看完整发现')}"><span class="aggregate-period-label">${safe(label)}<small>${row.startYear}–${row.endYear}</small></span><span class="aggregate-period-bar" aria-hidden="true"><span style="width:${width}%"></span></span><strong>${numerator}<small> / ${denominator}</small></strong><span class="aggregate-period-coverage">${coverage} ${tr('profiles with dated evidence','人有可定年来源记录')}</span></a></li>`;
+      return `<li><a class="aggregate-period-row" href="#findings/${safe(finding.id)}" aria-label="${safe(label)} · ${row.startYear}–${row.endYear} · ${numerator} / ${denominator} ${tr('people','人')} · ${tr('open the full finding','查看完整发现')}"><span class="aggregate-period-label">${safe(label)}<small>${row.startYear}–${row.endYear}</small></span><span class="aggregate-period-bar" aria-hidden="true"><span style="width:${width}%"></span></span><strong>${numerator}<small> / ${denominator}</small></strong><span class="aggregate-period-coverage">${coverage} ${tr('profiles with dated evidence','人有可定年来源记录')}</span></a></li>`;
     }).join('')}</ol>`;
   }
   function renderAggregateSnapshot() {

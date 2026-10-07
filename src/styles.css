@@ -224,6 +224,16 @@ html[data-lang="zh"] .dossier h3{line-height:1.25;letter-spacing:0}
 .event-evidence{font-size:13px;color:var(--muted);line-height:1.8;margin-top:5px}
 .event-evidence summary{cursor:pointer;padding:5px 0}
 .event-evidence p{margin:9px 0 0;color:var(--ink-soft)}
+.event-source-locator{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.event-source-locator-label{font:11px/1.5 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--vermilion)!important;margin:0 0 8px!important}
+.event-source-card{padding:10px 0;border-top:1px solid rgba(31,48,66,.12)}
+.event-source-card:first-of-type{border-top:0;padding-top:0}
+.event-source-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.event-source-card-title{font-size:13px;line-height:1.6;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.event-source-card-head>span{flex:none;font:10px/1.5 var(--font-mono);color:var(--muted);letter-spacing:.04em}
+.event-source-card-meta{display:flex;flex-wrap:wrap;gap:3px 11px;margin:4px 0 0!important;font:11px/1.6 var(--font-mono)!important;color:var(--muted)!important}
+.event-source-card-field,.event-source-card-note{font-size:12px!important;line-height:1.7!important;margin-top:6px!important}
+.event-source-card-field strong,.event-source-card-note strong{display:inline-block;margin-right:7px;font:11px/1.5 var(--font-mono);letter-spacing:.02em;color:var(--muted)}
 .path-item.evidence-focus{background:#f1e7d1;outline:1px solid #b79a66;outline-offset:10px;margin-bottom:24px}
 .path-item.pending-event::before{background:var(--paper-bright);border:1.5px dashed var(--muted);box-shadow:none}
 .pending-event small{color:var(--muted)}
