@@ -1263,7 +1263,7 @@ td{color:var(--ink-soft)}
     renderNavigation();
     if(tour.active)renderTour();
     if(!options.keepHash)history.pushState(null,'',`#${activeView}${options.section?'/'+encodeURIComponent(options.section):''}`);
-    const target=options.section?document.getElementById(`${activeView==='findings'?'finding':'method'}-${options.section}`):(activeView==='atlas'?document.querySelector('.map-panel'):viewNodes[activeView]);
+    const target=options.section?document.getElementById(`${activeView==='findings'?'finding':'method'}-${options.section}`):(activeView==='atlas'?document.querySelector('.workspace'):viewNodes[activeView]);
     scrollToNode(target || viewNodes[activeView]);
     if(activeView==='atlas')requestAnimationFrame(renderMap);
     if(activeView==='method')requestAnimationFrame(updateMethodPosition);
