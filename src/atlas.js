@@ -139,11 +139,14 @@
       const pair = labels[raw] || (raw ? [raw, raw] : ['Tier not assigned', '来源等级未分配']);
       return state.lang === 'en' ? pair[0] : pair[1];
     }
-    function sourceTypeText(source) {
-      // These are source-catalog fields, not inferred classifications. Keep a
-      // neutral label when the catalog has not assigned a type or publisher.
-      const value = source?.publisher || source?.evidenceFamily || source?.sourceType || source?.type || '';
-      return value || (state.lang === 'en' ? 'Source type not assigned' : '来源类型未分配');
+    function sourceCatalogDetail(source) {
+      // Publisher and evidenceFamily are catalog notes, not inferred source
+      // types. Keep them visible under a neutral label rather than presenting
+      // a publisher as a formal classification.
+      const type = source?.sourceType || source?.type || '';
+      if (type) return { label: state.lang === 'en' ? 'Type' : '类型', value: type };
+      const detail = [source?.publisher, source?.evidenceFamily].filter(Boolean).join(' · ');
+      return { label: state.lang === 'en' ? 'Catalog note' : '目录信息', value: detail || (state.lang === 'en' ? 'Not assigned' : '未分配') };
     }
     function sourceScopeText(source) {
       const scopes = Array.isArray(source?.scopes) ? source.scopes : [];
@@ -168,8 +171,8 @@
         if (!source?.url) return '';
         const note = en ? (ref.evidenceNoteEn || source.evidenceNoteEn || '') : (ref.evidenceNoteZh || source.evidenceNoteZh || '');
         const scope = sourceScopeText(source);
-        const type = sourceTypeText(source);
-        return `<article class="event-source-card"><div class="event-source-card-head"><a class="event-source-card-title" href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title || (en ? 'Open source' : '打开来源'))} ↗</a><span>${en ? 'Source' : '来源'} ${index + 1}</span></div><p class="event-source-card-meta"><span><b>${en ? 'Tier' : '等级'}</b> ${escapeHTML(sourceTierText(source))}</span><span><b>${en ? 'Type' : '类型'}</b> ${escapeHTML(type)}</span><span><b>${en ? 'Relation' : '关系'}</b> ${escapeHTML(sourceRelationText(ref))}</span></p>${scope ? `<p class="event-source-card-field"><strong>${en ? 'Scope' : '范围'}</strong>${escapeHTML(scope)}</p>` : ''}${note ? `<p class="event-source-card-note"><strong>${en ? 'Evidence note' : '证据说明'}</strong>${escapeHTML(note)}</p>` : ''}</article>`;
+        const catalog = sourceCatalogDetail(source);
+        return `<article class="event-source-card"><div class="event-source-card-head"><a class="event-source-card-title" href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title || (en ? 'Open source' : '打开来源'))} ↗</a><span>${en ? 'Source' : '来源'} ${index + 1}</span></div><p class="event-source-card-meta"><span><b>${en ? 'Tier' : '等级'}</b> ${escapeHTML(sourceTierText(source))}</span><span><b>${escapeHTML(catalog.label)}</b> ${escapeHTML(catalog.value)}</span><span><b>${en ? 'Relation' : '关系'}</b> ${escapeHTML(sourceRelationText(ref))}</span></p>${scope ? `<p class="event-source-card-field"><strong>${en ? 'Scope' : '范围'}</strong>${escapeHTML(scope)}</p>` : ''}${note ? `<p class="event-source-card-note"><strong>${en ? 'Evidence note' : '证据说明'}</strong>${escapeHTML(note)}</p>` : ''}</article>`;
       }).join('');
     }
     function eventEvidenceState(item) { return !item.pending && item.status === 'verified' ? 'verified' : item.type && item.type !== 'unknown' ? 'typed' : 'lead'; }
