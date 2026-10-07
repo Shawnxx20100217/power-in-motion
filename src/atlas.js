@@ -147,7 +147,8 @@
     }
     function sourceScopeText(source) {
       const scopes = Array.isArray(source?.scopes) ? source.scopes : [];
-      return source?.scope || scopes[0] || '';
+      const value = source?.scope || scopes[0] || '';
+      return state.lang === 'zh' && value === 'Event-level historical evidence' ? '事件级历史证据' : value;
     }
     function sourceRelationText(ref) {
       const labels = {
